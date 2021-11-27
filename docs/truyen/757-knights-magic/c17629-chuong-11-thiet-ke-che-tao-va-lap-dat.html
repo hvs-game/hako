@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Đọc Knights &amp; Magic - Chương 11: Thiết kế, chế tạo và lắp đặt - Cổng Light Novel</title>
+<meta name="keywords" content="Knights,&amp;,Magic,Chương,11:,Thiết,kế,chế,tạo,và,lắp,đặt">
+<meta name="description" content="Đọc Light Novel Knights &amp; Magic - Chương 11: Thiết kế, chế tạo và lắp đặt Tiếng Việt nhanh nhất, chất lượng cao, cập nhật liên tục tại Cổng Light Novel. Cung cấp cho độc giả nhiều tiện ích giúp đọc truyện dễ dàng hơn.">
+<meta name="theme-color" content="#000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="o5ORFp4Oh6heOPF3UJjFMESo8Y8pwMs0RqAH3AFd">
+<meta name="logged-in" content="0">
+<link rel="canonical" href="https://ln.hako.re/truyen/757-knights-magic/c17629-chuong-11-thiet-ke-che-tao-va-lap-dat">
+<meta property="og:image" content="https://2.bp.blogspot.com/-gYXqkC9QS1E/WQ1kQrXGALI/AAAAAAAAQDQ/FVu9QzGSwlIQfRT7Ajuu3tlJBmfV71RkACHM/w215/default.jpg">
+<meta property="fb:app_id" content="1864643850436909">
+<link rel="prefetch" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="prefetch" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="shortcut icon" href="/img/favicon.png?v=3">
+<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
+<link rel="stylesheet" href="/css/interface.css?id=fde29cbca40eea8f6585">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+<script src="/scripts/plugins.js?id=549277a37ac0021cae34"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34864968-3');
+    </script>
+</head>
+<body>
+<style>
+    body {
+        background: inherit;
+    }
+
+    #footer {
+        display: none;
+    }
+</style>
+<main id="mainpart" class="reading-page style-3">
+<section id="rd-side_icon" class="none force-block-l">
+<a class="rd_sd-button_item rd_top-left" href="/truyen/757-knights-magic/c17628-chuong-10-bat-dau"><i class="fas fa-backward"></i></a>
+<a class="rd_sd-button_item" href="/truyen/757-knights-magic"><i class="fas fa-home"></i></a>
+<a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
+<a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
+<a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
+<a class="rd_sd-button_item rd_top-right" href="/truyen/757-knights-magic/c17630-chuong-12-quyet-dau-gia-tap"><i class="fas fa-forward"></i></a>
+</section>
+<section id="chapters" class="rd_sidebar rdtoggle">
+<main class="rdtoggle_body">
+<header class="rd_sidebar-header clear">
+<a class="img" href="/truyen/757-knights-magic/c17629-chuong-11-thiet-ke-che-tao-va-lap-dat" style="background: url('https://2.bp.blogspot.com/-gYXqkC9QS1E/WQ1kQrXGALI/AAAAAAAAQDQ/FVu9QzGSwlIQfRT7Ajuu3tlJBmfV71RkACHM/w215/default.jpg') no-repeat"></a>
+<div class="rd_sidebar-name">
+<h5><a href="/truyen/757-knights-magic">Knights &amp; Magic</a></h5>
+<small><i class="fas fa-pen"></i>Amazake No Hisago</small>
+<small><i class="fas fa-paint-brush"></i>Kurogin</small>
+</div>
+</header>
+<ul id="chap_list" class="unstyled">
+<li class=""><a href="/truyen/757-knights-magic/c17617-chuong-1-the-gioi-khac">Tập 01</a></li>
+<li class="current"><a href="/truyen/757-knights-magic/t2493-tap-02">Tập 02</a></li>
+<ul class="sub-chap_list unstyled">
+<li>
+<a href="/truyen/757-knights-magic/c17627-mo-dau">
+Mở đầu
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17628-chuong-10-bat-dau">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 10: Bắt đầu
+</a>
+</li>
+<li class="current">
+<a href="/truyen/757-knights-magic/c17629-chuong-11-thiet-ke-che-tao-va-lap-dat">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 11: Thiết kế, chế tạo và lắp đặt
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17630-chuong-12-quyet-dau-gia-tap">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 12: Quyết đấu giả tập
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17631-chuong-13-nen-lam-gi-voi-co-may-nguyen-mau">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 13: Nên làm gì với cỗ máy nguyên mẫu
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17633-chuong-14-di-toi-trung-tam-cua-con-bao-tap">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 14: Đi tới trung tâm của cơn bão táp
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17634-chuong-15-ke-dich-o-trong-bong-toi-bat-dau-ruc-rich">
+ <i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 15: Kẻ địch ở trong bóng tối bắt đầu rục rịch
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17635-chuong-16-lua-noi-len-o-phao-dai-casadesus">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 16: Lửa nổi lên ở pháo đài Casadesus
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17636-chuong-17-cuoc-chien-trong-rung">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 17: Cuộc chiến trong rừng
+</a>
+</li>
+<li>
+<a href="/truyen/757-knights-magic/c17637-chuong-18-khi-phuong-hoang-bac-giuong-canh">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 18: Khi Phượng Hoàng Bạc giương cánh
+</a>
+</li>
+</ul>
+<li class=""><a href="/truyen/757-knights-magic/c17638-mo-dau">Tập 03</a></li>
+<li class=""><a href="/truyen/757-knights-magic/c38377-mo-dau">Tập 04</a></li>
+<li class=""><a href="/truyen/757-knights-magic/c38389-mo-dau">Tập 05</a></li>
+<li class=""><a href="/truyen/757-knights-magic/c38400-mo-dau">Tập 06</a></li>
+</ul>
+</main>
+<div class="black-click"></div>
+</section>
+<section id="bookmarks" class="rd_sidebar rdtoggle">
+<main class="rdtoggle_body">
+<div class="rd_sidebar-header">
+<h2 class="rd_s-name"><i class="fas fa-bookmark"></i><a href="/bookmark" style="color: white;"> Bookmarks</a></h2>
+</div>
+<ul id="bookmarks_list" class="unstyled">
+<li>Bạn phải đăng nhập để sử dụng bookmark</li>
+</ul>
+</main>
+<div class="black-click"></div>
+</section>
+<section id="setting" class="rdtoggle">
+<section class="re_set-in basic-section clear rdtoggle_body">
+<header class="sect-header"><span class="sect-title">Tùy chỉnh</span></header>
+<main class="sect-body">
+<div class="set-list set-color clear">
+<label>Màu nền</label>
+<div class="set-input clear">
+<span data-color="#fff" data-id="0" style="background-color: #fff"></span>
+<span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
+<span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
+<span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+<span data-color="#f5e9ef" data-id="4" style="background-color: #f5e9ef"></span>
+<span data-color="#222222" data-id="5" style="background-color: #222222"></span>
+</div>
+</div>
+<div class="set-list set-font-family clear"><label>Font chữ</label>
+<div class="set-slide set-input">
+<select>
+<option>Times New Roman</option>
+<option>Palatino Linotype</option>
+<option>Segoe UI</option>
+<option>Arial</option>
+<option>Verdana</option>
+</select>
+</div>
+</div>
+<div class="set-list set-font clear"><label>Kích cỡ chữ</label>
+<div class="set-slide set-input">
+<span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+<input class="set-slide_input" disabled="" value="16px" type="text">
+<span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+</div>
+</div>
+<div class="set-list set-margin clear"><label>Bản lề</label>
+<div class="set-slide set-input">
+<span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+<input class="set-slide_input" disabled="" value="20px" type="text">
+<span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+</div>
+</div>
+</main>
+</section>
+<div class="black-click"></div>
+</section>
+<div class="container">
+<div class="row">
+<div class="reading-content col-12 col-lg-10 offset-lg-1" style="word-wrap: break-word;">
+<div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
+<span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
+<section class="rd-basic_icon d-lg-none row">
+<a href="/truyen/757-knights-magic/c17628-chuong-10-bat-dau" class="col text-center "><i class="fas fa-backward"></i></a>
+<a href="/truyen/757-knights-magic" class="col text-center"><i class="fas fa-home"></i></a>
+<a href="/truyen/757-knights-magic/c17630-chuong-12-quyet-dau-gia-tap" class="col text-center "><i class="fas fa-forward"></i></a>
+</section>
+<div class="title-top" style="padding-top: 20px">
+<h2 class="title-item" align="center">Tập 02</h2>
+<h4 class="title-item" align="center">Chương 11: Thiết kế, chế tạo và lắp đặt</h4>
+<h6 class="title-item" align="center">Độ dài: 11,710 từ - Lần cuối:
+<time class="timeago" title="06/05/2017 16:53:42" datetime="2017-05-06T16:53:42+07:00">
+06/05/2017 16:53:42
+</time>
+- <a href="https://ln.hako.re/truyen/757-knights-magic/c17629-chuong-11-thiet-ke-che-tao-va-lap-dat#chapter-comments" style="text-decoration: underline">Bình luận: 1</a>
+</h6>
+</div>
+<div style="text-align: center; margin: 20px auto -20px auto;">
+</div>
+ <div id="chapter-content" class="long-text no-select">
+<p id="1">Kế hoạch được đưa ra bởi các học sinh sửa chữa của khoa Phi Công – đã hoàn toàn thoát khỏi khuôn phép của việc sửa chữa Hình Bóng Kỵ Sĩ, họ đã bắt đầu quá trình chế tạo cỗ máy kiểu mới cho tới bây giờ đã được nửa tháng rồi. Trong suốt thời gian này, trường học đã bắt đầu dạy học lại, và Ernesti làm học sinh trung học phải trở lại với nhịp điệu cuộc sống sinh hoạt hằng ngày của mình.</p><p id="2">Tiếng chuông vang lên báo hiệu giờ học đã kết thúc, và lớp học vốn yên tĩnh như rừng đột nhiên trở nên ồn ào như khu chợ. Giáo viên nhẹ nhàng thở dài trước sự thay đổi đột nhiên của học sinh, sau đó bỏ lại lời chào tạm biệt rồi rời khỏi lớp. Tiết học ngày hôm nay cuối cùng đã kết thúc và giờ phút tiếp theo chính là lúc tan học. Các học sinh đã được giải thoát khỏi khoảng thời gian học tập của mình. Mặc dù bọn họ sống trong môi trường có thể bị Thú Ác Quỷ tấn công nếu như bọn họ bước ra một bước khỏi thành phố, nhưng bản chất của học sinh vẫn là giống như cũ. Nó cũng còn đối với Eru và những người khác, mặc dù hoàn cảnh của họ ở trong tình thế khác nhau.</p><p id="3">“Eru, Eru! Chúng ta đi làm hoạt động thực tế đi! Hôm nay phải làm việc vất vả đây!”</p><p id="4">“Được rồi, được rồi, cậu không cần phải kéo mình như thế đâu, mình sẽ đi với cậu mà.”</p><p id="5">Ady không thể đợi được nữa lôi kéo tay của Eru và Chid thì đi theo sau bọn họ. Ban ngày bọn họ tham gia vào các tiết học, đến khi tan học họ liền hướng phía nhà xưởng mà chạy tới. Đây là lịch trình mới nhất của họ.</p><p id="6">Vốn như mọi khi công xưởng đáng lẽ ra phải đầy tiếng ồn ào. Nhưng tình huống ngày hôm nay có vẻ lại khác. Eru và những người khác đang trò chuyện với nhau nhưng khi tới nơi thì chợt cảm thấy bầu không khí rất nặng nề. Họ nhìn về phía Lão Đại, người đang nằm chán chường trên ghế và đến gần anh ta.</p><p id="7">“Xin chào Lão Đại. Tại sao hôm nay trông mọi người có vẻ mệt mỏi thế?”</p><p id="8">“A, nhóc tóc bạc đó à… cũng chẳng có gì đâu, chỉ là vấn đề về cái kia. Bọn anh đã làm chuỗi dây tinh thể.”</p><p id="9">“Chính là thứ mà Eru đưa ra sáng ý ư?”</p><p id="10">“Đúng thế, nhưng… anh không đoán trước được khoa Phi Công cần một máy dệt sợi. Đám người bên khoa Thời Trang thì khăng khăng đòi bọn anh phải làm nó một cách nghiêm túc, và như bọn em thấy bọn họ không có chút ‘hiền lành’ tý nào.</p><p id="11">Con mắt của Lão Đại không có tiêu cự, một dấu hiệu cho thấy nỗi buồn không thể diễn tả nổi được. Ba người bọn họ chợt cười to ra thành tiếng khi tưởng tượng thân hình vạm vỡ người lùn dùng máy dệt sợi; hình ảnh đó quá mức là hài hước.</p><p id="12">“Chà phải cảm ơn Lão Đại vì đã làm việc chăm chỉ rồi.”</p><p id="13">“Không có gì, nhưng việc này cũng đáng giá. Nha, nhìn cái này đi.”</p><p id="14">Lão Đại ném cho Eru xấp tài liệu ghi lại rất nhiều số liệu, ghi lại sự khác nhau khi sử dụng chuỗi tinh thể bình thường so với chuỗi dây tinh thể trong mọi tình huống khác nhau.</p><p id="15">Ngoài ra, còn có đối chiếu so sánh dữ liệu khi bện lại chuỗi tinh thể theo kiểu cách khác nhau. Trong quá trình chế tạo chuỗi dây tinh thể, họ phát hiện ra phương pháp đan dệt trong may mặc lại lại có hiệu quả hơn phương pháp bện dây bình thường.</p><p id="16">“Khi anh yêu cầu bên khoa Thời Trang dùng chuỗi tinh thể bện các kiểu bện khác nhau, bọn họ xém nữa kêu bác sĩ tâm thần tới khám bệnh cho anh.”</p><p id="17">“Lão Đại đúng là chơi ẩu thật.”</p><p id="18">Lượng thông tin mà bọn họ thu thập được từ việc hy sinh tìm tòi đến có thể nói là thứ vô giá. Phương pháp bện đã được cải thiện có thể làm tăng lên sản lượng tối đa lên tới lên 1.5 lần, chuỗi tinh thể được bện chặt lại vượt qua được bài kiểm tra về sự kéo căng hết lần này tới lần khác, thể hiện ra tính dai gấp 10 lần so với độ dai trước đây.</p><p id="19">“Nó tốt hơn những gì bọn em mong đợi đấy. Em nghĩ rằng tuổi thọ nó chỉ tăng lên khoảng chừng khoảng 20%, cho tới khoảng gấp hai lần thôi…”</p><p id="20">“Ha! Đúng là chính nhóc đưa ra kế hoạch này, nhưng cũng đừng nghĩ rằng bọn anh đây không biết làm thêm cái gì cả. A, anh đây cũng không phủ nhận rằng anh đây có chút tự mãn bởi vì đã đạt được chút thành quả. Anh chỉ muốn kiểm tra thử nó ra xem sao thôi, nhưng phương pháp bện khác nhau sẽ lại ra kết quả khác nhau. Anh nghĩ những linh kiện mà anh mới làm xong đây vẫn còn rất nhiều không gian để cải tiến nữa.</p><p id="21">Vừa nói, Lão Đại vừa cười trông giống như một đứa trẻ còn thơ ngây. Đứng bên cạnh Eru, cũng thật khó nói rằng ai mới thực là đứa trẻ đây. Khi cuộc trò chuyện của họ đã ra kết quả, thì đột nhiên tiếng ồn ào vang lên đến từ bên trong công xưởng, và một ai đó la hét lên kêu Lão Đại.</p><p id="22">“Lão Đại! Đã thay thế tinh thể ở cánh tay xong!”</p><p id="23">“Ồ! Ta tới ngay đây! … Chúng ta sẽ kiểm tra thử tính năng của mô hình chuỗi dây tinh thể. Này nhóc, đi với bọn anh luôn đi.”</p><p id="24">“Dĩ nhiên rồi, hãy cho bọn em thấy nó đi nào!”</p><p id="25">Ở một góc của công xưởng một cỗ máy khổng lồ với các tấm lớp giáp ở xung quanh và cánh tay phải bị tháo dỡ xuống, để lộ ra tinh thể bắp thịt ở phía dưới. Các thớ bắp thịt tinh thể dưới cánh tay rất dày đặc, chúng đích thực là chuỗi dây tinh thể mà Eru đề xuất ra.</p><p id="26">Nếu như tinh thể có màu sắc và vị trí giống như sinh vật, thì đó chắc chắn sẽ là một cảnh tượng không dành cho những người yếu tim. May mắn thay, chuỗi tinh thể có màu bụi trắng. Được đặt ở bên trong thân hình khổng lồ của Hình Bóng Kỵ Sĩ, nó đem lại một ấn tượng như nhìn một bức tượng vậy.</p><p id="27"><strong>(TL: Màu bụi trắng giống như màu thả vôi vào nước trong làm nó đục màu trắng)</strong></p><p id="28">“Được rồi – lùi lại hết đi! Chúng ta sẽ thử nghiệm thử khả năng chuyển động của nó! … Tốt, tiến hành đi, Helvi!”</p><p id="29">“Rõ ràng. Thử nghiệm bắt đầu.”</p><p id="30">Các học sinh làm việc ở gần đây phân tán nhau ra. Phi công, Helvi Öberg đi lại ngồi ở trong cỗ máy ở trên ụ sửa chữa. Cánh cửa khép lại một cách từ từ kèm theo âm thanh của không khí bị nén lại.</p><p id="31">Họ đã sớm kiểm tra lượng tiêu thụ mana của lớp bắp thịt tinh thể, nhưng đây là lần đầu tiên họ kiểm tra thử nghiệm nó trên một cỗ máy thực tế. Con mắt của các học sinh ở xung quanh lấp lánh nín thở chờ đợi cuộc thử nghiệm sắp diễn ra. Cánh tay phải được lắp đặt chuỗi dây tinh thể nắm chặt một miếng thép khổng lồ. Hình Bóng Kỵ Sĩ tuân theo chỉ lệnh nâng lên cánh tay của mình, và từ góc độ của các học sinh có thể chứng kiến được chuỗi dây tinh thể co rút lại và căng ra thông qua kẻ hở của các tấm giáp.</p><p id="32">“Ồ… Thật là tuyệt vời.”</p><p id="33">“Haha – nó là một sức mạnh tuyệt vời, đúng không?”</p><p id="34">Tấm thép được nâng lên đó thường phải cần một Hình Bóng Kỵ Sĩ bình thường sử dụng cả hai bàn tay để nhấc được nó lên. Nhưng với chuỗi tinh thể dạng dây thì nó có thể nâng được tấm thép đó chỉ cần bằng một tay. Công suất của chuỗi dây tinh thể phát ra đúng là khó có thể tin. Có thể là bởi vì đặc tính độc đáo của mô hình dạng sợi dây, hay là do thiếu đi lớp vỏ da ngoài, mà âm thanh ma sát chà chà vang lên bên tai.</p><p id="35">“Công suất phát ra tăng mạnh và tính dai cũng tăng cường lên, có vẻ như cuộc thử nghiệm đã diễn ra tốt đẹp.”</p><p id="36">“Đúng vậy, bây giờ chúng ta có thể bắt đầu chế tạo một cỗ máy không bị đứt chuỗi tinh thể một cách dễ dàng cho dù là nhóc này có là phi công của cỗ máy đó.”</p><p id="37">Khi Eru và Lão Đại đang nói chuyện hăng say về kết quả của cuộc thử nghiệm, một âm thanh chợt vang lên ngày càng to, và tiếng ồn này xen lẫn vào một kiểu không giống lắm chuỗi dây tinh thể có thể nghe rõ được.</p><p id="38">“Đúng rồi, Lão Đại, anh có nghe thấy tiếng gì không? Nó giống như là tiếng của sự… ma sát.”</p><p id="39">“Thật là khéo, nhóc cũng nghe được ư? Anh đây thật không thể tưởng tượng được… ử… Nhóc vừa nói gì cơ?”</p><p id="40">Cả hai liếc nhìn nhau và ngay lập tức họ quay người lại nhìn về phía cỗ máy – họ nghe thấy âm thanh nổ giòn vang, và cánh tay phải theo đúng nghĩa đen bị ‘tan vỡ’ ra. Sợi bắp thịt tinh thể bung rơi ra và cánh tay buông lỏng trụy xuống, kèm theo đó tấm thép khổng lồ cũng rơi tiếp xuống mặt đất. Nhưng bây giờ không có ai rảnh quan tâm đến chuyện này. Bởi vì các miếng tấm giáp đã bị chuỗi dây tinh thể quất bay văng ra tung tóe, bắn ra bốn phía xung quanh. Nếu như bị mảnh vỡ của miếng áo giáp của Hình Bóng Kỵ Sĩ đánh trúng thì đi đời nhà ma chứ chả có nói chơi, và âm thanh gào thét từ địa ngục vang vọng ra khắp cả công xưởng.</p><p id="41">“Wahhhhh!? A, nó đang bay về phía này…!!”</p><p id="42">Thật không may, một trong những miếng vỡ đó đã bay về phía hướng Lão Đại. Eru liền bước lên phía trước anh ngay tức khắc, vung lên thanh gậy súng của mình, Winchester, đẩy lùi lại các mảnh vỡ. Eru hạ thấp mình xuống, bắn ra một lượng lớn không khí dồn nén lại, làm trệch đi phương hướng tập trung của mảnh vỡ. Mảnh vỡ lưu lại một tiếng nổ vỡ trầm đục, vẽ lên một đường cong trong không khí trước khi va chạm vào bức tường phía sau lưng họ.</p><p id="43">Lão Đại là một thợ máy trong khoa Phi Công, cùng với việc Người Lùn thiếu sự nhanh nhẹn trong hành động, nên đó sẽ là việc không thể nào để mong đợi một phản ứng kịp thời ngay lập tức của Lão Đại. Anh chỉ kịp che chắn lại thân thể mình và đứng cứng ngắc trông như một bức tượng. Một lúc sau, Lão Đại nhìn thấy mảnh vỡ bị kẹt lại ở bức tường phía sau lưng anh. Sau khi nhìn thấy mảnh vỡ bị ấn vào sâu trong bức tường, Lão Đại không thể nào thốt ra được lời nào. Chid và Ady cũng duy trì tư thế cầm gậy kiếm, trong chốc lát cả nơi đây tràn ngập trong sự im lặng.</p><p id="44">Lão Đại rất nhanh kịp hồi phục lại tinh thần và ngay lập tức kiểm tra cỗ máy bị bung nổ. Cánh tay phải đã trở nên tả tơi trông rất khủng khiếp. Bắp thịt tinh thể lác đác rơi ở bốn phía, thậm chí còn có thể thấy được khung xương máy ở bên trong nữa. Eru rụt rè hỏi Lão Đại, người đang tràn đầy tinh thần kiểm tra cánh tay phải của cỗ máy:</p><p id="45">“… Lão Đại, hãy nó cho bọn em biết anh cái nhìn của anh về vụ này.”</p><p id="46">“A – đúng rồi, ngay đây. Bắp thịt tinh thể vốn là rất ổn, nhưng nền móng để cố định lại cơ cấu của cả hệ thống đã bị quất bay ra rồi. Công suất mới của chuỗi dây tinh thể tăng lên quá cao, nên các bộ phận khác không thể theo kịp được. Nên, vì thế, ai nha, chúng ta thật là bó tay với nó.”</p><p id="47">Lão Đại cười khô khan rồi một lúc sau tắt hẳn tiếng cười. Bắt gặp được ánh mắt nhìn chằm chằm của Eru, cả hai cùng thở dài.</p><p id="48">“Biện pháp bình thường không thể làm được; chúng ta cần phải thay đổi cả toàn bộ thân thể trong khoảng thời gian này.”</p><p id="49">Mặc dù cỗ máy này đã bị hư hỏng bắn ra mảnh vỡ, nhưng kỳ lạ thay không có một ai bị thương cả, bởi vì họ đã giữ một khoảng cách an toàn đối với cỗ máy. Các học sinh bò người ra chợt thở dài khi họ nhìn thấy cánh tay phải trong tình trạng tả tơi.</p><p id="50">Chuỗi dây tinh thể vẫn còn một con đường dài để đi trước khi nó được áp dụng vào thực tế. Dù sao, bọn họ cũng phải đánh giá lại và phương pháp mới để bảo đảm độ ổn định của tinh thể. Việc này cần thời gian để đánh giá lại các tiêu chuẩn lại từ đầu, các nhân viên liên quan đến việc thiết kế này sẽ phải bận rộn trong nay mai rồi đây.</p><p id="51">“Vậy thì Lão Đại, bên này liền giao cho anh nhé… bọn em đi rèn luyện trước đây.”</p><p id="52">“Nhóc chăm sóc ‘bên kia’ đi. Được rồi… Này, còn đứng ngơ ngác đó làm gì nữa!! Chúng ta phải bắt đầu thôi!!”</p><p id="53">Lão Đại có chút uể oải, nhưng anh sẽ không từ bỏ và liền ném mình vào trong đống công việc.</p><p id="54">Eru rời khỏi góc công xưởng đã trở nên ồn ào với công việc sửa chữa, theo Chid và Ady đi tới góc khác của công xưởng.</p><p id="55">Ở đây không có Hình Bóng Kỵ Sĩ; thay vào đó là một vài bộ ‘áo giáp toàn thân’, đó là một thiết kế rất thú vị. Chiều cao của nó lớn hơn so người lái chỉ có chút thôi, nó cao cỡ khoảng  2m - 1.5m, nhỏ hơn so với một Hình Bóng Kỵ Sĩ. Cái đầu và thân hình của nó nhỏ hơn so với so với tỉ lệ của chiếc áo giáp toàn thân, tay chân của chúng đặc biệt dài, và tỉ lệ đối thân hình trông không đối xứng tý nào.</p><p id="56">“Xin chào – Baston, công việc ngày hôm nay như thế nào rồi?”</p><p id="57">“Ồ, Eru à. Không có vấn đề gì, ‘Hình Bóng Giáp Trụ’ hôm nay đang trong tình trạng đỉnh cao. Mình có thể cam đoan về điều đó.”</p><p id="58">Baston vừa trả lời vừa gập lại bắp cánh tay của mình. Tên của bộ áo giáp toàn thân là ‘Hình Bóng Giáp Trụ’, là vật thay thế cho Hình Bóng Kỵ Sĩ trong công việc huấn luyện thông qua kế hoạch đề xuất của Eru, nó có thể được coi là Hình Bóng Kỵ Sĩ phiên bản nhỏ.</p><p id="59"><img src="https://3.bp.blogspot.com/-_L68SZiSfP0/WASUyguOEUI/AAAAAAAABF8/u29cJM3qOywg7C75BbQ2GvJGv64O8rcdwCLcB/s640/Knight%2Band%2BMagic%2B-%2BArc%2B3%2B-%2BChap%2B2%2B%25281%2529.jpg" alt="Knight%2Band%2BMagic%2B-%2BArc%2B3%2B-%2"></p><p id="60">Xếp thành hàng trước Hình Bóng Giáp Trụ ngoài Baston ra còn có các học sinh khác đang làm việc. Từ chiều cao của họ, liền rõ ràng biết được họ không phải là học sinh khóa học sinh cao học, mà là học sinh trung học. Điểm chính của bản thiết kế Hình Bóng Giáp Trụ là ‘đem Hình Bóng Kỵ Sĩ nhỏ lại và đơn giản hóa lại so với phiên bản gốc’, vậy nên mức độ khó khăn sẽ hạ thấp xuống, cho dù là học sinh trung học, những người nhắm mục tiêu đến làm một thợ máy cũng có thể làm được nó. Baston tham gia vào việc này là một ví dụ điển hình, nhưng bởi vì cậu đã sớm quen biết Eru nên cậu đã sớm làm một đóng dụng cụ kỳ lạ.</p><p id="61">“Vậy thì, bọn mình muốn tập luyện chăm chỉ rồi-“</p><p id="62">Eru chỉ vừa mới nói xong thì Ady và Chid liền hăng hái đáp lại. Nói đến nó, Hình Bóng Giáp Trụ chính là thứ mà cậu nghĩa ra được để dạy cho bọn họ cách tập luyện trở thành một phi công, và nó đồng thời cũng giải quyết nốt vấn đề không đủ máy trong nhà trường. Chid và Ady tinh thần đầy phấn khởi, Eru cũng phấn khởi không kém. Đối với cậu, mặc dù có chút nhỏ, nhưng được điều khiển một chiếc người máy vẫn làm cho cậu hạnh phúc.</p><p id="63">Hình Bóng Giáp Trụ giống như một bộ giáp bình thường, mọi hành động đều được điều khiển trực tiếp bởi người điều khiển, và nó cần phải được chế tạo cỡ máy cùng kích cỡ với người lái. Ví vụ, Eru sẽ sử dụng cỗ máy được điều chỉnh phù hợp đối với người có vóc dáng nhỏ; Chid và Ady sẽ điều khiển cỗ máy lớn hơn.</p><p id="64">Eru đứng trước Hình Bóng Giáp Trụ đang quỳ một chân xuống mặt đất với ngực áo giáp mở bung ra, nhưng cậu không có đi vào cỗ máy ngay lập tức mà trái lại lại là ôm chặt cỗ máy. Nhìn Eru nở nụ cười hạnh phúc, Chid đứng ở phía sau nhịn không được không thể không nói:</p><p id="65">“Mình biết cậu thích nó, nhưng coi như cậu có thương nó đến cỡ nào, nó cũng đâu có phản ứng lại cậu đâu.”</p><p id="66">“Không có chuyện này đâu. Nếu cậu trút tình yêu xuống nó, nó sẽ nghe lời ấy.”</p><p id="67">Chid nhìn về Hình Bóng Giáp Trụ của mình mà tràn ngập sự nghi ngờ. Điều đó là thực sự ư? Điều đó làm sao có thể được? Trong đầu của cậu chớp hiện qua những ý nghĩ tranh cãi này.</p><p id="68">“… Không, không thể nào!”</p><p id="69">Ngay khi Chid sắp tin lời này thì anh đột nhiên cảnh giác lên lại.</p><p id="70">“Ughh, Eru chỉ là quá mức yêu thích Hình Bóng Giáp Trụ thôi. Hài, Chid, anh đừng có nói nữa và đi vào máy của anh đi! Cuộc huấn luyện, bây giờ đã bắt đầu!”</p><p id="71">“Ách? A, được rồi… đây là lỗi của anh… ?”</p><p id="72">Chid bị Ady người đã sớm leo lên cỗ máy của mình thúc giục, anh vừa càu nhàu một chút vừa ngồi vào chiếc Giáp Trụ. Cánh cửa sắt đóng lại, âm thanh của không khí thoát ra có thể nghe thấy được, và áo giáp toàn thân đã được bọc kín chắc lại. Chid nắm lấy nắm chặt lấy cánh tay điều khiển bên trong Hình Bóng Giáp Trụ, vừa trực tiếp di chuyển tay chân của cỗ máy vừa kiểm tra trận đồ cùng một lúc. Hình Bóng Giáp Trụ được thiết kế để có thể kiểm tra cùng giống với Hình Bóng Kỵ Sĩ để thuận tiện hơn trong việc huấn luyện. </p><p id="73">“Mình đã khởi động nó…”</p><p id="74">Cậu ta bắt đầu sử dụng cơ quan độc nhất chung của tất cả sinh vật trên thế giới này – chu trình ma thuật trong lĩnh vực xây dựng trận đồ. Bắp thịt tinh thể được lắp đặt bên trong Giáp Trụ theo dòng chảy mana chạy thuận theo trận đồ có trước, và bắt đầu bắt đầu co rút lại và giãn nở ra. Giáp Trụ rung lên, và đứng bật dậy ngay sau đó. Lượng mana mà họ đưa vào sẽ được Giáp Trụ dùng để kích hoạt lên hoạt động của chính nó, một cỗ máy chuyển đổi trực tiếp mana thành các hoạt động thực thể.</p><p id="75">Họ lái Hình Bóng Giáp Trụ và bước từng bước ầm ĩ ra ngoài công xưởng. Sau khi đi đường vòng ra sau sân huấn luyện, họ thấy đã có một vài người đã sớm làm khách ở nơi này.</p><p id="76">“Xin chào, Edgar-senpai. Anh có cảm giác như thế nào khi sử dụng nó?”</p><p id="77">“Aa! Ernesti… Ha! Hắc!... Em nhìn là biết rồi chứ gì?”</p><p id="78">Thuộc khoa Phi Công chuẩn Kỵ Sĩ Edgar C. Blanche đang lái một Giáp Trụ được làm với thân cao phù hợp với anh. Anh vừa chào hỏi bọn họ vừa nhấc lên chân và bước đi với từng sải bước dài. Động tác của anh nhìn rất vụng về và dường như trông anh rất cố gắng để làm điều đó. Anh không giỏi bằng Eru, người có thể lái Hình Bóng Giáp Trụ hành động một cách tự nhiên, Edgar vẫn thực sự nghiêm túc về vấn đề này.</p><p id="79">“Em thấy rồi, trông có vẻ rất thú vị!”</p><p id="80">Eru vừa gật đầu vừa nhìn về phía Edgar. Khuôn mặt Edgar nghiêm túc cứng lên và nhìn ngửa lên phía bầu trời. Eru biết anh đã tốn một quảng thời gian khó khăn để tập luyện, nhưng đối với Eru, ‘sự gian khổ điều khiển một người máy = một điều hạnh phúc’. Bởi vì từ tận đáy lòng của Eru, cậu muốn làm điều như vậy, nên cậu mới nói ra câu như vậy. Edgar hiểu điều đó nên đã từ bỏ việc thuyết phục cậu ta. Thay vào đó, anh nâng cánh tay lên và nói chuyện khác.</p><p id="81">“Này Ernesti, anh đang suy nghĩ về việc này. Chiếc Hình Bóng Giáp Trụ này không tệ chút nào, nhưng anh nghĩ… việc điều khiển nó quá khó!!”</p><p id="82">Eru đã có một khoảng thời gian khó khăn bởi vì phương pháp điều khiển. Điều khiển tay chân thực tế và trận đồ đồng thời cùng một lúc không phải là vấn đề quan trọng; vấn đề là ở chủng loại ma thuật được sử dụng. Phi công đòi hỏi phải có ma thuật cấp cao ‘tăng cường thể chất’, mặc dù là thuộc hàng phi công đứng đầu trong trường như anh cũng không thể làm điều đó một cách tốt đẹp được, liền khỏi phải nói các học sinh bình thường khác rồi.</p><p id="83">“Thứ cần phải điều khiển quá mức phức tạp. Trận đồ điều khiển Hình Bóng Kỵ Sĩ mang lại gánh nặng ít hơn nhiều với cái này… Cũng không phải là không phù hợp, nhưng chắc chắn nó không phù hợp với việc huấn luyện phi công. Thực tế, rất nhiều người đã sớm bỏ cuộc rồi.</p><p id="84">Edgar đã khảo sát qua sân huấn luyện. Chỉ có một vài người khác ngoài anh ra. Mọi người đều phàn nàn sau khi đã cố gẳng thử tập một vài lần.</p><p id="85">“Vâng – anh nói đúng. Em đã đánh giá quá thấp về mức độ khó khăn.”</p><p id="86">“Như vậy chúng ta phải chăm chỉ tập luyện. Nha, nhìn em nè senpai, chúng ta có thể làm được điều này.”</p><p id="87">Edgar nhìn về phía Eru, Chid và Ady rồi sau đó thở một hơi dài. Chid và Ady cũng không quan tâm chút nào đến các phi công cao học, thoải mái điều khiển lấy Hình Bóng Giáp Trụ. Đây là thành quả từ việc học ma thuật từ Eru và cùng nhau huấn luyện, nhưng những người khác chỉ đem họ gộp lại cùng nhau với Eru thành một nhóm người biến thái.</p><p id="88">“Đừng có nói mấy câu bất khả thi như vậy; đây không phải là một thứ gì đó có thể làm được trong ngày một ngày hai, đúng không? Thực sự … anh biết mấy đứa quái thai đến cỡ nào. Được rồi, anh sẽ không nói gì thêm nữa, chỉ cần không có hy vọng những người bình thường có thể bắt kịp được nhóm người các em là được.”</p><p id="89">“Hmm- ugh… thật là đáng tiếc, xem ra cái này không thể dùng rồi.”</p><p id="90">“Đó là sự thật nếu như không có sự cải tiến nào. Đây là một Hình Bóng Kỵ Sĩ kiểu nhỏ đúng không? Sau này lắp đặt một động cơ ma thuật. Như thế nó sẽ giảm bớt được áp lực trầm trọng lên phi công.”</p><p id="91">Edgar nói với Eru về ý kiến của mình. Lời này không sai, nếu như tiếp tục như vậy; các học sinh cao học sẽ không thể sử dụng được chúng, mặc dù đối với Eru và nhóm bạn của mình thì điều này không thành vấn đề.</p><p id="92">“Ưmmm – chỉ còn cách đó thôi… Như vậy thì sẽ tăng lên chi phí, nhưng không còn cách nào khác, chỉ còn phương án đó thôi à.”</p><p id="93">Nhưng chính phương án này cũng có vấn đề. Cấu trúc nhỏ của Hình Bóng Giáp Trụ không thể để trực tiếp lò chuyển đổi mana của Hình Bóng Kỵ Sĩ được. Ý tưởng chủ chốt là thu nhỏ lại kích thước của cỗ máy, nhưng cho dù Eru thông minh đến cỡ nào đi nữa, thì cậu ấy vẫn không có biết được cấu trúc của động cơ ma thuật. Nên vì thế vấn đề này giải quyết được ngay lập tức.</p><p id="94">“Ha! Thật là một hình ảnh đáng thương, Edgar! Làm Kỵ Sĩ hàng đầu của Khoa Phi Công, ta không hy vọng cậu lại từ bỏ một cách dễ dàng như vậy được!”</p><p id="95">Nghe được âm thanh truyền đến từ phía sau mình, Edgar quay đầu lại. Trước mặt anh chính là Dietrich đang mặc Hình Bóng Giáp Trụ chậm rãi bước tới hướng về phía anh, với động tác tinh tế hơn nhiều so với Edgar.</p><p id="96">“… Di, thật hiếm khi thấy cậu nhiệt tình như vậy.”</p><p id="97">Thật bất ngờ, Dietrich lại nghiêm túc học về cách điều khiển Hình Bóng Giáp Trụ. Động tác của anh ta mượt mà hơn Edgar, trong khi đó Edgar lại trong tình trạng chán nản. Dietrich hiện tại có cảm giác rất tuyệt vời sau một loạt nổ lực chăm chỉ rèn luyện, cuối cùng anh cũng vượt mặt đối thủ của mình. Ngay khi anh đang chuẩn bị bước đi lên một sải chân lớn thì – bi kịch xảy ra.</p><p id="98">“Ưmm, trình độ cỡ này dễ như ăn ch..á… Ử? Gì đây? Chết em rồi, không thể dừng lại được--!?”</p><p id="99">Mặc dù động tác của anh có vẻ ngon lành hơn Edgar, nhưng Dietrich đã không thể làm chủ được nó. Bởi vì anh đã sử dụng sức quá trớn thêm vào sai sót trong việc điều khiển, phần thân trên truyền đến âm thanh ‘răng rắc’ và lập tức thân thể cong một góc không thể cong hơn được nữa. Mọi người nhìn thấy tình huống như thế biểu hiện có chút lo lắng.</p><p id="100">“Di-senpai? Oa, đây là trường hợp khẩn cấp, mau đưa senpai đến ‘phòng y tế’.</p><p id="101">Khi nghe được Eru trong lúc hoảng loạn nhắc đến từ cấm kỵ, Dietrich lập tức hồi phục lại một cách cấp tốc tinh thần, khởi động lại cỗ máy. Không chỉ thế, anh còn làm động màu mè xoay một vòng người lại và làm một tư thế cực kỳ đẹp trai, nói cộc lốc:</p><p id="102">“Anh, chắc…chắn sẽ không đến phòng y tế đâu! Này, này vết thương tính toán là gì!! Chỉ là vết thương nhỏ hoàn toàn không cần phải đi!!”</p><p id="103">Anh bày ra tư thế hoạt động linh hoạt, nhưng trên trán của anh lại đổ tràn đầy mồ hôi. Đây có rốt cuộc là do thương tổn thân thể hay là thương tổn về mặt tinh thần? Mọi người trợn mắt há mồm với tình huống này và Dietrich bước đi về hướng công xưởng mà cất một tiếng cười vang lớn. Lấy lại tinh thần Edgar vội vàng đuổi theo anh ta.</p><p id="104">“… A, có vẻ như trông senpai vẫn ổn. Vậy chúng ta hãy bắt đầu cuộc tập luyện nào.”</p><p id="105">Sau một lát ngây người nhìn các senpai rời đi, Eru và những người khác cuối cùng cũng bắt đầu việc tập luyện. Eru thì không còn phải nói, nhưng cặp sinh đôi cũng đã sớm có thể đạt tới mức di chuyển một cách tự do. Nên họ đề ra phương thức rèn luyện nào đó khó khăn hơn giống như là một trận chiến mô phỏng.</p><p id="106">“Hình Bóng Giáp Trụ phương thức điều khiển giống như Hình Bóng Kỵ Sĩ, và hơn nữa nó còn là phương thức điều khiển trực tiếp. Khống chế tinh thể bắp thịt, cảm nhận dòng chảy mana. Điều khiển trận đồ. Hai người các cậu có thể di chuyển với tốc độ nhanh hơn!”</p><p id="107">“Nói như nó đơn giản lắm!!”</p><p id="108">Cuộc rèn luyện đối chiến của Chid và Ady chiến đấu chống lại Eru. Mặc dù vậy, cặp sinh đôi chưa bao giờ đạt được chiến thắng. Họ ôm ấp quyết tâm rằng ít nhất có thể chiến thắng một trận đấu và lao vào tấn công với sự phối hợp hoàn hảo.</p><p id="109">Chid nhấc lên một thanh kiếm to lớn và tấn công về phía Eru, lợi dụng chiều dài của thanh kiếm để nắm lấy thế chủ động. Cỗ máy của Eru thay vì né tránh lại lựa chọn thu hẹp lại khoảng cách. Với sự khác biệt lớn về tốc độ di chuyển, nó ép Chid quay lại thế bị động phòng thủ.</p><p id="110">“Ồ, không! Eru áp sát ghê quá. Ady!”</p><p id="111">“Để đó cho em! Em sẽ phá vỡ thế tấn công của cậu ta!”</p><p id="112">Ady thét lên, tấn công về phía Eru từ mặt sau. Cỗ máy của cô nâng lên vũ khí giống như hai lưỡi đao mà phi công ưa thích sử dụng, tấn công liên tục như bão táp – nhưng nó liền thất bại khi tiếp xúc với cỗ máy của Eru, cậu ta đã né tránh hết tấn cả đòn đột kích của cô. Nhưng mặc dù Ady không thu được bất cứ lợi thế nào, thì tình thế hai đấu một vẫn như cũ không thay đổi chút nào. Trong lúc này, đến lượt Chid tấn công ép Eru đang ở tư thế phòng thủ khi cậu lộ ra sơ hở khi né tránh. Thanh kiếm lớn vung xuống với tốc độ đáng sợ và suýt nữa đánh trúng.</p><p id="113">“Phối hợp rất tốt… Nhưng…!”</p><p id="114">Kèm theo anh thanh nổ tung, Eru dáng người vốn rất chậm đột nhiên gia tốc lên. Khi lái Hình Bóng Giáp Trụ, cậu lợi dụng sức mạnh ma thuật không khí nén lại của mình để tăng lên tốc độ. Eru nhảy lên với sức lực như muốn bới lên mặt đất, hạ xuống đằng sau Ady đang chuẩn bị đổi lại vị trí tấn công. Cô vội vã né tránh, nhưng đã bị Eru tóm được, rồi ném về phía Chid, người đang vung thanh kiếm của mình xuống.</p><p id="115">“Hmm! Ugh!”</p><p id="116">Hai cỗ máy không thể nào dừng lại được trong thời gian ngắn và đã va chạm vào. Nhìn cỗ máy của hai người va chạm vào nhau, Eru hài lòng gật đầu.</p><p id="117">“Tuy rằng có chút nhỏ, nhưng vũ khí hình người này thật là tuyệt vời. Sự mạnh mẽ và nỗ lực chảy cuồn cuộn không ngừng. Các cậu định nằm đó bao lâu nữa, chúng ta tiếp tục nào!”</p><p id="118">“Ai, anh thấy là Eru thậm chí còn nghiêm khắc hơn giáo viên dạy ma thuật của chúng ta?”</p><p id="119">“Cái này không giống nhau. Nếu như bất cứ thứ gì liên quan đến Hình Bóng Giáp Trụ, Eru đều trở nên đầy xấu xa như vậy… Cậu ta hết thuốc chữa rồi. Được rồi! Chúng ta hãy làm lại một ván nữa nào.”</p><p id="120">Họ tự cổ vũ bẩn thân mình lên và lại một lần nữa khiêu chiến tiếp với cỗ máy của Eru.</p><p id="121">“Các cậu muốn huấn luyện tiếp thì cũng tốt thôi – nhưng người phải sửa chữa lại Giáp Trụ là mình, nên đừng có làm hư chúng…”</p><p id="122">Baston nhìn khung cảnh trước mắt đau lòng mà nói.</p><p id="123">Trời đã trở nên lạnh hơn, thời tiết đã bắt đầu thay đổi từ mùa hè tới mùa thu.</p><p id="124">Những ngày tháng bận rộn của mọi người chậm rãi trôi qua. Khoảng thời gian Eru đưa ra bản kế hoạch về chuỗi dây tinh thể và vũ khí sau lưng đã trôi qua vài tháng. Với sự nỗ lực không ngừng của đội sửa chữa khoa Phi Công, cuối cùng họ cũng hoàn thành một ‘cỗ máy nguyên mẫu’.</p><p id="125">“Ai nha, cuối cùng chúng ta cũng đã đi tới giai đoạn này…”</p><p id="126">Lão Đại càu nhàu nói, trong giọng nói của anh không giấu được cảm giác mệt mỏi. Một vài học sinh khác cũng là con mắt gấu trúc <strong>(TL: Mắt gấu trúc ý chỉ vành mắt đen, ngụ ý thức nhiều đêm để làm việc)</strong>, một vài người đang xoa bóp bả vai của mình, và tất cả bọn họ đều toát ra cảm giác nặng nề mệt mỏi. Vài tháng nay để hoàn thành cỗ máy nguyên mẫu này bọn họ đã phải sống một cuộc sống như ở địa ngục.</p><p id="127">Người thiết kế phụ trách vấn đề đã vẽ ra tất cả các chi tiết cấu tạo, và người phụ trách vấn đề chế tạo đã đem từng cái một chế tạo ra. Cỗ máy trải qua nhiều lần thử nghiệm và sai sót cuối cùng cũng thành hình, sẽ không kỳ lạ nào khi trông họ rất mệt mỏi.</p><p id="128">Có thể họ chỉ là những học sinh, nhưng kỹ năng của họ đã đạt đến đẳng cấp thợ chế tạo chuyên nghiệp. Tuy nhiên dự án này là một thử thách lớn lao đối với bọn họ. Với mỗi ngày đều trải nghiệm ác liệt làm cho họ cảm thấy kỳ lạ là ‘tại sao lại không thấy có ai chết’. Để đạt tới giai đoạn này mà không đánh mất đi lòng nhiệt tình, đó là bởi vì những trải nghiệm vui vẻ bao la khi họ đang đi ngược chiều khai thác loại kỹ thuật mới. Bằng chứng là trong đôi mắt của họ tràn đầy niềm đam mê mặc dù họ rất mệt mỏi.</p><p id="129">“Được rồi, mang nó ra! Chậm thôi. Nếu như ném hư nó, thì không chỉ đơn giản là một trận đòn đâu!!”</p><p id="130">Mọi người nhấc lên chiếc nguyên mẫu đã hoàn thành lên xe đẩy, đưa nó ra ngoài công xưởng một cách cẩn thận. Vật này thật có chút quái lạ. Thân thể của nó được bao phủ bởi lượng áo giáp một cách thấp nhất, thứ áo giáp được biết đến là ‘áo giáp nguyên thủy’ chủ yếu bảo vệ các bộ phận bên trong. Có một vài vị trí có có thể nhìn thấy được bắp thịt tinh thể. Chỉ có phần ngực và tay chân được bao bọc bởi lớp vỏ ngoài, mang đến một cảm giác ‘thật không đầy đủ’.</p><p id="131">Cỗ máy nguyên mẫu nhanh chóng được đưa ra sân huấn luyện có hình dạng đấu trường tròn của khoa Phi Công. Sau khi đi đến vị trí giữa sân huấn luyện, phần ngực của cỗ máy nguyên mẫu đang nằm xuống được mở ra, để cho phi công thử nghiệm Helvi đi vào bên trong khoang lái.</p><p id="132">Các thành viên của nhóm sửa chữa ngồi trên hàng ghế của khán giả của đấu trường để quan sát tình hình. Trước mặt của bọn họ là một tấm chắn khổng lồ bảo vệ mình, họ đã rút ra được một bài học tai nạn lúc trước. Đã có kinh nghiệm xém đi chầu ông bà như thế tự nhiên bọn họ sẽ cẩn thận rồi. Mặc dù bọn họ đã thực hiện một vài thử nghiệm từng bộ phận riêng lẻ, nhưng đây là lần đầu tiên lắp ráp lại một cơ thể hoàn chỉnh để kiểm tra. Để an toàn, bọn họ đã tháo bỏ một số linh kiện bổ trợ trọng lượng nặng khác.</p><p id="133">“Được rồi, Helvi, cậu đã sẵn sàng chưa!?... Bắt đầu nha, đứng lên nào!”</p><p id="134">Lão Đại cầm một chiếc micrô và la thét lên. Với tín hiệu này, cỗ máy nguyên mẫu bắt đầu đứng lên. Các thành viên của nhóm sửa chữa cẩn thận quan sát hoạt động của nó. Tiếng ‘cót két’ vang lên khi cỗ máy nguyên mẫu chậm rãi đứng dậy; chuyển động nó khá đơ cứng hơn so với các cỗ máy bình thường khác, và di chuyển rất chậm. Cánh tay của chậm đất chống đỡ cho thân thể, hai chân cong lên. Từ đằng xa cũng có thể nhìn thấy được đôi chân của nó dùng sức lực làm bắp đùi căng phồng lên. Trải qua một lúc sau, cỗ máy nguyên mẫu cuối cùng cũng đứng lên được.</p><p id="135">“Nó đã đứng lên…!!”</p><p id="136">Một giọng nói đầy cảm xúc vang lên từ một nơi nào đó. Khi nghĩ đến biết bao nỗ lực mà họ đã đặt lên nó, những khó khăn mà bọn họ đã vượt qua và cả sự hy sinh, trong giọng nói này còn ẩn chứa sự run rẩy đầy cảm xúc. Hoàn thành động tác hoàn toàn ý lại vào sức mạnh của tinh thể ở phần chân, chứng tỏ rằng cấu trúc của cỗ máy nguyên mẫu có thể chống chịu được năng suất thấp nhất của chuỗi dây tinh thể.</p><p id="137">“Chưa đâu, hãy cẩn thận hơn đi… thằng bờm ở trên kia! Đừng có ló người ra chứ! Rất nguy hiểm đó!! Được rồi, ổn định nào… Helvi, thử bước đi thử xem. Chậm nào, từ từ… từ từ thôi.”</p><p id="138">Đầu của cỗ máy nguyên mẫu gật lên gật xuống, biểu lộ rõ rằng mình đã hiểu. Sau khi dừng lại được một lúc, nó bắt đầu di chuyển tiếp. Mặc dù ở giữa sân đấu phía dưới nền đã được lát trải lên từng miếng phiến đá, nhưng bước chân của nó cực kỳ cẩn thận. Giống như là đang đi trên một chiếc cầu treo có thể bị đứt bất cứ khi nào, tốt độ của nó chậm hơn so với chiếc xe bò chậm rãi bước tới. Với âm thanh nặng nề theo từng bước chân và tiếng bắp thịt tinh thể hoạt động, phải mất nhiều khá thời gian để nó có thể đi được nửa vòng sân huấn luyện.</p><p id="139">“Các bộ phận vẫn ổn định tại chỗ, như vậy tức là nó có thể giữ chặt được.”</p><p id="140">Bởi vì không có lớp vỏ bao bọc ngoài, họ không thể không cẩn thận. Nhưng ít ra nó không có xảy ra tình huống xấu đi bất kỳ lúc nào. Cỗ máy nguyên mẫu di chuyển tiến lên phía trước các học sinh đội sửa chữa, và thực hiện thao tác quỳ một chân xuống một cách chậm rãi. Thực hiện chế độ sẵn sàng của một Hình Bóng Kỵ Sĩ và dừng lại động tác. Chỉ khi làm xong các thao tác này các thành viên của đội bảo trì mới thở nhẹ đi. Sau một loạt chuyển động trong sự  im ắng, lúc này đây các học sinh mới bùng nổ ra sự reo hò hân hoan. Bài thử nghiệm hành động bước đi đã thành công – trải qua biết bao cố gắng và vướng mắc sai lầm giờ đây họ đã gặt hái được thành quả của mình.</p><p id="141">Lớp áo giáp ngực của bộ máy nguyên mẫu mở ra và hình bóng của Helvi xuất hiện. Có lẽ cô vẫn còn căng thẳng vừa thở hồng hộc vừa lau chùi mồ hôi của mình.</p><p id="142">“Này, Helvi, cậu cảm giác như thế nào khi điều khiển nó?”</p><p id="143">Lão Đại sau khi chứng kiến cuộc thử nghiệm thành công vui vẻ hỏi. Helvi trả lời kèm theo một chút cay đắng:</p><p id="144">“Nó đúng theo nghĩa đen là ‘một con ngựa hoang dã’. Động lực của nó quá thừa thãi, chỉ là bước chân đi thôi đã phải tốn nhiều sức lực điều khiển như vậy rồi.”</p><p id="145">“Tệ như thế sao?”</p><p id="146">“Đúng, cảm giác này hoàn toàn khác hẳn với những cỗ máy khác mà mình đã từng lái. Thành thật mà nói, tất cả mọi người cần phải được huấn luyện lại để điều khiển được nó.”</p><p id="147">“Vậy à… để tiến tới giai đoạn bước đi được có thể nói là thành tựu rất tốt rồi, nhưng hệ thống điều khiển vẫn chưa cải tiến được. Điều đó để sau đi… Được rồi, có thể bây giờ động tác của nó không nhanh nhẹn được, nhưng bộ phận đi lại của nó không có vấn đề gì cả, tất cả những gì còn lại là kiểm tra các bộ phận khác.”</p><p id="148">Helvi gật đầu và quay trở lại khoang điều khiển của phi công. Sau khi đã xác được nhóm bảo trì đã được an toàn và nâng lên tấm kiên chắn, bọn họ tiến tới giai đoạn tiếp theo của cuộc thử nghiệm. Hình Bóng Kỵ Sĩ chưa cải tiến nâng lên nhiều tấm bia ngắm lớn ra sân huấn luyện và đặt chúng xuống mặt đất từng cái một. Lão Đại cũng đi xuống sân huấn luyện lát đá và ra lệnh cho các học sinh ở xung quanh.</p><p id="149">“Được rồi, mang Vũ Khí Ma Thuật Hình Bóng tới! Là bản huấn luyện đó! Đặt mấy cái bia ngắm ở góc đó! Và tên nào đó chạy đi kêu nhóc tóc bạc tới đây mau! Thằng nhóc đó chắc chắn đang đi lang thang ở đâu đó trên chiếc Hình Bóng Giáp Trụ của nó; với đặc trưng như thế sẽ rất dễ dàng tìm tên nhóc đó ở mấy vùng lân cận này!!”</p><p id="150">Xung quanh Học Viện Phi Công Laihiala có một vài cửa hàng tạp hóa và cửa hàng bán thức ăn nhanh. Các học sinh không có tiền dư dả lắm, nhưng với bọn họ có số lượng đông đảo, cho nên thị trường cũng không nhỏ. Vì vậy phụ cận học viện có rất nhiều cửa hàng buôn bán các vận dụng cần thiết cho học sinh.</p><p id="151">Bất cứ lúc nào ra khỏi trường, các quầy hàng đều trải dài ra xung quanh con đường dẫn ra khỏi khuôn viên trường học. Hầu hết đều là bán các đồ ăn vặt. Trong lúc này, các học sinh hầu như đều đã được giải thoát khỏi các tiết học và bọn họ giống như là con bướm bị mật ong hấp dẫn, cả đám bu quanh các quầy hàng bán đồ ăn vặt. Một cửa hàng bán bánh nướng xốp với mứt nào đó. Chủ của quầy hàng này đang nướng bánh như mọi khi thì bỗng nhiên ông nghe được một nữ sinh gọi món ăn.</p><p id="152">“Ông chủ, cháu muốn ba cái bánh nướng, với mứt cam!”</p><p id="153">“Được rồi – xin chờ một chút, nó sẽ xong ngay…”</p><p id="154">Giọng nói của ông chủ, người đang quay đầu lại chào đón khách hàng của mình chợt trở nên mềm xuống. Lý do rất đơn giản, trước gian hàng của ông thay vì là một học sinh thì lại là một Kỵ Sĩ áo giáp đầy đủ. Nó không cao bằng Hình Bóng Kỵ Sĩ, nhưng nó cao hơn độ cao của lều vải. Nó ngồi xổm thân hình của mình xuống và nhìn vào lối vào của cửa hàng, nhìn thấy ông chủ đang trợn mắt há mồm mà nhìn mình. Bầu không khí quỷ dị duy trì được một khoảng thời gian, thì hai chiếc Kỵ Sĩ giống như nhau từ phía sau trách mắng chiếc Kỵ Sĩ phía trước.</p><p id="155">“Này, Ady, làm gì có vụ ngồi trong khoang lái đi mua đồ chứ?”</p><p id="156">“Ưmm? A, đúng rồi ha! Xin lỗi, ông chủ ơi cháu có làm ông hoảng sợ không?”</p><p id="157">Giọng nói của một cô gái trẻ từ trong lớp áo giáp Kỵ Sĩ nặng nề truyền ra. Ông chủ không có từ cảnh tượng vừa rồi lấy lại tinh thần thì lớp áo giáp đột nhiên mở ra và một học sinh thực sự đi ra đến, làm ông choáng váng tại chỗ.</p><p id="158">“Cái, cái này là cái gì đây!!”</p><p id="159">“A, ông chủ, bánh cháy kìaaaaa!!”</p><p id="160">Nghe đến câu đó ông chủ vội vàng xúc lên chiếc bánh, nhưng đã có một vài cái đã bị cháy. Cô gái bày ra vẻ mặt đầy xin lỗi.</p><p id="161">“A – xin lỗi, tất cả là tại cháu. Bọn cháu sẽ mua luôn cái bị cháy.”</p><p id="162">“Không sao, mặc dù ta rất ngạc nhiên nhưng vẫn là ta làm cháy nó. Nên cháu không cần lo lắng về điều này.”</p><p id="163">Ông chủ đem bánh xốp nướng mà khách hàng chọn đưa ra và thu tiền cùng một lúc. Cô học sinh nữa nói tiếng cảm ơn, rồi quay trở lại chiếc áo giáp và rời đi cùng các Kỵ Sĩ khác.</p><p id="164">“… Áo giáp gần đây mà học viên sử dụng đúng là không thể tin được…”</p><p id="165">Ông chủ cầm tiền với vẻ mặt khá sốc, nhìn ba Kỵ Sĩ rời đi.</p><p id="166">“Ưmm – nó có vị thật tuyệt – mứt cam đúng là nhất—“</p><p id="167">“Mình thích mứt vải thiều hơn.”</p><p id="168">“Èo chỉ cần cái gì ngọt thì đều tốt cả--”</p><p id="169">Ady, Eru và Chid vừa cầm trong tay bánh mứt nướng vừa di chuyển Hình Bóng Giáp Trụ. Trông họ như một Kỵ Sĩ bọc giáp, nhưng họ lại đang đi bộ với đồ ăn vặt trên tay – một cảnh tượng làm người dân và các học sinh khác hoảng sợ nhường đường.</p><p id="170">Họ sử dụng Hình Bóng Giáp Trụ không chỉ trong lúc huấn luyện, mà họ còn sử dụng nó vào cuộc sống mỗi ngày vào thời gian gần đây. Như đã vừa thấy, có chút rắc rối khi mặc nó trong cuộc sống thường ngày, nhưng họ không làm điều này mà không có chút ích lợi nào. Như mọi người đều biết, điều khiển Hình Bóng Giáp Trụ đòi hỏi phải sử dụng không ngừng ma thuật cấp cao và truyền lượng mana ra rất nhiều. Ma thuật năng lực chỉ có thể dựa vào việc huấn luyện để tăng cường lên. Nếu như muốn tăng cường lên năng lực mana của mình một cách hiệu quả, họ sẽ phải trải qua cuộc rèn luyện đầy khó khăn.</p><p id="171">Nói cách khác, bọn họ làm giống như trước đây vừa chạy vừa sử dụng ma thuật tăng cường thể chất, rèn luyện kỹ năng này vào cuộc sống mỗi ngày. Tiện thể mà nói, Eru làm chuyện này chỉ vì đơn giản là sở thích của cậu lại bộc phát.</p><p id="172">Khi họ đang tiến lên phía trước với từng bước chân ầm ĩ, một học sinh khoa Phi Công đuổi theo đằng sau bọn họ. Cậu ta chính là người mà Lão Đại sai đi tìm Eru.</p><p id="173">“… Được rồi, không biết buổi thử nghiệm cỗ máy nguyên mẫu như thế nào rồi? Chúng ta mau trở về xem thử đi!”</p><p id="174">Sau khi nghe được lời truyện đạt của người học sinh đưa tin, Eru ngay lập tức gật đầu đồng ý trở về. Cậu ta thậm chí còn nhấc lên người học sinh đưa tin mang đi theo để tránh khỏi lãng phí từng giây phút thời gian. Đối chiếu trực tiếp với hình thức điều khiển của Hình Bóng Kỵ Sĩ, Eru lái với kỹ thuật vượt mức để đề cao tốc độ lên vượt qua so với tốc độ gốc của cỗ máy. Eru muốn quay trở về nơi thử nghiệm ngay lập tức, nên đã phớt lờ đi tiếng thét thảm thiết của người học sinh bị nhấc lên, trực tiếp phóng thẳng tới khuôn viên trường với một tốc độ không thể tin được.</p><p id="175">Khi càng tiến gần tới khu sân huấn luyện, thì càng có nhiều học sinh của khoa Phi Công đang ở nơi này. Hình Bóng Kỵ Sĩ chưa cải tiến đang vận chuyển các linh kiện sửa chữa và các vật tư khác. Các thợ máy và phi công đang làm đủ mọi công việc cùng với nhau. Khi Eru và nhóm bạn của mình đi tới sân huấn luyện, họ nhìn thấy một Hình Bóng Kỵ Sĩ không có lớp vỏ ngoài đang ở giữa khu vực lát đá. Đó là ‘cỗ máy nguyên mẫu’ vừa mới kết thúc bài thử nghiệm bước đi.</p><p id="176">“Nó vừa chuyển động đúng như kế hoạch. Thật là may khi nó không bị nổ bung ra như lần trước sau một vài bước đi.”</p><p id="177">“Em lo lắng mấy điều bình thường quá … hồng hộc… Này em định cởi bộ áo giáp này ra hả? Nếu như em mặc nó vào, thì em có thể dễ dàng chạy trốn hơn khi xảy ra sự cố, đúng không?”</p><p id="178">Eru thả xuống người học sinh đang ở trên bờ vực của cái chết, cởi bỏ Hình Bóng Giáp Trụ ra và bước đi tới bên cạnh Lão Đại.</p><p id="179">“Ồ, nhóc tới rồi à. Thế thì bắt đầu đi.”</p><p id="180">“Nhờ anh giúp đỡ.”</p><p id="181">Chuỗi dây tinh thể bọn họ vừa mới kiểm tra xong tính năng của nó, Lão Đại và các thợ máy đã hoàn thành công việc thử nghiệm sau nhiều lần cải thiện sai sót và nỗ lực. Trái ngược lại, việc thử nghiệm vũ khí sau lưng sẽ được tiến hành kế tiếp sẽ được diễn ra theo một cách khác – không chỉ là về lý thuyết cơn bản, ngay cả về mặt thiết kế đều là do Eru hoàn thành nó. Họ gọi Eru đến đây để xác nhận cho giai đoạn kiểm tra kế tiếp.</p><p id="182">“Trông nó có vẻ ổn… nó hoàn thành tới mức nào rồi?”</p><p id="183">“Phần truyền lực và chức năng nhắm ngắm đều dựa theo thiết kế mà cài đặt. Phần còn lại đại khái là độ nhắm chính xác và thiết lập đang được tối ưu hóa lên.”</p><p id="184">“Cái kia… độ nhắm bắn chính xác là chuyện gì thế?”</p><p id="185">“Ồ, à… nó là điều chỉnh khoảng cách vị trí ngắm tới mục tiêu càng gần càng tốt… anh nghĩ thế.”</p><p id="186">“Ồ, cái này rất quan trọng nha. Dù sao đi nữa, tất cả các điều này phải đợi đến khi cuộc thử nghiệm hoàn thành xong đã.”</p><p id="187">Vừa mới nhảy xuống Hình Bóng Giáp Trụ, Eru lo lắng trả lời lại. Cặp song sinh vẫn ở trong Hình Bóng Giáp Trụ, thân hình to lớn của nó vô ý cản trở đến công việc ở phía sau lưng họ.</p><p id="188">“Được rồi! Bắt đầu lắp đặt vũ khí ma thuật Hình Bóng nào!!”</p><p id="189">Sau khi nhận được lệnh của Lão Đại, các học sinh khoa Phi Công cầm lấy vũ khí ma thuật Hình Bóng tiến lại gần cỗ máy nguyên mẫu. Cấu trúc của nó chưa được nhìn thấy trên Hình Bóng Kỵ Sĩ trước đây bao giờ, nó được gắn chặt lại phía sau lưng của cỗ máy nguyên mẫu. Về phần nơi đặt nó theo hình dáng của con người mà nói chính là xương bả vai hai bên, tại đó mọc lồi ra một cái móng vuốt trông giống như cánh tay robot được sử dụng trong sản xuất ở Trái Đất, chức năng của nó cũng giống như vậy . Nó là cấu trúc chính của vũ khí sau lưng – ‘cánh tay phụ’.</p><p id="190">Cuộc thử nghiệm bắt đầu từ việc lắp đặt vũ khí ma thuật Hình Bóng, và trực tiếp sử dụng nó mà không trải qua công việc sửa đổi. Bởi vì cánh tay phụ vốn là ‘tay’ nên nó có thể trực tiếp điều khiển được vũ khí ma thuật Hình Bóng, nó có thể trang bị được tất cả các kiểu vũ khí ma thuật Hình Bóng khác nhau, đây là đặc điểm nổi bật của nó.</p><p id="191">Các học sinh khoa cơ khí đứng ở đằng sau cỗ máy nguyên mẫu đưa lên vũ khí Hình Bóng cho cánh tay phụ. Mặc dù tay của cánh tay phụ đã được đơn giản hóa, nhưng bởi vì không muốn nó thực hiện các thao tác phức tạp khác, chỉ đơn giản cho nó nắm giữ vũ khí Hình Bóng nên động tác của nó rất trôi chảy. Mỗi cánh tay phụ nắm lấy một vũ khí Hình Bóng, nhắm ngay phía trên mà nắm.</p><p id="192">“Ưmm, chuyển động của cánh tay phụ có vẻ ổn!”</p><p id="193">Mặc dù cần phải có sự giúp đỡ của khung máy khác để có thể thay đổi vũ khí Hình Bóng, nhưng cánh tay phụ hoạt động vẫn bình thường. Đang lái cỗ máy nguyên mẫu Helvi cảm thấy một chấn động nhẹ từ phía sau lưng, và đã xác nhận được tình huống từ hình ảnh trên màn hình.</p><p id="194">“Được rồi, vũ khí Hình Bóng lắp đặt hoàn tất, bắt đầu cuộc thử nghiệm tính năng ngay bây giờ.”</p><p id="195">Trước khi đảm nhiệm vai trò của phi công của một mẫu máy thử nghiệm, Helvi cũng đã có tham dự vào việc phát triển về vũ khí sau lưng. Cô đã nghe lại điều này và cũng đã lý giả rõ ràng về vấn đề này.</p><p id="196">“Triển khai vũ khí Hình Bóng, hiển thị ngắm chữ thập.”</p><p id="197">Helvi kéo cần gạt ở một bên chỗ điều khiển, nó đưa chỉ thị tới động cơ ma thuật, rồi qua đó kích hoạt lên các tinh thể ở trong cánh tay phụ. Cánh tay phụ rung nhẹ lên rồi cong lên, chậm rãi nâng lên vũ khí Hình Bóng một cách từ từ. Cánh tay phụ quay một góc 90 độ chuyển sang tư thế nằm ngang, rồi dừng lại trên bờ vai của cỗ máy nguyên mẫu, nhắm hướng về phía trước. Nhìn thấy động tác của cánh tay phụ mượt mà hơn những gì đã dự kiến, nhóm học sinh sửa chữa râm rả bàn tán lên. Họ đã nhìn thấy cấu trúc của nó rất nhiều lần trước khi được lắp đặt, nhưng khi nhìn thấy cách thức nó hoạt động khi đã lắp đặt xong thì rất là kích động.</p><p id="198">Ở trong buồng lái, trên màn hình quan sát đã có sự thay đổi. Màn hình vốn thường luôn chiếu hình ảnh ở bên ngoài cỗ máy, nhưng giờ đây đã có thêm một đường kẻ hình chữ thập dùng để ngắm bắn. Một sự kết hợp giữa một chữ thập và một đường tròn (<strong>TL: Giống súng ngắm</strong>), một khung hình rất đơn giản. Nhưng thành thật mà nói băng vượt qua từ cái không có khái niệm gì tới bước này, thì đây là một cải tiến vượt bật.</p><p id="199">“Nhắm vào … chuẩn bị bắn.”</p><p id="200">Helvi nhắm thanh chữ thập vào bia ngắm. Từ bên ngoài quan sát cẩn thận thì thấy, rõ ràng là cái đầu cỗ máy được liên kết trực tiếp với vũ khí Hình Bóng khi chuyển động. Cô căng thẳng nín thở rồi, rồi cẩn thận từ từ ấn nút xuống. Vũ khí Hình Bóng nhận được chỉ lệnh từ trong buồng lái rồi đột nhiên bắn ra bắn ra một viên đạn ma thuật. Một viên đạn lửa tiêu chuẩn được bắn ra từ vũ khí Hình Bóng. Viên đạn ma thuật này phát ra ánh sáng màu đỏ bay thoát ra khỏi và đập trúng vào bia ngắm như mặt trời lặn về phía Tây. Vũ khí thường dùng để tập luyện thì thường không có mạnh mẽ về sức bạo phá, nên cũng chẳng có gì kìa lạ khi bia ngắm vẫn còn giữ nguyên được hình dạng ban đầu, nhưng dấu vết cháy của viên đạn hiện ra rất rõ ràng. Không có ai dự tính rằng cuộc thử nghiệm sẽ diễn ra được một cách thật hoàn hảo, nhưng cuối cùng vẫn là hiện ra thành quả trúng mục tiêu.</p><p id="201">“Ta vốn đã nghĩ chúng ta cần phải chỉnh sửa nó thêm nữa, thì nó mới có thể bắn trúng được chứ.”</p><p id="202">“Thế không phải là tốt sao? A, lại bắn trúng nữa kìa.”</p><p id="203">Cỗ máy nguyên mẫu tiếp tục bắn ra nhiều phát nữa. Có một vài phát bắn hụt, nhưng toàn bộ tỉ lệ chính xác trúng mục tiêu có thể lên tới được 60%. Sau khi bắn xong, cỗ máy nguyên mẫu chậm rãi thu lại vũ khí Hình Bóng về vị trí cũ, đảo ngược lại hành động ban đầu khi rút nó ra. Cánh tay phụ cong lại, giữ cho vũ khí Hình Bóng nằm thẳng dọc theo sống lưng.</p><p id="204">Lần này là thử nghiệm về tính năng của việc triển khai và thu lại vũ khí, nó vốn chỉ mong sao đạt tới kết quả bắn ra là được rồi, nhưng không ngờ kết quả lại vượt qua ngoài mong đợi.</p><p id="205">“Ồ… đây là vũ khí sau lưng ư… nó mạnh hơn những gì mình đã tưởng.”</p><p id="206">Sau khi chứng kiến thành quả sau nhiều tháng vất vả, cho dù là Lão Đại cũng phải vuốt ve chùm râu của mình mà khen ngợi. Các học sinh khác nhìn thấy cỗ máy nguyên mẫu thử nghiệm xong liền từng người kích động mà buông ra từng mảnh lời khen ngợi. Đó là bởi vì chuỗi dây tinh thể, vũ khí sau lưng và chương trình kiểm soát hỏa lực – từ đầu đến cuối tất cả tính năng mới của nó mọi người đều nhìn thấy, và họ đều nhìn thấy một tia ánh sáng rạng đông cho thành quả sắp đạt được. Sau chặng đường vất vả khi đã nhìn thấy điểm cuối đích đến thì đó là khoảng khắc hạnh phúc nhất của những người nhân viên kỹ thuật.</p><p id="207">“… Tại sao mọi người ai nấy đều kích động thế?”</p><p id="208">Cặp song sinh vốn không phải là Phi Công và cũng chẳng là thợ máy không thể nào hiểu rõ được tại sao mọi người lại hân hoan đầy cảm xúc như vậy. Họ giống như đã lạc loài giữa bầy học sinh đang đầy vui vẻ. Nghe được câu hỏi đầy nghi ngờ của Ady, Eru nở nụ cười khổ trả lời:</p><p id="209">“Bởi vì đây là bước tiến đầu tiên của một Hình Bóng Kỵ Sĩ loại mới. Và con đường này được xây dựng nên bởi chính đôi tay của họ.”</p><p id="210">Ady khéo léo khoanh hai tay của Hình Bóng Giáp Trụ , bực mình lắc lư, rồi chợt nâng đầu lên khi chợt nhớ ra điều gì đó.</p><p id="211">“Ưmm – mình thật không hiểu rõ lắm về chuyện này. Nhưng thật là tuyệt khi cậu đã thành công!”</p><p id="212">“Cậu nói đúng, nhưng, Ady…”</p><p id="213">Eru ôm lấy đầu, cậu không chắc phải giải thích như thế nào để cho Ady hiểu được.</p><p id="214">Khi các học sinh khác đang bị nhấn chìm trong niềm vui sướng hân hoan bằng chính thành quả công việc của mình, có một nhóm khác nhìn chằm chằm vào cỗ máy nguyên mẫu theo một góc độ khác.</p><p id="215">“Di, cậu nghĩ như thế nào về buổi thử nghiệm?”</p><p id="216">Đó là Edgar và Dietrich – là phi công của Hình Bóng Kỵ Sĩ. Bọn họ nhìn vào thành quả đó với nhiều suy tư.</p><p id="217">“Ưmm, tớ nghĩ… Đầu tiên, chúng ta sẽ gặp phải bất lợi khi chiến đấu ở khoảng cách xa. Chúng ta có thể dụng một cánh tay để điều khiển Vũ Khí Hình Bóng, nhưng kẻ thù có thể sử dụng tấm chắn để bắn lại. Quan trọng hơn, nó có thể sử dụng một tấm chắn rộng lớn với cả hai tay đều có thể chiến đấu.”</p><p id="218">“Đúng vậy, và nó có thể sử dụng hai Vũ Khí Hình Bóng mà không lo lắng bị cận chiến tý nào. Để bù đắp cho khoảng sơ hở khi thay đổi vũ khí, chúng ta bình thường đều sẽ một tay cầm một thanh. Nó đơn giản hơn mà nói là tăng gấp hỏa lực. Mình không muốn tưởng tượng sẽ có một trận chiến với nó.”</p><p id="219">“Không tệ, nó có thể giúp ta đánh bại kẻ thù trong một khoảng cách an toàn. Nó đúng là một chức năng tuyệt vời.”</p><p id="220">“Cậu… Tự tin vào lại một trận chiến chống lại Thú Ác Quỷ không sai, nhưng có thể chúng ta sẽ lại đối mặt với nó.”</p><p id="221">Khi Edgar đang nói và Dietrich đang muốn cãi lại thì một giọng nói khác chợt xen vào.</p><p id="222">“Đúng vậy, nếu như vậy để mình đánh bại các cậu trước tiên nhé?”</p><p id="223">Hai người chợt quay đầu lại và thấy phi công của cỗ máy nguyên mẫu Helvi đang đứng ở phía sau. Cuộc thử nghiệm đã kết thúc khi họ đang mải mê đắm chìm trong cuộc thảo luận của mình.</p><p id="224">“Mình không nói là không thể, nhưng cỗ máy này chỉ mới có hoàn thành một nửa đúng không?”</p><p id="225">“Đúng là như vậy, mình có thể khẳng định điều đó trong cả quá trình thử nghiệm nó. Nhưng nó sẽ được hoàn thành sớm thôi.”</p><p id="226">Vỏ ngoài của cỗ máy cũng sắp hoàn thành, rất nhanh thì nó có thể chế tạo xong xuôi rồi. Helvi nở một nụ cười tự tin và đôi mắt của cô chợt trở nên sắc bén.</p><p id="227">“Trong trường hợp đó, cậu không nghĩ có điều gì đó cần phải làm sao? Ví dụ như – để Kỵ Sĩ mạnh mẽ nhất của khoa Phi Công, người đã sống sót qua trận chiến với Behemoth thử nghiệm chống lại với cỗ máy mới xem.”</p><p id="228">Đôi mắt của Edgar trợn to ra. Anh, Helvi và Dietrich đều là những người còn sống sót trong Tai Nạn Behemoth, nhưng mỗi người bọn họ đều có cái nhìn khác nhau về điều này.</p><p id="229">“A, cậu nói đúng; chúng ta dù sớm muộn đều cần tiến hành một trận chiến giả định… mà cậu nãy nói về mình ư? Helvi này, cậu chẳng phải cũng là một trong những người còn sống sót sao?”</p><p id="230">“Chỉ may mắn mà thôi, chỉ là trùng hợp lắm mình mới còn sống sót. Bởi vì ‘chàng trai’ đó đã kéo dài thời gian cho chúng ta.”</p><p id="231">“Cậu có cảm giác hối hận về điều này ư?”</p><p id="232">“Hối hận ư? Mình không có nói đủ lời cảm ơn đối với cậu ta. Không bằng nói … mình trở nên tò mò muốn biết về cỗ máy mà cậu bé đang làm.”</p><p id="233">Họ nhìn về phía cỗ máy nguyên mẫu đang được di dời về xưởng.</p><p id="234">“Mình đã tham gia vào nó khi từ khi nó mới bắt đầu, nên mình biết rất rõ. Nếu như mình lái ‘đứa nhỏ’ này với loại sức mạnh mới, cho dù có là cậu đi nữa thì mình cũng có thể đánh bại cậu.”</p><p id="235">“…Thật đáng sợ.”</p><p id="236">Edgar nhìn không có tý sợ hãi chút nào, chỉ có một chút nghi hoặc. Helvi khẽ thở dài.</p><p id="237">“Vì lẽ đó, sau khi nó được hoàn thành… Có lẽ mình có thể chiến đấu với con thú khổng lồ đó tới giờ phút cuối cùng.”</p><p id="238">“Helvi… Đó sẽ không phải là nguyên nhân thực sự mà cậu tham gia vào vai trò phi công của cuộc thử nghiệm chứ?”</p><p id="239">“Nha, mình chỉ cảm thấy đây là một điều tốt khi Hình Bóng Kỵ Sĩ trở nên mạnh mẽ hơn thôi. Như thế chúng ta sẽ có khoảng thời gian dễ dàng hơn trong lúc đánh nhau với Thú Ác Quỷ.”</p><p id="240">Nhìn thấy nụ cười đầy vui vẻ của Helvi như mọi khi, Edgar cảm thấy rằng cô đang cố gắng tìm cách lẩn tránh câu trở lời.</p><p id="241">(<strong>TL: Không hiểu sao cảm nhận về Helvi của mình giống như cảm thấy rằng con này là gián điệp</strong>)</p><p id="242">“Lo mà rửa sạch cổ mà chờ mình đi, Edgar. Mình thật muốn đập cậu một trận ra trò.”</p><p id="243">Edgar khẽ thở dài, nhìn về phía Helvi đang vẫy vẫy cánh tay mình. Dietrich vỗ nhẹ vào bả vai của anh.</p><p id="244">“Mình rất ghen tỵ với cậu, Edgar; cậu sẽ là một trong những người đầu tiên chiến đấu với cỗ máy mới.”</p><p id="245">“Cậu có muốn đổi chỗ cho mình không? Mình rất nghiêm túc đó.”</p><p id="246">“Nếu như cậu từ chối lời thách đấu này, cô ấy sẽ ghét cậu đúng không? Và, dĩ nhiên, mình sẽ lợi dung trận chiến đó của cậu như là một tài liệu để tham khảo.”</p><p id="247">Mặc dù Edgar có một chút không tình nguyện, nhưng anh không giấu nổi sự hiếu kỳ và quyết tâm chiến thắng của mình. Hai cảm giác mâu thuẫn trái ngược này khiến cho Edgar vẻ mặt trở nên phức tạp.</p><p id="248">Sau khi hoàn thành ứng dụng của chuỗi dây tinh thể là giai đoạn khó khăn nhất, phần còn lại của công việc diễn ra một cách trôi chảy hơn. Các học sinh tiếp tục làm theo kế hoạch và hoàn thành bước kiểm tra thử về áo giáp, và cuộc thử nghiệm giống như là triển khai vũ khí sau lưng đã và vũ khí bắn phá đều được di chuyển cùng một lúc. Họ dần dần từ từ hoàn thành mỗi giai đoạn. Một tháng sau cuộc thử nghiệm bước đi, họ cuối cùng cũng chuyển từ giai đoạn cỗ máy nguyên mẫu sang giai đoạn được mệnh danh một cách chính thức. Cỗ máy nguyên mẫu lúc thử nghiệm được gọi là ‘Tellestarle’ --  sau khi nó thông qua một chút thay đổi.</p><p id="249">Tellestarle chậm rãi hiện ra khỏi bóng tối của công xưởng. Bề ngoài của nó không khác gì mấy so với cỗ máy của những học sinh khác. Bởi vì có thể chỉnh sửa thêm bớt gì nữa trong tương lai, trông nó không có chút tao nhã tý nào so với các cỗ máy khác. Chỉ có hai cánh tay phụ ở sau lưng làm nổi trội lên điểm khác biệt của nó so với các cỗ máy hiện hành. Tellestarle bước tiến tới sân huấn luyện – chuyển động của nó trở nên nhẵn nhụi hơn sơ với bài thử nghiệm trước đây, nhưng nó vẫn cảm giác có chút không tự nhiên.</p><p id="250">Đi xuyên qua cánh cổng của sân huấn luyện, nó đã nhìn thấy một vài Hình Bóng Kỵ Sĩ khác đang đứng đây chờ nó. Kỵ Sĩ ‘Earlecumber’ được bao phủ trong lớp áo giáp trắng – sự xuất hiện của nó trông đơn giản hơn so với Tellestarle, trang bị của nó là thanh kiếm thẳng và tấm khiên. Nhưng nó được điều khiển bởi một phi công được công nhận là mạnh nhất trong khoa Phi Công – Edgar.</p><p id="251"><img src="https://4.bp.blogspot.com/-uAyr8FwjPwY/WASUy-ahWVI/AAAAAAAABGA/NYz0jTtcFK84Dk64lQbFxjyN4oZzFuezACLcB/s640/Knight%2Band%2BMagic%2B-%2BArc%2B3%2B-%2BChap%2B2%2B%25282%2529.jpg" alt="Knight%2Band%2BMagic%2B-%2BArc%2B3%2B-%2"></p><p id="252">“Được rồi, Helvi trông có vẻ đã sẵn sàng. Vậy trận chiến giả định giữa Tellestarle và Earlecumber bắt đầu!! Hãy trình diễn cho mọi người thấy thành quả sau cuộc thử nghiệm!”</p><p id="253">Các học sinh khoa Phi Công đã kéo bầy kéo lũ tới để xem, cổ vũ cho trận chiến này sau khi nghe được lời bài phát biểu mở đầu. Trận chiến giả định giữa cỗ máy mới chống lại với cỗ máy mạnh mẽ nhất được mọi người trong học viện công nhận mang lại chờ mong rất lớn.</p><p id="254">Helvi nhìn chằm chằm vào Earlecumber trên màn ảnh điều khiển, tập trung tinh thần ngồi ở trong khoang lái của Tellestarle. Cho dù là với một cỗ máy mới mạnh mẽ như Tellestarle, cô không thể là không cẩn thận xuống. Edgar và Earlecumber đã từng chiến đấu trực tiếp với Behemoth. Mặc dù anh không có đánh bại được Behemoth, nhưng anh vẫn người chiến sĩ bền bĩ, người đã chiến đấu ở tiền tuyến đầu cho tới thời điểm cuối cùng.</p><p id="255">Trái ngược lại đối thủ của anh, Helvi và đối tác của mình ‘Trandorches’ đã thua. Giống như cô đã nói, chỉ là sự trùng hợp ngẫu nhiên cô mới còn sống sót. Trandorches và Earlecumber là những cỗ máy được làm từ các học sinh, nên đặc tính của chúng là như nhau. Điều đó có nghĩa là kỹ năng điều khiển khác nhau của Phi Công sẽ dẫn đến thành quả khác nhau.</p><p id="256">Nhưng, còn về Tellestarle thì sao? Nó có thể là một con ngựa hoang dã và rất khó để có thể điều khiển được, nhưng nó có tiềm năng vô hạn. Khi làm phi công thử nghiệm, Helvi đã cùng nó trải qua tất cả chặng đường từ lúc cỗ máy được đề cập lần đầu tiên, cho nên cô biết rất rõ về nó.</p><p id="257">Quan trọng hơn – Cô nhìn xung quanh buồng lái. Cô đã dùng quen thuộc cần điều khiển, các bộ phận đã được đổi mới nhưng cô vẫn quen thuộc với nó. Cô ngồi ở chỗ ngồi thích hợp mang đến cho cô cảm giác thân quen. Nói đến nó, Tellestarle được xây dựng lại từ đống đổ nát sau Tai Nạn Behemoth và nó đã được thay đổi bởi các học sinh. Cỗ máy này được xây dựng từ một nửa nền tảng của cỗ máy Trandorches. Đương nhiên, cấu trúc giữa hai cỗ máy có sự khác biệt rõ ràng và chỉ có khoảng hơn 20% linh kiện là từ bộ phận gốc của cỗ máy. Mặc dù là vậy, cỗ máy này vẫn là người cộng sự mà cô đã biết từ lâu.</p><p id="258">“Chúng ta lại có thể tiếp tục chiến đấu cùng với nhau… được rồi, chúng ta đi thôi, Tellestarle!!”</p><p id="259">Cô bước chân vào bàn đạp cứng và thét lên tên của cộng sự của cô đã được ban tặng một cuộc sống mới. Cỗ máy hưởng ứng lại một cách mạnh mẽ, dẫn dắt cô quay lại chiến trường chiến đấu. </p>
+</div>
+<div style="text-align: center; margin: 20px auto 10px auto;">
+</div>
+<section class="rd-basic_icon d-lg-none row">
+<a href="/truyen/757-knights-magic/c17628-chuong-10-bat-dau" class="col text-center "><i class="fas fa-backward"></i></a>
+<a href="/truyen/757-knights-magic" class="col text-center"><i class="fas fa-home"></i></a>
+<a href="/truyen/757-knights-magic/c17630-chuong-12-quyet-dau-gia-tap" class="col text-center "><i class="fas fa-forward"></i></a>
+</section>
+
+</div>
+<div class="col-12 col-lg-10 offset-lg-1">
+<section id="chapter-comments" class="basic-section">
+<header class="sect-header tab-list">
+<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(1)</span></span>
+</header>
+<main id="fbcmt_root" class="sect-body">
+<span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="https://ln.hako.re/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
+<div id="tab-content-1" class="tab-content clear">
+<section class="ln-comment">
+<header>
+<h3>1 Bình luận </h3>
+
+</header>
+<main class="ln-comment-body">
+<div class="ln-comment_sign-in long-text">
+Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-650060" class="ln-comment-item clear" data-comment="650060" data-parent="650060">
+<div class="ln-comment-user_ava">
+<img src="https://c1.hako.re/lightnovel/users/ua33210-4efb660c-4fda-43be-8df2-1aa67216abc1.jpg">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://ln.hako.re/thanh-vien/33210" class="strong">Black Snow</a>
+</div>
+<div class="ln-comment-content long-text">
+Hm... Tks
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/757-knights-magic/c17629-chuong-11-thiet-ke-che-tao-va-lap-dat?comment_id=650060#ln-comment-650060">
+<time class="timeago" title="26-02-2020 14:42:39" datetime="2020-02-26T14:42:39+07:00">
+26-02-2020 14:42:39
+</time>
+</a></span>
+
+</div>
+</div>
+</div> </div>
+<div class="ln-comment-page">
+</div> </main>
+<script>
+        var token = 'o5ORFp4Oh6heOPF3UJjFMESo8Y8pwMs0RqAH3AFd';
+        var comment_type = 'chapter';
+        var comment_typeid = '17629';
+    </script>
+</section>
+</div>
+</main>
+</section>
+</div>
+</div>
+</div>
+</main>
+<script>
+    token = 'o5ORFp4Oh6heOPF3UJjFMESo8Y8pwMs0RqAH3AFd';
+    
+    $('.rd-basic_icon').hide();
+
+    $(document).ready(function() {
+        listab("#chapter-comments");
+        // Switch to FB tab if request fb_comment_id
+        if (getParameterByName('fb_comment_id') != null) {
+            $('span[data-tab-index="2"]').click();
+        }
+        
+        function turnoffall() {
+            $(".rdtoggle").removeClass("on");
+            $(".rdtoggle_body").removeClass("animation fade-in-left-big fade-in-down");
+            $("html").removeClass("overflow-hiden");
+        }
+        
+        function rdtoggle(classicon, effect) {            
+            if($(classicon).hasClass("on")) {
+                turnoffall();
+            } else {
+                turnoffall();
+                $(classicon).addClass("on");
+                $("html").addClass("overflow-hiden");
+                $(classicon + " .rdtoggle_body").addClass("animation " + effect);
+            } 
+        };
+        
+        $("#rd-setting_icon").on('click',function(){
+            rdtoggle("#setting","fade-in-down");                   
+        });
+         
+        $("#rd-info_icon").on('click',function(){
+            rdtoggle("#chapters","fade-in-left-big");              
+        });
+         
+         $("#rd-bookmark_icon").on('click',function(){
+            rdtoggle("#bookmarks","fade-in-left-big");                     
+        });
+         
+        $(".black-click").on('click',function(){
+            turnoffall();
+            $("#rd-side_icon").hide();
+            $("#bookmark_top").removeClass("on");
+        });
+         
+        var bgcolor    = Cookies.get('night_mode') ? 5 : (Cookies.get('color') || 3);
+        var fontfamily = Cookies.get('fontfamily') || '';
+        var fontsize   = Cookies.get('font') || 18; 
+        var margin     = Cookies.get('margin') || 0;
+         
+        function setcolor(alter = true) {
+            var switcher = $(".set-color .set-input span").eq(bgcolor);
+            switcher.addClass("current");
+
+            if (alter) {
+                for (var i = 0; i < $(".set-color .set-input span").length; i++) {
+                    $("#mainpart").removeClass('style-' + i);
+                }
+                $("#mainpart").addClass('style-' + bgcolor);
+            }
+        }
+
+        // This creates unsmooth experience so we only use it for select box
+        function setfontfamily() {
+            $('.set-font-family select option').filter(function () {
+                return fontfamily.split(',')[0].indexOf($(this).text()) != -1 ;
+            }).attr('selected', true);
+        }
+         
+        function setfontstyle(alter = true) {
+            $(".set-font input.set-slide_input").val(fontsize + "px"); 
+
+            if (alter) {
+                $("div#chapter-content").css("font-size", fontsize + "px");
+
+                var lineheight = +fontsize + 10;
+                $("#chapter-content").css("line-height", lineheight + "px");
+            }
+        }
+         
+        function setmargin() {
+            $(".set-margin input.set-slide_input").val(margin + "px"); 
+            $("#chapter-content").css({
+                'padding-left': margin + "px",
+                'padding-right': margin + "px"
+            });
+        }
+        
+        setcolor(false);
+        setfontfamily();
+        setfontstyle(false);
+        setmargin();
+        
+        //1px = 0.0625rem;
+        //16px = 1rem (default);
+        
+        $(".set-color .set-input span").click(function(){
+            bgcolor = $(this).data("id");
+            $(".set-color .set-input span").removeClass("current");
+            setcolor();            
+            Cookies.set('color', bgcolor, { expires: 365 });
+        });
+
+        $('.set-font-family select').on('change', function () {
+            fontfamily = "'" + $('option:selected', this).text() + "', " + '\'Times New Roman\', Georgia, serif';
+            
+            $('div#chapter-content').css('font-family', fontfamily);
+
+            Cookies.set('fontfamily', fontfamily, { expires: 365 });
+        });
+        
+        $(".set-font .set-slide_button.set-smaller").click(function () {
+            fontsize = fontsize - 2;
+            if (fontsize < 0) fontsize = 0;
+            setfontstyle();
+            Cookies.set('font', fontsize, { expires: 365 });
+        });
+        
+        $(".set-font .set-slide_button.set-bigger").click(function () {
+            fontsize = +fontsize + 2;
+            setfontstyle();
+            Cookies.set('font', fontsize, { expires: 365 });
+        });
+        
+        $(".set-margin .set-slide_button.set-smaller").click(function () {
+            margin = margin - 20;
+            if (margin < 0) margin = 0;
+            setmargin();
+            Cookies.set('margin', margin, { expires: 365 });
+        });
+        
+        $(".set-margin .set-slide_button.set-bigger").click(function () {
+            margin = +margin + 20;
+            setmargin();
+            Cookies.set('margin', margin, { expires: 365 });
+        }); 
+         
+        $("#bookmarks_list li").each(function(){
+            var linepr = $(this).data("line");
+            var preview = $(".reading-content p#" + linepr).text();
+
+            var shortText = preview.trim().substring(0, 30) + "...";
+            $(this).find(".pos_bookmark small").text(shortText);
+        });
+
+        $('div#chapter-content').html(
+            $('div#chapter-content').html().replace(
+                /\[note(\d+)\]/gi, 
+                '<span id="anchor-note$1" class="note-icon none-print inline note-tooltip" data-tooltip-content="#note$1 .note-content" data-note-id="note$1"><i class="fas fa-sticky-note"></i></span><a id="anchor-note$1" class="inline-print none" href="#note$1">[note]</a>'
+            )
+        )
+        
+        tippy('.note-tooltip', {
+            delay: 50,
+            maxWidth: 240,
+            interactive: true,
+            content(ref) {
+                const selector = ref.getAttribute('data-tooltip-content');
+                const template = document.querySelector(selector);
+                return template.innerHTML;
+            }
+        });
+    });    
+        
+    isLoggedIn = 0;
+    series_id = parseInt('757');
+    chapter_id = parseInt('17629');
+
+    readingObject = {
+        series_id: series_id,
+        series_title: 'Knights &amp; Magic',
+        series_url: $('i.fa-home').first().parent().attr('href'),
+        series_cover: $('.rd_sidebar-header a.img').css('background-image'),
+        chapter_title: $('ul.sub-chap_list li.current a').text().trim(),
+        chapter_url: $('ul.sub-chap_list li.current a').attr('href'),
+        book_title: $('ul#chap_list > li.current a').text(),
+        book_url: $('ul#chap_list > li.current a').attr('href'),
+        read_time: +new Date() / 1000 | 0,
+    };
+</script>
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+  var _pop = _pop || [];
+  _pop.push(['siteId', 3333025]);
+  _pop.push(['minBid', 0]);
+  _pop.push(['popundersPerIP', 1]);
+  _pop.push(['delayBetween', 0]);
+  _pop.push(['default', false]);
+  _pop.push(['defaultPerDay', 0]);
+  _pop.push(['topmostLayer', false]);
+  (function() {
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    var s = document.getElementsByTagName('script')[0]; 
+    pa.src = '//c1.popads.net/pop.js';
+    pa.onerror = function() {
+      var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+      sa.src = '//c2.popads.net/pop.js';
+      s.parentNode.insertBefore(sa, s);
+    };
+    s.parentNode.insertBefore(pa, s);
+  })();
+/*]]>/* */
+</script>
+<script src="/scripts/app.js?id=309f6a45cb440fd98b45"></script>
+<footer id="footer">
+<div class="container">
+
+<span class="right">Liên hệ: <a href="mailto:contact@hako.re" target="_blank" style="color: #5fff46">contact@hako.re</a></span>
+<span>© 2016 - 2021 Cổng Light Novel</span>
+</div>
+</footer> </body>
+</html>

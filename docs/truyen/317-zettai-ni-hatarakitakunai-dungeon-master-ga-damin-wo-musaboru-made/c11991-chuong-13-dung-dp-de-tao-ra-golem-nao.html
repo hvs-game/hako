@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Đọc Zettai ni Hatarakitakunai Dungeon Master ga Damin wo Musaboru Made - Chương 13: Dùng DP để tạo ra Golem nào. - Cổng Light Novel</title>
+<meta name="keywords" content="Zettai,ni,Hatarakitakunai,Dungeon,Master,ga,Damin,wo,Musaboru,Made,Chương,13:,Dùng,DP,để,tạo,ra">
+<meta name="description" content="Đọc Light Novel Zettai ni Hatarakitakunai Dungeon Master ga Damin wo Musaboru Made - Chương 13: Dùng DP để tạo ra Golem nào. Tiếng Việt nhanh nhất, chất lượng cao, cập nhật liên tục tại Cổng Light Novel. Cung cấp cho độc giả nhiều tiện ích giúp đọc truyện dễ dàng hơn.">
+<meta name="theme-color" content="#000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="VypRpMQXMyBK5Dd6C53VaKq39fBtPiXrxmiceeSg">
+<meta name="logged-in" content="0">
+<link rel="canonical" href="https://ln.hako.re/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11991-chuong-13-dung-dp-de-tao-ra-golem-nao">
+<meta property="og:image" content="https://2.bp.blogspot.com/-ePuWYBLwa3o/WO2wEquPFvI/AAAAAAAAKD8/aSXJv-RxlRY/w215/series_317.jpg">
+<meta property="fb:app_id" content="1864643850436909">
+<link rel="prefetch" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="prefetch" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="shortcut icon" href="/img/favicon.png?v=3">
+<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
+<link rel="stylesheet" href="/css/interface.css?id=fde29cbca40eea8f6585">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+<script src="/scripts/plugins.js?id=549277a37ac0021cae34"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34864968-3');
+    </script>
+</head>
+<body>
+<style>
+    body {
+        background: inherit;
+    }
+
+    #footer {
+        display: none;
+    }
+</style>
+<main id="mainpart" class="reading-page style-3">
+<section id="rd-side_icon" class="none force-block-l">
+<a class="rd_sd-button_item rd_top-left" href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11990-phu-chuong-chu-nhan-ham-nguc-kehma"><i class="fas fa-backward"></i></a>
+<a class="rd_sd-button_item" href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made"><i class="fas fa-home"></i></a>
+<a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
+<a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
+<a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
+<a class="rd_sd-button_item rd_top-right disabled"><i class="fas fa-forward"></i></a>
+</section>
+<section id="chapters" class="rd_sidebar rdtoggle">
+<main class="rdtoggle_body">
+<header class="rd_sidebar-header clear">
+<a class="img" href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11991-chuong-13-dung-dp-de-tao-ra-golem-nao" style="background: url('https://2.bp.blogspot.com/-ePuWYBLwa3o/WO2wEquPFvI/AAAAAAAAKD8/aSXJv-RxlRY/w215/series_317.jpg') no-repeat"></a>
+<div class="rd_sidebar-name">
+<h5><a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made">Zettai ni Hatarakitakunai...</a></h5>
+<small><i class="fas fa-pen"></i>Supana Onikage</small>
+<small><i class="fas fa-paint-brush"></i>Youta</small>
+</div>
+</header>
+<ul id="chap_list" class="unstyled">
+<li class="current"><a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/t1596-tap-1">Tập 1.</a></li>
+<ul class="sub-chap_list unstyled">
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c12537-minh-hoa">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Minh Họa.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11850-chuong-1-toi-khong-muon-lam-gi-ca">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 1: Tôi không muốn làm gì cả…!
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11863-chuong-2-chet-vi-lam-viec">
+Chương 2: Chết vì làm việc.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11921-chuong-3-nghien-cuu-tinh-huong">
+Chương 3: Nghiên cứu tình huống.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11981-chuong-4-hay-xu-bon-cuop-cai-da">
+Chương 4: Hãy xử bọn cướp cái đã.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11982-chuong-5-bat-dau-don-dep-them-cho-thoi-nao">
+<i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+Chương 5: Bắt đầu dọn dẹp thêm chỗ thôi nào.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11983-chuong-6-su-dung-phep-thuat-lan-dau-tien">
+Chương 6: Sử dụng phép thuật lần đầu tiên.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11984-chuong-7-thu-linh-cua-bon-cuop">
+Chương 7: Thủ lĩnh của bọn cướp.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11985-chuong-8-tien-trien-tot">
+Chương 8: Tiến triển tốt.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11986-chuong-9-tieu-xai-dp-nao">
+Chương 9: Tiêu xài DP nào.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11987-chuong-10-ten-cuop-mua-no-le">
+Chương 10: Tên cướp mua nô lệ.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11988-chuong-11-ngay-tan-cua-bon-cuop">
+Chương 11: Ngày tàn của bọn cướp.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11989-chuong-12-mot-no-le-duoc-goi-la-goi-om">
+Chương 12: Một nô lệ được gọi là gối ôm.
+</a>
+</li>
+<li>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11990-phu-chuong-chu-nhan-ham-nguc-kehma">
+Phụ chương: Chủ nhân hầm ngục Kehma.
+</a>
+</li>
+<li class="current">
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11991-chuong-13-dung-dp-de-tao-ra-golem-nao">
+Chương 13: Dùng DP để tạo ra Golem nào.
+</a>
+</li>
+</ul>
+<li class=" disabled "><a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made">Tập 2.</a></li>
+ <li class=" disabled "><a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made">Tập 3.</a></li>
+</ul>
+</main>
+<div class="black-click"></div>
+</section>
+<section id="bookmarks" class="rd_sidebar rdtoggle">
+<main class="rdtoggle_body">
+<div class="rd_sidebar-header">
+<h2 class="rd_s-name"><i class="fas fa-bookmark"></i><a href="/bookmark" style="color: white;"> Bookmarks</a></h2>
+</div>
+<ul id="bookmarks_list" class="unstyled">
+<li>Bạn phải đăng nhập để sử dụng bookmark</li>
+</ul>
+</main>
+<div class="black-click"></div>
+</section>
+<section id="setting" class="rdtoggle">
+<section class="re_set-in basic-section clear rdtoggle_body">
+<header class="sect-header"><span class="sect-title">Tùy chỉnh</span></header>
+<main class="sect-body">
+<div class="set-list set-color clear">
+<label>Màu nền</label>
+<div class="set-input clear">
+<span data-color="#fff" data-id="0" style="background-color: #fff"></span>
+<span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
+<span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
+<span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+<span data-color="#f5e9ef" data-id="4" style="background-color: #f5e9ef"></span>
+<span data-color="#222222" data-id="5" style="background-color: #222222"></span>
+</div>
+</div>
+<div class="set-list set-font-family clear"><label>Font chữ</label>
+<div class="set-slide set-input">
+<select>
+<option>Times New Roman</option>
+<option>Palatino Linotype</option>
+<option>Segoe UI</option>
+<option>Arial</option>
+<option>Verdana</option>
+</select>
+</div>
+</div>
+<div class="set-list set-font clear"><label>Kích cỡ chữ</label>
+<div class="set-slide set-input">
+<span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+<input class="set-slide_input" disabled="" value="16px" type="text">
+<span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+</div>
+</div>
+<div class="set-list set-margin clear"><label>Bản lề</label>
+<div class="set-slide set-input">
+<span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+<input class="set-slide_input" disabled="" value="20px" type="text">
+<span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+</div>
+</div>
+</main>
+</section>
+<div class="black-click"></div>
+</section>
+<div class="container">
+<div class="row">
+<div class="reading-content col-12 col-lg-10 offset-lg-1" style="word-wrap: break-word;">
+<div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
+<span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
+<section class="rd-basic_icon d-lg-none row">
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11990-phu-chuong-chu-nhan-ham-nguc-kehma" class="col text-center "><i class="fas fa-backward"></i></a>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made" class="col text-center"><i class="fas fa-home"></i></a>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made" class="col text-center  disabled "><i class="fas fa-forward"></i></a>
+</section>
+<div class="title-top" style="padding-top: 20px">
+<h2 class="title-item" align="center">Tập 1.</h2>
+<h4 class="title-item" align="center">Chương 13: Dùng DP để tạo ra Golem nào.</h4>
+<h6 class="title-item" align="center">Độ dài: 1,894 từ - Lần cuối:
+<time class="timeago" title="04/01/2017 22:52:10" datetime="2017-01-04T22:52:10+07:00">
+04/01/2017 22:52:10
+</time>
+- <a href="https://ln.hako.re/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11991-chuong-13-dung-dp-de-tao-ra-golem-nao#chapter-comments" style="text-decoration: underline">Bình luận: 1</a>
+</h6>
+</div>
+<div style="text-align: center; margin: 20px auto -20px auto;">
+</div>
+<div id="chapter-content" class="long-text no-select">
+<p id="1"><strong>Solo : Sayorui</strong></p><p id="2">“Vậy nên, anh nghĩ là anh sẽ học 「Tạo Golem」.”</p><p id="3">Cái trước mắt tôi bây giờ là ma pháp 「Tạo Golem」.</p><p id="4">Ma pháp tạo ra đám người đá ấy hả, chẳng phải sẽ dễ dàng hơn nếu như để cho chúng làm việc ư?</p><p id="5">“Ơ, không có ma pháp nào có thể tạo ra golem đâu. Tốt nhất là cứ triệu hồi một con với DP. Dù tốn tầm 100 DP nhưng nó khá khỏe đấy.”</p><p id="6">“Vậy nói theo cách khác, sau khi triệu hồi đủ 100 con thì sẽ đủ số DP đã bỏ ra để mua「Tạo Golem」… và rồi tất cả những lần sau coi như là miễn phí.”</p><p id="7">“Ồ, tuyệt vời!”</p><p id="8">Hừm, liệu mình có nên triệu hồi nhiều như vậy không? Hoặc là có thể triệu hồi mà không mất gì? Bởi mình cũng không rõ bọn golem này hiệu quả ra sao, nên cũng không chắc là có nên gọi tận 100 con không nữa.</p><p id="9">Nói thẳng thừng thì, có một lí do mà tôi muốn tạo một con golem… nhưng mà cái đấy tạm thời cứ giữ bí mật đã.</p><p id="10">“Vậy nên, vì những công việc nặng nhọc trong tương lại, ta yêu cầu quyển trục của phép 「Tạo Golem」… A, nó hiện ra này.”</p><p id="11">Đổi lại bằng 10000 DP, một quyển trục được bọc bởi dây được hiện ra.</p><p id="12">Việc số DP còn lại chỉ còn bằng 1/3 lúc ban đầu thì cứ gác lại đã.</p><p id="13">Giờ thì xài đồ mới luôn nào. Cởi bỏ cuộn dây, tôi liền nhìn vào bên trong.</p><p id="14">「Tạo Golem」được viết ở phía bên trái, cùng với đó là một thứ gì đấy giống như ma pháp trận.</p><p id="15">“… Này, sử dụng nó như nào hả Rokuko?”</p><p id="16">“Cứ truyền năng lượng phép thuật vào trong ma pháp trận là được.”</p><p id="17">Khi tôi thử truyền năng lượng vào, cảm giác giống như lúc sử dụng ma pháp 「Tẩy sạch」vậy.</p><p id="18">Năng lượng phép thuật trong cơ thể tuôn ra từ tay được truyền vào ma pháp trận, đồng thời cơ thể cũng có cảm giác yếu đi.</p><p id="19">Và rồi những dòng chữ trên ma pháp trận xoay tròn.</p><p id="20">Hiểu rồi… vậy ra cảm giác là như thế này khi mà năng lượng bị rút đi.</p><p id="21">Không biết như nào là đủ nhỉ? Giờ thì cứ truyền thêm vậy. Trận pháp cũng tăng tốc lên khi mà tôi tiếp tục truyền thêm năng lượng.</p><p id="22">Hình như là nó đến giới hạn rồi thì phải? Ma pháp trận biến mất bằng một tiếng ‘bang’ và rồi năng lượng ma thuật trút xuống người tôi như mưa.</p><p id="23">Và ngay lúc đó, tôi cảm nhận được rằng cấu trúc của ma pháp trận vừa rồi được in vào người mình.</p><p id="24">Cảm giác giống như là tôi có thể dùng 「Tạo Golem」được luôn.</p><p id="25">Còn về cuộn phép thì… những dòng chữ biểu thị cho ma pháp trận đã bị đốt cháy, biến mất trong ngọn lửa.</p><p id="26">“…Hơ, lần đầu tiên ta thấy thứ gì như này đấy. Vậy ra dùng cuộn phép thì sẽ như thế.”</p><p id="27">“Ể? Rokuko, em không biết dùng à?”</p><p id="28">“Không đời nào, nó quá đắt.”</p><p id="29">“Vậy sao mà biết cách dùng…?”</p><p id="30">“Fufun, bởi đấy là kiến thức thông thường mà… Dù Ane-sama số 89 có chỉ ta một ít…”</p><p id="31">… Tôi lập tức thử dùng 「Tạo Golem」.</p><p id="32">Những thứ cần thiết đó là nguyên liệu thô để tạo nên cơ thể của golem và năng lượng ma thuật. Tôi biết điều đó có lẽ là do tác dụng của cuộn phép.</p><p id="33">Golem đá thì cần đá. Golem đất sét thì cần đất sét. Năng lượng cần dùng cũng theo đó mà thay đổi.</p><p id="34">Liệu mình có nên đào đất sét ở bên ngoài phòng chủ không nhỉ? Vừa đứng dậy, tôi liền nhớ ra Thịt. Em nó đang ngồi xổm, tay ôm lấy đầu gối ở góc phòng.</p><p id="35">Phải rồi, mình không cần tự tay làm. Nên tận dụng những thành phần nhàn rỗi vậy.</p><p id="36">“… Được rồi, Thịt, em ra ngoài và đào một ít đất sét ở bên ngoài hang nhé. Chừng này là đủ.”</p><p id="37">“V-âng. Goshujin-sama (Chủ nhân).”</p><p id="38">Cỡ quả bóng đá là đủ.</p><p id="39">Tôi mua một cái xẻng (5 DP) và rồi đưa cho Thịt, có cảm giác như em nó hơi ngạc nhiên một tí khi mình đưa, nhưng có lẽ do mình tưởng tượng bởi mặt em ấy vẫn đơ đơ như bình thường…</p><p id="40">Một lúc sau, Thịt quay lại với xẻng và đát sét trên tay. Bê đống đấy bằng thân hình nhỏ bé của mình, trông nặng phết. Mà thật ra thì nó khá nặng so với một đứa trẻ nhỉ.</p><p id="41">À đúng rồi, giờ thì em ấy có thể ra vào phòng chủ được rồi.</p><p id="42">“Được rồi, làm tốt lắm. Nghỉ đi.”</p><p id="43">“Ah, uu.”</p><p id="44">Tôi vỗ đầu khen em nó và rồi dùng 「Tẩy sạch」để bỏ đi hết bụi bẩn do cầm đống đất sét bằng tay.</p><p id="45">Không biết là dùng 「Tẩy sạch」có nhột không mà em ấy lại kêu lên “hyafu-!”.</p><p id="46">Giờ thì mình muốn thử lên Rokuko rồi đấy.</p><p id="47">“Được rồi, vì một tương lai không phải làm việc nặng nữa… 「Tạo Golem」!”</p><p id="48">Tôi truyền năng lượng ma thuật vào đống đất sét. Sau khi tạo mạch dẫn bằng năng lượng ma thuật, nó dần có hình dạng của con người.</p><p id="49">Có lẽ là do tác dụng của cuộn phép, hình ảnh của golem được hiện lên trong đầu… Mặc dù nó hơi nhỏ, nhưng như thế cũng được rồi. Ừm. Chắc vậy. Có lẽ… Nah, kiểu gì thì cũng ổn thôi.</p><p id="50">Theo suy nghĩ trong đầu, tôi nặn đống đất sét và truyền thêm năng lượng.</p><p id="51">Và dựa theo hình mẫu đó, tôi tạo ra một con golem nhỏ với hình dạng con người.</p><p id="52">Tiếp tục truyền thêm năng lượng ma thuật trong khoảng 10 phút, golem đất sét cao khoảng 30 cm (thu nhỏ) đã được hoàn thành.</p><p id="53">“Ồ, đấy là… golem à?”</p><p id="54">“Câu hỏi kiểu gì vậy!?”</p><p id="55">“Nhưng chẳng phải golem thường sẽ to hơn một con người trưởng thành sao!? Ta bắt đầu nghi ngờ việc tạo ra 100 cái thứ như này có đáng không nữa.”</p><p id="56">“Ờ thì, anh hơi băn khoăn không biết một con bình thường là như thế nào… Mà cũng chả sao, thế thì anh chỉ cần tạo 10,000 con là được.”</p><p id="57">Hiện giờ thì con golem sẽ di chuyển khi được ra lệnh. Lập tức tôi sai nó đi mở rộng hang, tiết kiệm được DP.</p><p id="58">Mở bản đồ, tôi ra lệnh cho nó đào tới chỗ hang chứa phòng goblin ở xa. Và nó lập tức rời khỏi phòng chủ mà đến cái xẻng cũng không có.</p><p id="59">“Golem biết tự thích nghi không tồn tại đâu. Sẽ tốt hơn nếu như nó dùng xẻng để đục qua tường.”</p><p id="60">“Ầy, đang nói gì vậy? Hiện giờ, anh chỉ bị ấn tượng bởi khả năng của con golem này thôi.”</p><p id="61">Rokuko hiểu rằng [Golem không thể làm một cái gì đó phực tạp được], giống như một điều gì đó không tưởng vậy.</p><p id="62">Lấy ví dụ đi, [Đào một cái hố] chẳng hạn. Việc đào một cái hố theo tôi đã là một việc khá phức tạp rồi. Nếu như bạn thử làm điều đó ở Nhật Bản đi chẳng hạn, điều đó sẽ không thể trừ phi bạn dạy cho nó cách di chuyển cơ thể để có thể đào một cái hố được.</p><p id="63">Địa điểm nữa, nếu như bạn bảo là [Đi đến đó] ở Nhật, việc dạy nó cách di chuyển bàn chân thôi cũng cần thiết. Và nếu như nó nghĩ thì sẽ không thể tự mình đứng dậy được. Hay là khi gặp một chướng ngại trên đường, nó vẫn sẽ tiếp tục đâm vào đấy.</p><p id="64">Nhưng ở đây, tôi chỉ nói [Đi đến đó và đào qua tường]. Ma thuật thật tuyệt vời và ngạc nhiên.</p><p id="65">Tuy nhiên, dùng ma thuật khá là mệt mỏi… Được rồi, đi ngủ nào.</p><p id="66">À, phải rồi. Lấy Thịt làm gối ôm nào. Hình như mình lấy em ấy về để làm vậy mà… Không, không được ngại. Nó sẽ ổn cả thôi, bởi tôi sẽ không làm gì thiếu đứng đắn đâu hiểu không? Và em ấy cũng không đi tất chân hay cái gì đó tương tự hôm nay đâu. Tốt nhất vẫn là nuôi dưỡng niềm tin của nhau mà…</p><p id="67">*</p><p id="68">À… Tôi phải nói trước một điều.</p><p id="69">Con người không hợp để làm gối ôm.</p><p id="70">Mặc dù Thịt bị biến thành cái gối ôm… À tất nhiên là tôi không lột hết quần áo em nó ra. Chỉ làm gối ôm thôi.</p><p id="71">Ban đầu thì khá ổn.</p><p id="72">Làn da mịn màng và mùi hương của tóc cũng được.</p><p id="73">Tuy nhiên vấn đề nảy sinh sau đó.</p><p id="74">Nóng. Da của con người quá nóng. Kể cả là mùa đông thì vẫn vậy. Thứ nhiệt này chỉ để sưởi ấm cho nhau khi mà đang ở trên núi tuyết thôi. Mặc dù đã nghe là trẻ con vốn đã có thân nhiệt cao… Và chó thì cũng cao hơn cả con người luôn. Vậy nên, kết hợp cả hai vào thì em nó vốn đã có thân nhiệt cao rồi.</p><p id="75">Tiếp đến, khi mà tôi bắt đầu nghĩ rằng tiếng thở của em ấy bắt đầu to dần. Thì em nó gần như là đã ngộp thở ở trong chăn.</p><p id="76">Phải rồi, tôi ngu thật. Sẽ là quá nguy hiểm nếu như không cho đầu ra bên ngoài, vậy nên tôi liền cho đầu em ấy ra.</p><p id="77">Còn bây giờ thì là chương trình ‘Đối mặt’. Đôi môi hơi khẽ mở đầy gợi cảm (chắc do quá nóng), hai bên má đỏ dịu dàng (chắc do thiếu oxi)… Không! TÔI không phải lolicon! Hoàn toàn không hiểu chưa!?</p><p id="78">Vì hơi thở em ấy khiến tôi nhột nhột, tôi liền quay mặt ra hướng khác. Chắc chắn không phải do tim tôi đang đập mạnh, đó là do hơi thở hiểu không?… Và giờ thì đến lượt tóc gáy của tôi thấy nhột… Thôi nào…</p><p id="79">Không còn cách nào khác, tôi hạ thấp đầu em ấy xuống và ôm em ấy lần nữa. Tôi hạ phần chăn xuống để em ấy không khỏi ngạt thở lần này. Dù vậy thì vẫn còn ấm chán.</p><p id="80">Cuối cùng thì cảm giác nó cũng chuẩn chuẩn và tôi có thể ngủ được.</p><p id="81">Nhưng mà vẫn còn một vấn đề. Vấn đề lớn nữa.</p><p id="82">Đó là tôi không thể di chuyển được cái gối ôm này. Mặc dù bạn không có cách nào khác ngoài đẩy cái gối ôm ra nếu như bạn muốn di chuyển. Nhưng Thịt thì không làm được như vậy. Kết quả làー</p><p id="83">Em ấy đang tè.…!</p><p id="84">Không, đấy là lỗi của tôi. Phải, tôi là người đã sai. Khi đang bị ướt sũng, tôi nghĩ như vậy.</p><p id="85">Thịt thì bối rồi và che mặt khóc.</p><p id="86">Lập tức, tôi dỗ em nó và dùng 「Tẩy sạch」cho cả em ấy, cái đệm, và tôi…</p><p id="87">Phải, tôi sai hoàn toàn ở đây luôn. Làm ơn cứ đẩy anh ra thoải mái nếu như em phải đi hái hoa từ bây giờ.</p><p id="88">Đây đây, Hamberger này! Nó ngon lắm đấy biết không! Nên đừng khóc nữa, anh biết anh sai rồi mà….!</p>
+</div>
+<div style="text-align: center; margin: 20px auto 10px auto;">
+</div>
+<section class="rd-basic_icon d-lg-none row">
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11990-phu-chuong-chu-nhan-ham-nguc-kehma" class="col text-center "><i class="fas fa-backward"></i></a>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made" class="col text-center"><i class="fas fa-home"></i></a>
+<a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made" class="col text-center  disabled "><i class="fas fa-forward"></i></a>
+</section>
+
+</div>
+<div class="col-12 col-lg-10 offset-lg-1">
+<section id="chapter-comments" class="basic-section">
+<header class="sect-header tab-list">
+<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(1)</span></span>
+</header>
+<main id="fbcmt_root" class="sect-body">
+<span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="https://ln.hako.re/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
+<div id="tab-content-1" class="tab-content clear">
+<section class="ln-comment">
+<header>
+<h3>1 Bình luận </h3>
+
+</header>
+<main class="ln-comment-body">
+ <div class="ln-comment_sign-in long-text">
+Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-204748" class="ln-comment-item clear" data-comment="204748" data-parent="204748">
+<div class="ln-comment-user_ava">
+<img src="https://1.bp.blogspot.com/-mTKYW1BeBqM/WLsnozdTb3I/AAAAAAAAGPQ/deqwcpsGwCE/w100/user-avatar.png">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://ln.hako.re/thanh-vien/2189" class="strong">Haro</a>
+</div>
+<div class="ln-comment-content long-text">
+Thành người trông trẻ luôn rồi =)
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/317-zettai-ni-hatarakitakunai-dungeon-master-ga-damin-wo-musaboru-made/c11991-chuong-13-dung-dp-de-tao-ra-golem-nao?comment_id=204748#ln-comment-204748">
+<time class="timeago" title="17-02-2019 11:40:34" datetime="2019-02-17T11:40:34+07:00">
+17-02-2019 11:40:34
+</time>
+</a></span>
+
+</div>
+</div>
+</div> </div>
+<div class="ln-comment-page">
+</div> </main>
+<script>
+        var token = 'VypRpMQXMyBK5Dd6C53VaKq39fBtPiXrxmiceeSg';
+        var comment_type = 'chapter';
+        var comment_typeid = '11991';
+    </script>
+</section>
+</div>
+</main>
+</section>
+</div>
+</div>
+</div>
+</main>
+<script>
+    token = 'VypRpMQXMyBK5Dd6C53VaKq39fBtPiXrxmiceeSg';
+    
+    $('.rd-basic_icon').hide();
+
+    $(document).ready(function() {
+        listab("#chapter-comments");
+        // Switch to FB tab if request fb_comment_id
+        if (getParameterByName('fb_comment_id') != null) {
+            $('span[data-tab-index="2"]').click();
+        }
+        
+        function turnoffall() {
+            $(".rdtoggle").removeClass("on");
+            $(".rdtoggle_body").removeClass("animation fade-in-left-big fade-in-down");
+            $("html").removeClass("overflow-hiden");
+        }
+        
+        function rdtoggle(classicon, effect) {            
+            if($(classicon).hasClass("on")) {
+                turnoffall();
+            } else {
+                turnoffall();
+                $(classicon).addClass("on");
+                $("html").addClass("overflow-hiden");
+                $(classicon + " .rdtoggle_body").addClass("animation " + effect);
+            } 
+        };
+        
+        $("#rd-setting_icon").on('click',function(){
+            rdtoggle("#setting","fade-in-down");                   
+        });
+         
+        $("#rd-info_icon").on('click',function(){
+            rdtoggle("#chapters","fade-in-left-big");              
+        });
+         
+         $("#rd-bookmark_icon").on('click',function(){
+            rdtoggle("#bookmarks","fade-in-left-big");                     
+        });
+         
+        $(".black-click").on('click',function(){
+            turnoffall();
+            $("#rd-side_icon").hide();
+            $("#bookmark_top").removeClass("on");
+        });
+         
+        var bgcolor    = Cookies.get('night_mode') ? 5 : (Cookies.get('color') || 3);
+        var fontfamily = Cookies.get('fontfamily') || '';
+        var fontsize   = Cookies.get('font') || 18; 
+        var margin     = Cookies.get('margin') || 0;
+         
+        function setcolor(alter = true) {
+            var switcher = $(".set-color .set-input span").eq(bgcolor);
+            switcher.addClass("current");
+
+            if (alter) {
+                for (var i = 0; i < $(".set-color .set-input span").length; i++) {
+                    $("#mainpart").removeClass('style-' + i);
+                }
+                $("#mainpart").addClass('style-' + bgcolor);
+            }
+        }
+
+        // This creates unsmooth experience so we only use it for select box
+        function setfontfamily() {
+            $('.set-font-family select option').filter(function () {
+                return fontfamily.split(',')[0].indexOf($(this).text()) != -1 ;
+            }).attr('selected', true);
+        }
+         
+        function setfontstyle(alter = true) {
+            $(".set-font input.set-slide_input").val(fontsize + "px"); 
+
+            if (alter) {
+                $("div#chapter-content").css("font-size", fontsize + "px");
+
+                var lineheight = +fontsize + 10;
+                $("#chapter-content").css("line-height", lineheight + "px");
+            }
+        }
+         
+        function setmargin() {
+            $(".set-margin input.set-slide_input").val(margin + "px"); 
+            $("#chapter-content").css({
+                'padding-left': margin + "px",
+                'padding-right': margin + "px"
+            });
+        }
+        
+        setcolor(false);
+        setfontfamily();
+        setfontstyle(false);
+        setmargin();
+        
+        //1px = 0.0625rem;
+        //16px = 1rem (default);
+        
+        $(".set-color .set-input span").click(function(){
+            bgcolor = $(this).data("id");
+            $(".set-color .set-input span").removeClass("current");
+            setcolor();            
+            Cookies.set('color', bgcolor, { expires: 365 });
+        });
+
+        $('.set-font-family select').on('change', function () {
+            fontfamily = "'" + $('option:selected', this).text() + "', " + '\'Times New Roman\', Georgia, serif';
+            
+            $('div#chapter-content').css('font-family', fontfamily);
+
+            Cookies.set('fontfamily', fontfamily, { expires: 365 });
+        });
+        
+        $(".set-font .set-slide_button.set-smaller").click(function () {
+            fontsize = fontsize - 2;
+            if (fontsize < 0) fontsize = 0;
+            setfontstyle();
+            Cookies.set('font', fontsize, { expires: 365 });
+        });
+        
+        $(".set-font .set-slide_button.set-bigger").click(function () {
+            fontsize = +fontsize + 2;
+            setfontstyle();
+            Cookies.set('font', fontsize, { expires: 365 });
+        });
+        
+        $(".set-margin .set-slide_button.set-smaller").click(function () {
+            margin = margin - 20;
+            if (margin < 0) margin = 0;
+            setmargin();
+            Cookies.set('margin', margin, { expires: 365 });
+        });
+        
+        $(".set-margin .set-slide_button.set-bigger").click(function () {
+            margin = +margin + 20;
+            setmargin();
+            Cookies.set('margin', margin, { expires: 365 });
+        }); 
+         
+        $("#bookmarks_list li").each(function(){
+            var linepr = $(this).data("line");
+            var preview = $(".reading-content p#" + linepr).text();
+
+            var shortText = preview.trim().substring(0, 30) + "...";
+            $(this).find(".pos_bookmark small").text(shortText);
+        });
+
+        $('div#chapter-content').html(
+            $('div#chapter-content').html().replace(
+                /\[note(\d+)\]/gi, 
+                '<span id="anchor-note$1" class="note-icon none-print inline note-tooltip" data-tooltip-content="#note$1 .note-content" data-note-id="note$1"><i class="fas fa-sticky-note"></i></span><a id="anchor-note$1" class="inline-print none" href="#note$1">[note]</a>'
+            )
+        )
+        
+        tippy('.note-tooltip', {
+            delay: 50,
+            maxWidth: 240,
+            interactive: true,
+            content(ref) {
+                const selector = ref.getAttribute('data-tooltip-content');
+                const template = document.querySelector(selector);
+                return template.innerHTML;
+            }
+        });
+    });    
+        
+    isLoggedIn = 0;
+    series_id = parseInt('317');
+    chapter_id = parseInt('11991');
+
+    readingObject = {
+        series_id: series_id,
+        series_title: 'Zettai ni Hatarakitakunai Dungeon Master ga Damin wo Musaboru Made',
+        series_url: $('i.fa-home').first().parent().attr('href'),
+        series_cover: $('.rd_sidebar-header a.img').css('background-image'),
+        chapter_title: $('ul.sub-chap_list li.current a').text().trim(),
+        chapter_url: $('ul.sub-chap_list li.current a').attr('href'),
+        book_title: $('ul#chap_list > li.current a').text(),
+        book_url: $('ul#chap_list > li.current a').attr('href'),
+        read_time: +new Date() / 1000 | 0,
+    };
+</script>
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+  var _pop = _pop || [];
+  _pop.push(['siteId', 3333025]);
+  _pop.push(['minBid', 0]);
+  _pop.push(['popundersPerIP', 1]);
+  _pop.push(['delayBetween', 0]);
+  _pop.push(['default', false]);
+  _pop.push(['defaultPerDay', 0]);
+  _pop.push(['topmostLayer', false]);
+  (function() {
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    var s = document.getElementsByTagName('script')[0]; 
+    pa.src = '//c1.popads.net/pop.js';
+    pa.onerror = function() {
+      var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+      sa.src = '//c2.popads.net/pop.js';
+      s.parentNode.insertBefore(sa, s);
+    };
+    s.parentNode.insertBefore(pa, s);
+  })();
+/*]]>/* */
+</script>
+<script src="/scripts/app.js?id=309f6a45cb440fd98b45"></script>
+<footer id="footer">
+<div class="container">
+
+<span class="right">Liên hệ: <a href="mailto:contact@hako.re" target="_blank" style="color: #5fff46">contact@hako.re</a></span>
+<span>© 2016 - 2021 Cổng Light Novel</span>
+</div>
+</footer> </body>
+</html>
