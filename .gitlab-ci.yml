@@ -1,11 +1,11 @@
 image: alpine:latest
 
 pages:
-  stage: docs
+  stage: deploy
   script:
   - echo 'publish docs to pages...'
   artifacts:
     paths:
-    - public
+    - docs
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
