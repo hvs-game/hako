@@ -16,7 +16,7 @@ const fetch = async (url) => {
 
 const urls = async () => {
   let urls = []
-  for (let index = 1; index <= 46; index++) {
+  for (let index = 1; index <= 47; index++) {
     console.log('🚀 ~ index', index)
     const url = 'https://ln.hako.re/danh-sach?page=' + index
     const html = await fetch(url)
