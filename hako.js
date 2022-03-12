@@ -177,7 +177,7 @@ const start = async () => {
     await urls().then((urls) => {
         writeJsonFile('docs/index.html', urls)
     })
-    // await save()
+    await save()
     await update()
   console.timeEnd('start')
 }
