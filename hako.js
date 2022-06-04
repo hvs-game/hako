@@ -18,7 +18,7 @@ const urls = async () => {
   let urls = []
   for (let index = 1; index <= 51; index++) {
     console.log('🚀 ~ index', index)
-    const url = 'https://ln.hako.re/danh-sach?page=' + index
+    const url = 'https://docln.net/danh-sach?page=' + index
     const html = await fetch(url)
     if (!html) {
       index--
@@ -26,7 +26,7 @@ const urls = async () => {
     }
     const $ = cheerio.load(html)
     urls = [...urls, ...$('.series-title a').map(function list () {
-      return `https://ln.hako.re${$(this).attr('href')}`
+      return `https://docln.net${$(this).attr('href')}`
     }).get()]
   }
   return urls
@@ -34,11 +34,11 @@ const urls = async () => {
 
 const updateURLs = async () => {
   let urls = []
-  const url = 'https://ln.hako.re/danh-sach?truyendich=1&dangtienhanh=1&tamngung=1&hoanthanh=1&sapxep=capnhat&page=1'
+  const url = 'https://docln.net/danh-sach?truyendich=1&dangtienhanh=1&tamngung=1&hoanthanh=1&sapxep=capnhat&page=1'
   const html = await fetch(url)
   const $ = cheerio.load(html)
   urls = [...urls, ...$('.series-title a').map(function list () {
-    return `https://ln.hako.re${$(this).attr('href')}`
+    return `https://docln.net${$(this).attr('href')}`
   }).get()]
   return urls
 }
@@ -65,7 +65,7 @@ const save = async () => {
       const $File = cheerio.load(htmlFile)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
-        return `https://ln.hako.re${$(this).attr('href')}`
+        return `https://docln.net${$(this).attr('href')}`
       }).get()
       await write(pathURL, html)
 
@@ -95,7 +95,7 @@ const save = async () => {
       await write(pathURL, html)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
-        return `https://ln.hako.re${$(this).attr('href')}`
+        return `https://docln.net${$(this).attr('href')}`
       }).get()
       for (let j = 0; j < chapterURLs.length; j++) {
         console.log('🚀 new ~ i ~ j', i, j)
@@ -128,7 +128,7 @@ const update = async () => {
       const $File = cheerio.load(htmlFile)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
-        return `https://ln.hako.re${$(this).attr('href')}`
+        return `https://docln.net${$(this).attr('href')}`
       }).get()
       await write(pathURL, html)
       for (let j = 0; j < chapterURLs.length; j++) {
@@ -153,7 +153,7 @@ const update = async () => {
       await write(pathURL, html)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
-        return `https://ln.hako.re${$(this).attr('href')}`
+        return `https://docln.net${$(this).attr('href')}`
       }).get()
       for (let j = 0; j < chapterURLs.length; j++) {
         console.log('🚀 new ~ i ~ j', i, j)
