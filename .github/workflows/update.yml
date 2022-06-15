@@ -22,3 +22,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn
       - run: yarn update
+      
+      - name: Update changes in GitHub repository
+        run:  |
+          git config --global user.name 'hvs-game' 
+          git config --global user.email 'hvs-game@example.com'
+          git add -A
+          git commit -m '[automated commit] add configs generated using jsonnet & GitHub workflow'
+          git push
