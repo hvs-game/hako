@@ -92,7 +92,7 @@ const save = async () => {
         i--
         continue
       }
-      await write(pathURL, html)
+      html && await write(pathURL, html)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
         return `https://docln.net${$(this).attr('href')}`
@@ -107,7 +107,7 @@ const save = async () => {
           j--
           continue
         } else {
-          await write(pathChapterURL, chapterHTML)
+          chapterHTML && await write(pathChapterURL, chapterHTML)
         }
       }
     }
@@ -130,7 +130,7 @@ const update = async () => {
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
         return `https://docln.net${$(this).attr('href')}`
       }).get()
-      await write(pathURL, html)
+      html && await write(pathURL, html)
       for (let j = 0; j < chapterURLs.length; j++) {
         const chapterURL = chapterURLs[j]
         const qChapterURL = URL.parse(chapterURL, true)
@@ -141,7 +141,7 @@ const update = async () => {
         } catch (error) {
           console.log('🚀 update ~ i ~ j', i, j)
           const chapterHTML = await fetch(chapterURL)
-          await write(pathChapterURL, chapterHTML)
+          chapterHTML && await write(pathChapterURL, chapterHTML)
         }
       }
     } catch (error) {
@@ -150,7 +150,8 @@ const update = async () => {
         i--
         continue
       }
-      await write(pathURL, html)
+      html && await write(pathURL, html)
+      console.log(pathURL)
       const $ = cheerio.load(html)
       const chapterURLs = $('.list-chapters .chapter-name a').map(function chapters () {
         return `https://docln.net${$(this).attr('href')}`
@@ -165,7 +166,7 @@ const update = async () => {
           j--
           continue
         } else {
-          await write(pathChapterURL, chapterHTML)
+          chapterHTML && await write(pathChapterURL, chapterHTML)
         }
       }
     }
@@ -174,9 +175,9 @@ const update = async () => {
 
 const start = async () => {
   console.time('start')
-    await urls().then((urls) => {
-        writeJsonFile('docs/index.html', urls)
-    })
+    // await urls().then((urls) => {
+    //     writeJsonFile('docs/index.html', urls)
+    // })
     await update()
   console.timeEnd('start')
 }
