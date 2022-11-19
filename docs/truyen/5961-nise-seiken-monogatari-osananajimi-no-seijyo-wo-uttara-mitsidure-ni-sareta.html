@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="sZxSoTcJwBdfUlBUjP3OCvmaEDYqzFmPas5iyiaT">
+<meta name="csrf-token" content="4G6NKfab5j2oUCVU0T08qwLYUt8drX3B9FbSwKMx">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta">
@@ -22,9 +22,10 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=116ca9f1e941e666d030">
+<link rel="stylesheet" href="/css/interface.css?id=82e3b85f754712a81d62">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=1f074cf74da21d296ccb"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -103,7 +104,7 @@
 <button class="search-submit" type="submit" value="Tìm kiếm"><i class="fas fa-search"></i></button>
 </form>
 </div>
-<ul class="navbar-menu at-navbar none d-lg-block unstyled"> 
+<ul class="navbar-menu at-navbar none d-lg-block unstyled">
 <li><a class="nav-menu_item" href="/sang-tac"><i class="fas fa-pen-nib menu-icon"></i><span class="">Sáng tác</span></a></li>
 <li><a class="nav-menu_item" href="/convert"><i class="fas fa-book menu-icon"></i><span class="">Convert</span></a></li>
 <li><a class="nav-menu_item" href="/xuat-ban"><i class="fas fa-calendar menu-icon"></i><span class="">Xuất bản</span></a></li>
@@ -127,20 +128,21 @@
 
 </div>
 </div>
-<div class="page-top-group">
-<div class="index-background"></div>
+<div class="page-top-group ">
+<a href="/sang-tac/12255-vay-ra-mau-tuoi-cung-chua-huong-vi-tinh-yeu">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/banner1_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/banner1_m.jpg'); background-size: cover"></div>
+</a>
 </div>
 <main id="mainpart" class="project-page">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-9">
+<div class="col-12">
 <div class="page-breadcrumb">
 <span class="breadcrum-level"><a href="https://docln.net"><i class="fas fa-home"></i></a></span>
 <span class="next-icon"><i class="fas fa-chevron-right"></i></span>
 <span class="breadcrum-level"><a href="https://docln.net">Truyện dịch</a></span>
 </div>
-</div>
-<div class="col-12 col-lg-3">
 </div>
 </div>
 </div>
@@ -164,7 +166,7 @@
 </div>
 <div class="col-12 col-md-9">
 <div class="series-name-group">
- <span class="series-name">
+<span class="series-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta">Nise Seiken Monogatari ～Osananajimi no Seijyo wo Uttara Mitsidure ni Sareta ～</a>
 </span>
 </div>
@@ -194,7 +196,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 1820 </span>
+<span class="block feature-name"> 1904 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -205,7 +207,7 @@
 </label>
 <input type="checkbox" id="open-rating" />
 <div class="series-evaluation clear">
- <span class="star-evaluate-item star-5" data-value="5"><i class="fas fa-star"></i></span>
+<span class="star-evaluate-item star-5" data-value="5"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-4" data-value="4"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-3" data-value="3"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-2" data-value="2"><i class="fas fa-star"></i></span>
@@ -232,6 +234,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/5961')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Nise Seiken Monogatari ～Osananajimi no Seijyo wo Uttara Mitsidure ni Sareta ～&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -247,19 +250,19 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="01/10/2020 19:42:27" datetime="2020-10-01T19:42:27+07:00">Đang chạy...</time></div>
-</div>
+<div class="statistic-value"><time class="timeago" title="19/11/2022 18:22:10" datetime="2022-11-19T18:22:10+07:00">Đang chạy...</time></div>
+ </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
 <div class="statistic-value">143.455</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
-<div class="statistic-name"> 268 đánh giá</div>
-<div class="statistic-value">4.9<small>/5</small></div>
+<div class="statistic-name">Đánh giá</div>
+<div class="statistic-value">269</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">480.687</div>
+<div class="statistic-value">517.434</div>
 </div>
 </div>
 </div>
@@ -325,7 +328,6 @@
 </section>
 </div>
 </div>
-
 <section class="series-note basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -346,7 +348,7 @@
 <li>
 <div class="others-img no-padding">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.png')">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
 </div>
 </div>
 </div>
@@ -395,9 +397,10 @@
 <i class="fas fa-times"></i>
 </span>
 <ol class="list-volume unstyled no-margin no-padding">
-<li data-scrollTo="#volume_9799"><span class="list_vol-order">01.</span><span class="list_vol-title">Arc 01: Sự ra đời của thánh kiếm sĩ</span></li>
-<li data-scrollTo="#volume_10876"><span class="list_vol-order">02.</span><span class="list_vol-title">Arc 02: Chuyến viếng thăm ngoài ý muốn</span></li>
-<li data-scrollTo="#volume_12292"><span class="list_vol-order">03.</span><span class="list_vol-title">Arc 03: Làn sương đen</span></li>
+<li data-scrollTo="#volume_19456"><span class="list_vol-order">01.</span><span class="list_vol-title">Light Novel Illustration (VN ver)</span></li>
+<li data-scrollTo="#volume_9799"><span class="list_vol-order">02.</span><span class="list_vol-title">Arc 01: Sự ra đời của thánh kiếm sĩ</span></li>
+<li data-scrollTo="#volume_10876"><span class="list_vol-order">03.</span><span class="list_vol-title">Arc 02: Chuyến viếng thăm ngoài ý muốn</span></li>
+<li data-scrollTo="#volume_12292"><span class="list_vol-order">04.</span><span class="list_vol-title">Arc 03: Làn sương đen</span></li>
 </ol>
 </div>
 </section>
@@ -405,6 +408,52 @@
 <div class="col-12 col-lg-9 float-left">
 <div style="text-align: center; margin: 0 auto 10px auto;">
 </div>
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+<header id="volume_19456" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Light Novel Illustration (VN ver) <span style="color: red">*</span>
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/t19456-illustration-vn-ver">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
+ <li class="">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c105307-vol-1" title="Vol 1.">Vol 1.</a>
+</div>
+<div class="chapter-time">19/11/2022</div>
+</li>
+<li class="">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c105308-vol-2" title="Vol 2.">Vol 2.</a>
+</div>
+<div class="chapter-time">19/11/2022</div>
+</li>
+</ul>
+</div>
+</div>
+</main>
+</section>
 <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
 <header id="volume_9799" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
@@ -419,12 +468,13 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/t9799-vol-1-su-ra-doi-cua-thanh-kiem">
 <div class="a6-ratio">
 <div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/b9799-07c30419-586e-4ad8-8a82-4331bae44c2a-m.jpg')">
- </div>
+</div>
 </div>
 </a>
 </div>
 </div>
 <div class="col-12 col-md-10">
+
 <ul class="list-chapters at-series">
 <li class="">
 <div class="chapter-name">
@@ -485,7 +535,7 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c59066-chuong-10-nu-cuoi-tan-doc" title="Chương 10: Nụ Cười Tàn Độc">Chương 10: Nụ Cười Tàn Độc</a>
 </div>
 <div class="chapter-time">20/12/2019</div>
-</li>
+ </li>
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c59204-chuong-11-kinh-do-hoang-gia" title="Chương 11: Kinh Đô Hoàng Gia">Chương 11: Kinh Đô Hoàng Gia</a>
@@ -515,7 +565,7 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c59993-chuong-15-van-den" title="Chương 15: Đen Đủi!!">Chương 15: Đen Đủi!!</a>
 </div>
 <div class="chapter-time">17/01/2020</div>
-</li>
+ </li>
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c60148-chuong-16-phai-khong" title="Chương 16: Đúng Không?">Chương 16: Đúng Không?</a>
@@ -544,7 +594,7 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c61358-chuong-20-toi-khong-muon-doi-mat-voi-chung-lan-nua-dau" title="Chương 20: Tôi Không Muốn Đối Mặt Với Chúng Lần Nữa Đâu!!">Chương 20: Tôi Không Muốn Đối Mặt Với Chúng Lần Nữa Đâu!!</a>
 </div>
-<div class="chapter-time">20/02/2020</div>
+ <div class="chapter-time">20/02/2020</div>
 </li>
 <li class="none">
 <div class="chapter-name">
@@ -573,7 +623,7 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c62097-chuong-25-ong-dang-lam-cai-quai-gi-vay" title="Chương 25: Ông Đang Làm Cái Quái Gì Vậy!!">Chương 25: Ông Đang Làm Cái Quái Gì Vậy!!</a>
-</div>
+ </div>
 <div class="chapter-time">06/03/2020</div>
 </li>
 <li class="none">
@@ -603,7 +653,7 @@ Arc 01: Sự ra đời của thánh kiếm sĩ
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c62739-chuong-30-su-xuat-hien-cua-ga-ac-nhan" title="Chương 30: Sự Xuất Hiện Của Gã Ác Nhân!">Chương 30: Sự Xuất Hiện Của Gã Ác Nhân!</a>
-</div>
+ </div>
 <div class="chapter-time">20/03/2020</div>
 </li>
 <li class="none">
@@ -737,7 +787,7 @@ Arc 02: Chuyến viếng thăm ngoài ý muốn
 <div class="chapter-time">19/04/2020</div>
 </li>
 <li class="none">
- <div class="chapter-name">
+<div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c64556-chuong-47-ngay-ca-loi-noi" title="Chương 47: Ngay Cả Lời Nói">Chương 47: Ngay Cả Lời Nói</a>
 </div>
 <div class="chapter-time">21/04/2020</div>
@@ -768,7 +818,6 @@ Arc 02: Chuyến viếng thăm ngoài ý muốn
 </li>
 <li class="none">
 <div class="chapter-name">
-
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c65096-chuong-52-bit-mieng" title="Chương 52: Bịt Miệng">Chương 52: Bịt Miệng</a>
 </div>
 <div class="chapter-time">01/05/2020</div>
@@ -799,7 +848,8 @@ Arc 02: Chuyến viếng thăm ngoài ý muốn
 </li>
 <li class="none">
 <div class="chapter-name">
- <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c65395-chuong-57-thoi-diem-te-nhat" title="Chương 57: Thời Điểm Tệ Nhất">Chương 57: Thời Điểm Tệ Nhất</a>
+<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c65395-chuong-57-thoi-diem-te-nhat" title="Chương 57: Thời Điểm Tệ Nhất">Chương 57: Thời Điểm Tệ Nhất</a>
+
 </div>
 <div class="chapter-time">07/05/2020</div>
 </li>
@@ -829,8 +879,8 @@ Arc 02: Chuyến viếng thăm ngoài ý muốn
 </li>
 <li class="none">
 <div class="chapter-name">
-
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c69204-chuong-62-do-ngu" title="Chương 62: Đồ Ngu!">Chương 62: Đồ Ngu!</a>
+
 </div>
 <div class="chapter-time">20/08/2020</div>
 </li>
@@ -861,7 +911,7 @@ Arc 02: Chuyến viếng thăm ngoài ý muốn
 </li>
 <li class="none">
 <div class="chapter-name">
-<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c69780-chuong-67-toi-nhat-dinh-se-khien-anh-dau-kho" title="Chương 67: Tôi Nhất Định Sẽ Khiến Anh Đau Khổ....!">Chương 67: Tôi Nhất Định Sẽ Khiến Anh Đau Khổ....!</a>
+ <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c69780-chuong-67-toi-nhat-dinh-se-khien-anh-dau-kho" title="Chương 67: Tôi Nhất Định Sẽ Khiến Anh Đau Khổ....!">Chương 67: Tôi Nhất Định Sẽ Khiến Anh Đau Khổ....!</a>
 </div>
 <div class="chapter-time">04/09/2020</div>
 </li>
@@ -894,7 +944,7 @@ Arc 03: Làn sương đen
 <div class="volume-cover">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/t12292-arc-03-lan-suong-den">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.png')">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
 </div>
 </div>
 </a>
@@ -905,7 +955,7 @@ Arc 03: Làn sương đen
 <li class="">
 <div class="chapter-name">
 <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c70172-chuong-69-dung-den-day" title="Chương 69: Đừng Đến Đây">Chương 69: Đừng Đến Đây</a>
-</div>
+ </div>
 <div class="chapter-time">15/09/2020</div>
 </li>
 <li class="">
@@ -934,7 +984,7 @@ Arc 03: Làn sương đen
 </li>
 <li class="">
 <div class="chapter-name">
- <a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c70723-chuong-74-toi-nhat-dinh-se-khong-gap-lai-con-oat-do" title="Chương 74: Tôi Nhất Định Sẽ Không Gặp Lại Con Oắt Đó">Chương 74: Tôi Nhất Định Sẽ Không Gặp Lại Con Oắt Đó</a>
+<a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta/c70723-chuong-74-toi-nhat-dinh-se-khong-gap-lai-con-oat-do" title="Chương 74: Tôi Nhất Định Sẽ Không Gặp Lại Con Oắt Đó">Chương 74: Tôi Nhất Định Sẽ Không Gặp Lại Con Oắt Đó</a>
 </div>
 <div class="chapter-time">01/10/2020</div>
 </li>
@@ -951,15 +1001,15 @@ Arc 03: Làn sương đen
 <li class="col-12 col-6-m">
 <div class="others-img no-padding">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s10484-76f15eca-8049-4b6d-be49-aeb00d71f599-m.jpg')">
+<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s10484-e17db19c-68de-4b29-b0c0-65a16fb82cb3-m.jpg')">
 </div>
 </div>
 </div>
 <div class="others-info">
 <h5 class="others-name"><a href="/truyen/10484-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta">Nhóm dịch: Một Thành Viên</a></h5>
 
-<small>Vol 2</small>
-<small style="color: #aaa;">Minh họa màu LN</small>
+<small>Chương 76: Hai thánh nữ</small>
+<small style="color: #aaa;">Arc 3: Làn sương đen</small>
 
 </div>
 </li>
@@ -974,14 +1024,14 @@ Arc 03: Làn sương đen
 </section>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(493)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(2633)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3>493 Bình luận </h3>
+<h3>502 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -1046,12 +1096,12 @@ Cảm ơn nhiều
 </time>
 </a></span>
 
- </div>
+</div>
 </div>
 </div> <div id="ln-comment-1204903" class="ln-comment-item clear" data-comment="1204903" data-parent="978325">
 <div class="ln-comment-user_ava">
 <img src="https://docln.net/img/noava.png">
-</div>
+</div> 
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
 <div class="ln-comment-user_name">
@@ -1080,6 +1130,120 @@ Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 </div>
 </div>
 <div class="ln-comment-group">
+<div id="ln-comment-2030681" class="ln-comment-item clear" data-comment="2030681" data-parent="2030681">
+<div class="ln-comment-user_ava">
+<img src="https://i.docln.net/lightnovel/users/ua17896-cf1c4b5c-f62a-4768-b5e6-4622b926bac5.jpg">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/17896" class="strong">Fuyuno</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+Sắp sống lại rồi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=2030681#ln-comment-2030681">
+<time class="timeago" title="19-11-2022 18:52:19" datetime="2022-11-19T18:52:19+07:00">
+19-11-2022 18:52:19
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2030641" class="ln-comment-item clear" data-comment="2030641" data-parent="2030641">
+<div class="ln-comment-user_ava">
+<img src="https://i.docln.net/lightnovel/users/ua27350-434230db-f2a4-429b-a31e-111236a2996f.jpg">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/27350" class="strong">M0j1</a>
+<div class="ln-comment-user_badge comment-owner">
+<i class="fas fa-flag"></i> Chủ post
+</div>
+</div>
+<div>
+<span class="ln-comment-user_badge_icon" title="Dịch giả">
+<img src="/img/badge/trans.png?t=1">
+</span>
+</div>  <div class="ln-comment-content long-text">
+Chuẩn bị comeback ^.^
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=2030641#ln-comment-2030641">
+<time class="timeago" title="19-11-2022 18:23:15" datetime="2022-11-19T18:23:15+07:00">
+19-11-2022 18:23:15
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2030673" class="ln-comment-item clear" data-comment="2030673" data-parent="2030641">
+<div class="ln-comment-user_ava">
+<img src="https://i.docln.net/lightnovel/users/ua137248-15717780-4abf-4f92-a9aa-7f06a46af432.jpg">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/137248" class="strong">vinkneyugn</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+Finally
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=2030641&amp;reply_id=2030673#ln-comment-2030673">
+<time class="timeago" title="19-11-2022 18:46:19" datetime="2022-11-19T18:46:19+07:00">
+19-11-2022 18:46:19
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-1959611" class="ln-comment-item clear" data-comment="1959611" data-parent="1959611">
+<div class="ln-comment-user_ava">
+<img src="https://docln.net/img/noava.png">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/102340" class="strong">Tran_Quang123</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+Bên eng end rồi, khúc cuối thánh nữ magali vs a hùng alistar kết hôn luôn rồi còn đc thế hệ sau coi ngày kết hôn là lễ hội nữa chứ. Trong khi 2 đứa này vẫn tính ăn bám nhau tới cuối cùng luôn
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1959611#ln-comment-1959611">
+<time class="timeago" title="03-09-2022 21:14:53" datetime="2022-09-03T21:14:53+07:00">
+03-09-2022 21:14:53
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
 <div id="ln-comment-1817101" class="ln-comment-item clear" data-comment="1817101" data-parent="1817101">
 <div class="ln-comment-user_ava">
 <img src="https://docln.net/img/noava.png">
@@ -1104,6 +1268,61 @@ Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 
 </div>
 </div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-1853766" class="ln-comment-item clear" data-comment="1853766" data-parent="1817101">
+<div class="ln-comment-user_ava">
+<img src="https://docln.net/img/noava.png">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/30152" class="strong">Bũn2k4</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+Đọc ở đâu thế b, tôi tìm đc mỗi nhóm foxaholic nhưng chỗ đấy kh sao chép đc
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1817101&amp;reply_id=1853766#ln-comment-1853766">
+<time class="timeago" title="28-06-2022 00:06:14" datetime="2022-06-28T00:06:14+07:00">
+28-06-2022 00:06:14
+</time>
+</a></span>
+
+</div>
+</div>
+</div> <div id="ln-comment-1854245" class="ln-comment-item clear" data-comment="1854245" data-parent="1817101">
+<div class="ln-comment-user_ava">
+<img src="https://docln.net/img/noava.png">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/110918" class="strong">Hien123</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+<a href="https://docln.net/thanh-vien/30152">@Bũn2k4:</a> tôi vừa dịch vừa đọc mà, cũng đọc trên foxaholic thôi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1817101&amp;reply_id=1854245#ln-comment-1854245">
+<time class="timeago" title="28-06-2022 13:43:14" datetime="2022-06-28T13:43:14+07:00">
+28-06-2022 13:43:14
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+<div class="fetch_reply" data-parent="1817101">
+Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+</div>
+<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
 <div class="ln-comment-group">
@@ -1136,7 +1355,7 @@ Huhu
 <div class="ln-comment-group">
 <div id="ln-comment-1707703" class="ln-comment-item clear" data-comment="1707703" data-parent="1707703">
 <div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua87663-f227b7fb-44e2-4625-8cb3-cd5022ae104a.jpg">
+<img src="https://i.docln.net/lightnovel/users/ua87663-b2be6828-6d6e-4d32-a86c-7630832de0f0.jpg">
 </div>
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
@@ -1234,7 +1453,7 @@ cumback đi mà :( <br>
 <span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1418272#ln-comment-1418272">
 <time class="timeago" title="17-09-2021 12:03:36" datetime="2021-09-17T12:03:36+07:00">
 17-09-2021 12:03:36
-</time>
+ </time>
 </a></span>
 
 </div>
@@ -1263,143 +1482,7 @@ vẫn luôn đợi chap
 15-09-2021 20:42:50
 </time>
 </a></span>
- 
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1415589" class="ln-comment-item clear" data-comment="1415589" data-parent="1415589">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua61758-7546abd7-f7b9-4b4a-98d8-bec45b8b7f96.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/61758" class="strong">Gì? Ai biết đâu!</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Đào...
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1415589#ln-comment-1415589">
-<time class="timeago" title="15-09-2021 20:19:08" datetime="2021-09-15T20:19:08+07:00">
-15-09-2021 20:19:08
-</time>
-</a></span>
 
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1346641" class="ln-comment-item clear" data-comment="1346641" data-parent="1346641">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua58324-7c9725b6-5f7a-42bd-aeab-108cec0670c4.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/58324" class="strong">Lordbird</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Bruh... Đọc đoạn kết thấy sau này main đấm nhau với cả thần :]]]? Bố đời
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1346641#ln-comment-1346641">
-<time class="timeago" title="11-08-2021 16:22:34" datetime="2021-08-11T16:22:34+07:00">
-11-08-2021 16:22:34
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-1411237" class="ln-comment-item clear" data-comment="1411237" data-parent="1346641">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua55380-10256cff-e0d8-4d5c-a18c-6dbd63496778.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/55380" class="strong">Ashe</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Bác đọc ở đâu vậy cho em xin link đi ạ
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1346641&amp;reply_id=1411237#ln-comment-1411237">
-<time class="timeago" title="13-09-2021 13:16:07" datetime="2021-09-13T13:16:07+07:00">
-13-09-2021 13:16:07
-</time>
-</a></span>
-
-</div>
-</div>
-</div> <div id="ln-comment-1411417" class="ln-comment-item clear" data-comment="1411417" data-parent="1346641">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua58324-7c9725b6-5f7a-42bd-aeab-108cec0670c4.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/58324" class="strong">Lordbird</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-<a href="https://docln.net/thanh-vien/55380">@Ashe:</a> end đấy bác, các nhà sử học bảo main chính là hiện thân của ragnarok nên đi vả chetcu mấy thằng thần dbrr
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1346641&amp;reply_id=1411417#ln-comment-1411417">
-<time class="timeago" title="13-09-2021 16:18:23" datetime="2021-09-13T16:18:23+07:00">
-13-09-2021 16:18:23
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-<div class="fetch_reply" data-parent="1346641">
-Xem thêm 5 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1340887" class="ln-comment-item clear" data-comment="1340887" data-parent="1340887">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua23205-14f9d805-4b68-4600-95c7-c1e11f42b54c.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/23205" class="strong">...ko...</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-:(( hồi sinh đi bác ơi
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/5961-nise-seiken-monogatari-osananajimi-no-seijyo-wo-uttara-mitsidure-ni-sareta?comment_id=1340887#ln-comment-1340887">
-<time class="timeago" title="08-08-2021 19:54:56" datetime="2021-08-08T19:54:56+07:00">
-08-08-2021 19:54:56
-</time>
-</a></span>
- 
 </div>
 </div>
 </div>
@@ -1413,7 +1496,7 @@ Xem thêm 5 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 </div>
 </div> </main>
 <script>
-        var token = 'sZxSoTcJwBdfUlBUjP3OCvmaEDYqzFmPas5iyiaT';
+        var token = 'a2FegxIBppjobdlm6YbjW3fQ3WNNJTgo6urTUgyn';
         var comment_type = 'series';
         var comment_typeid = '5961';
     </script>
@@ -1452,8 +1535,8 @@ Xem thêm 5 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
     series_id = parseInt('5961');
 </script>
 <script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'sZxSoTcJwBdfUlBUjP3OCvmaEDYqzFmPas5iyiaT';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type='text/javascript' src='//pl16314303.safestcontentgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+<script src="/vendor/livewire/livewire.js?id=de3fca26689cb5a39af4" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '4G6NKfab5j2oUCVU0T08qwLYUt8drX3B9FbSwKMx';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
 <footer id="footer">
 <div class="container">
 
