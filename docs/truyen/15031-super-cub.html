@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="ZPl0ZeVm2R7ciuSVgJkGR2Jyv8YaQNfli1JF1DAj">
+<meta name="csrf-token" content="xICzE8MHVPN6MvBo3CESIMFlzcIwdib7Z2GOdOSk">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/15031-super-cub">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
-<link rel="stylesheet" href="/css/tailwind.css?id=8fff756458c9a1c7b74e">
+<link rel="stylesheet" href="/css/tailwind.css?id=ec30c1d899ca7c4251f1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
@@ -165,13 +165,14 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-9">
+<div class="col-12 col-md-9 flex flex-col">
+<div class="flex-1">
 <div class="series-name-group">
 <span class="series-name">
 <a href="/truyen/15031-super-cub">Super Cub</a>
 </span>
 </div>
-<div class="series-information">
+<div class="series-information mb-0 flex flex-col">
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-anime">Adapted to Anime</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-manga">Adapted to Manga</a>
@@ -193,13 +194,15 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15031) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
 </div>
-<div class="side-features">
+</div>
+<div class="side-features flex-none">
 <div class="row">
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 15 </span>
+<span class="block feature-name"> 16 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -247,11 +250,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="22/05/2023 00:32:04" datetime="2023-05-22T00:32:04+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="25/06/2023 23:13:40" datetime="2023-06-25T23:13:40+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">3.567</div>
+<div class="statistic-value">5.169</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -259,7 +262,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">2.739</div>
+<div class="statistic-value">3.387</div>
 </div>
 </div>
 </div>
@@ -314,7 +317,7 @@
 <div class="long-text" style="word-wrap: break-word;">
 <p><strong>Dịch truyện:</strong> Shirodkuro, Hitamoto, Haloroute</p>
 <p><strong>Biên tập truyện:</strong> Haloroute</p>
-<p><strong>Lịch ra chương mới: </strong>Trung bình 8 ngày/chương, phụ thuộc vào lịch học của các thành viên trong team.</p>
+<p><strong>Lịch ra chương mới: </strong>Không cố định, phụ thuộc vào lịch học của các thành viên trong team.</p>
 </div>
 </main>
 </section>
@@ -366,9 +369,6 @@ Tập 01 <span style="color: red">*</span>
 <ul class="list-chapters at-series">
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/15031-super-cub/c113232-minh-hoa-tap-01" title="Minh hoạ Tập 01">Minh hoạ Tập 01</a>
 <small class="unfinished-status">Chưa hoàn thành</small>
@@ -383,19 +383,25 @@ Tập 01 <span style="color: red">*</span>
 </li>
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/15031-super-cub/c113229-chuong-07-reiko" title="Chương 07 - Reiko">Chương 07 - Reiko</a>
 </div>
 <div class="chapter-time">22/05/2023</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/15031-super-cub/c114806-chuong-08-gio-an-trua" title="Chương 08 - Giờ nghỉ trưa">Chương 08 - Giờ nghỉ trưa</a>
+</div>
+<div class="chapter-time">25/06/2023</div>
 </li>
 </ul>
 </div>
 </div>
 </main>
 </section>
-<div wire:id="bIJwv792CsDC1xRsP2Yf" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;bIJwv792CsDC1xRsP2Yf&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/15031-super-cub&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:15031,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;87b9715d73654ae865ca8f9e185b3ad9425e9f657ac307d8a91ea445a2cce42f&quot;}}" wire:init="loadRelevantSeries">
+<div wire:id="uzfwBH8eIajq6ssy1wwb" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;uzfwBH8eIajq6ssy1wwb&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/15031-super-cub&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:15031,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;d572f61fd87d3d94de83cbd6eaed9281ff72092e34bfb5b20d0a9a97b314f5fd&quot;}}" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -542,7 +548,7 @@ Uể, đợt lâu nhớ bộ này có anime thì phải
 <div class="ln-comment-page">
 </div> </main>
 <script>
-        var token = 'ZPl0ZeVm2R7ciuSVgJkGR2Jyv8YaQNfli1JF1DAj';
+        var token = 'xICzE8MHVPN6MvBo3CESIMFlzcIwdib7Z2GOdOSk';
         var comment_type = 'series';
         var comment_typeid = '15031';
     </script>
@@ -580,8 +586,8 @@ Uể, đợt lâu nhớ bộ này có anime thì phải
 
     series_id = parseInt('15031');
 </script>
-<script src="/scripts/app.js?id=666a549f3d7423291080"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'ZPl0ZeVm2R7ciuSVgJkGR2Jyv8YaQNfli1JF1DAj';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'xICzE8MHVPN6MvBo3CESIMFlzcIwdib7Z2GOdOSk';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <script type="text/javascript" src="//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
