@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="6kTleP8VJ4RJ19LC0aYLI6UnQYg0P4ynGwc1DP8f">
+<meta name="csrf-token" content="hQcSojbXkF9H7ZDoO4k0lL6s17rLc7idzv8uuuIg">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei">
@@ -22,8 +22,8 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
-<link rel="stylesheet" href="/css/tailwind.css?id=4f07f76cd71fac465b09">
+<link rel="stylesheet" href="/css/interface.css?id=7a219b8d39cd68faef43">
+<link rel="stylesheet" href="/css/tailwind.css?id=35a2a684af509538a68d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
@@ -35,7 +35,7 @@
       gtag('config', 'UA-34864968-3');
     </script>
 </head>
-<body class="lightmode">
+<body>
 <div id="page-top"></div>
 <div data-scrollto="#page-top" class="backtoTop"><i class="fas fa-angle-double-up"></i></div>
 <div id="navbar" class="headroom">
@@ -54,7 +54,7 @@
 </form>
 </div>
 <li><a class="nav-menu_item" href="/sang-tac"><span class="">Sáng tác</span></a></li>
- <li><a class="nav-menu_item" href="/convert"><span class="">Convert</span></a></li>
+<li><a class="nav-menu_item" href="/convert"><span class="">Convert</span></a></li>
 <li><a class="nav-menu_item" href="/xuat-ban"><span class="">Xuất bản</span></a></li>
 <li><a class="nav-menu_item" href="/thao-luan"><span class="">Thảo luận</span></a></li>
 <li><a class="nav-menu_item" href="/danh-sach"><span class="">Danh sách</span></a></li>
@@ -130,9 +130,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+<a href="/truyen/12377">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12377_d_l.png')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/12377_m_l.png'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -165,13 +165,14 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-9">
+<div class="col-12 col-md-9 flex flex-col">
+<div class="flex-1">
 <div class="series-name-group">
 <span class="series-name">
 <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei">Tensei Oujo To Tensai Reijou No Mahou Kakumei</a>
 </span>
 </div>
-<div class="series-information">
+<div class="series-information mb-0 flex flex-col">
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-anime">Adapted to Anime</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-manga">Adapted to Manga</a>
@@ -206,15 +207,17 @@ Yuri
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14089) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
 </div>
-<div class="side-features">
+</div>
+<div class="side-features flex-none">
 <div class="row">
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 445 </span>
+<span class="block feature-name"> 442 </span>
 </a>
-</div>
+</div> 
 <div class="col-4 col-md feature-item width-auto-xl">
 <div class="series-rating rated">
 <a href="https://docln.net/truyen/14089/danh-gia">
@@ -257,14 +260,14 @@ Yuri
 <div class="bottom-part">
 <div class="row">
 <div class="col-12">
-<div class="row statistic-list">
+ <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="23/04/2023 21:21:05" datetime="2023-04-23T21:21:05+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="02/08/2023 22:55:32" datetime="2023-08-02T22:55:32+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
- <div class="statistic-value">35.001</div>
+<div class="statistic-value">40.575</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -272,7 +275,7 @@ Yuri
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">50.186</div>
+<div class="statistic-value">57.776</div>
 </div>
 </div>
 </div>
@@ -302,7 +305,7 @@ Yuri
 </div>
 </div>
 </div>
-</main> 
+</main>
 </section>
 </div>
 <div id="rd-sidebar" class="col-12 col-lg-3 float-right">
@@ -340,6 +343,7 @@ Yuri
 </div>
 </main>
 </section>
+
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Thảo luận</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -349,7 +353,7 @@ Yuri
 </a>
 </div>
 </main>
- </section>
+</section>
 <section id='list-vol' class="none list_vol-section">
 <div class="list-volume-wrapper basic-section">
 <header class="sect-header"><span class="sect-title">Mục lục</span></header>
@@ -390,7 +394,7 @@ Web Novel Tập 01 <span style="color: red">*</span>
 <li class="">
 <div class="chapter-name">
 <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c107442-chuong-mo-dau" title="Chương mở đầu">Chương mở đầu</a>
-</div>
+ </div>
 <div class="chapter-time">08/01/2023</div>
 </li>
 <li class="">
@@ -420,11 +424,11 @@ Web Novel Tập 01 <span style="color: red">*</span>
 </li>
 <li class="">
 <div class="chapter-name">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c108860-chuong-05-cuoc-hoi-kien-bon-ben-cua-tieu-thu-nha-cong-tuoc-2" title="Chương 05: Cuộc hội kiến bốn bên của tiểu thư nhà Công tước (2)">Chương 05: Cuộc hội kiến bốn bên của tiểu thư nhà Công tước (2)</a>
+ <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c108860-chuong-05-cuoc-hoi-kien-bon-ben-cua-tieu-thu-nha-cong-tuoc-2" title="Chương 05: Cuộc hội kiến bốn bên của tiểu thư nhà Công tước (2)">Chương 05: Cuộc hội kiến bốn bên của tiểu thư nhà Công tước (2)</a>
 </div>
 <div class="chapter-time">09/02/2023</div>
 </li>
- <li class="none">
+<li class="none">
 <div class="chapter-name">
 <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c110750-chuong-06-xin-hay-giao-con-gai-cua-ngai-cho-toi" title="Chương 06: Xin hãy giao con gái của ngài cho tôi!">Chương 06: Xin hãy giao con gái của ngài cho tôi!</a>
 </div>
@@ -432,23 +436,29 @@ Web Novel Tập 01 <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c112068-chuong-07-khoa-bo-tuc-ma-hoc-cua-anisphia" title="Chương 07: Khóa bổ túc ma học của Anisphia">Chương 07: Khóa bổ túc ma học của Anisphia</a>
-<small class="unfinished-status">Chưa hoàn thành</small>
 </div>
 <div class="chapter-time">23/04/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei/c116750-chuong-08-tang-ma-kiem-nao" title="Chương 08: Tặng ma kiếm nào">Chương 08: Tặng ma kiếm nào</a>
+<small class="unfinished-status">Chưa hoàn thành</small>
+</div>
+<div class="chapter-time">02/08/2023</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (3 chương)</span>
+<span>Xem tiếp (4 chương)</span>
 </div>
 </div>
 </ul>
 </div>
 </div>
-</main>
+ </main>
 </section>
 <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
 <header id="volume_19837" class="sect-header">
@@ -470,7 +480,7 @@ Minh họa Light Novel
 </div>
 </div>
 <div class="col-12 col-md-10">
- <ul class="list-chapters at-series">
+<ul class="list-chapters at-series">
 <li class="">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
@@ -483,7 +493,7 @@ Minh họa Light Novel
 </div>
 </main>
 </section>
-<div wire:id="wlPPV7iZVMF54u2OPJGZ" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;wlPPV7iZVMF54u2OPJGZ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:14089,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;d740debba6ca42dfb2c377435faa4f19369c11d52ca4ea3ab8fb86400d2ca5bc&quot;}}" wire:init="loadRelevantSeries">
+<div wire:id="MIoMxzGxl8BXxsNBkQDK" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;MIoMxzGxl8BXxsNBkQDK&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:14089,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;ea1677abdcd375fa49a6a6cd68a2a06510ed9ce2afac5b2c284cd87cf19c241d&quot;}}" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -502,19 +512,93 @@ Minh họa Light Novel
 
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(118)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(120)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold">88 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">90 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
 <div class="ln-comment_sign-in long-text">
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2202586" class="ln-comment-item mt-3 clear" data-comment="2202586" data-parent="2202586">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/112972">Suhai</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Chậc 2 tháng rồi à? Trans ơi còn sống khôm
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2202586#ln-comment-2202586" class="text-slate-500">
+<time class="timeago" title="28-06-2023 13:50:44" datetime="2023-06-28T13:50:44+07:00">
+28-06-2023 13:50:44
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2165505" class="ln-comment-item mt-3 clear" data-comment="2165505" data-parent="2165505">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
+ </div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/112972">Suhai</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Đàooooooo😪 ai đấy mua cho trans giáp hồi sinh đi🐧
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2165505#ln-comment-2165505" class="text-slate-500">
+<time class="timeago" title="12-05-2023 23:06:55" datetime="2023-05-12T23:06:55+07:00">
+12-05-2023 23:06:55
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="ln-comment-group">
 <div id="ln-comment-2142807" class="ln-comment-item mt-3 clear" data-comment="2142807" data-parent="2142807">
@@ -524,7 +608,7 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 <img src="https://i.docln.net/lightnovel/users/ua38393-e736c556-984d-4a11-8866-22a8e51be518.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -545,7 +629,7 @@ Khi nào có chương mới ông, đói quá :v
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
+<span class="likecount font-semibold">1</span>
 </a>
 </div>
 </div>
@@ -560,7 +644,7 @@ Khi nào có chương mới ông, đói quá :v
 <img src="https://i.docln.net/lightnovel/users/ua148149-1b8a2e16-22df-44bd-a121-908c30bd8250.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -579,7 +663,7 @@ Khi nào có chương mới ông, đói quá :v
 <div class="leading-4">TRANS</div>
 </div>
 </div>
- </div>
+</div>
 </div>
 <div class="ln-comment-content long-text">
 chết thật off suốt, tuần sau 2 chương nhé bạn
@@ -593,7 +677,7 @@ chết thật off suốt, tuần sau 2 chương nhé bạn
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
+<span class="likecount font-semibold">2</span>
 </a>
 </div>
 </div>
@@ -610,14 +694,14 @@ chết thật off suốt, tuần sau 2 chương nhé bạn
 <img src="https://i.docln.net/lightnovel/users/ua30060-d75c7a42-d354-416b-85bb-a1888cd4cbdf.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
 <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/30060">๖ۣۜNghĩa ๖ۣۜOnii-chan</a>
 </div>
-</div>
+ </div>
 </div>
 <div class="ln-comment-content long-text">
 Giờ mới để ý có người dịch lại bộ này, tym ngay và luôn 💯
@@ -644,10 +728,10 @@ Giờ mới để ý có người dịch lại bộ này, tym ngay và luôn �
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -685,17 +769,17 @@ Ai cần bản ln đến vol3 thì ib nha
 <div class="ln-comment-group">
 <div id="ln-comment-2117025" class="ln-comment-item mt-3 clear" data-comment="2117025" data-parent="2117025">
 <div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
+ <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua87348-d9475ac3-04d4-4a08-a4b2-d4a87fe92c1d.jpg" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua87348-bd4ce5ad-dac8-4364-a1a4-52d1ca68a748.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/87348">Tun.hako</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/87348">Rei Yuzaki</a>
 </div>
 </div>
 </div>
@@ -727,7 +811,7 @@ Adu direct x 9 nay biết dịch truyện:))
 <img src="https://i.docln.net/lightnovel/users/ua148149-1b8a2e16-22df-44bd-a121-908c30bd8250.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -775,12 +859,12 @@ tuần vừa rồi mình bận nên cố gắng tuần sau comeback nhe�
 <img src="https://i.docln.net/lightnovel/users/ua116605-6d3b5375-b361-4be7-924c-23d0a7b362cb.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/116605">chien12t</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/116605">Caàap</a>
 </div>
 </div>
 </div>
@@ -810,7 +894,7 @@ Ko sao đâu miễn ko trop là con dân vui lắm r 🤧
 <img src="https://i.docln.net/lightnovel/users/ua148149-1b8a2e16-22df-44bd-a121-908c30bd8250.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -864,7 +948,7 @@ Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <img src="https://i.docln.net/lightnovel/users/ua120452-4d2ebde9-bc4b-4f22-b9e2-2603a2ffd5b7.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -878,7 +962,7 @@ Ad cũng đăng illustration mấy vol còn lại đi
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2100026#ln-comment-2100026" class="text-slate-500">
+ <a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2100026#ln-comment-2100026" class="text-slate-500">
 <time class="timeago" title="09-02-2023 22:23:00" datetime="2023-02-09T22:23:00+07:00">
 09-02-2023 22:23:00
 </time>
@@ -898,10 +982,10 @@ Ad cũng đăng illustration mấy vol còn lại đi
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -909,7 +993,7 @@ Ad cũng đăng illustration mấy vol còn lại đi
 <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/151188">minhsimba</a>
 </div>
 </div>
- </div>
+</div>
 <div class="ln-comment-content long-text">
 Cho mình hỏi trc có nhóm nào dịch mà để đọc phải down về là tìm ở đâu thế nhỉ. Mình cảm ơn
 </div>
@@ -937,7 +1021,7 @@ Cho mình hỏi trc có nhóm nào dịch mà để đọc phải down về là 
 <img src="https://i.docln.net/lightnovel/users/ua148149-1b8a2e16-22df-44bd-a121-908c30bd8250.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -987,7 +1071,7 @@ bạn tìm ở mục convert nhé
 <img src="https://i.docln.net/lightnovel/users/ua130328-1cfe22ad-4299-48d3-b8e9-c09717150ae1.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
 <div class="flex min-w-0 flex-col px-2">
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
@@ -1005,193 +1089,7 @@ Bộ này được cái nội dung mới lạ, độc đáo, tuy cốt truyện 
 <time class="timeago" title="29-01-2023 21:36:21" datetime="2023-01-29T21:36:21+07:00">
 29-01-2023 21:36:21
 </time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2090868" class="ln-comment-item mt-3 clear" data-comment="2090868" data-parent="2090868">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua36153-89d0dfae-a2ab-4f3d-98ca-cb021365799b.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/36153">Owari</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
- <div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
-<img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
-<div class="leading-4">CVTER</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Sao k quất bản ln cho máu nhề
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2090868#ln-comment-2090868" class="text-slate-500">
-<time class="timeago" title="29-01-2023 19:26:54" datetime="2023-01-29T19:26:54+07:00">
-29-01-2023 19:26:54
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2090882" class="ln-comment-item mt-3 clear" data-comment="2090882" data-parent="2090868">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua148149-1b8a2e16-22df-44bd-a121-908c30bd8250.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/148149">d3dx9_69.dll</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-<div class="leading-4">CHỦ THỚT</div>
-</div>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-vì không đủ trình á 😥
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2090868&amp;reply_id=2090882#ln-comment-2090882" class="text-slate-500">
-<time class="timeago" title="29-01-2023 19:36:36" datetime="2023-01-29T19:36:36+07:00">
-29-01-2023 19:36:36
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2090883" class="ln-comment-item mt-3 clear" data-comment="2090883" data-parent="2090868">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua36153-89d0dfae-a2ab-4f3d-98ca-cb021365799b.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/36153">Owari</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
-<img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
-<div class="leading-4">CVTER</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/148149">@d3dx9_69.dll:</a> Ln hàng bản quyền nên có khi dễ đọc hơn wn á (chắc vậy)
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2090868&amp;reply_id=2090883#ln-comment-2090883" class="text-slate-500">
-<time class="timeago" title="29-01-2023 19:37:30" datetime="2023-01-29T19:37:30+07:00">
-29-01-2023 19:37:30
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fetch_reply" data-parent="2090868">
-Xem thêm 6 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-</div>
-</div>
-<div class="ln-comment-group">
- <div id="ln-comment-2087633" class="ln-comment-item mt-3 clear" data-comment="2087633" data-parent="2087633">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua149862-24c4768f-2528-4384-90cc-e8e0e1745123.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149862">Kouy</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Coi bộ Trans hơi nhọc nhỉ? Bên Anime nó ra gần nữa vol 1 rồi.
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?comment_id=2087633#ln-comment-2087633" class="text-slate-500">
-<time class="timeago" title="26-01-2023 12:11:52" datetime="2023-01-26T12:11:52+07:00">
-26-01-2023 12:11:52
-</time>
-</a>
+ </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
 <span class="likecount font-semibold"></span>
@@ -1206,12 +1104,12 @@ Coi bộ Trans hơi nhọc nhỉ? Bên Anime nó ra gần nữa vol 1 rồi.
 <div class="pagination-footer">
 <div class="pagination_wrap">
 <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
-<a href="https://docln.net/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?page=2" class="paging_item paging_prevnext next">Sau</a>
+<a href="https://ln.hako.vn/truyen/14089-tensei-oujo-to-tensai-reijou-no-mahou-kakumei?page=2" class="paging_item paging_prevnext next">Sau</a>
 </div>
 </div>
 </div> </main>
 <script>
-        var token = '6kTleP8VJ4RJ19LC0aYLI6UnQYg0P4ynGwc1DP8f';
+        var token = '0rivoF23PuhqRGDHyTcq99GoonmLJiGcOYrOYXEK';
         var comment_type = 'series';
         var comment_typeid = '14089';
     </script>
@@ -1249,8 +1147,9 @@ Coi bộ Trans hơi nhọc nhỉ? Bên Anime nó ra gần nữa vol 1 rồi.
 
     series_id = parseInt('14089');
 </script>
-<script src="/scripts/app.js?id=666a549f3d7423291080"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '6kTleP8VJ4RJ19LC0aYLI6UnQYg0P4ynGwc1DP8f';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'hQcSojbXkF9H7ZDoO4k0lL6s17rLc7idzv8uuuIg';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script type='text/javascript' src='//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
 <footer id="footer">
 <div class="container">
 
