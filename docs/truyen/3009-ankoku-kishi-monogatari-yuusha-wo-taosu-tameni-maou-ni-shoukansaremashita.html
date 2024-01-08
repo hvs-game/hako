@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="lkhfDPG3VXialQAFVFH4etU3MVdnC3X28fM7rP66">
+<meta name="csrf-token" content="uo4crp9FYIMYSP46hPNYUOg7HcEMqwou9HdQhI6G">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12890">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
+<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -206,7 +206,7 @@ Isekai
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 3009) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 3009) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -214,7 +214,7 @@ Isekai
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 7467 </span>
+<span class="block feature-name"> 7482 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -246,7 +246,7 @@ Isekai
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/3009')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/3009'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Ankoku kishi monogatari~Yuusha wo taosu tameni Maou ni Shoukansaremashita~&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -262,11 +262,11 @@ Isekai
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="31/12/2023 22:00:11" datetime="2023-12-31T22:00:11+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="08/01/2024 16:00:15" datetime="2024-01-08T16:00:15+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">664.925</div>
+<div class="statistic-value">665.319</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -274,7 +274,7 @@ Isekai
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">5.192.332</div>
+<div class="statistic-value">5.216.300</div>
 </div>
 </div>
 </div>
@@ -992,7 +992,7 @@ Act 3: Bạch ngân phù thủy
 <header id="volume_9914" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Act 4: Mê Lộ của Tà Thần
+Act 4: Mê Lộ của Tà Thần <span style="color: red">*</span>
 </span>
 </header>
 <main class="d-lg-block">
@@ -1071,7 +1071,6 @@ Act 4: Mê Lộ của Tà Thần
 </li>
 <li class="none">
 <div class="chapter-name">
-<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita/c61154-chuong-492-thi-tran-cua-linh-danh-thue" title="Chương 49.2: Thị trấn của lính đánh thuê">Chương 49.2: Thị trấn của lính đánh thuê</a>
 </div>
 <div class="chapter-time">15/02/2020</div>
@@ -1084,7 +1083,6 @@ Act 4: Mê Lộ của Tà Thần
 </li>
 <li class="none">
 <div class="chapter-name">
-<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita/c62439-chuong-501-khu-vuon-cockatrice" title="Chương 50.1: Khu Vườn Cockatrice">Chương 50.1: Khu Vườn Cockatrice</a>
 </div>
 <div class="chapter-time">13/03/2020</div>
@@ -1154,6 +1152,15 @@ Act 4: Mê Lộ của Tà Thần
 <a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita/c66546-chuong-533-ma-vuong-va-nu-than" title="Chương 53.3: Ma Vương và Nữ Thần">Chương 53.3: Ma Vương và Nữ Thần</a>
 </div>
 <div class="chapter-time">06/06/2020</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita/c124974-chuong-534-ma-vuong-va-nu-than" title="Chương 53.4: Ma Vương và Nữ Thần">Chương 53.4: Ma Vương và Nữ Thần</a>
+</div>
+<div class="chapter-time">08/01/2024</div>
 </li>
 <li class="none">
 <div class="chapter-name">
@@ -1301,7 +1308,7 @@ Act 4: Mê Lộ của Tà Thần
 </li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (43 chương)</span>
+<span>Xem tiếp (44 chương)</span>
 </div>
 </div>
 </ul>
@@ -2167,7 +2174,7 @@ Arc 7: Thần Thú Sa Mạc <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:3009,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;rzwh7qh6nvSPoc9Sq6ZS&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;60898830e7946354eefd331cb91d9516f007f6250246a30ad84f64ca55efc5e1&quot;}" wire:effects="[]" wire:id="rzwh7qh6nvSPoc9Sq6ZS" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:3009,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;VMJUSnBhVuzP56AZutKA&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;63b5b46ed924bde22b0c9c5587146208cf51ac038ba904b45292405182accec0&quot;}" wire:effects="[]" wire:id="VMJUSnBhVuzP56AZutKA" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -2186,14 +2193,14 @@ Arc 7: Thần Thú Sa Mạc <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(26881)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(26981)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">9537 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">9552 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -2201,7 +2208,7 @@ Arc 7: Thần Thú Sa Mạc <span style="color: red">*</span>
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2134475" class="ln-comment-item mt-3 clear" data-comment="2134475" data-parent="2134475">
+<div id="ln-comment-2339167" class="ln-comment-item mt-3 clear" data-comment="2339167" data-parent="2339167">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -2230,34 +2237,33 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 </div>
 </div>
 <div class="ln-comment-content long-text">
-LOA LOA LOA!!!!<br>
-Lịch tra chap sẽ là 2-3 chap mỗi tháng; sẽ ra vào cuối tháng<br>
-Còn tháng nào quên thì tháng sau sẽ có bù!!!!<br>
-P/s: spoil thì nhớ thêm tag spoil và cách dòng để phần spoil bị che cho những người không muốn bị spoil. Hãy tôn trọng các đọc giả khác!!!?! <br>
-Thân ái ~~~
+LOA LOA LOA!!!!<br>Lịch tra chap sẽ là 2-3 chap mỗi tháng; sẽ ra vào cuối tháng<br>Còn tháng nào quên thì tháng sau sẽ có bù!!!!<br>
+<strong>ARC 4 CHAP 53.4 TRƯỚC ĐĂNG THIẾU NAY ĐÃ CÓ, XIN LỖI VÌ SỰ THIẾU SÓT NÀY!</strong><br>
+<u><em><strong>P/s</strong>:</em></u> spoil thì nhớ thêm tag spoil và cách dòng để phần spoil bị che cho những người không muốn bị spoil. Hãy tôn trọng các đọc giả khác!!!?!<br>Thân ái ~~~
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2134475#ln-comment-2134475" class="text-slate-500">
-<time class="timeago" title="31-03-2023 18:30:35" datetime="2023-03-31T18:30:35+07:00">
-31-03-2023 18:30:35
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2339167#ln-comment-2339167" class="text-slate-500">
+<time class="timeago" title="08-01-2024 16:02:28" datetime="2024-01-08T16:02:28+07:00">
+08-01-2024 16:02:28
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">58</span>
+<span class="likecount font-semibold">1</span>
 </a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2134481" class="ln-comment-item mt-3 clear" data-comment="2134481" data-parent="2134475">
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2338281" class="ln-comment-item mt-3 clear" data-comment="2338281" data-parent="2338281">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u60247-fa896427-0b08-4e26-84d7-5dbae755f2db.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -2265,18 +2271,20 @@ Thân ái ~~~
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/124603">Hoàng Đạt 077</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/60247">Haurvatat</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ôi trans sama
+Ít khi đọc light novel xem được bộ này<br>
+Chap nào chap nấy đọc cũng tầm 30~50p mới xong ( đã luôn ) 🤣 <br>
+Ít ảnh minh họa quá :v
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2134475&amp;reply_id=2134481#ln-comment-2134481" class="text-slate-500">
-<time class="timeago" title="31-03-2023 18:41:06" datetime="2023-03-31T18:41:06+07:00">
-31-03-2023 18:41:06
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2338281#ln-comment-2338281" class="text-slate-500">
+<time class="timeago" title="07-01-2024 14:06:21" datetime="2024-01-07T14:06:21+07:00">
+07-01-2024 14:06:21
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -2288,11 +2296,13 @@ Thân ái ~~~
 </div>
 </div>
 </div>
-<div id="ln-comment-2134502" class="ln-comment-item mt-3 clear" data-comment="2134502" data-parent="2134475">
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2336733" class="ln-comment-item mt-3 clear" data-comment="2336733" data-parent="2336733">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua145390-95b79b28-cf5e-4a88-8be9-3d426a897d9e.jpg" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua79173-474a1ab6-c902-4af1-950d-ad0cefdda072.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -2300,31 +2310,325 @@ Thân ái ~~~
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/145390">Little world</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/79173">rbr</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Cảm ơn ngài <img src="https://cdn.discordapp.com/emojis/1030700059018399754.webp?size=44&amp;quality=lossless" alt="1030700059018399754.webp?size=44&amp;quality=lossless">
+mặc dù đã dù đã drop bộ này nhưng mà lâu lâu t lại vô đây đọc cmt dù chả hiểu đọc cmt làm j vô tri thật chứ =))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2134475&amp;reply_id=2134502#ln-comment-2134502" class="text-slate-500">
-<time class="timeago" title="31-03-2023 19:12:32" datetime="2023-03-31T19:12:32+07:00">
-31-03-2023 19:12:32
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336733#ln-comment-2336733" class="text-slate-500">
+<time class="timeago" title="05-01-2024 00:33:11" datetime="2024-01-05T00:33:11+07:00">
+05-01-2024 00:33:11
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">3</span>
+<span class="likecount font-semibold"></span>
 </a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="fetch_reply" data-parent="2134475">
-Xem thêm 12 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+<div class="ln-comment-reply">
+<div id="ln-comment-2337054" class="ln-comment-item mt-3 clear" data-comment="2337054" data-parent="2336733">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua18945-d47fa658-2505-4d83-ac03-693331502223.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18945">------:))</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+cmt đây là nơi những học giả tri thức thảo luận, dù là tôi đôi khi cũng hoang mang không kém :))))
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336733&amp;reply_id=2337054#ln-comment-2337054" class="text-slate-500">
+<time class="timeago" title="05-01-2024 15:00:15" datetime="2024-01-05T15:00:15+07:00">
+05-01-2024 15:00:15
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2336167" class="ln-comment-item mt-3 clear" data-comment="2336167" data-parent="2336167">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/177824">Anhbui0805</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Muốn chờ full luôn rồi đọc thì chắc phải 3-4 năm nữa quá 😢
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336167#ln-comment-2336167" class="text-slate-500">
+<time class="timeago" title="04-01-2024 08:27:58" datetime="2024-01-04T08:27:58+07:00">
+04-01-2024 08:27:58
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2336328" class="ln-comment-item mt-3 clear" data-comment="2336328" data-parent="2336167">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua18945-d47fa658-2505-4d83-ac03-693331502223.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18945">------:))</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+3-4 năm nữa thì chắc tới arc 12, lúc đó thì tác giả chắc ra tới arc 20 rồi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336167&amp;reply_id=2336328#ln-comment-2336328" class="text-slate-500">
+<time class="timeago" title="04-01-2024 15:08:27" datetime="2024-01-04T15:08:27+07:00">
+04-01-2024 15:08:27
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2336377" class="ln-comment-item mt-3 clear" data-comment="2336377" data-parent="2336167">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/177824">Anhbui0805</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Còn rág trả lời nữa 🤬 ngta đã chán đời còn đưa thêm cây dao cho đc 🤧
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336167&amp;reply_id=2336377#ln-comment-2336377" class="text-slate-500">
+<time class="timeago" title="04-01-2024 16:50:25" datetime="2024-01-04T16:50:25+07:00">
+04-01-2024 16:50:25
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fetch_reply" data-parent="2336167">
+Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+</div>
+<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2336043" class="ln-comment-item mt-3 clear" data-comment="2336043" data-parent="2336043">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86290-fb84ae28-a61e-4e32-87ed-592690f995f2.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86290">Dyan</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+cốt truyện đang dần bị lan man rồi ấy nhỉ chi tiết đi không quá sâu như hồi mới... tôi đọc từ cái hồi nó chỉ mới có mười mấy chap=))) bánh cuốn quá theo đến giờ... tks trans for all guy
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336043#ln-comment-2336043" class="text-slate-500">
+<time class="timeago" title="04-01-2024 00:33:03" datetime="2024-01-04T00:33:03+07:00">
+04-01-2024 00:33:03
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2336803" class="ln-comment-item mt-3 clear" data-comment="2336803" data-parent="2336043">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Vậy cũng đúng thôi vì Kuroki đến đây vì bị triệu hồi, cũng chả có lập tổ đội tiêu diệt ma vương các thứ hay tìm đường trở về (Kuroki còn có được harem trong lúc bảo vệ Modes cơ),thêm nữa Kuroki mạnh top server rồi nên đâu còn mấy cái phiêu lưu các thứ tập trung vào Kuroki nữa đâu. Giờ mà nhét phát triển nhân vật, plot các thứ thì chỉ có đám Reiji thôi.
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336043&amp;reply_id=2336803#ln-comment-2336803" class="text-slate-500">
+<time class="timeago" title="05-01-2024 03:45:43" datetime="2024-01-05T03:45:43+07:00">
+05-01-2024 03:45:43
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2336904" class="ln-comment-item mt-3 clear" data-comment="2336904" data-parent="2336043">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86290-fb84ae28-a61e-4e32-87ed-592690f995f2.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86290">Dyan</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/38250">@Chiến công đầu:</a> đồng ý là main không phải phiêu lưu hay gì nhưng mà cái dev char của main ngoài cái mạnh từ đầu với tốt tính ra thì nó hơi tệ thiệt... nội cái việc ông main ổng tự ti này nọ về bản thân qua cả mấy trăm chap r cũng ko khá lên, đọc nó khó chịu ác, kiểu chẳng có thay đổi gì luôn.
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2336043&amp;reply_id=2336904#ln-comment-2336904" class="text-slate-500">
+<time class="timeago" title="05-01-2024 10:11:12" datetime="2024-01-05T10:11:12+07:00">
+05-01-2024 10:11:12
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fetch_reply" data-parent="2336043">
+Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
 </div>
 <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
@@ -2832,7 +3136,7 @@ Santa Claus Kuna😊
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
+<span class="likecount font-semibold">2</span>
 </a>
 </div>
 </div>
@@ -2916,462 +3220,6 @@ Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
-<div class="ln-comment-group">
-<div id="ln-comment-2324455" class="ln-comment-item mt-3 clear" data-comment="2324455" data-parent="2324455">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/167969">ThanhZicy</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Có ông nào cho tôi biết là sau này dàn harem của main gồm những ai không? (Mong là ko có con mắm Shirone trong đấy)
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2324455#ln-comment-2324455" class="text-slate-500">
-<time class="timeago" title="12-12-2023 23:01:05" datetime="2023-12-12T23:01:05+07:00">
-12-12-2023 23:01:05
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2324481" class="ln-comment-item mt-3 clear" data-comment="2324481" data-parent="2324455">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Cho đến arc mới nhất bên raw thì dàn harem của Kuroki khá bự (Chắc cũng ít nhất là ngang với thánh vếu Issei) và dĩ nhiên là đúng theo mong ước của ông, không hề có Shirone (hoặc ít nhất là chưa). Và chúng ta đến với dàn harem hùng hậu của Hắc hiệp sĩ: <br>- Chủng tộc thần thánh và thần chính thức:<br>Rena<br>Kuna<br>Totona<br>Kyouka<br>- Thuộc hạ:<br>Ít nhất là 10 em thuộc hạ quỷ dẫn đầu bởi Guno mà Mona gửi đến làm gián điệp nhưng bị Kuroki mindbreak<br>Regena<br>- Người quen:<br>Polen<br>Tess<br>- Ngưỡng mộ/Tôn thờ<br>Sienna<br>Sabina (nv ở arc 13)<br>Inura<br>- Nhân vật CỰC KỲ PHỤ, chả đáng nhắc tới<br>Dàn công chúa ở arc 11 cùng vô số đứa con gái khác (Nhưng chủ yếu là thoáng qua vẻ đẹp trai của main thôi)
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2324455&amp;reply_id=2324481#ln-comment-2324481" class="text-slate-500">
-<time class="timeago" title="13-12-2023 00:15:58" datetime="2023-12-13T00:15:58+07:00">
-13-12-2023 00:15:58
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2324541" class="ln-comment-item mt-3 clear" data-comment="2324541" data-parent="2324455">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/167969">ThanhZicy</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/38250">@Chiến công đầu:</a> Thank bác nha, chỉ mong từ giờ đến end truyện tác ko thêm con Shirone này vào dàn harem. Tôi dell thể chịu đựng nổi con mắm này
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2324455&amp;reply_id=2324541#ln-comment-2324541" class="text-slate-500">
-<time class="timeago" title="13-12-2023 06:37:30" datetime="2023-12-13T06:37:30+07:00">
-13-12-2023 06:37:30
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fetch_reply" data-parent="2324455">
-Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2323947" class="ln-comment-item mt-3 clear" data-comment="2323947" data-parent="2323947">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19353">Daichi Kun</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Có ô nào bật mí Arc mới nhất có j hay ho k. T ngừng từ Arc 9 sau khi Kuroki hóa rồng chọi nhau với con Felix gì đó
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323947#ln-comment-2323947" class="text-slate-500">
-<time class="timeago" title="11-12-2023 19:35:11" datetime="2023-12-11T19:35:11+07:00">
-11-12-2023 19:35:11
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2324084" class="ln-comment-item mt-3 clear" data-comment="2324084" data-parent="2323947">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-2-3 arc gần đây tập trung vào Kouki nhiều hơn là Kuroki nên nếu bác không muốn có trải nghiệm như Boruto (Tui ko nói là phần Kouki rác, nhưng ở mấy arc này Kuroki xuất hiện cực kỳ ít và chỉ ra tay khi cần thiết.
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323947&amp;reply_id=2324084#ln-comment-2324084" class="text-slate-500">
-<time class="timeago" title="11-12-2023 23:50:23" datetime="2023-12-11T23:50:23+07:00">
-11-12-2023 23:50:23
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2324146" class="ln-comment-item mt-3 clear" data-comment="2324146" data-parent="2323947">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua66969-497e677e-b31f-4fe6-973d-13b640cddd30.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66969">ACE Otaku</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/38250">@Chiến công đầu:</a> chán v, t tự hỏi ai mới là main đây?
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323947&amp;reply_id=2324146#ln-comment-2324146" class="text-slate-500">
-<time class="timeago" title="12-12-2023 07:35:54" datetime="2023-12-12T07:35:54+07:00">
-12-12-2023 07:35:54
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">2</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fetch_reply" data-parent="2323947">
-Xem thêm 16 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2323374" class="ln-comment-item mt-3 clear" data-comment="2323374" data-parent="2323374">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/167969">ThanhZicy</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Các cao nhân cho t hỏi là sau này main về với ai vậy
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323374#ln-comment-2323374" class="text-slate-500">
-<time class="timeago" title="10-12-2023 16:48:20" datetime="2023-12-10T16:48:20+07:00">
-10-12-2023 16:48:20
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2323424" class="ln-comment-item mt-3 clear" data-comment="2323424" data-parent="2323374">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Harem học đường hiện đại thì còn có end với ai, chứ harem fantasy isekai thì chỉ có hốt hết thôi bác ạ.
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323374&amp;reply_id=2323424#ln-comment-2323424" class="text-slate-500">
-<time class="timeago" title="10-12-2023 18:46:19" datetime="2023-12-10T18:46:19+07:00">
-10-12-2023 18:46:19
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2323433" class="ln-comment-item mt-3 clear" data-comment="2323433" data-parent="2323374">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/167969">ThanhZicy</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/38250">@Chiến công đầu:</a> Thanks bác nha, tại t mới đọc quên ko để ý phần tag :))
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323374&amp;reply_id=2323433#ln-comment-2323433" class="text-slate-500">
-<time class="timeago" title="10-12-2023 19:00:53" datetime="2023-12-10T19:00:53+07:00">
-10-12-2023 19:00:53
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2323233" class="ln-comment-item mt-3 clear" data-comment="2323233" data-parent="2323233">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua64251-e9b18964-2985-4466-aed7-a00caa602349.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64251">Nguyễn Hùng</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-đây là dịch của bản mới hả mng
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323233#ln-comment-2323233" class="text-slate-500">
-<time class="timeago" title="10-12-2023 11:26:45" datetime="2023-12-10T11:26:45+07:00">
-10-12-2023 11:26:45
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">2</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2323340" class="ln-comment-item mt-3 clear" data-comment="2323340" data-parent="2323233">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua18945-d47fa658-2505-4d83-ac03-693331502223.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18945">------:))</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-<div class="leading-4">CHỦ THỚT</div>
-</div>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-ờ thì không phải là bản mới nhất, bản mới nhất là bản Re
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323233&amp;reply_id=2323340#ln-comment-2323340" class="text-slate-500">
-<time class="timeago" title="10-12-2023 15:15:37" datetime="2023-12-10T15:15:37+07:00">
-10-12-2023 15:15:37
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2323425" class="ln-comment-item mt-3 clear" data-comment="2323425" data-parent="2323233">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/18945">@------:)):</a> Mà thật ra bản mới nhất cũng chả khác bản này là mấy, kiểu thay đổi một số chi tiết thôi. Ví dụ thay vì Kuroki được Rena kéo đến đám Shirone thì Kuroki tình cờ gặp và cứu Kyouka, sau đó khi ra khỏi dungeon thì Shirone nhìn thấy và nhận ra ngay lập tức, thế là anh Ku bị dắt về.
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/3009-ankoku-kishi-monogatari-yuusha-wo-taosu-tameni-maou-ni-shoukansaremashita?comment_id=2323233&amp;reply_id=2323425#ln-comment-2323425" class="text-slate-500">
-<time class="timeago" title="10-12-2023 18:47:38" datetime="2023-12-10T18:47:38+07:00">
-10-12-2023 18:47:38
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
@@ -3381,7 +3229,7 @@ Harem học đường hiện đại thì còn có end với ai, chứ harem fant
 </div>
 </div> </main>
 <script>
-        var token = 'lkhfDPG3VXialQAFVFH4etU3MVdnC3X28fM7rP66';
+        var token = 'MZh4Mj6ugHabxs5wu2Vt3GWiuEMRtSS7V3FOWfUV';
         var comment_type = 'series';
         var comment_typeid = '3009';
     </script>
@@ -3419,8 +3267,8 @@ Harem học đường hiện đại thì còn có end với ai, chứ harem fant
 
     series_id = parseInt('3009');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="lkhfDPG3VXialQAFVFH4etU3MVdnC3X28fM7rP66" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="uo4crp9FYIMYSP46hPNYUOg7HcEMqwou9HdQhI6G" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -3428,5 +3276,14 @@ Harem học đường hiện đại thì còn có end với ai, chứ harem fant
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
