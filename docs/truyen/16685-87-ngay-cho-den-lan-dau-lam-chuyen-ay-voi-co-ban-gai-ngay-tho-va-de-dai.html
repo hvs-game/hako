@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="nGT1P6hWcZnVvKcz3XU9KjDeKesbO3Vp2g9vHuK9">
+<meta name="csrf-token" content="H0ZheT6Q68J633obfJkkvcOceeeyvd1wHiNk2zYM">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=27ad7c5790a7f581687d">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,7 +129,7 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+<a href="/thao-luan/2591">
 <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
 <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
@@ -191,7 +191,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16685) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16685) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -199,7 +199,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 913 </span>
+<span class="block feature-name"> 944 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -231,7 +231,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16685')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16685'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=87 ngày cho đến lần đầu làm chuyện ấy với cô bạn gái ngây thơ và dễ dãi&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -247,11 +247,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="26/12/2023 19:16:12" datetime="2023-12-26T19:16:12+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="11/01/2024 00:24:06" datetime="2024-01-11T00:24:06+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">46.509</div>
+<div class="statistic-value">53.910</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -259,7 +259,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">49.795</div>
+<div class="statistic-value">53.557</div>
 </div>
 </div>
 </div>
@@ -456,9 +456,6 @@ Thật ra... đây là lần đầu của mình đó <span style="color: red">*<
 <ul class="list-chapters at-series">
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai/c124453-minh-hoa-mau" title="Minh họa màu">Minh họa màu</a>
 </div>
@@ -513,9 +510,6 @@ Thật ra... đây là lần đầu của mình đó <span style="color: red">*<
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai/c124384-chuong-6-tinh-yeu-di-kem-hoi-han" title="Chương 6: Tình yêu đi kèm hối hận">Chương 6: Tình yêu đi kèm hối hận</a>
 </div>
@@ -523,17 +517,24 @@ Thật ra... đây là lần đầu của mình đó <span style="color: red">*<
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai/c124418-chuong-65-quan-diem-tinh-yeu-cua-kagaya-saki" title="Chương 6.5: Quan điểm tình yêu của Kagaya Saki">Chương 6.5: Quan điểm tình yêu của Kagaya Saki</a>
 </div>
 <div class="chapter-time">25/12/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai/c125087-chuong-7-tin-don-va-su-nghi-ngo" title="Chương 7: Tin đồn và sự nghi ngờ">Chương 7: Tin đồn và sự nghi ngờ</a>
+</div>
+<div class="chapter-time">11/01/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (5 chương)</span>
+<span>Xem tiếp (6 chương)</span>
 </div>
 </div>
 </ul>
@@ -541,7 +542,7 @@ Thật ra... đây là lần đầu của mình đó <span style="color: red">*<
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16685,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;mS6IK1NkWRXyGDaB6XLw&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;46eeada08ddaddecf69587a6b4700c5d97f91b2cc7044404af0673013d96a02c&quot;}" wire:effects="[]" wire:id="mS6IK1NkWRXyGDaB6XLw" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16685,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;9Iq9Lg24lUlFQJwtYSJd&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ec9aa56f15fd0d36a4f8e2811359398d9cc2b499fbe6fb8f9e574c197873d63c&quot;}" wire:effects="[]" wire:id="9Iq9Lg24lUlFQJwtYSJd" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -560,19 +561,165 @@ Thật ra... đây là lần đầu của mình đó <span style="color: red">*<
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(135)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(143)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">33 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">37 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
 <div class="ln-comment_sign-in long-text">
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2339561" class="ln-comment-item mt-3 clear" data-comment="2339561" data-parent="2339561">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua63677-d44286b4-52f8-45dc-819a-4dd66a70dce7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/63677">Hạ Diệp Sư</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Ai có link raw kh xin với
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2339561#ln-comment-2339561" class="text-slate-500">
+<time class="timeago" title="08-01-2024 22:00:45" datetime="2024-01-08T22:00:45+07:00">
+08-01-2024 22:00:45
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2334725" class="ln-comment-item mt-3 clear" data-comment="2334725" data-parent="2334725">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160904">Nqloi</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Truyện đọc kiểu vứt não vl:)) 1 đứa thì đi thích thằng mang tiếng lăng nhăng còn 1 đứa thì thích con thấy trai đẹp là lứng:)))
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2334725#ln-comment-2334725" class="text-slate-500">
+<time class="timeago" title="02-01-2024 11:47:54" datetime="2024-01-02T11:47:54+07:00">
+02-01-2024 11:47:54
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2338769" class="ln-comment-item mt-3 clear" data-comment="2338769" data-parent="2334725">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua103314-64384d74-16aa-4ec0-8f79-e6065ab67bff.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103314">Mistdo</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Ko biết bạn có đọc kỹ ko nma bọn nó có nói lý do bọn nó thích nhau r còn j :)?
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2334725&amp;reply_id=2338769#ln-comment-2338769" class="text-slate-500">
+<time class="timeago" title="08-01-2024 00:02:53" datetime="2024-01-08T00:02:53+07:00">
+08-01-2024 00:02:53
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2339036" class="ln-comment-item mt-3 clear" data-comment="2339036" data-parent="2334725">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160904">Nqloi</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/103314">@Mistdo:</a> à t mới đọc dc 2c đầu
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2334725&amp;reply_id=2339036#ln-comment-2339036" class="text-slate-500">
+<time class="timeago" title="08-01-2024 11:48:21" datetime="2024-01-08T11:48:21+07:00">
+08-01-2024 11:48:21
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="ln-comment-group">
 <div id="ln-comment-2332142" class="ln-comment-item mt-3 clear" data-comment="2332142" data-parent="2332142">
@@ -686,7 +833,7 @@ Ngàiiiiiii
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2328298" class="ln-comment-item mt-3 clear" data-comment="2328298" data-parent="2328298">
+<div id="ln-comment-2328298" class="ln-comment-item mt-3 clear deleted disabled" data-comment="2328298" data-parent="2328298">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -703,19 +850,7 @@ Ngàiiiiiii
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ra từ từ thôi ngài ơi sợ drop ghê
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2328298#ln-comment-2328298" class="text-slate-500">
-<time class="timeago" title="20-12-2023 05:59:00" datetime="2023-12-20T05:59:00+07:00">
-20-12-2023 05:59:00
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
+Bình luận đã bị xóa bởi Nqloi
 </div>
 </div>
 </div>
@@ -859,80 +994,6 @@ Mới hôm qua mua cuốn "Chàng trai chuyển kiếp với cô gái thiên tà
 </div>
 </div>
 </div>
-<div class="ln-comment-group">
-<div id="ln-comment-2322841" class="ln-comment-item mt-3 clear" data-comment="2322841" data-parent="2322841">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua115299-54af79f3-c45d-4449-8bbe-c6aed58e6f11.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/115299">Tín đồ của Elysia</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<u>adu mạnh quá</u>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2322841#ln-comment-2322841" class="text-slate-500">
-<time class="timeago" title="09-12-2023 19:19:42" datetime="2023-12-09T19:19:42+07:00">
-09-12-2023 19:19:42
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2322738" class="ln-comment-item mt-3 clear" data-comment="2322738" data-parent="2322738">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua83542-cb804dfb-8676-43ba-9e51-1c136a61509a.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/83542">KxSnake</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-2 anh chị này đúng là một 9 một 10 mà :D
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16685-87-ngay-cho-den-lan-dau-lam-chuyen-ay-voi-co-ban-gai-ngay-tho-va-de-dai?comment_id=2322738#ln-comment-2322738" class="text-slate-500">
-<time class="timeago" title="09-12-2023 14:10:17" datetime="2023-12-09T14:10:17+07:00">
-09-12-2023 14:10:17
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
@@ -942,7 +1003,7 @@ Mới hôm qua mua cuốn "Chàng trai chuyển kiếp với cô gái thiên tà
 </div>
 </div> </main>
 <script>
-        var token = 'nGT1P6hWcZnVvKcz3XU9KjDeKesbO3Vp2g9vHuK9';
+        var token = 'H0ZheT6Q68J633obfJkkvcOceeeyvd1wHiNk2zYM';
         var comment_type = 'series';
         var comment_typeid = '16685';
     </script>
@@ -980,14 +1041,23 @@ Mới hôm qua mua cuốn "Chàng trai chuyển kiếp với cô gái thiên tà
 
     series_id = parseInt('16685');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="nGT1P6hWcZnVvKcz3XU9KjDeKesbO3Vp2g9vHuK9" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="H0ZheT6Q68J633obfJkkvcOceeeyvd1wHiNk2zYM" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
