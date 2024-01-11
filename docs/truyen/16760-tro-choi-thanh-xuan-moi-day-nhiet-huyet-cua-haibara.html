@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="nZXq93x5DC9z9LhUTJ0QZOdIn4284XQBLvyvzXqk">
+<meta name="csrf-token" content="FguraGZLo1oxNV2N6n3so5fnWVjCXmPYsUidgijP">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=27ad7c5790a7f581687d">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12890">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
+<a href="/thao-luan/2591">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -190,7 +190,7 @@
 <a href="https://docln.net/truyen-tam-ngung">Tạm ngưng</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16760) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16760) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -198,7 +198,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 89 </span>
+<span class="block feature-name"> 99 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -230,7 +230,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16760')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16760'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Trò chơi thanh xuân mới đầy nhiệt huyết của Haibara&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -246,11 +246,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="31/12/2023 17:34:54" datetime="2023-12-31T17:34:54+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="11/01/2024 22:46:17" datetime="2024-01-11T22:46:17+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">6.261</div>
+<div class="statistic-value">8.657</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -258,7 +258,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">4.920</div>
+<div class="statistic-value">5.633</div>
 </div>
 </div>
 </div>
@@ -384,20 +384,27 @@ Tập 01 <span style="color: red">*</span>
 </li>
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara/c124617-chuong-01-ke-hoach-tuoi-thanh-xuan-ruc-ro-2" title="Chương 01: Kế hoạch tuổi thanh xuân rực rỡ (2)">Chương 01: Kế hoạch tuổi thanh xuân rực rỡ (2)</a>
 </div>
 <div class="chapter-time">31/12/2023</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara/c125142-chuong-01-ke-hoach-tuoi-thanh-xuan-ruc-ro-3" title="Chương 01: Kế hoạch tuổi thanh xuân rực rỡ (3)">Chương 01: Kế hoạch tuổi thanh xuân rực rỡ (3)</a>
+</div>
+<div class="chapter-time">11/01/2024</div>
 </li>
 </ul>
 </div>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16760,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;eZarWCDUFaLiNzkWSdg2&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;a43826590a8e88edb8733f87d70c6f48deeee0e376193788f752c6fc0da104ac&quot;}" wire:effects="[]" wire:id="eZarWCDUFaLiNzkWSdg2" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16760,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;gdFEIve7UJYYXYAG8Zzt&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16760-tro-choi-thanh-xuan-moi-day-nhiet-huyet-cua-haibara&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;2a7a432816e3e26dfa1eb027969c24ad162baa326a9491da39dfaebe5a285e72&quot;}" wire:effects="[]" wire:id="gdFEIve7UJYYXYAG8Zzt" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -416,19 +423,44 @@ Tập 01 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(20)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(23)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">17 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">18 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
 <div class="ln-comment_sign-in long-text">
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2336745" class="ln-comment-item mt-3 clear deleted disabled" data-comment="2336745" data-parent="2336745">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u178109-30f974fb-2068-4957-9864-2badecec4fe9.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178109">Hoàng_tú</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Bình luận đã bị xóa bởi Hoàng_tú
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="ln-comment-group">
 <div id="ln-comment-2331532" class="ln-comment-item mt-3 clear" data-comment="2331532" data-parent="2331532">
@@ -642,7 +674,7 @@ Truyện tôi làm lúc nào chả tạm ngưng :'
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua78290-876c2fc1-f1c9-4762-b184-d8599391f9e5.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u78290-c951ff1a-746a-4b94-9072-2eb8e04bf895.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1011,7 +1043,7 @@ Dịch từ đầu thì đâu cần hỏi ai đâu bác
 <div class="ln-comment-page">
 </div> </main>
 <script>
-        var token = 'nZXq93x5DC9z9LhUTJ0QZOdIn4284XQBLvyvzXqk';
+        var token = '8vxHGBI0vF3fV40coYkhHcKLBCNU186yQnhyBq3s';
         var comment_type = 'series';
         var comment_typeid = '16760';
     </script>
@@ -1049,8 +1081,8 @@ Dịch từ đầu thì đâu cần hỏi ai đâu bác
 
     series_id = parseInt('16760');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="nZXq93x5DC9z9LhUTJ0QZOdIn4284XQBLvyvzXqk" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="FguraGZLo1oxNV2N6n3so5fnWVjCXmPYsUidgijP" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -1058,5 +1090,14 @@ Dịch từ đầu thì đâu cần hỏi ai đâu bác
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
