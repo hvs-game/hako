@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="HDcbv5q6rYSx2bRy1BwuohS0fyp1AkIQh4lE0mX4">
+<meta name="csrf-token" content="x8DA8Us07gXb7JHD2OtrJJhnq7A7QzJ7r1sXvrMR">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16691-seiken-gakuin-no-maken-tsukai">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,7 +129,7 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+<a href="/thao-luan/2591">
 <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
 <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
@@ -193,7 +193,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16691) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16691) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -201,7 +201,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 230 </span>
+<span class="block feature-name"> 241 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -233,7 +233,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16691')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16691'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16691-seiken-gakuin-no-maken-tsukai" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Seiken Gakuin no Maken Tsukai&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16691-seiken-gakuin-no-maken-tsukai" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -249,11 +249,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="01/01/2024 11:02:03" datetime="2024-01-01T11:02:03+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="13/01/2024 18:00:07" datetime="2024-01-13T18:00:07+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">32.575</div>
+<div class="statistic-value">46.748</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -261,7 +261,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">18.932</div>
+<div class="statistic-value">20.522</div>
 </div>
 </div>
 </div>
@@ -349,6 +349,7 @@
 </span>
 <ol class="list-volume unstyled no-margin no-padding">
 <li data-scrollTo="#volume_22885"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 07</span></li>
+<li data-scrollTo="#volume_23141"><span class="list_vol-order">02.</span><span class="list_vol-title">Tập 08</span></li>
 </ol>
 </div>
 </section>
@@ -377,6 +378,16 @@ Tập 07 <span style="color: red">*</span>
 </div>
 <div class="col-12 col-md-10">
 <ul class="list-chapters at-series">
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c125217-minh-hoa" title="Minh họa">Minh họa</a>
+</div>
+<div class="chapter-time">13/01/2024</div>
+</li>
 <li class>
 <div class="chapter-name">
 <a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c123632-mo-dau" title="Mở đầu">Mở đầu</a>
@@ -410,11 +421,8 @@ Tập 07 <span style="color: red">*</span>
 </div>
 <div class="chapter-time">25/12/2023</div>
 </li>
-<li class>
+<li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c124664-chuong-05-bao-loan-long-vuong" title="Chương 05: Long Vương nổi loạn">Chương 05: Long Vương nổi loạn</a>
 </div>
@@ -422,17 +430,43 @@ Tập 07 <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c124690-chuong-06-yeu-cau-cua-elfine" title="Chương 06: Yêu cầu của Elfine">Chương 06: Yêu cầu của Elfine</a>
 </div>
 <div class="chapter-time">01/01/2024</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c125210-chuong-07-song-bac" title="Chương 07: Sòng bạc">Chương 07: Sòng bạc</a>
+</div>
+<div class="chapter-time">13/01/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c125211-chuong-ket-cuoc-chien-giua-cac-ma-vuong" title="Chương kết: Cuộc chiến giữa các Ma Vương">Chương kết: Cuộc chiến giữa các Ma Vương</a>
+</div>
+<div class="chapter-time">13/01/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/c125212-loi-ket" title="Lời kết">Lời kết</a>
+</div>
+<div class="chapter-time">13/01/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (2 chương)</span>
+<span>Xem tiếp (6 chương)</span>
 </div>
 </div>
 </ul>
@@ -440,7 +474,33 @@ Tập 07 <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16691,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;latvpDkf5Lc9OckcK4mp&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16691-seiken-gakuin-no-maken-tsukai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;73c37d8dbdff2c46671d0af8415f0cc16dad797f6ab4ee6ba76064799e06d7b3&quot;}" wire:effects="[]" wire:id="latvpDkf5Lc9OckcK4mp" wire:init="loadRelevantSeries">
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+<header id="volume_23141" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Tập 08
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/16691-seiken-gakuin-no-maken-tsukai/t23141-tap-08">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
+</ul>
+</div>
+</div>
+</main>
+</section>
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16691,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;fpD9XdWI554YaERTkULU&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16691-seiken-gakuin-no-maken-tsukai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;8f98c417345c9a59322c6eb9162ade7d587321a6a86ec0637dc82c934fb9f65c&quot;}" wire:effects="[]" wire:id="fpD9XdWI554YaERTkULU" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -459,7 +519,7 @@ Tập 07 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(50)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(52)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -960,7 +1020,7 @@ Tran cumback r ak
 </div>
 </div> </main>
 <script>
-        var token = 'HDcbv5q6rYSx2bRy1BwuohS0fyp1AkIQh4lE0mX4';
+        var token = 'x8DA8Us07gXb7JHD2OtrJJhnq7A7QzJ7r1sXvrMR';
         var comment_type = 'series';
         var comment_typeid = '16691';
     </script>
@@ -998,8 +1058,8 @@ Tran cumback r ak
 
     series_id = parseInt('16691');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="HDcbv5q6rYSx2bRy1BwuohS0fyp1AkIQh4lE0mX4" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="x8DA8Us07gXb7JHD2OtrJJhnq7A7QzJ7r1sXvrMR" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -1007,5 +1067,14 @@ Tran cumback r ak
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
