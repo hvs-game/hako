@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="XS2wCh6ZTmlBPRuMYtqyyKC9s512S2jD6uw1J3Kk">
+<meta name="csrf-token" content="PIVXK5Tdv4oPt7S0dwFea2sF9HxmbLglx3o6EfKF">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+<a href="/thao-luan/2695">
+<div class="index-background d-none d-lg-block" style="background-image: url('https://i2.docln.net/ln/banners/2024-01-10/dl.png')"></div>
+<div class="index-background d-lg-none" style="background-image: url('https://i2.docln.net/ln/banners/2024-01-10/ml.png'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -186,7 +186,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14181) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14181) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -194,7 +194,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 595 </span>
+<span class="block feature-name"> 601 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -226,7 +226,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14181')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14181'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=The Dragon That Lost Its Eggs Started Raising Me for Some Reason!&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -242,11 +242,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="01/01/2024 23:38:52" datetime="2024-01-01T23:38:52+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="14/01/2024 23:25:17" datetime="2024-01-14T23:25:17+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">87.133</div>
+<div class="statistic-value">89.283</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -254,7 +254,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">170.159</div>
+<div class="statistic-value">172.730</div>
 </div>
 </div>
 </div>
@@ -829,16 +829,22 @@ Vol 2 <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c124735-chuong-13" title="Chương 13">Chương 13</a>
 </div>
 <div class="chapter-time">01/01/2024</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c125292-chuong-14" title="Chương 14">Chương 14</a>
+</div>
+<div class="chapter-time">14/01/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (8 chương)</span>
+<span>Xem tiếp (9 chương)</span>
 </div>
 </div>
 </ul>
@@ -846,7 +852,7 @@ Vol 2 <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14181,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;x4hKczqRjRLZrWr91n8R&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d21d85da16f929e8bb0e40a93aae8051766b1671ad8425a2ecc26ff3794393e4&quot;}" wire:effects="[]" wire:id="x4hKczqRjRLZrWr91n8R" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14181,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;YbHHJv5Tx45ppKGkaJtd&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c743edd5f974c76778ca34a98ca8d535224d2327cf69a09acf66f5f256844f43&quot;}" wire:effects="[]" wire:id="YbHHJv5Tx45ppKGkaJtd" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -865,7 +871,7 @@ Vol 2 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(673)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(674)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -994,7 +1000,7 @@ Trans đang thi á ông, để mai tui lên chap tồn kho
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">2</span>
+<span class="likecount font-semibold">3</span>
 </a>
 </div>
 </div>
@@ -1218,7 +1224,7 @@ vừa mới CB xong thông cảm :)))
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
+<span class="likecount font-semibold">2</span>
 </a>
 </div>
 </div>
@@ -1497,7 +1503,7 @@ Bom qua manh, không đỡ nổi 😂
 </div>
 </div> </main>
 <script>
-        var token = 'XS2wCh6ZTmlBPRuMYtqyyKC9s512S2jD6uw1J3Kk';
+        var token = 'PIVXK5Tdv4oPt7S0dwFea2sF9HxmbLglx3o6EfKF';
         var comment_type = 'series';
         var comment_typeid = '14181';
     </script>
@@ -1535,8 +1541,8 @@ Bom qua manh, không đỡ nổi 😂
 
     series_id = parseInt('14181');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="XS2wCh6ZTmlBPRuMYtqyyKC9s512S2jD6uw1J3Kk" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="PIVXK5Tdv4oPt7S0dwFea2sF9HxmbLglx3o6EfKF" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -1544,5 +1550,14 @@ Bom qua manh, không đỡ nổi 😂
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
