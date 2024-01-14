@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="KJ6bnnqiFsTS8spviWTA0KZyK0BlqM5Tlz9qkiZA">
+<meta name="csrf-token" content="qUV4fOnPWakiShJnMit6aH51MxNwFFuRKG6jpJ9t">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/14347-magical-girl-tyrant-sylph">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -196,7 +196,7 @@ Yuri
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14347) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14347) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -204,7 +204,7 @@ Yuri
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 251 </span>
+<span class="block feature-name"> 252 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -236,7 +236,7 @@ Yuri
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14347')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14347'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F14347-magical-girl-tyrant-sylph" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Magical Girl Tyrant Sylph&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F14347-magical-girl-tyrant-sylph" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -252,11 +252,11 @@ Yuri
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="01/01/2024 18:53:22" datetime="2024-01-01T18:53:22+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="14/01/2024 14:22:31" datetime="2024-01-14T14:22:31+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">54.857</div>
+<div class="statistic-value">57.057</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -264,7 +264,7 @@ Yuri
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">87.706</div>
+<div class="statistic-value">88.943</div>
 </div>
 </div>
 </div>
@@ -667,16 +667,22 @@ Chapter 1 - Thổi tung vạn vật trên thiên đàng và mặt đất thành 
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/14347-magical-girl-tyrant-sylph/c124717-chuong-25" title="25 • Người Bạn ②">25 • Người Bạn ②</a>
 </div>
 <div class="chapter-time">01/01/2024</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/14347-magical-girl-tyrant-sylph/c125268-26-nguoi-ban" title="26 • Người Bạn ③">26 • Người Bạn ③</a>
+</div>
+<div class="chapter-time">14/01/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (20 chương)</span>
+<span>Xem tiếp (21 chương)</span>
 </div>
 </div>
 </ul>
@@ -684,7 +690,7 @@ Chapter 1 - Thổi tung vạn vật trên thiên đàng và mặt đất thành 
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14347,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;now0ucBf6x02wABNSCgr&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14347-magical-girl-tyrant-sylph&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;4e6dc955b5e6c71b874c57de6874096934e3a6b8a47f95ae74bee603511c3027&quot;}" wire:effects="[]" wire:id="now0ucBf6x02wABNSCgr" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14347,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Vz4oH6R4Tv6aQVAU1Nny&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14347-magical-girl-tyrant-sylph&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;7118a5293c15a723fd166d521cbad2aab6acf7624bd459fb6490f8c047e086c6&quot;}" wire:effects="[]" wire:id="Vz4oH6R4Tv6aQVAU1Nny" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -703,14 +709,14 @@ Chapter 1 - Thổi tung vạn vật trên thiên đàng và mặt đất thành 
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(263)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(267)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">94 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">95 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -718,7 +724,7 @@ Chapter 1 - Thổi tung vạn vật trên thiên đàng và mặt đất thành 
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2099770" class="ln-comment-item mt-3 clear" data-comment="2099770" data-parent="2099770">
+<div id="ln-comment-2343637" class="ln-comment-item mt-3 clear" data-comment="2343637" data-parent="2343637">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -747,54 +753,13 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 </div>
 </div>
 <div class="ln-comment-content long-text">
-<strong>Vui lòng không Spoil nội dung</strong><br>
-Jap: <a href="https://ncode.syosetu.com/n3490gk/" rel="nofollow noreferrer noopener" target="_blank">https://ncode.syosetu.com/n3490gk/</a><br>
-Eng: <a href="https://www.novelupdates.com/series/magical-girl-tyrant-sylph/" rel="nofollow noreferrer noopener" target="_blank">https://www.novelupdates.com/series/magical-girl-tyrant-sylph/</a><br>
-<strong>Tiến độ:</strong> tùy tâm( thường sẽ là cuối tuần ) vì bận cosplay gao xanh nhưng sẽ cố gắng không drop( có thể thế... )<br>
-<strong>Về Dịch Thuật:</strong><br>
-Bản dịch hiện tại được dịch từ eng và nguồn eng này nhìn có vẻ là trans nhưng lại rất là mtl nên nếu bạn bất có ý kiến gì về chính tả hoặc dịch thuật đều có thể để lại cảm nghĩ bên dưới dòng bình luận nhé, cảm ơn rất nhiều và chúc bạn một ngày tốt lành :3
+Chuyện là tuần này vừa thi hết môn nên đang rảnh rang, thiết nghĩ nên bù đắp cho các đọc giả của mình, nói nào ngay, xin chính thức thông event truyện cười bắt đầu, thể thức như sau: 30' nữa t sẽ đăng chương 26 và ở dưới phần bình luận sẽ có 1 câu hỏi bất kỳ(dead by cringe tự chịu), nếu có bất kỳ ai trả lời đúng, thì chương tiếp theo sẽ được đăng liền kề cũng với một câu hỏi khác cho đến khi hết chương của "Chapter 1 - Thổi tung vạn vật trên thiên đàng và mặt đất thành mảnh vụn"
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2099770#ln-comment-2099770" class="text-slate-500">
-<time class="timeago" title="09-02-2023 16:52:41" datetime="2023-02-09T16:52:41+07:00">
-09-02-2023 16:52:41
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">7</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2104572" class="ln-comment-item mt-3 clear" data-comment="2104572" data-parent="2099770">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua50841-0703e353-8f1d-46cd-a311-25dc02aec1c0.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/50841">AX203</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Gao xanh? =))?
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2099770&amp;reply_id=2104572#ln-comment-2104572" class="text-slate-500">
-<time class="timeago" title="16-02-2023 11:00:04" datetime="2023-02-16T11:00:04+07:00">
-16-02-2023 11:00:04
+<a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2343637#ln-comment-2343637" class="text-slate-500">
+<time class="timeago" title="14-01-2024 13:47:42" datetime="2024-01-14T13:47:42+07:00">
+14-01-2024 13:47:42
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -806,7 +771,8 @@ Gao xanh? =))?
 </div>
 </div>
 </div>
-<div id="ln-comment-2104579" class="ln-comment-item mt-3 clear" data-comment="2104579" data-parent="2099770">
+<div class="ln-comment-reply">
+<div id="ln-comment-2343662" class="ln-comment-item mt-3 clear" data-comment="2343662" data-parent="2343637">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -835,28 +801,24 @@ Gao xanh? =))?
 </div>
 </div>
 <div class="ln-comment-content long-text">
-<a href="/thanh-vien/50841">@AX203:</a> cá mập biển sâu - gao xanh, a.k.a thợ lặn
+Lưu ý: sự kiện kéo dài đến hết 24h ngày 14/1/2024
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2099770&amp;reply_id=2104579#ln-comment-2104579" class="text-slate-500">
-<time class="timeago" title="16-02-2023 11:15:23" datetime="2023-02-16T11:15:23+07:00">
-16-02-2023 11:15:23
+<a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2343637&amp;reply_id=2343662#ln-comment-2343662" class="text-slate-500">
+<time class="timeago" title="14-01-2024 14:31:36" datetime="2024-01-14T14:31:36+07:00">
+14-01-2024 14:31:36
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">4</span>
+<span class="likecount font-semibold"></span>
 </a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="fetch_reply" data-parent="2099770">
-Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
 <div class="ln-comment-group">
@@ -1738,7 +1700,7 @@ Xem thêm 16 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;
 </div>
 </div> </main>
 <script>
-        var token = 'KJ6bnnqiFsTS8spviWTA0KZyK0BlqM5Tlz9qkiZA';
+        var token = 'qUV4fOnPWakiShJnMit6aH51MxNwFFuRKG6jpJ9t';
         var comment_type = 'series';
         var comment_typeid = '14347';
     </script>
@@ -1776,8 +1738,8 @@ Xem thêm 16 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;
 
     series_id = parseInt('14347');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="KJ6bnnqiFsTS8spviWTA0KZyK0BlqM5Tlz9qkiZA" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="qUV4fOnPWakiShJnMit6aH51MxNwFFuRKG6jpJ9t" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -1785,5 +1747,14 @@ Xem thêm 16 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
