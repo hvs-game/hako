@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="tQixvUhh21bn8yMtXg1Ox0Fu5NrATyvXPKsdyViE">
+<meta name="csrf-token" content="Xr205pd8X44HeGt8WExEoIQbGEttB6Xb0Mbp912b">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/15333-on-the-night-when-the-stars-and-flowers-fall">
@@ -22,11 +22,10 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=7a219b8d39cd68faef43">
-<link rel="stylesheet" href="/css/tailwind.css?id=35a2a684af509538a68d">
+<link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -130,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12377">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12377_d_l.png')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12377_m_l.png'); background-size: cover"></div>
+<a href="/thao-luan/2591">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -189,7 +188,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15333) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15333) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -197,7 +196,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 66 </span>
+<span class="block feature-name"> 67 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -229,7 +228,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15333')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15333'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F15333-on-the-night-when-the-stars-and-flowers-fall" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=On The Night When The Stars And Flowers Fall&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F15333-on-the-night-when-the-stars-and-flowers-fall" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -245,11 +244,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="31/08/2023 21:32:27" datetime="2023-08-31T21:32:27+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="22/01/2024 21:35:33" datetime="2024-01-22T21:35:33+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">9.546</div>
+<div class="statistic-value">11.385</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -257,7 +256,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">7.573</div>
+<div class="statistic-value">10.187</div>
 </div>
 </div>
 </div>
@@ -343,6 +342,7 @@
 </span>
 <ol class="list-volume unstyled no-margin no-padding">
 <li data-scrollTo="#volume_21215"><span class="list_vol-order">01.</span><span class="list_vol-title">Webnovel</span></li>
+<li data-scrollTo="#volume_23202"><span class="list_vol-order">02.</span><span class="list_vol-title">Ngoại truyện</span></li>
 </ol>
 </div>
 </section>
@@ -354,7 +354,7 @@
 <header id="volume_21215" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Webnovel <span style="color: red">*</span>
+Webnovel
 </span>
 </header>
 <main class="d-lg-block">
@@ -385,9 +385,6 @@ Webnovel <span style="color: red">*</span>
 </li>
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/15333-on-the-night-when-the-stars-and-flowers-fall/c118348-chap-3-nhung-ngoi-sao-sang-o-tokyo" title="Chương 3: Những ngôi sao sáng ở Tokyo">Chương 3: Những ngôi sao sáng ở Tokyo</a>
 </div>
 <div class="chapter-time">31/08/2023</div>
@@ -397,12 +394,57 @@ Webnovel <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:id="IrpmNHbQ04C7LAH9bVwO" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;IrpmNHbQ04C7LAH9bVwO&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/15333-on-the-night-when-the-stars-and-flowers-fall&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:15333,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;18dbe5e221b8e155c1715d03ce28d80579fcfd4fb83288ec2dc2c86edb5db585&quot;}}" wire:init="loadRelevantSeries">
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+<header id="volume_23202" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Ngoại truyện <span style="color: red">*</span>
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/15333-on-the-night-when-the-stars-and-flowers-fall/t23202-ngoai-truyen">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/15333-on-the-night-when-the-stars-and-flowers-fall/c125601-phan-1" title="Phần 1">Phần 1</a>
+</div>
+<div class="chapter-time">22/01/2024</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/15333-on-the-night-when-the-stars-and-flowers-fall/c125602-phan-2" title="Phần 2: Cơn mưa sao băng cùng bông hoa cuối cùng">Phần 2: Cơn mưa sao băng cùng bông hoa cuối cùng</a>
+</div>
+<div class="chapter-time">22/01/2024</div>
+</li>
+</ul>
+</div>
+</div>
+</main>
+</section>
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:15333,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;ySVot6QwYRBz01IKDsQy&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/15333-on-the-night-when-the-stars-and-flowers-fall&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ef8e6d349ba57e06766ef7be8904592fd90a96feb2fdaa272ac8e285ffe1b26a&quot;}" wire:effects="[]" wire:id="ySVot6QwYRBz01IKDsQy" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
 <ul class="others-list">
 <div class="row">
+<!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
 </div>
 </ul>
 <div class="mobile-more none">
@@ -413,7 +455,6 @@ Webnovel <span style="color: red">*</span>
 </main>
 </section>
 </div>
-
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
 <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(10)</span></span>
@@ -670,7 +711,7 @@ có tag tragedy sợ thế, phải đọc thôi =)
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19578">Nguyễn Khuê</a>
+<a class="font-bold leading-6 md:leading-7 ln-username line-through decoration-4" href="/thanh-vien/19578">Nguyễn Khuê</a>
 </div>
 </div>
 </div>
@@ -713,7 +754,7 @@ Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <div class="ln-comment-page">
 </div> </main>
 <script>
-        var token = 'tQixvUhh21bn8yMtXg1Ox0Fu5NrATyvXPKsdyViE';
+        var token = 'Xr205pd8X44HeGt8WExEoIQbGEttB6Xb0Mbp912b';
         var comment_type = 'series';
         var comment_typeid = '15333';
     </script>
@@ -751,14 +792,23 @@ Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 
     series_id = parseInt('15333');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'tQixvUhh21bn8yMtXg1Ox0Fu5NrATyvXPKsdyViE';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type="text/javascript" src="//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="Xr205pd8X44HeGt8WExEoIQbGEttB6Xb0Mbp912b" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
