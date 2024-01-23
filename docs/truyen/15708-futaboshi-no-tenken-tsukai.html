@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="xXeN31RUv5hxDsKgu5Lhjjm03xXzkWr2thKUVw7Z">
+<meta name="csrf-token" content="7OkTaD3cb9n8pE2dH41wg8SXA3vsma6u7obN7Awv">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/15708-futaboshi-no-tenken-tsukai">
@@ -22,11 +22,10 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=26fa77f843ddea418099">
-<link rel="stylesheet" href="/css/tailwind.css?id=6345e2aaec0cb9ac1b40">
+<link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -130,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+<a href="/truyen/12890">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -201,7 +200,7 @@ Web Novel
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15708) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15708) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -209,7 +208,7 @@ Web Novel
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 257 </span>
+<span class="block feature-name"> 285 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -241,7 +240,7 @@ Web Novel
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15708')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15708'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F15708-futaboshi-no-tenken-tsukai" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Sousei no Tenken Tsukai&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F15708-futaboshi-no-tenken-tsukai" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -257,11 +256,11 @@ Web Novel
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="23/10/2023 20:41:55" datetime="2023-10-23T20:41:55+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="23/01/2024 09:00:20" datetime="2024-01-23T09:00:20+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">46.524</div>
+<div class="statistic-value">65.819</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -269,7 +268,7 @@ Web Novel
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">21.615</div>
+<div class="statistic-value">26.534</div>
 </div>
 </div>
 </div>
@@ -345,10 +344,13 @@ Web Novel
 <i class="fas fa-times"></i>
 </span>
 <ol class="list-volume unstyled no-margin no-padding">
-<li data-scrollTo="#volume_21638"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 01</span></li>
-<li data-scrollTo="#volume_21640"><span class="list_vol-order">02.</span><span class="list_vol-title">Tập 02</span></li>
-<li data-scrollTo="#volume_21639"><span class="list_vol-order">03.</span><span class="list_vol-title">Tập 01 Web Novel: Công bố thiết lập</span></li>
-<li data-scrollTo="#volume_21641"><span class="list_vol-order">04.</span><span class="list_vol-title">Tập 02 Web Novel</span></li>
+<li data-scrollTo="#volume_21638"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 01: Song Tinh Thiên Kiếm Sứ</span></li>
+<li data-scrollTo="#volume_21640"><span class="list_vol-order">02.</span><span class="list_vol-title">Tập 02: Sự trừng phạt dành cho kẻ phản bội</span></li>
+<li data-scrollTo="#volume_23205"><span class="list_vol-order">03.</span><span class="list_vol-title">Tập 03: Huyết chiến, đi đến kết cục</span></li>
+<li data-scrollTo="#volume_23206"><span class="list_vol-order">04.</span><span class="list_vol-title">Tập 04: Một khoảnh khắc bình yên</span></li>
+<li data-scrollTo="#volume_23207"><span class="list_vol-order">05.</span><span class="list_vol-title">Tập 05: Chim Non nhảy múa, Bạch Quỷ giễu cợt</span></li>
+<li data-scrollTo="#volume_21639"><span class="list_vol-order">06.</span><span class="list_vol-title">Tập 01 Web Novel: Công bố thiết lập</span></li>
+<li data-scrollTo="#volume_21641"><span class="list_vol-order">07.</span><span class="list_vol-title">Tập 02 Web Novel</span></li>
 </ol>
 </div>
 </section>
@@ -360,7 +362,7 @@ Web Novel
 <header id="volume_21638" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Tập 01 <span style="color: red">*</span>
+Tập 01: Song Tinh Thiên Kiếm Sứ <span style="color: red">*</span>
 </span>
 </header>
 <main class="d-lg-block">
@@ -400,13 +402,20 @@ Tập 01 <span style="color: red">*</span>
 </li>
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/15708-futaboshi-no-tenken-tsukai/c121208-chuong-02" title="Chương 02">Chương 02</a>
 </div>
 <div class="chapter-time">23/10/2023</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/15708-futaboshi-no-tenken-tsukai/c125619-chuong-04" title="Chương 04">Chương 04</a>
+</div>
+<div class="chapter-time">23/01/2024</div>
 </li>
 </ul>
 </div>
@@ -417,7 +426,7 @@ Tập 01 <span style="color: red">*</span>
 <header id="volume_21640" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Tập 02
+Tập 02: Sự trừng phạt dành cho kẻ phản bội
 </span>
 </header>
 <main class="d-lg-block">
@@ -441,6 +450,84 @@ Tập 02
 </div>
 <div class="chapter-time">31/07/2023</div>
 </li>
+</ul>
+</div>
+</div>
+</main>
+</section>
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+<header id="volume_23205" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Tập 03: Huyết chiến, đi đến kết cục
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/15708-futaboshi-no-tenken-tsukai/t23205-tap-03-huyet-chien-di-den-ket-cuc">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://i2.docln.net/ln/books/covers/s23205-80afeb7f-bb8d-482d-911b-ac4db9eb419e.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
+</ul>
+</div>
+</div>
+</main>
+</section>
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+<header id="volume_23206" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Tập 04: Một khoảnh khắc bình yên
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/15708-futaboshi-no-tenken-tsukai/t23206-tap-04-mot-khoanh-khac-binh-yen">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://i2.docln.net/ln/books/covers/s23206-5938f1da-496e-458d-9407-d66bdf19328b.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
+</ul>
+</div>
+</div>
+</main>
+</section>
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+<header id="volume_23207" class="sect-header">
+<span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+<span class="sect-title">
+Tập 05: Chim Non nhảy múa, Bạch Quỷ giễu cợt
+</span>
+</header>
+<main class="d-lg-block">
+<div class="row">
+<div class="col-12 col-md-2">
+<div class="volume-cover">
+<a href="/truyen/15708-futaboshi-no-tenken-tsukai/t23207-tap-05-chim-non-nhay-mua-bach-quy-gieu-cot">
+<div class="a6-ratio">
+<div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 col-md-10">
+<ul class="list-chapters at-series">
 </ul>
 </div>
 </div>
@@ -504,12 +591,13 @@ Tập 02 Web Novel
 </div>
 </main>
 </section>
-<div wire:id="n9AjrdXgXp6JOisGOzJ2" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;n9AjrdXgXp6JOisGOzJ2&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/15708-futaboshi-no-tenken-tsukai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:15708,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;b8d41096b2d1348cfa8a4cb6443af736c8b54667077d17fd9e64dadd747d4db3&quot;}}" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:15708,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;spU7qrS73Er4p6vf3g36&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/15708-futaboshi-no-tenken-tsukai&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d7dd029db06496a144ef627b01f8117d8d39eb20a7c06879acc74599009dfe07&quot;}" wire:effects="[]" wire:id="spU7qrS73Er4p6vf3g36" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
 <ul class="others-list">
 <div class="row">
+<!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
 </div>
 </ul>
 <div class="mobile-more none">
@@ -520,7 +608,6 @@ Tập 02 Web Novel
 </main>
 </section>
 </div>
-
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
 <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(44)</span></span>
@@ -542,7 +629,7 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua29699-bf86dcd0-07d9-4444-add3-cdc6d8e78640.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u29699-a7affae1-e6c8-40d1-975f-dc33b82c7904.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -661,7 +748,13 @@ Truyện nhật lấy bối cảnh trung ko phải là hiếm cơ mà thế quá
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/26550">longendoh</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/26550">The Founding Wibu</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
 </div>
 </div>
 </div>
@@ -971,7 +1064,7 @@ me too :))
 </div>
 </div> </main>
 <script>
-        var token = 'xXeN31RUv5hxDsKgu5Lhjjm03xXzkWr2thKUVw7Z';
+        var token = '7OkTaD3cb9n8pE2dH41wg8SXA3vsma6u7obN7Awv';
         var comment_type = 'series';
         var comment_typeid = '15708';
     </script>
@@ -1009,14 +1102,23 @@ me too :))
 
     series_id = parseInt('15708');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'xXeN31RUv5hxDsKgu5Lhjjm03xXzkWr2thKUVw7Z';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type="text/javascript" src="//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="7OkTaD3cb9n8pE2dH41wg8SXA3vsma6u7obN7Awv" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
