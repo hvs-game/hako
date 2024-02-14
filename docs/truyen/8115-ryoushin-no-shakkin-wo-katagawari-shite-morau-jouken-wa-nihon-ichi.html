@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="N3MfKhyjnfdpdcZUJuTa2ZlfXnO6eKmXzou1nRsx">
+<meta name="csrf-token" content="dSwYULTg7CPSChgm2yjX2v6g5Sz4xDV87FRVfDgm">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi">
@@ -22,13 +22,12 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=26fa77f843ddea418099">
-<link rel="stylesheet" href="/css/tailwind.css?id=6345e2aaec0cb9ac1b40">
+<link rel="stylesheet" href="/css/interface.css?id=ead911cd7afa37e8c4aa85e2b6ef245b">
+<link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
-<script>
+<script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2" type="2332d6fa10032053b27770aa-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3" type="2332d6fa10032053b27770aa-text/javascript"></script>
+<script type="2332d6fa10032053b27770aa-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -130,7 +129,7 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+<a href="/thao-luan/2591">
 <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
 <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
@@ -193,7 +192,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 8115) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 8115) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -201,7 +200,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 11626 </span>
+<span class="block feature-name"> 11812 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -233,7 +232,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/8115')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/8115'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Ryoushin no Shakkin wo Katagawari shite Morau Jouken wa Nihon Ichi&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -249,11 +248,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="06/12/2023 00:33:02" datetime="2023-12-06T00:33:02+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="14/02/2024 23:49:33" datetime="2024-02-14T23:49:33+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">117.000</div>
+<div class="statistic-value">123.191</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -261,7 +260,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">3.820.226</div>
+<div class="statistic-value">3.940.550</div>
 </div>
 </div>
 </div>
@@ -310,6 +309,7 @@
 <div class="series-owner_share">
 <span class="owner_share-title" title="Tham gia">Tham gia</span>
 <a class="ln_info-name" href="/thanh-vien/1" style="padding-left: 5px;">Embers</a>,
+<a class="ln_info-name" href="/thanh-vien/176" style="padding-left: 5px;">Nguyễn Trần Anh Khoa</a>,
 <a class="ln_info-name" href="/thanh-vien/64345" style="padding-left: 5px;">紫花Violet</a>
 </div>
 <div class="owner-donate" style="padding: 0">
@@ -324,14 +324,12 @@
 <main class="d-lg-block">
 <div class="long-text" style="word-wrap: break-word;">
 <p><strong>Bản WN:</strong></p>
-<p><strong>- Trans: </strong><a href="../../../thanh-vien/64345">紫花Violet</a></p>
+<p><strong>- Trans: </strong><a href="../../../thanh-vien/64345">紫花Violet</a>, <a href="../../../thanh-vien/176">Nguyễn Trần Anh Khoa</a> (từ chương 64 trở đi)</p>
 <p><strong>- Proofread: </strong><a href="../../../thanh-vien/10906">Fui</a></p>
-<p><strong>- Tiến độ: </strong>1-2 tuần/1 chương + phụ thuộc vào người dịch.</p>
 <p><strong>- Nguồn dịch:</strong> <a href="https://kakuyomu.jp/works/1177354054896611050" rel="nofollow noreferrer noopener" target="_blank">WN</a></p>
 <p><strong>Bản LN:</strong></p>
 <p><strong>- Trans: </strong><a href="../../../thanh-vien/6440">Shiki Natsume</a></p>
 <p><strong>- Proofread: </strong><a href="../../../thanh-vien/10906">Fui</a></p>
-<p><strong>- Tiến độ: </strong>1 tuần/1 chương + phụ thuộc vào người dịch.</p>
 <p><strong>- Nguồn dịch:</strong> <a href="https://www.amazon.co.jp/dp/4040739191" rel="nofollow noreferrer noopener" target="_blank">LN</a></p>
 </div>
 </main>
@@ -954,13 +952,55 @@ Web Novel <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c123461-chuong-61-tro-choi-ki-co-muc-hard-extra-stage" title="Chương 61: Trò chơi kì cọ mức Hard &amp; Extra Stage">Chương 61: Trò chơi kì cọ mức Hard &amp; Extra Stage</a>
 </div>
 <div class="chapter-time">06/12/2023</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c126864-chuong-62-ngu-khoa-than" title="Chương 62: Ngủ khỏa thân">Chương 62: Ngủ khỏa thân</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c126865-chuong-63-noi-kho-hoc-chung-lop" title="Chương 63: Nỗi khổ học chung lớp">Chương 63: Nỗi khổ học chung lớp</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c126866-chuong-64-anh-taka-la-ong-bo-chieu-con-thai-qua" title="Chương 64: Anh Taka là ông bố chiều con thái quá">Chương 64: Anh Taka là ông bố chiều con thái quá</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c126867-chuong-65-y-kien-cua-nguoi-tung-trai-van-la-nhat" title="Chương 65: Ý kiến của người từng trải vẫn là nhất">Chương 65: Ý kiến của người từng trải vẫn là nhất</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
+</li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi/c126868-chuong-66-chon-qua-la-ca-mot-nghe-thuat" title="Chương 66: Chọn quà là cả một nghệ thuật">Chương 66: Chọn quà là cả một nghệ thuật</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
 </li>
 <li class="none">
 <div class="chapter-name">
@@ -976,7 +1016,7 @@ Web Novel <span style="color: red">*</span>
 </li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (58 chương)</span>
+<span>Xem tiếp (63 chương)</span>
 </div>
 </div>
 </ul>
@@ -1043,12 +1083,13 @@ Light Novel – Tập 1
 </div>
 </main>
 </section>
-<div wire:id="kysSEyyyeuoDWWm5PdXz" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;kysSEyyyeuoDWWm5PdXz&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:8115,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;ee8a3e6c585064232e9fa02a0d905ede150ce8f92eac187514a5964a38a06e1e&quot;}}" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8115,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;TtBf7uJHlbbEvdIjMnt7&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;f3a17fbaf020f0526520581f2f1bda1b860219373511f909d363d8390bc73b0d&quot;}" wire:effects="[]" wire:id="TtBf7uJHlbbEvdIjMnt7" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
 <ul class="others-list">
 <div class="row">
+<!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
 </div>
 </ul>
 <div class="mobile-more none">
@@ -1059,17 +1100,16 @@ Light Novel – Tập 1
 </main>
 </section>
 </div>
-
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(8923)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(9049)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">2177 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">2213 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -1077,7 +1117,7 @@ Light Novel – Tập 1
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2276928" class="ln-comment-item mt-3 clear" data-comment="2276928" data-parent="2276928">
+<div id="ln-comment-2364411" class="ln-comment-item mt-3 clear" data-comment="2364411" data-parent="2364411">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -1124,51 +1164,15 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ờm thì do bận công việc <s>chứ không phải do nghiện game đâu</s> nên mình không update thường xuyên được, cơ mà nếu có tí ủng hộ thì mình sẽ update thường xuyên hơn (có hàng nóng dịch sẵn rồi chờ edit thôi). Chúc những ai chơi HSR roll thành công fuxuan nhé.<br>
-Ủng hộ mình tại: STK 4669157 - Nguyễn Đức Huy - Ngân hàng ACB hoặc Momo - 0392350442.<br>
-<img src="https://i.imgur.com/LrkmZYE.jpg" alt="LrkmZYE.jpg">
+Well, thực ra thì mình tính xả chương vào mấy ngày Tết, nhưng do vướng nhiều thứ với lại Tết ai cũng đi chơi nên khả năng cao là ít người xem. Và kết quả là tới giờ mới đăng, thôi thì cứ coi đây là lì xì muộn vậy. Cảm ơn sự giúp đỡ của <a href="../thanh-vien/176">Nguyễn Trần Anh Khoa</a>, người đã dịch 3 chương 64 65 66 cho mình, và từ giờ cậu ấy sẽ tham gia pj này để dịch các chương tiếp theo, tiến độ thì mình chưa thể nói trước được gì nhưng chắc chắn sẽ nhanh hơn bây giờ (sẽ ra theo tuần).<br>
+<br>Tiện thể nếu ai hảo tâm thì có thể lì xì lại cho mình: STK 4669157 - Nguyễn Đức Huy - Ngân hàng ACB hoặc Momo - 0392350442.<br>
+<img src="https://cdn.discordapp.com/emojis/992478710433316904.webp?size=96&amp;quality=lossless" alt="992478710433316904.webp?size=96&amp;quality=lossless">
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2276928#ln-comment-2276928" class="text-slate-500">
-<time class="timeago" title="17-09-2023 23:10:15" datetime="2023-09-17T23:10:15+07:00">
-17-09-2023 23:10:15
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">21</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2277006" class="ln-comment-item mt-3 clear" data-comment="2277006" data-parent="2276928">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/161204">Ryuto</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-chắc chắn là ko nghịn 🐧
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2276928&amp;reply_id=2277006#ln-comment-2277006" class="text-slate-500">
-<time class="timeago" title="18-09-2023 01:21:24" datetime="2023-09-18T01:21:24+07:00">
-18-09-2023 01:21:24
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364411#ln-comment-2364411" class="text-slate-500">
+<time class="timeago" title="14-02-2024 23:52:16" datetime="2024-02-14T23:52:16+07:00">
+14-02-2024 23:52:16
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1180,11 +1184,12 @@ chắc chắn là ko nghịn 🐧
 </div>
 </div>
 </div>
-<div id="ln-comment-2277028" class="ln-comment-item mt-3 clear" data-comment="2277028" data-parent="2276928">
+<div class="ln-comment-reply">
+<div id="ln-comment-2364412" class="ln-comment-item mt-3 clear" data-comment="2364412" data-parent="2364411">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua123633-04dd3705-57fc-41d1-a92d-debc6d6f95c6.jpg" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua68226-1759358a-9c48-4b9a-b80e-ce068f5ed73e.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1192,41 +1197,37 @@ chắc chắn là ko nghịn 🐧
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123633">tanthanh</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/68226">Con Nghiện Rom-Com</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Tôi thì thi vọng ko lệch do 4 banner trước ko lệch rồi (selee,sói bạc, laucha,bleach) thi vọng banner fuxuan ko lệch:))
+Cảm ơn ngài, chúc ngài năm mới vui vẻ ạ
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2276928&amp;reply_id=2277028#ln-comment-2277028" class="text-slate-500">
-<time class="timeago" title="18-09-2023 02:22:14" datetime="2023-09-18T02:22:14+07:00">
-18-09-2023 02:22:14
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364411&amp;reply_id=2364412#ln-comment-2364412" class="text-slate-500">
+<time class="timeago" title="14-02-2024 23:52:56" datetime="2024-02-14T23:52:56+07:00">
+14-02-2024 23:52:56
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">3</span>
+<span class="likecount font-semibold"></span>
 </a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="fetch_reply" data-parent="2276928">
-Xem thêm 4 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2323166" class="ln-comment-item mt-3 clear" data-comment="2323166" data-parent="2323166">
+<div id="ln-comment-2364451" class="ln-comment-item mt-3 clear" data-comment="2364451" data-parent="2364451">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua160416-8dff7f39-0591-4f80-8552-ccf16781ff6c.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u173017-36595b63-b02e-43cd-98e9-714618e48161.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1234,18 +1235,30 @@ Xem thêm 4 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160416">Hienmd</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173017">Người bạn tên Kevin</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+<img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+<div class="leading-4">AUTHOR</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ae cho hỏi sao đang từ chap 61 nhảy lên chap 104 z
+Mlemmm
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2323166#ln-comment-2323166" class="text-slate-500">
-<time class="timeago" title="10-12-2023 09:02:47" datetime="2023-12-10T09:02:47+07:00">
-10-12-2023 09:02:47
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364451#ln-comment-2364451" class="text-slate-500">
+<time class="timeago" title="15-02-2024 00:44:31" datetime="2024-02-15T00:44:31+07:00">
+15-02-2024 00:44:31
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1259,11 +1272,11 @@ Ae cho hỏi sao đang từ chap 61 nhảy lên chap 104 z
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2321243" class="ln-comment-item mt-3 clear" data-comment="2321243" data-parent="2321243">
+<div id="ln-comment-2364450" class="ln-comment-item mt-3 clear" data-comment="2364450" data-parent="2364450">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua152298-fb4edc54-c9ac-4e3e-b874-b7c486283b3a.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u160088-59890286-d414-40b8-b72f-afe4ba348732.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1271,18 +1284,18 @@ Ae cho hỏi sao đang từ chap 61 nhảy lên chap 104 z
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/152298">DuckMind258</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160088">Nguoz</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-nhìn art bìa quen quen bấm vào xem hóa ra :]]
+On top🔝
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2321243#ln-comment-2321243" class="text-slate-500">
-<time class="timeago" title="06-12-2023 15:52:38" datetime="2023-12-06T15:52:38+07:00">
-06-12-2023 15:52:38
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364450#ln-comment-2364450" class="text-slate-500">
+<time class="timeago" title="15-02-2024 00:44:25" datetime="2024-02-15T00:44:25+07:00">
+15-02-2024 00:44:25
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1296,7 +1309,50 @@ nhìn art bìa quen quen bấm vào xem hóa ra :]]
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2321055" class="ln-comment-item mt-3 clear" data-comment="2321055" data-parent="2321055">
+<div id="ln-comment-2364432" class="ln-comment-item mt-3 clear" data-comment="2364432" data-parent="2364432">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u78290-0df63c42-7f78-481b-8ec9-98ba990c33eb.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/78290">Loy</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Ba tym nữa
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364432#ln-comment-2364432" class="text-slate-500">
+<time class="timeago" title="15-02-2024 00:17:59" datetime="2024-02-15T00:17:59+07:00">
+15-02-2024 00:17:59
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2364429" class="ln-comment-item mt-3 clear" data-comment="2364429" data-parent="2364429">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -1308,18 +1364,18 @@ nhìn art bìa quen quen bấm vào xem hóa ra :]]
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/35986">Lolst123</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/168196">Dangbulu</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Yeahhhh
+Vẫn mong full chương để đọc lại từ đầu luôn 1 lần chứ quên hết nội dung rồi 😗
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2321055#ln-comment-2321055" class="text-slate-500">
-<time class="timeago" title="06-12-2023 00:42:12" datetime="2023-12-06T00:42:12+07:00">
-06-12-2023 00:42:12
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364429#ln-comment-2364429" class="text-slate-500">
+<time class="timeago" title="15-02-2024 00:15:59" datetime="2024-02-15T00:15:59+07:00">
+15-02-2024 00:15:59
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1333,11 +1389,11 @@ Yeahhhh
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2319489" class="ln-comment-item mt-3 clear" data-comment="2319489" data-parent="2319489">
+<div id="ln-comment-2364346" class="ln-comment-item mt-3 clear" data-comment="2364346" data-parent="2364346">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u181078-dd84822f-34d1-481f-9d15-d4318074bebf.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1345,18 +1401,18 @@ Yeahhhh
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/157214">Gián 2007</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/181078">Soft &amp; Wet</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Trans nghiện nữa rồi :((
+6 tym nữa là độc chiếm top 1
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2319489#ln-comment-2319489" class="text-slate-500">
-<time class="timeago" title="03-12-2023 07:23:33" datetime="2023-12-03T07:23:33+07:00">
-03-12-2023 07:23:33
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364346#ln-comment-2364346" class="text-slate-500">
+<time class="timeago" title="14-02-2024 23:01:15" datetime="2024-02-14T23:01:15+07:00">
+14-02-2024 23:01:15
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1370,11 +1426,11 @@ Trans nghiện nữa rồi :((
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2318067" class="ln-comment-item mt-3 clear" data-comment="2318067" data-parent="2318067">
+<div id="ln-comment-2364318" class="ln-comment-item mt-3 clear" data-comment="2364318" data-parent="2364318">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua115579-ca278fdb-a32c-44ed-8ba0-897f749ea65e.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1382,23 +1438,29 @@ Trans nghiện nữa rồi :((
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98295">Furyghost012</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/115579">Senuim</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ném donate nhỏ vào mặt trans
+Sắp ăn top 1 tim rồi, ko bt trans có bom ko nhỉ 🐧
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2318067#ln-comment-2318067" class="text-slate-500">
-<time class="timeago" title="30-11-2023 16:13:59" datetime="2023-11-30T16:13:59+07:00">
-30-11-2023 16:13:59
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364318#ln-comment-2364318" class="text-slate-500">
+<time class="timeago" title="14-02-2024 22:33:01" datetime="2024-02-14T22:33:01+07:00">
+14-02-2024 22:33:01
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
+<span class="likecount font-semibold"></span>
 </a>
 </div>
 </div>
@@ -1406,7 +1468,7 @@ Ném donate nhỏ vào mặt trans
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-2321050" class="ln-comment-item mt-3 clear" data-comment="2321050" data-parent="2318067">
+<div id="ln-comment-2364378" class="ln-comment-item mt-3 clear" data-comment="2364378" data-parent="2364318">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -1453,49 +1515,13 @@ Ném donate nhỏ vào mặt trans
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Cảm ơn bạn nhé :3
+Vát bôn giờ.<br><img src="https://cdn.discordapp.com/emojis/948513856035106828.webp?size=96&amp;quality=lossless" alt="948513856035106828.webp?size=96&amp;quality=lossless">
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2318067&amp;reply_id=2321050#ln-comment-2321050" class="text-slate-500">
-<time class="timeago" title="06-12-2023 00:34:43" datetime="2023-12-06T00:34:43+07:00">
-06-12-2023 00:34:43
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2321137" class="ln-comment-item mt-3 clear" data-comment="2321137" data-parent="2318067">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua21437-09a94357-11a6-49f5-940e-43b9925b1f7e.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/21437">Kuma đầu tiên</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/10906">@Fui:</a> trans nhiều danh hiệu qué<br>
-Gấu 🐻
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2318067&amp;reply_id=2321137#ln-comment-2321137" class="text-slate-500">
-<time class="timeago" title="06-12-2023 09:54:23" datetime="2023-12-06T09:54:23+07:00">
-06-12-2023 09:54:23
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2364318&amp;reply_id=2364378#ln-comment-2364378" class="text-slate-500">
+<time class="timeago" title="14-02-2024 23:24:41" datetime="2024-02-14T23:24:41+07:00">
+14-02-2024 23:24:41
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1510,44 +1536,7 @@ Gấu 🐻
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2317523" class="ln-comment-item mt-3 clear" data-comment="2317523" data-parent="2317523">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua174226-d10b3dfc-9442-4539-9bef-08de1ed29d90.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/174226">Ngỹn Nam</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Ae còn bộ nào giống này nữa ko cho tôi xin với<br>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2317523#ln-comment-2317523" class="text-slate-500">
-<time class="timeago" title="29-11-2023 11:57:29" datetime="2023-11-29T11:57:29+07:00">
-29-11-2023 11:57:29
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2315866" class="ln-comment-item mt-3 clear" data-comment="2315866" data-parent="2315866">
+<div id="ln-comment-2360437" class="ln-comment-item mt-3 clear" data-comment="2360437" data-parent="2360437">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -1564,87 +1553,13 @@ Ae còn bộ nào giống này nữa ko cho tôi xin với<br>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Thiếu đường vl sống dậy đii:(
+T mong 1 ngày nào đó wing thầu bộ này :))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2315866#ln-comment-2315866" class="text-slate-500">
-<time class="timeago" title="26-11-2023 15:50:35" datetime="2023-11-26T15:50:35+07:00">
-26-11-2023 15:50:35
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2307529" class="ln-comment-item mt-3 clear" data-comment="2307529" data-parent="2307529">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua149502-c55ab5c1-c9ce-4978-93e8-fb1ae839b26d.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149502">Hyuigh</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Đào!
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2307529#ln-comment-2307529" class="text-slate-500">
-<time class="timeago" title="06-11-2023 20:40:24" datetime="2023-11-06T20:40:24+07:00">
-06-11-2023 20:40:24
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2307097" class="ln-comment-item mt-3 clear" data-comment="2307097" data-parent="2307097">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173760">sorrowseeker</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-xin phép hỏi , sao ko thấy từ chap 61-103 nhỉ ? tks .
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2307097#ln-comment-2307097" class="text-slate-500">
-<time class="timeago" title="05-11-2023 22:04:32" datetime="2023-11-05T22:04:32+07:00">
-05-11-2023 22:04:32
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2360437#ln-comment-2360437" class="text-slate-500">
+<time class="timeago" title="09-02-2024 21:40:54" datetime="2024-02-09T21:40:54+07:00">
+09-02-2024 21:40:54
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1657,11 +1572,11 @@ xin phép hỏi , sao ko thấy từ chap 61-103 nhỉ ? tks .
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-2308441" class="ln-comment-item mt-3 clear" data-comment="2308441" data-parent="2307097">
+<div id="ln-comment-2361497" class="ln-comment-item mt-3 clear" data-comment="2361497" data-parent="2360437">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua158289-d86dadee-ade0-41cb-b964-bd698f4eefd1.jpg" class="w-full rounded-full" />
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1669,18 +1584,18 @@ xin phép hỏi , sao ko thấy từ chap 61-103 nhỉ ? tks .
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/158289">Simp Elaina♥︎</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/158778">dgf</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Do fan hóng segg nên dịch 2 chap kia trc
+Wing khó thầy mấy bộ ecchi lắm
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2307097&amp;reply_id=2308441#ln-comment-2308441" class="text-slate-500">
-<time class="timeago" title="08-11-2023 21:48:48" datetime="2023-11-08T21:48:48+07:00">
-08-11-2023 21:48:48
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2360437&amp;reply_id=2361497#ln-comment-2361497" class="text-slate-500">
+<time class="timeago" title="11-02-2024 11:53:04" datetime="2024-02-11T11:53:04+07:00">
+11-02-2024 11:53:04
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1692,11 +1607,11 @@ Do fan hóng segg nên dịch 2 chap kia trc
 </div>
 </div>
 </div>
-<div id="ln-comment-2310156" class="ln-comment-item mt-3 clear" data-comment="2310156" data-parent="2307097">
+<div id="ln-comment-2361608" class="ln-comment-item mt-3 clear" data-comment="2361608" data-parent="2360437">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua144775-369d6ef9-68a4-468f-a82a-32ab7df08c6f.jpg" class="w-full rounded-full" />
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1704,18 +1619,18 @@ Do fan hóng segg nên dịch 2 chap kia trc
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/144775">one cham</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160904">Nqloi</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-<a href="/thanh-vien/158289">@Simp Elaina♥︎:</a> =))) đầu toàn seggs
+<a href="/thanh-vien/158778">@dgf:</a> gọi là mong mà
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2307097&amp;reply_id=2310156#ln-comment-2310156" class="text-slate-500">
-<time class="timeago" title="12-11-2023 21:01:08" datetime="2023-11-12T21:01:08+07:00">
-12-11-2023 21:01:08
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2360437&amp;reply_id=2361608#ln-comment-2361608" class="text-slate-500">
+<time class="timeago" title="11-02-2024 15:47:35" datetime="2024-02-11T15:47:35+07:00">
+11-02-2024 15:47:35
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1730,11 +1645,11 @@ Do fan hóng segg nên dịch 2 chap kia trc
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2290010" class="ln-comment-item mt-3 clear" data-comment="2290010" data-parent="2290010">
+<div id="ln-comment-2359491" class="ln-comment-item mt-3 clear" data-comment="2359491" data-parent="2359491">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua171085-3de86a51-7772-4932-8ad3-b77e8cbb4937.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1742,18 +1657,19 @@ Do fan hóng segg nên dịch 2 chap kia trc
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/172345">GoldenSaint</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/171085">Khôiusenpai</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Truyện tranh chap 15 sang đây là chap bao nhiêu thế mn
+À thì đến đây đc rồi đối với tui bộ này đã end nên sủi đây.<br>
+Thứ Năm, 8 tháng 2, 2024 lúc 2h10p.<br>
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2290010#ln-comment-2290010" class="text-slate-500">
-<time class="timeago" title="07-10-2023 15:04:47" datetime="2023-10-07T15:04:47+07:00">
-07-10-2023 15:04:47
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2359491#ln-comment-2359491" class="text-slate-500">
+<time class="timeago" title="08-02-2024 02:10:34" datetime="2024-02-08T02:10:34+07:00">
+08-02-2024 02:10:34
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1766,7 +1682,7 @@ Truyện tranh chap 15 sang đây là chap bao nhiêu thế mn
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-2290555" class="ln-comment-item mt-3 clear" data-comment="2290555" data-parent="2290010">
+<div id="ln-comment-2360153" class="ln-comment-item mt-3 clear" data-comment="2360153" data-parent="2359491">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
@@ -1778,18 +1694,18 @@ Truyện tranh chap 15 sang đây là chap bao nhiêu thế mn
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/128397">just lyk</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180692">Johnathan</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
+Sao thế ông
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2290010&amp;reply_id=2290555#ln-comment-2290555" class="text-slate-500">
-<time class="timeago" title="08-10-2023 14:09:56" datetime="2023-10-08T14:09:56+07:00">
-08-10-2023 14:09:56
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2359491&amp;reply_id=2360153#ln-comment-2360153" class="text-slate-500">
+<time class="timeago" title="09-02-2024 10:18:59" datetime="2024-02-09T10:18:59+07:00">
+09-02-2024 10:18:59
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1797,6 +1713,115 @@ manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
 <span class="likecount font-semibold"></span>
 </a>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2360219" class="ln-comment-item mt-3 clear" data-comment="2360219" data-parent="2359491">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/157214">Gián 2007</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/180692">@Johnathan:</a> chắc tại ông trans có vẻ sủi nữa rồi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2359491&amp;reply_id=2360219#ln-comment-2360219" class="text-slate-500">
+<time class="timeago" title="09-02-2024 13:56:06" datetime="2024-02-09T13:56:06+07:00">
+09-02-2024 13:56:06
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2358661" class="ln-comment-item mt-3 clear" data-comment="2358661" data-parent="2358661">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180465">Npk1525</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Tôi thấy đường huyết của mình tăng cao rồi hẹn ngày khác trở lại
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2358661#ln-comment-2358661" class="text-slate-500">
+<time class="timeago" title="06-02-2024 20:04:45" datetime="2024-02-06T20:04:45+07:00">
+06-02-2024 20:04:45
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2353403" class="ln-comment-item mt-3 clear" data-comment="2353403" data-parent="2353403">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua131379-e5246d71-c79d-49cb-9206-c11ac64cc002.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/131379">~shi~</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+đêm 30 thả boom🐧
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8115-ryoushin-no-shakkin-wo-katagawari-shite-morau-jouken-wa-nihon-ichi?comment_id=2353403#ln-comment-2353403" class="text-slate-500">
+<time class="timeago" title="29-01-2024 17:04:24" datetime="2024-01-29T17:04:24+07:00">
+29-01-2024 17:04:24
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
 </div>
 </div>
 </div>
@@ -1811,8 +1836,8 @@ manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
 </div>
 </div>
 </div> </main>
-<script>
-        var token = 'OoFCAs5gG3MMZQ1i41HCIAXcsWK87poiywBeTrJI';
+<script type="2332d6fa10032053b27770aa-text/javascript">
+        var token = 'oV4GqdYJxcxQG4tJdyfXb9ZqbbMbo50KvMlQrB2Q';
         var comment_type = 'series';
         var comment_typeid = '8115';
     </script>
@@ -1824,7 +1849,7 @@ manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
 </div>
 </div>
 </main>
-<script>
+<script type="2332d6fa10032053b27770aa-text/javascript">
     $(document).ready(function() {
         listab("#series-comments");
         // Switch to FB tab if request fb_comment_id
@@ -1835,14 +1860,14 @@ manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
         $('ol.list-volume li').on('click',function(){
             var vol = $(this);
             var scrollTo = vol.data('scrollto');
-            $('html, body').animate({scrollTop: $(scrollTo).offset().top});   
+            $('html, body').animate({scrollTop: $(scrollTo).offset().top});
         });
-        
+
         $('.catalog-icon').on('click', function(){
             $('#list-vol').toggleClass('animation fade-in-right');
             $('#list-vol').toggle();
         });
-        
+
         $('.list-vol_off').on('click', function(){
             $('#list-vol').hide();
         });
@@ -1850,14 +1875,23 @@ manga khác wn lắm cứ đọc từ đầu đi không dài lắm đâu
 
     series_id = parseInt('8115');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'N3MfKhyjnfdpdcZUJuTa2ZlfXnO6eKmXzou1nRsx';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59" type="2332d6fa10032053b27770aa-text/javascript"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="dSwYULTg7CPSChgm2yjX2v6g5Sz4xDV87FRVfDgm" data-update-uri="/livewire/update" data-navigate-once="true" type="2332d6fa10032053b27770aa-text/javascript"></script>
+<script type="2332d6fa10032053b27770aa-text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2332d6fa10032053b27770aa-|49" defer></script></body>
 </html>
