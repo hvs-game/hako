@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="Ftng3a2nEILwir3oC6yHt7aPh18O389IpJ5aGOSH">
+<meta name="csrf-token" content="yQI5u63YsV3rWBLpavcEXFZNabPiIYk98UJe8Dxt">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/15881-phap-su-the-gioi-moi">
@@ -22,13 +22,12 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=26fa77f843ddea418099">
-<link rel="stylesheet" href="/css/tailwind.css?id=6345e2aaec0cb9ac1b40">
+<link rel="stylesheet" href="/css/interface.css?id=ead911cd7afa37e8c4aa85e2b6ef245b">
+<link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
-<script>
+<script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2" type="a6ee0f805d7c84750a33107e-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3" type="a6ee0f805d7c84750a33107e-text/javascript"></script>
+<script type="a6ee0f805d7c84750a33107e-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -130,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+<a href="/truyen/12890">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -201,7 +200,7 @@ Web Novel
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15881) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 15881) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -209,7 +208,7 @@ Web Novel
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 89 </span>
+<span class="block feature-name"> 93 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -241,7 +240,7 @@ Web Novel
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15881')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/15881'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F15881-phap-su-the-gioi-moi" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Isekai cheat magican&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F15881-phap-su-the-gioi-moi" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -257,11 +256,11 @@ Web Novel
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="10/12/2023 17:32:20" datetime="2023-12-10T17:32:20+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="17/02/2024 14:57:20" datetime="2024-02-17T14:57:20+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">44.436</div>
+<div class="statistic-value">48.478</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -269,7 +268,7 @@ Web Novel
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">27.495</div>
+<div class="statistic-value">29.755</div>
 </div>
 </div>
 </div>
@@ -535,16 +534,23 @@ Tập 1: Bình thường ở thế giới cũ, phi thường ở thế giới m�
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/15881-phap-su-the-gioi-moi/c123756-chuong-12-chan-tuong-bai-lo" title="Chương 12: Chân tướng bại lộ">Chương 12: Chân tướng bại lộ</a>
 </div>
 <div class="chapter-time">10/12/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/15881-phap-su-the-gioi-moi/c126982-chuong-13-khoi-hanh" title="Chương 13: Khởi hành">Chương 13: Khởi hành</a>
+</div>
+<div class="chapter-time">17/02/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (7 chương)</span>
+<span>Xem tiếp (8 chương)</span>
 </div>
 </div>
 </ul>
@@ -552,12 +558,13 @@ Tập 1: Bình thường ở thế giới cũ, phi thường ở thế giới m�
 </div>
 </main>
 </section>
-<div wire:id="LFzasX88lnKEM5i8QOqL" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;LFzasX88lnKEM5i8QOqL&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/15881-phap-su-the-gioi-moi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:15881,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;c3f0627d8482f227904f5098670ea451caefc4aef24f1a33d2d8ab4ed20aadd4&quot;}}" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:15881,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;lrA6LGbaydRXM3LYeZO8&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/15881-phap-su-the-gioi-moi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;5f8e09aeccffd3f9d53cf8c0b0d5aeea63d15c00f36c77f2e93719c923b91a9a&quot;}" wire:effects="[]" wire:id="lrA6LGbaydRXM3LYeZO8" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
 <ul class="others-list">
 <div class="row">
+<!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
 </div>
 </ul>
 <div class="mobile-more none">
@@ -568,7 +575,6 @@ Tập 1: Bình thường ở thế giới cũ, phi thường ở thế giới m�
 </main>
 </section>
 </div>
-
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
 <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(30)</span></span>
@@ -733,7 +739,7 @@ Có một cơn ác mộng mang tên THI GIỮA KÌ...
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua88077-90ddaa23-8f69-43a9-a185-b3c08b0e721b.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u88077-b064411e-420d-4ed2-9651-d3e3210eb508.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1255,7 +1261,7 @@ Anime như
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua108952-d0fd99e4-edc5-4fbb-8573-0324bca66566.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u108952-7a576209-7242-4adc-95a1-12226b853189.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1263,7 +1269,7 @@ Anime như
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/108952">Đang bị lag</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/108952">Thứ Tư Nghiêm Túc</a>
 </div>
 </div>
 </div>
@@ -1379,8 +1385,8 @@ Năm 2017 có người làm nhưng drop từ đó đến giờ rồi. Mà hình 
 </div>
 <div class="ln-comment-page">
 </div> </main>
-<script>
-        var token = 'Eu2MA51PhDvDB3PanFzzMVI1TjwnfUrzoENqnneX';
+<script type="a6ee0f805d7c84750a33107e-text/javascript">
+        var token = 'yQI5u63YsV3rWBLpavcEXFZNabPiIYk98UJe8Dxt';
         var comment_type = 'series';
         var comment_typeid = '15881';
     </script>
@@ -1392,7 +1398,7 @@ Năm 2017 có người làm nhưng drop từ đó đến giờ rồi. Mà hình 
 </div>
 </div>
 </main>
-<script>
+<script type="a6ee0f805d7c84750a33107e-text/javascript">
     $(document).ready(function() {
         listab("#series-comments");
         // Switch to FB tab if request fb_comment_id
@@ -1403,14 +1409,14 @@ Năm 2017 có người làm nhưng drop từ đó đến giờ rồi. Mà hình 
         $('ol.list-volume li').on('click',function(){
             var vol = $(this);
             var scrollTo = vol.data('scrollto');
-            $('html, body').animate({scrollTop: $(scrollTo).offset().top});   
+            $('html, body').animate({scrollTop: $(scrollTo).offset().top});
         });
-        
+
         $('.catalog-icon').on('click', function(){
             $('#list-vol').toggleClass('animation fade-in-right');
             $('#list-vol').toggle();
         });
-        
+
         $('.list-vol_off').on('click', function(){
             $('#list-vol').hide();
         });
@@ -1418,14 +1424,23 @@ Năm 2017 có người làm nhưng drop từ đó đến giờ rồi. Mà hình 
 
     series_id = parseInt('15881');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Ftng3a2nEILwir3oC6yHt7aPh18O389IpJ5aGOSH';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59" type="a6ee0f805d7c84750a33107e-text/javascript"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="yQI5u63YsV3rWBLpavcEXFZNabPiIYk98UJe8Dxt" data-update-uri="/livewire/update" data-navigate-once="true" type="a6ee0f805d7c84750a33107e-text/javascript"></script>
+<script type="a6ee0f805d7c84750a33107e-text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a6ee0f805d7c84750a33107e-|49" defer></script></body>
 </html>
