@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="lWaEPGq3NVl8lDImcxAPZDPcWnhDeXCKkKRXwrcY">
+<meta name="csrf-token" content="wxokHur8AfHEgW7lNcX5QAw5vsu2UNI8KN6x6tcW">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite">
@@ -22,12 +22,12 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/interface.css?id=ead911cd7afa37e8c4aa85e2b6ef245b">
+<link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
-<script>
+<script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2" type="f1e2f53f0fc77a9e646265c3-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3" type="f1e2f53f0fc77a9e646265c3-text/javascript"></script>
+<script type="f1e2f53f0fc77a9e646265c3-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12890">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
+<a href="/thao-luan/2591">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -191,7 +191,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16774) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16774) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -199,7 +199,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 270 </span>
+<span class="block feature-name"> 335 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -231,7 +231,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16774')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16774'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Maigo ni Natteita Youjo wo Tasuketara, Otonari ni Sumu Bishoujo Ryuugakusei ga Ie ni Asobi ni Kuru You ni Natta Ken Nitsuite&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -247,11 +247,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="02/01/2024 08:56:34" datetime="2024-01-02T08:56:34+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="03/03/2024 23:17:33" datetime="2024-03-03T23:17:33+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">25.071</div>
+<div class="statistic-value">31.800</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -259,7 +259,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">19.752</div>
+<div class="statistic-value">27.655</div>
 </div>
 </div>
 </div>
@@ -296,7 +296,7 @@
 <section class="series-users">
 <main>
 <div class="series-owner group-mem">
-<img width="50px" height="50px" src="https://i.docln.net/lightnovel/users/ua147580-41cbbcde-71bf-407f-ae09-6c806d1b2b72.jpg" alt="Poster's avatar">
+<img width="50px" height="50px" src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" alt="Poster's avatar">
 <div class="series-owner-title">
 <span class="series-owner_name"><a href="/thanh-vien/147580">Mitsuyuki</a></span>
 </div>
@@ -398,12 +398,19 @@ Light Novel Volume 1 <span style="color: red">*</span>
 </li>
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite/c124744-chuong-3-lua-chon-tuong-lai" title="Chương 3:  Lựa chọn tương lai">Chương 3: Lựa chọn tương lai</a>
 </div>
 <div class="chapter-time">02/01/2024</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite/c128129-chuong-4-nhung-thu-co-du-hoc-sinh-xinh-dep-thich-phan-1" title="Chương 4: Những thứ cô du học sinh xinh đẹp thích (Phần 1)">Chương 4: Những thứ cô du học sinh xinh đẹp thích (Phần 1)</a>
+</div>
+<div class="chapter-time">03/03/2024</div>
 </li>
 </ul>
 </div>
@@ -513,7 +520,7 @@ Light Novel Volume 4
 <header id="volume_23031" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Light Novel Volume 5 <span style="color: red">*</span>
+Light Novel Volume 5
 </span>
 </header>
 <main class="d-lg-block">
@@ -532,9 +539,6 @@ Light Novel Volume 5 <span style="color: red">*</span>
 <ul class="list-chapters at-series">
 <li class>
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite/c124561-minh-hoa-vol-5" title="Minh họa vol 5">Minh họa vol 5</a>
 </div>
@@ -545,7 +549,7 @@ Light Novel Volume 5 <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16774,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;T52qrESQU1R0FqwyIZZn&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c62c38b9c561ad04438d0f69a32340ff5d573fc6d7f17816d36e3597c0d90061&quot;}" wire:effects="[]" wire:id="T52qrESQU1R0FqwyIZZn" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16774,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;SO9xlnCdmCsuq6EvtbNJ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;882f07d77ba030b9fedbdefae0452d896ef0a2608214bcc6cfe33f11b1282690&quot;}" wire:effects="[]" wire:id="SO9xlnCdmCsuq6EvtbNJ" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -564,14 +568,14 @@ Light Novel Volume 5 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(45)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(60)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">31 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">40 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -579,11 +583,11 @@ Light Novel Volume 5 <span style="color: red">*</span>
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-2334658" class="ln-comment-item mt-3 clear" data-comment="2334658" data-parent="2334658">
+<div id="ln-comment-2377842" class="ln-comment-item mt-3 clear" data-comment="2377842" data-parent="2377842">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua147580-41cbbcde-71bf-407f-ae09-6c806d1b2b72.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ring-2 ring-cyan-500 dark:ring-cyan-900">
@@ -608,13 +612,268 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
+Hello ae tôi đã trở lại rồi đây, mấy nay bận quá nay mới lên chương được, từ nay sẽ chăm hơn nhóe &lt;3
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658#ln-comment-2334658" class="text-slate-500">
-<time class="timeago" title="02-01-2024 08:57:38" datetime="2024-01-02T08:57:38+07:00">
-02-01-2024 08:57:38
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2377842#ln-comment-2377842" class="text-slate-500">
+<time class="timeago" title="03-03-2024 23:26:35" datetime="2024-03-03T23:26:35+07:00">
+03-03-2024 23:26:35
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">1</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2377848" class="ln-comment-item mt-3 clear" data-comment="2377848" data-parent="2377842">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/147580">Mitsuyuki</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+với tình hình là eng ra tới vol 4 rồi nên mình tuyển thêm edit để speed run, ai có nhu cầu ib nhé
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2377842&amp;reply_id=2377848#ln-comment-2377848" class="text-slate-500">
+<time class="timeago" title="03-03-2024 23:29:05" datetime="2024-03-03T23:29:05+07:00">
+03-03-2024 23:29:05
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2377915" class="ln-comment-item mt-3 clear" data-comment="2377915" data-parent="2377842">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86406-007f3286-9954-450f-bb32-ccf202adff6f.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86406">Ozu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+😘
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2377842&amp;reply_id=2377915#ln-comment-2377915" class="text-slate-500">
+<time class="timeago" title="04-03-2024 01:37:37" datetime="2024-03-04T01:37:37+07:00">
+04-03-2024 01:37:37
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2372084" class="ln-comment-item mt-3 clear" data-comment="2372084" data-parent="2372084">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua173755-726e33e0-fe3c-4c6b-9598-4d9bfbfb77f7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173755">Phúcmêtruyện</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+cho hỏi drop chưa vậy bữa giờ chờ mon2 cả cổ
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2372084#ln-comment-2372084" class="text-slate-500">
+<time class="timeago" title="23-02-2024 23:49:28" datetime="2024-02-23T23:49:28+07:00">
+23-02-2024 23:49:28
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2373004" class="ln-comment-item mt-3 clear" data-comment="2373004" data-parent="2372084">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/147580">Mitsuyuki</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+mấy nay bận quá chưa có tgian dịch chắc tuần sau có chap<br>
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2372084&amp;reply_id=2373004#ln-comment-2373004" class="text-slate-500">
+<time class="timeago" title="25-02-2024 13:35:29" datetime="2024-02-25T13:35:29+07:00">
+25-02-2024 13:35:29
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2370618" class="ln-comment-item mt-3 clear" data-comment="2370618" data-parent="2370618">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua22611-463ebb50-53c0-4205-9d8e-bdad96819ecd.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/22611">OkitaItsuki</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+2 tháng rồi à ...
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2370618#ln-comment-2370618" class="text-slate-500">
+<time class="timeago" title="21-02-2024 22:56:24" datetime="2024-02-21T22:56:24+07:00">
+21-02-2024 22:56:24
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2373007" class="ln-comment-item mt-3 clear" data-comment="2373007" data-parent="2370618">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/147580">Mitsuyuki</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+sang tuần có chap nhéeeee
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2370618&amp;reply_id=2373007#ln-comment-2373007" class="text-slate-500">
+<time class="timeago" title="25-02-2024 13:36:40" datetime="2024-02-25T13:36:40+07:00">
+25-02-2024 13:36:40
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -626,12 +885,11 @@ Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
 </div>
 </div>
 </div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2334727" class="ln-comment-item mt-3 clear" data-comment="2334727" data-parent="2334658">
+<div id="ln-comment-2373304" class="ln-comment-item mt-3 clear" data-comment="2373304" data-parent="2370618">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua157196-d3614d49-cfed-45e1-8261-2992b07289d4.jpg" class="w-full rounded-full" />
+<img src="https://i.docln.net/lightnovel/users/ua22611-463ebb50-53c0-4205-9d8e-bdad96819ecd.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -639,18 +897,18 @@ Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/157196">dunhankiet</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/22611">OkitaItsuki</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Ông ra chương đúng sinh nhật tui luôn ấy :))<br>
+<a href="/thanh-vien/147580">@Mitsuyuki:</a> tuyệt vời, thanks trans :D
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658&amp;reply_id=2334727#ln-comment-2334727" class="text-slate-500">
-<time class="timeago" title="02-01-2024 11:50:24" datetime="2024-01-02T11:50:24+07:00">
-02-01-2024 11:50:24
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2370618&amp;reply_id=2373304#ln-comment-2373304" class="text-slate-500">
+<time class="timeago" title="25-02-2024 20:44:45" datetime="2024-02-25T20:44:45+07:00">
+25-02-2024 20:44:45
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -662,11 +920,14 @@ Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
 </div>
 </div>
 </div>
-<div id="ln-comment-2335160" class="ln-comment-item mt-3 clear" data-comment="2335160" data-parent="2334658">
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2342592" class="ln-comment-item mt-3 clear" data-comment="2342592" data-parent="2342592">
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua110755-729d0366-fda4-4455-8f34-f3436234a44f.jpg" class="w-full rounded-full" />
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -674,25 +935,24 @@ Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/110755">Vuizzz</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/75688">Bemeos</a>
 </div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-Uầy ad năng suất cao quá,năm mới vui vẻ
+hóng quá =))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658&amp;reply_id=2335160#ln-comment-2335160" class="text-slate-500">
-<time class="timeago" title="02-01-2024 22:00:11" datetime="2024-01-02T22:00:11+07:00">
-02-01-2024 22:00:11
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2342592#ln-comment-2342592" class="text-slate-500">
+<time class="timeago" title="12-01-2024 23:32:04" datetime="2024-01-12T23:32:04+07:00">
+12-01-2024 23:32:04
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
 <span class="likecount font-semibold"></span>
 </a>
-</div>
 </div>
 </div>
 </div>
@@ -778,7 +1038,7 @@ Chắc bri khum biết tui là ai đâu:)))<br>
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua147580-41cbbcde-71bf-407f-ae09-6c806d1b2b72.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -845,6 +1105,127 @@ chắc k phải ai đó ngày nào cũng đăng tus xin được thầu đâu<br
 <a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2335070&amp;reply_id=2336918#ln-comment-2336918" class="text-slate-500">
 <time class="timeago" title="05-01-2024 10:42:34" datetime="2024-01-05T10:42:34+07:00">
 05-01-2024 10:42:34
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2334658" class="ln-comment-item mt-3 clear" data-comment="2334658" data-parent="2334658">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/147580">Mitsuyuki</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Hơi muộn nhưng mà chúc anh em năm mới vui vẻ nhé <br>
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658#ln-comment-2334658" class="text-slate-500">
+<time class="timeago" title="02-01-2024 08:57:38" datetime="2024-01-02T08:57:38+07:00">
+02-01-2024 08:57:38
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">3</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2334727" class="ln-comment-item mt-3 clear" data-comment="2334727" data-parent="2334658">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u157196-be3b6226-bc69-4670-873c-82c5879b2607.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/157196">dunhankiet</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Ông ra chương đúng sinh nhật tui luôn ấy :))<br>
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658&amp;reply_id=2334727#ln-comment-2334727" class="text-slate-500">
+<time class="timeago" title="02-01-2024 11:50:24" datetime="2024-01-02T11:50:24+07:00">
+02-01-2024 11:50:24
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2335160" class="ln-comment-item mt-3 clear" data-comment="2335160" data-parent="2334658">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua110755-729d0366-fda4-4455-8f34-f3436234a44f.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/110755">Vuizzz</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Uầy ad năng suất cao quá,năm mới vui vẻ
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2334658&amp;reply_id=2335160#ln-comment-2335160" class="text-slate-500">
+<time class="timeago" title="02-01-2024 22:00:11" datetime="2024-01-02T22:00:11+07:00">
+02-01-2024 22:00:11
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -937,7 +1318,7 @@ Tưởng bom -_-
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua157196-d3614d49-cfed-45e1-8261-2992b07289d4.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u157196-be3b6226-bc69-4670-873c-82c5879b2607.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -973,7 +1354,7 @@ Tưởng bom -_-
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua147580-41cbbcde-71bf-407f-ae09-6c806d1b2b72.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u147580-3b43cc85-3dd4-4cc7-ad52-76fbefcd6fc7.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1067,320 +1448,6 @@ Toi vao day bu fame nhe ae
 </div>
 </div>
 </div>
-<div class="ln-comment-group">
-<div id="ln-comment-2330560" class="ln-comment-item mt-3 clear" data-comment="2330560" data-parent="2330560">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua120860-0bb1e12e-1795-443e-81fa-ea2d982f1ab2.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/120860">Đỗ Hàu</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Bộ này có gì hay mà sao nhiều bác tranh thế nhỉ?
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330560#ln-comment-2330560" class="text-slate-500">
-<time class="timeago" title="25-12-2023 15:52:54" datetime="2023-12-25T15:52:54+07:00">
-25-12-2023 15:52:54
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2330620" class="ln-comment-item mt-3 clear" data-comment="2330620" data-parent="2330560">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua77547-ba9e1dec-3bc4-4fec-8d9c-e9356a50aed9.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/77547">Negy</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-bên này dịch LN<br>ông kia dịch WN <br>cơ mà bộ này đg hot :)
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330560&amp;reply_id=2330620#ln-comment-2330620" class="text-slate-500">
-<time class="timeago" title="25-12-2023 20:01:40" datetime="2023-12-25T20:01:40+07:00">
-25-12-2023 20:01:40
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2330663" class="ln-comment-item mt-3 clear" data-comment="2330663" data-parent="2330560">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua152734-de53a4df-62cc-4fd8-839a-60e9c6816f42.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/152734">June 02</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/77547">@Negy:</a> yay<br>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330560&amp;reply_id=2330663#ln-comment-2330663" class="text-slate-500">
-<time class="timeago" title="25-12-2023 21:25:20" datetime="2023-12-25T21:25:20+07:00">
-25-12-2023 21:25:20
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="fetch_reply" data-parent="2330560">
-Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-</div>
-<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2330408" class="ln-comment-item mt-3 clear" data-comment="2330408" data-parent="2330408">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/120132">Điệp_HQT</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Nữa
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330408#ln-comment-2330408" class="text-slate-500">
-<time class="timeago" title="25-12-2023 04:02:05" datetime="2023-12-25T04:02:05+07:00">
-25-12-2023 04:02:05
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2330258" class="ln-comment-item mt-3 clear" data-comment="2330258" data-parent="2330258">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153406">hocnguyen2k4</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-sống lại rôiif à
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330258#ln-comment-2330258" class="text-slate-500">
-<time class="timeago" title="24-12-2023 21:19:43" datetime="2023-12-24T21:19:43+07:00">
-24-12-2023 21:19:43
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2330248" class="ln-comment-item mt-3 clear" data-comment="2330248" data-parent="2330248">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua149620-abb89ff1-a542-4177-9c13-da1b17f521f6.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Ơ bộ này chx bị thầu à? Tưởng nó bị thầu r chứ
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330248#ln-comment-2330248" class="text-slate-500">
-<time class="timeago" title="24-12-2023 21:08:09" datetime="2023-12-24T21:08:09+07:00">
-24-12-2023 21:08:09
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2330250" class="ln-comment-item mt-3 clear" data-comment="2330250" data-parent="2330248">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua147580-41cbbcde-71bf-407f-ae09-6c806d1b2b72.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/147580">Mitsuyuki</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-<div class="leading-4">CHỦ THỚT</div>
-</div>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Fanpage đang cầu xin nhà nào đó thầu từng ngày kia kìa 😂
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330248&amp;reply_id=2330250#ln-comment-2330250" class="text-slate-500">
-<time class="timeago" title="24-12-2023 21:09:49" datetime="2023-12-24T21:09:49+07:00">
-24-12-2023 21:09:49
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">1</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="ln-comment-2335083" class="ln-comment-item mt-3 clear" data-comment="2335083" data-parent="2330248">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua150183-937e456b-d641-4427-9533-ef4d4f4dd36d.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150183">SDMitfa</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<a href="/thanh-vien/147580">@Mitsuyuki:</a> cầu xin mọi nxb mà ;)<br>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16774-maigo-ni-natteita-youjo-wo-tasuketara-otonari-ni-sumu-bishoujo-ryuugakusei-ga-ie-ni-asobi-ni-kuru-you-ni-natta-ken-nitsuite?comment_id=2330248&amp;reply_id=2335083#ln-comment-2335083" class="text-slate-500">
-<time class="timeago" title="02-01-2024 20:53:57" datetime="2024-01-02T20:53:57+07:00">
-02-01-2024 20:53:57
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
@@ -1389,8 +1456,8 @@ Fanpage đang cầu xin nhà nào đó thầu từng ngày kia kìa 😂
 </div>
 </div>
 </div> </main>
-<script>
-        var token = 'lWaEPGq3NVl8lDImcxAPZDPcWnhDeXCKkKRXwrcY';
+<script type="f1e2f53f0fc77a9e646265c3-text/javascript">
+        var token = 'wxokHur8AfHEgW7lNcX5QAw5vsu2UNI8KN6x6tcW';
         var comment_type = 'series';
         var comment_typeid = '16774';
     </script>
@@ -1402,7 +1469,7 @@ Fanpage đang cầu xin nhà nào đó thầu từng ngày kia kìa 😂
 </div>
 </div>
 </main>
-<script>
+<script type="f1e2f53f0fc77a9e646265c3-text/javascript">
     $(document).ready(function() {
         listab("#series-comments");
         // Switch to FB tab if request fb_comment_id
@@ -1413,14 +1480,14 @@ Fanpage đang cầu xin nhà nào đó thầu từng ngày kia kìa 😂
         $('ol.list-volume li').on('click',function(){
             var vol = $(this);
             var scrollTo = vol.data('scrollto');
-            $('html, body').animate({scrollTop: $(scrollTo).offset().top});   
+            $('html, body').animate({scrollTop: $(scrollTo).offset().top});
         });
-        
+
         $('.catalog-icon').on('click', function(){
             $('#list-vol').toggleClass('animation fade-in-right');
             $('#list-vol').toggle();
         });
-        
+
         $('.list-vol_off').on('click', function(){
             $('#list-vol').hide();
         });
@@ -1428,14 +1495,23 @@ Fanpage đang cầu xin nhà nào đó thầu từng ngày kia kìa 😂
 
     series_id = parseInt('16774');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="lWaEPGq3NVl8lDImcxAPZDPcWnhDeXCKkKRXwrcY" data-update-uri="/livewire/update" data-navigate-once="true"></script>
-<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59" type="f1e2f53f0fc77a9e646265c3-text/javascript"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="wxokHur8AfHEgW7lNcX5QAw5vsu2UNI8KN6x6tcW" data-update-uri="/livewire/update" data-navigate-once="true" type="f1e2f53f0fc77a9e646265c3-text/javascript"></script>
+<script type="f1e2f53f0fc77a9e646265c3-text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f1e2f53f0fc77a9e646265c3-|49" defer></script></body>
 </html>
