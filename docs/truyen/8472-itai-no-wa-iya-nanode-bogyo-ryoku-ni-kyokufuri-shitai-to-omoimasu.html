@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="A4XxXoVIFSuZUNdMWyO7lCOCujtQMuNqg8ak0QRw">
+<meta name="csrf-token" content="aWQGb63qNN3LVYIncKvfjlRyM79CJQvTTBiIs7tF">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu">
@@ -22,12 +22,12 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=27ad7c5790a7f581687d">
+<link rel="stylesheet" href="/css/interface.css?id=ead911cd7afa37e8c4aa85e2b6ef245b">
+<link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
-<script>
+<script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2" type="9d19eb3b5d948f6a0b17b86b-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3" type="9d19eb3b5d948f6a0b17b86b-text/javascript"></script>
+<script type="9d19eb3b5d948f6a0b17b86b-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12890">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
+<a href="/truyen/14076">
+<div class="index-background d-none d-lg-block" style="background-image: url('https://i2.docln.net/ln/banners/2024-02-20/14076_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('https://i2.docln.net/ln/banners/2024-02-20/14076_m.jpg'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -200,7 +200,7 @@ Web Novel
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 8472) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 8472) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -208,7 +208,7 @@ Web Novel
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 1365 </span>
+<span class="block feature-name"> 1382 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -240,7 +240,7 @@ Web Novel
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/8472')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/8472'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Itai no wa Iya nanode Bōgyo-Ryoku ni Kyokufuri Shitai to Omoimasu&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -256,11 +256,11 @@ Web Novel
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="25/12/2023 20:44:52" datetime="2023-12-25T20:44:52+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="14/05/2024 19:55:44" datetime="2024-05-14T19:55:44+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">115.585</div>
+<div class="statistic-value">117.002</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -268,7 +268,7 @@ Web Novel
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">588.051</div>
+<div class="statistic-value">637.611</div>
 </div>
 </div>
 </div>
@@ -1199,16 +1199,22 @@ Tập 07 <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu/c124412-chuong-247-chuyen-hoa-phong-ngu-va-thap-tang-muoi-4" title="Chương 247 - Chuyên hóa phòng ngự và Tháp tầng mười (4)">Chương 247 - Chuyên hóa phòng ngự và Tháp tầng mười (4)</a>
 </div>
 <div class="chapter-time">25/12/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu/c131785-chuong-248-chuyen-hoa-phong-ngu-va-chien-luoc-sau-do" title="Chương 248 - Chuyên hóa phòng ngự và Chiến lược sau đó">Chương 248 - Chuyên hóa phòng ngự và Chiến lược sau đó</a>
+</div>
+<div class="chapter-time">14/05/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (32 chương)</span>
+<span>Xem tiếp (33 chương)</span>
 </div>
 </div>
 </ul>
@@ -1513,7 +1519,7 @@ Tập 16
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8472,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Fw75Bm6II9xDppOZ4kYG&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;bf2ac4410f77be30d7b87a22aa8280aa251132c388b02280a185fe2b1e2c285f&quot;}" wire:effects="[]" wire:id="Fw75Bm6II9xDppOZ4kYG" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8472,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;eexEEoRXGK8qynSqgirV&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;df21ea76c1a66f86a9aaa2a9f9a96ea8a9aefde825aeccefd5cfb79aee24d273&quot;}" wire:effects="[]" wire:id="eexEEoRXGK8qynSqgirV" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -1532,14 +1538,14 @@ Tập 16
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1261)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1269)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">202 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">205 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -1587,8 +1593,119 @@ tiến độ hiện tại: 1/3 tập 4 của anime mùa 2<br>tiến độ dự k
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">6</span>
+<span class="likecount font-semibold">7</span>
 </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2358897" class="ln-comment-item mt-3 clear" data-comment="2358897" data-parent="2358897">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i2.docln.net/ln/users/avatars/u144481-25de07ad-1881-497b-9f67-d16b52a231b7.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/144481">Hắc Dạ Nguyệt</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Bruh, vừa hết chương 7 được 1 tháng...bộ này hay nên gg bản eng thì hơi khoai...khi nào ra c8 vậy?
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu?comment_id=2358897#ln-comment-2358897" class="text-slate-500">
+<time class="timeago" title="07-02-2024 02:58:40" datetime="2024-02-07T02:58:40+07:00">
+07-02-2024 02:58:40
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2343492" class="ln-comment-item mt-3 clear" data-comment="2343492" data-parent="2343492">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/48795">Katori16012001</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Sao mình không thấy được chương để đọc vậy . Thấy mỗi LN minh hoạ thôi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu?comment_id=2343492#ln-comment-2343492" class="text-slate-500">
+<time class="timeago" title="14-01-2024 07:29:49" datetime="2024-01-14T07:29:49+07:00">
+14-01-2024 07:29:49
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2347723" class="ln-comment-item mt-3 clear" data-comment="2347723" data-parent="2343492">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua148652-a3ada572-04e0-473d-9eca-f082b3ef7582.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/148652">thanhvan291020</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+trang này sẽ có vol 5,6,7 nha bạn<br>mấy vol khác bạn có thể lướt xuống kiếm chỗ (có thể bạn quan tâm) để đọc các vol khác
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu?comment_id=2343492&amp;reply_id=2347723#ln-comment-2347723" class="text-slate-500">
+<time class="timeago" title="21-01-2024 15:32:16" datetime="2024-01-21T15:32:16+07:00">
+21-01-2024 15:32:16
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
 </div>
 </div>
 </div>
@@ -1991,87 +2108,6 @@ Tại sao mình không thấy chap nào hết vậy ạ?😭😭mình chỉ th�
 </div>
 </div>
 </div>
-<div class="ln-comment-group">
-<div id="ln-comment-2106611" class="ln-comment-item mt-3 clear" data-comment="2106611" data-parent="2106611">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua39-dcda761a-ec2c-40a4-bf98-f7faee936682.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/39">medassin</a>
-</div>
-<div class="self-center">
-<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-<div class="leading-4">TRANS</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-<img src="https://pbs.twimg.com/media/Fo-cplWaEAEW2a9?format=jpg&amp;" alt="Fo-cplWaEAEW2a9?format=jpg&amp;">
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu?comment_id=2106611#ln-comment-2106611" class="text-slate-500">
-<time class="timeago" title="19-02-2023 10:43:25" datetime="2023-02-19T10:43:25+07:00">
-19-02-2023 10:43:25
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold">3</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-2104367" class="ln-comment-item mt-3 clear" data-comment="2104367" data-parent="2104367">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua82766-ea024b4b-5723-46b1-9b90-79944e8c9b37.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/82766">Kzate</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Yayyyyy <br>
-Animu delay 3 tuần😀
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu?comment_id=2104367#ln-comment-2104367" class="text-slate-500">
-<time class="timeago" title="15-02-2023 23:15:26" datetime="2023-02-15T23:15:26+07:00">
-15-02-2023 23:15:26
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
@@ -2080,8 +2116,8 @@ Animu delay 3 tuần😀
 </div>
 </div>
 </div> </main>
-<script>
-        var token = 'A4XxXoVIFSuZUNdMWyO7lCOCujtQMuNqg8ak0QRw';
+<script type="9d19eb3b5d948f6a0b17b86b-text/javascript">
+        var token = 'aWQGb63qNN3LVYIncKvfjlRyM79CJQvTTBiIs7tF';
         var comment_type = 'series';
         var comment_typeid = '8472';
     </script>
@@ -2093,7 +2129,7 @@ Animu delay 3 tuần😀
 </div>
 </div>
 </main>
-<script>
+<script type="9d19eb3b5d948f6a0b17b86b-text/javascript">
     $(document).ready(function() {
         listab("#series-comments");
         // Switch to FB tab if request fb_comment_id
@@ -2104,14 +2140,14 @@ Animu delay 3 tuần😀
         $('ol.list-volume li').on('click',function(){
             var vol = $(this);
             var scrollTo = vol.data('scrollto');
-            $('html, body').animate({scrollTop: $(scrollTo).offset().top});   
+            $('html, body').animate({scrollTop: $(scrollTo).offset().top});
         });
-        
+
         $('.catalog-icon').on('click', function(){
             $('#list-vol').toggleClass('animation fade-in-right');
             $('#list-vol').toggle();
         });
-        
+
         $('.list-vol_off').on('click', function(){
             $('#list-vol').hide();
         });
@@ -2119,14 +2155,24 @@ Animu delay 3 tuần😀
 
     series_id = parseInt('8472');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="A4XxXoVIFSuZUNdMWyO7lCOCujtQMuNqg8ak0QRw" data-update-uri="/livewire/update" data-navigate-once="true"></script>
-<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59" type="9d19eb3b5d948f6a0b17b86b-text/javascript"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="aWQGb63qNN3LVYIncKvfjlRyM79CJQvTTBiIs7tF" data-update-uri="/livewire/update" data-navigate-once="true" type="9d19eb3b5d948f6a0b17b86b-text/javascript"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3514683197419976" crossorigin="anonymous" type="9d19eb3b5d948f6a0b17b86b-text/javascript"></script>
+<script type="9d19eb3b5d948f6a0b17b86b-text/javascript" src="//pl16314303.highcpmgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="9d19eb3b5d948f6a0b17b86b-|49" defer></script></body>
 </html>
