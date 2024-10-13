@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi" class="light">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+    <title>Đọc Lập Trình Viên Máy Tính Isekai - Chương 15: Tính toán đường đạn - Cổng Light Novel - Đọc Light Novel</title>
+
+    <meta name="description" content="Nhân loại có thể dự đoán chuyển động của bầu trời, xây dựng những tòa nhà chọc trời chạm tới đám mây, đặt chân lên mặt trăng và tạo ra trí thông minh vượt trội hơn con người, tất cả là nhờ vào máy tính. Tuy nhiên, ở thế giới...">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="bgYFZ3E2WAzPdjjDRv4okCoJdCtoimlB2seioXh5">
+    <meta name="logged-in" content="0">
+    <meta property="fb:app_id" content="1864643850436909">
+
+    <link rel="canonical" href="https://docln.net/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145647-chuong-15-tinh-toan-duong-dan">
+    <meta property="og:image" content="https://i.hako.vn/ln/series/covers/s19380-124780f9-5d81-4639-8edf-132a6d68901f.jpg">
+
+
+<style type="text/css">@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/devanagari/wght/normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}</style>
+    <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <link rel="shortcut icon" href="/img/favicon.png?v=3">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
+
+    <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
+    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+            
+    
+    <script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+      gtag('config', 'UA-34864968-3');
+    </script>
+</head>
+
+<body>
+	
+	<style>
+    body {
+        background: inherit;
+    }
+
+    #footer {
+        display: none;
+    }
+</style>
+
+
+<main id="mainpart" class="reading-page style-4">
+    <section id="rd-side_icon" class="none force-block-l">
+                <a class="rd_sd-button_item rd_top-left" href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145632-chuong-14-ngon-ngu-may"><i class="fas fa-backward"></i></a>
+        
+        <a class="rd_sd-button_item" href="/truyen/19380-lap-trinh-vien-may-tinh-isekai"><i class="fas fa-home"></i></a>     
+        <a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
+        <a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
+        <a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
+
+        
+         
+        <a class="rd_sd-button_item rd_top-right disabled"><i class="fas fa-forward"></i></a>
+            </section>    
+    
+    <section id="chapters" class="rd_sidebar rdtoggle">
+        <main class="rdtoggle_body">
+            <header class="rd_sidebar-header clear">
+                <a class="img" href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145647-chuong-15-tinh-toan-duong-dan" style="background: url('https://i.hako.vn/ln/series/covers/s19380-124780f9-5d81-4639-8edf-132a6d68901f.jpg') no-repeat"></a> 
+                <div class="rd_sidebar-name">                    
+                    <h5><a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai">Lập Trình Viên Máy Tính I...</a></h5>
+                    <small><i class="fas fa-pen"></i>Goseumdachi (고슴다치)</small>
+                    <small><i class="fas fa-paint-brush"></i></small>                
+                </div>
+            </header>
+
+            <ul id="chap_list" class="unstyled">
+                                                            <li class="current"><a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/t26265-web-novel">Web Novel</a></li>
+                        <ul class="sub-chap_list unstyled">
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144475-chuong-01-may-turing-1">
+                                                                            <i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                                        Chương 01: Máy Turing (1)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144515-chuong-02-may-turing-2">
+                                                                        Chương 02: Máy Turing (2)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144574-chuong-03-eniac-1">
+                                                                        Chương 03: ENIAC (1)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144583-chuong-04-eniac-2">
+                                                                        Chương 04: ENIAC (2)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144759-chuong-05-eniac-3">
+                                                                        Chương 05: ENIAC (3)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c144825-chuong-06-transistor-1">
+                                                                        Chương 06: Transistor (1)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145244-chuong-07-transistor-2">
+                                                                        Chương 07: Transistor (2)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145250-chuong-08-transistor-3">
+                                                                        Chương 08: Transistor (3)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145440-chuong-09-engine-co-vua-1">
+                                                                        Chương 09: Engine Cờ Vua (1)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145453-chuong-10-engine-co-vua-2">
+                                                                        Chương 10: Engine Cờ Vua (2)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145550-chuong-11-engine-co-vua-3">
+                                                                        Chương 11: Engine Cờ Vua (3)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145601-chuong-12-engine-co-vua-4">
+                                                                        Chương 12: Engine Cờ Vua (4)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145611-chuong-13-engine-co-vua-5-sua-doi">
+                                                                        Chương 13: Engine Cờ Vua (5) (Sửa đổi)
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145632-chuong-14-ngon-ngu-may">
+                                                                        Chương 14: Ngôn ngữ máy
+                                </a>
+                            </li>
+                                                        <li  class="current" >
+                                <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145647-chuong-15-tinh-toan-duong-dan">
+                                                                        Chương 15: Tính toán đường đạn
+                                </a>
+                            </li>
+                                                    </ul>
+                                        
+                                        
+            </ul>
+        </main>
+        <div class="black-click"></div>
+    </section>
+    
+    <section id="bookmarks" class="rd_sidebar rdtoggle">
+        <main class="rdtoggle_body">
+            <div class="rd_sidebar-header">
+                <h2 class="rd_s-name"><i class="fas fa-bookmark"></i><a href="/bookmark" style="color: white;"> Bookmarks</a></h2>
+            </div>
+            <ul id="bookmarks_list" class="unstyled">
+                                            <li>Bạn phải đăng nhập để sử dụng bookmark</li>
+                                        </ul>
+        </main>
+        <div class="black-click"></div>
+    </section>
+
+    <section id="setting" class="rdtoggle">
+        <section class="re_set-in basic-section clear rdtoggle_body">
+        <header class="sect-header"><span class="sect-title">Tùy chỉnh</span></header>
+            <main class="sect-body">
+                <div class="set-list set-color clear">
+                    <label class="font-bold">Màu nền</label>
+                    <div class="set-input clear justify-center">
+                        <span data-color="#ffffff" data-id="0" style="background-color: #ffffff"></span>
+                        <span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
+                        <span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
+                        <span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+                        <span data-color="#eae4d3" data-id="4" style="background-color: #eae4d3"></span>
+                        <span data-color="#f5e9ef" data-id="5" style="background-color: #f5e9ef"></span>
+                        <span data-color="#222222" data-id="6" style="background-color: #222222"></span>
+                        <span data-color="#000000" data-id="7" style="background-color: #000000"></span>
+                    </div>
+                </div>
+                <div class="set-list set-font-family clear">
+                    <label class="font-bold">Font chữ</label>
+                    <div class="set-slide set-input justify-center">    
+                        <select>
+                            <option>Times New Roman</option>
+                            <option>Merriweather</option>
+                            <option>Lora</option>
+                            <option>Roboto</option>
+                            <option>Noto Sans</option>
+                            <option>Nunito</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="set-list set-font clear">
+                    <label class="font-bold">Kích cỡ chữ</label>
+                    <div class="set-slide set-input justify-center">    
+                        <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+                        <input class="set-slide_input" disabled="" value="16px" type="text">
+                        <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                <div class="set-list set-margin clear">
+                    <label class="font-bold">Bản lề</label>
+                    <div class="set-slide set-input justify-center">
+                        <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+                        <input class="set-slide_input" disabled="" value="20px" type="text">
+                        <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                <div class="set-list set-text-align clear">
+                    <label class="font-bold">Kiểu căn chỉnh</label>
+                    <div class="set-input clear justify-center font-medium text-2xl flex flex-row gap-10">
+                        <span data-align="text-left" class="p-1"><i class="fas fa-align-left"></i></span>
+                        <span data-align="text-center" class="p-1"><i class="fas fa-align-center"></i></span>
+                        <span data-align="text-right" class="p-1"><i class="fas fa-align-right"></i></span>
+                        <span data-align="text-justify" class="p-1"><i class="fas fa-align-justify"></i></span>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="black-click"></div>
+    </section>
+    
+    <div class="container">
+        <div class="row">
+            <div class="reading-content col-12 col-lg-10 offset-lg-1" style="word-wrap: break-word;">
+                <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
+                <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
+                
+                
+                
+                <div class="title-top" style="padding-top: 20px">
+                    <h2 class="title-item text-xl font-bold" align="center">Web Novel</h2>
+                    <h4 class="title-item text-base font-bold" align="center">Chương 15: Tính toán đường đạn</h4>
+                    <h6 class="title-item font-bold" align="center">
+                        <a href="https://docln.net/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145647-chuong-15-tinh-toan-duong-dan#chapter-comments" style="text-decoration: underline">0 Bình luận</a> -
+                        Độ dài: 2,289 từ - Cập nhật: 
+                        <time class="topic-time timeago" title="13-10-2024 16:22:42" datetime="2024-10-13T16:22:42+07:00"></time>                    </h6>
+                </div>
+
+                <div style="text-align: center; margin: 20px auto -20px auto;">
+                                                            
+                </div>
+
+                <div id="chapter-content" class="long-text no-select text-justify">
+                    <p id="1">Trong khi đó.</p><p id="2">Hải quân Đế quốc đang thực hiện nhiệm vụ tuần tra lãnh hải và đẩy lùi hải tặc.</p><p id="3">"Đây là tàu số 1. Phát hiện tàu hải tặc. Sẽ khai hỏa ngay."</p><p id="4">Thuyền trưởng của tàu cầm thiết bị ma đạo cụ trên tay và liên lạc với bộ chỉ huy.</p><p id="5">—Đo toạ độ của địch và hướng gió. Chúng tôi sẽ tính toán từ đây và điều chỉnh góc nòng súng.</p><p id="6">"Tch."</p><p id="7">Thuyền trưởng tặc lưỡi một cách khó chịu.</p><p id="8">Gần đây, bộ chỉ huy đã mang về một đống sắt vụn nào đó và việc chỉ dựa vào nó khiến anh ta cảm thấy khó chịu.</p><p id="9">Trên thực tế, anh ta cảm thấy khó chịu vì hành động ra lệnh của bộ chỉ huy đối với công việc của mình, cảm giác như quyền uy của mình đang bị thách thức.</p><p id="10">"Nếu cứ dựa vào máy móc thì sẽ mất đi cảm giác. Nghĩ rằng có thể chờ đợi kết quả tính toán trên chiến trường, nơi mà từng phút từng giây đều quan trọng sao?"</p><p id="11">—Gần đây có nhiều ý kiến cho rằng đạn pháo bị lãng phí quá nhiều. Chỉ cần biết khoảng cách và hướng gió chính xác là có thể tính toán trong vòng 1 phút. Đừng tự ý phán đoán...</p><p id="12">Tút.</p><p id="13">Thuyền trưởng cúp máy.</p><p id="14">Chỉ nghe những lời nói khoác lác của những kẻ không có mặt trên chiến trường cũng khiến anh ta tức giận.</p><p id="15">"Thuyền trưởng... Liệu có ổn không ạ?"</p><p id="16">Thủy thủ lo lắng hỏi.</p><p id="17">"Chỉ cần cho họ thấy kết quả thì những kẻ ở cấp trên sẽ không thể nói được gì. Đừng tin vào đống sắt vụn kỳ lạ đó mà hãy tin vào cảm giác của ta đã lăn lộn trên chiến trường 30 năm."</p><p id="18">Thuyền trưởng liếm nhẹ ngón tay và lấy nó ra.</p><p id="19">"Thời tiết tốt. Gió tốt."</p><p id="20">Thuyền trưởng đo gió bằng cảm giác như đã làm trong 30 năm qua.</p><p id="21">"Xoay nhẹ góc nòng súng. Không, hơn một chút. Quá rồi. Đúng rồi, vừa đẹp."</p><p id="22">Thuyền trưởng tạo hình chữ V bằng hai ngón tay rồi đặt tàu hải tặc vào giữa. Kích thước của tàu hải tặc nhỏ hơn một chút so với khoảng cách giữa hai ngón tay.</p><p id="23">Thuyền trưởng thích tin tưởng vào trực giác của mình đã được tôi luyện lâu năm trên chiến trường. Cho đến bây giờ vẫn vậy và sau này cũng sẽ như vậy.</p><p id="24">"Nâng góc nòng súng lên cao hơn. Thêm một chút nữa. Đúng rồi."</p><p id="25">Anh ta thiết lập cả hướng và độ cao của nòng súng bằng cảm giác.</p><p id="26">"Khai hoả!"</p><p id="27">Bùm!</p><p id="28">Viên đạn pháo bay ra, xoay theo rãnh xoắn.</p><p id="29">Ngay khi rời khỏi nòng súng, trọng lực, ma sát không khí và các yếu tố gió bắt đầu cản trở chuyển động của viên đạn.</p><p id="30">Nếu quỹ đạo rơi sau 10 giây thì không cần tính toán nhiều, nhưng nếu mất hơn 30 giây thì sai số sẽ rất lớn.</p><p id="31">Phương trình đường đạn có nhiều biến số cần xem xét. Nếu muốn giải bài toán này mà không cần máy tính thì phải mất ít nhất nửa ngày.</p><p id="32">Nửa ngày? Nửa ngày là cái quái gì? Trên chiến trường, nơi từng phút từng giây đều quan trọng, liệu kẻ thù có chờ chúng ta tính toán hay không?</p><p id="33">Dù toán học và vật lý có phát triển đến đâu thì cuối cùng cũng chỉ là trò chơi trí tuệ của những kẻ chưa từng bước ra khỏi bàn làm việc.</p><p id="34">Điều quan trọng trên chiến trường không phải là công thức mà là kinh nghiệm. Thuyền trưởng đã nghĩ như vậy nên đã phớt lờ lời của bộ chỉ huy.</p><p id="35">Ùm.</p><p id="36">Viên đạn pháo trượt qua tàu hải tặc một cách vô ích rồi rơi xuống biển.</p><p id="37">Khuôn mặt thuyền trưởng nhăn lại.</p><p id="38">"Chết tiệt, tiếp tục bắn!"</p><p id="39">Thuyền trưởng bắn đại bác đã được nạp đạn một cách bừa bãi. Anh ta không quan tâm đến việc tiêu hao đạn pháo. Xét cho cùng thì chiến tranh là như vậy.</p><p id="40">Ầm ầm!</p><p id="41">Ngay sau đó, tàu hải tặc bị biến thành đống đổ nát sau khi hứng chịu một loạt đạn pháo và chìm xuống biển.</p><p id="42">"Nhiệm vụ hoàn thành. Đã tiêu diệt một tàu hải tặc. Đạn đã sử dụng là mười viên. Trong đó trúng năm viên."</p><p id="43">Thông thường, bắn mười viên mà trúng năm viên là đã bắn rất tốt rồi.</p><p id="44">Đôi khi vào những ngày may mắn, có thể trúng sáu hoặc bảy viên, và vào những ngày xui xẻo thì chỉ trúng khoảng ba viên.</p><p id="45">Chỉ cần như vậy là đã hoàn thành tốt vai trò của một thuyền trưởng.</p><p id="46">Đáng lẽ ra phải như vậy...</p><p id="47">—Này tên kia! Chỉ có tàu của anh là sử dụng nhiều đạn nhất! Tàu bên cạnh đã bắn trúng tất cả các viên, tại sao anh lại phớt lờ lời của chúng tôi và lãng phí đạn một cách tùy tiện như vậy! Từ giờ trở đi, tàu của anh sẽ bị hạn chế cung cấp đạn!</p><p id="48">Điều vọng lại là những lời cằn nhằn của bộ chỉ huy.</p><p id="49">"Cái quái gì, anh nói cái gì?"</p><p id="50">Thuyền trưởng không tin vào tai mình. Tàu bên cạnh đã bắn trúng tất cả các viên? Đó là lời nói làm tổn thương lòng tự trọng của anh ta.</p><p id="51">Ban đầu, anh ta nghĩ rằng đó là lời nói dối. Nhưng sau khi nghe lời của cấp trên, anh ta biết rằng việc bắn trúng tất cả các viên là sự thật.</p><p id="52">Hôm đó, thuyền trưởng phải viết bản tường trình vì sao lại cứng đầu không sử dụng máy tính.</p><p id="53">***</p><p id="54">Sự ra đời của máy tính đã mang đến một cuộc cách mạng cho quân đội. Nhưng trong giai đoạn đầu khi máy tính được đưa vào sử dụng, quân đội thực sự hỗn loạn.</p><p id="55">Choang!</p><p id="56">"A a a, lại vỡ rồi!"</p><p id="57">Các quân nhân Đế quốc ôm đầu nhìn ống chân không bị vỡ.</p><p id="58">Trước mắt họ là một cỗ máy khổng lồ nặng 30 tấn.</p><p id="59">Đó là máy tính ống chân không mà gia tộc Carpe của quân đội đã mang về cách đây vài tháng.</p><p id="60">"Chết tiệt, tại sao nó lại hay hỏng thế này!"</p><p id="61">Các quân nhân đang đau đầu vì chiếc máy tính này.</p><p id="62">Nếu độ ẩm quá cao thì nó sẽ nhanh chóng bị hỏng nên phải bảo dưỡng định kỳ, và nếu nó hoạt động lâu một chút thì ống chân không sẽ bị vỡ.</p><p id="63">Và có một điều khiến họ đau đầu hơn cả việc bảo trì, đó chính là lập trình.</p><p id="64">Họ vốn là những người xử lý công việc hành chính phía sau chiến tuyến. Nhưng bây giờ, chỉ vì họ hơi thông minh một chút nên họ phải học cách vận hành một cỗ máy mà họ không biết gì.</p><p id="65">Lập trình hardcore, phải sắp xếp lại dây điện và đục lỗ trên thẻ bìa mỗi khi thay đổi hàm!</p><p id="66">Quá khó để một người không chuyên học hỏi chỉ bằng sách hướng dẫn đơn thuần.</p><p id="67">"Chết tiệt. Phương trình đường đạn là cái quái gì vậy…? Đọc hướng dẫn sử dụng mà chả hiểu gì cả."</p><p id="68">"Gia tốc trọng trường, tốc độ gió, hướng, góc, lực cản, vận tốc ban đầu…? Sao nhiều biến số thế!"</p><p id="69">"Tôi không biết toán!"</p><p id="70">"Kết quả thì có rồi nhưng phải đọc kiểu gì đây…? Chỉ thấy mấy cái lỗ trên thẻ giấy thôi…"</p><p id="71">"A a a! Lại hỏng rồi!"</p><p id="72">"Lại có lỗi rồi. BUG đúng là một lũ gây rối ha ha…"</p><p id="73">Nói chung là hỗn loạn toàn tập.</p><p id="74">Nếu trong số các quân nhân có người đã từng làm công việc tính toán thì họ có thể dễ dàng đọc thẻ bìa đục lỗ, nhưng tiếc là không có nhân tài nào như vậy ở đây.</p><p id="75">Ở đó chỉ có tiếng kêu gào của những người không chuyên.</p><p id="76">Không phải ngẫu nhiên mà ngành đạn đạo được gọi là đạn đạo họcistics) chứ không phải nghệ thuật đạn đạo (ballistic art).</p><p id="77">Phương trình đường đạn để tính toán quỹ đạo của vật phóng là một bữa tiệc tính toán khó khăn ngay cả đối với những chuyên gia toán học.</p><p id="78">Nhưng khi họ nghe nói rằng có một cỗ máy có thể dễ dàng thực hiện những phép tính phức tạp này, thì hóa ra cách vận hành của cỗ máy đó cũng phức tạp không kém.</p><p id="79">Thật điên rồ. Đối với các quân nhân, đó quả là một tai họa.</p><p id="80">Nhưng dù sao thì họ cũng phải nhồi nhét hướng dẫn sử dụng vào đầu. Bởi vì tuân lệnh là nhiệm vụ của họ.</p><p id="81">Và.</p><p id="82">Sau những ngày tháng gian khổ và thử thách.</p><p id="83">Vài tháng sau, họ đã trở nên mạnh mẽ hơn.</p><p id="84">"Này, hải quân đang giao tranh với hải tặc đấy. Tính toán đường đạn đi."</p><p id="85">"Vâng ạ? Vâng... Dạ... Vâng ạ."</p><p id="86">Theo lệnh của cấp trên, người lính ngay lập tức bắt đầu khởi động máy tính ống chân không.</p><p id="87">Xác nhận các biến số được nghe từ cấp trên.</p><p id="88">Và lấy giấy mới ra, vung bút lông lên.</p><p id="89">Lập phương trình đường đạn như đã làm vô số lần.</p><p id="90">Giá trị cần tìm là hướng, góc của nòng súng và lượng ma lực của cuộn giấy kích hoạt.</p><p id="91">10 người lính lao đến trước máy tính ống chân không.</p><p id="92">Mở cuốn sách hướng dẫn sử dụng đã sờn rách vì đọc quá nhiều.</p><p id="93">Đọc trang viết về cách viết hàm để giải phương trình đường đạn, trực tiếp rút dây điện bằng tay và cắm lại đúng vị trí.</p><p id="94">Nhập công thức vào máy đánh chữ được kết nối với máy đục lỗ.</p><p id="95">Khi máy đánh chữ được nhấn, nó sẽ đục lỗ vuông vức trên thẻ bìa đã được chèn sẵn.</p><p id="96">Lấy tấm thẻ giấy đã đục lỗ bằng tay và cho trực tiếp vào máy tính ống chân không.</p><p id="97">Cùng với âm thanh máy móc đáng ngại, đèn của máy tính ống chân không sáng lên và đưa ra kết quả tính toán sau 20 giây.</p><p id="98">Người lính nhìn kết quả trên thẻ bìa đục lỗ, chép lại lên giấy và tính toán lại.</p><p id="99">Và báo cáo kết quả cho cấp trên.</p><p id="100">Cấp trên mở thiết bị ma thuật liên lạc và truyền đạt hướng và góc của nòng súng.</p><p id="101">Tổng thời gian đã mất: 5 phút.</p><p id="102">Họ đã trải qua thử thách và cuối cùng đã thành thạo trong việc sử dụng máy tính ống chân không.</p><p id="103">Con người luôn thích nghi với mọi hoàn cảnh dù khó khăn đến đâu.</p><p id="104">Quả là một chiến thắng của nhân loại!</p><p id="105">***</p><p id="106">"Vậy sao? Trong trận chiến lần này, cậu đã tận dụng khả năng của máy tính để dẫn dắt việc bắn trúng tất cả các viên đạn..."</p><p id="107">Lineld Carpe cảm thấy hài lòng sau khi nhận được báo cáo về thành tích của máy tính.</p><p id="108">"Quả nhiên là con gái của ta."</p><p id="109">Ông ấy nghĩ rằng con gái mình đã thực sự tạo ra một phát minh tuyệt vời.</p><p id="110">Tất cả những người cha đều có số phận trở thành người cuồng con gái. Ông ấy cũng không thể thoát khỏi số phận đó.</p><p id="111">"Nếu triển khai thêm nhiều máy tính thì quân đội Đế quốc sẽ càng mạnh hơn. Có nên đề xuất với Hoàng đế Bệ hạ không nhỉ."</p><p id="112">Ông ấy vừa ngân nga vừa viết một bức thư.</p><p id="113">Lời nói của Lineld cũng chính là tiếng nói của quân đội.</p><p id="114">Ông ấy là người có thể mang đến làn gió thay đổi cho quân đội.</p><p id="115">***</p><p id="116">"...Vì vậy, khi anh giải thích rằng anh đã mã hóa bằng ngôn ngữ máy, giáo sư Flink đã coi anh như một kẻ điên."</p><p id="117">"Chuyện đó đã xảy ra sao. Em cũng bị bạn bè nhìn như một kẻ điên khi nói về nghiên cứu liên quan đến máy tính mà em đang làm."</p><p id="118">Măm măm.</p><p id="119">Tôi và Caroline đang ăn trưa cùng nhau ở nhà ăn học viên.</p><p id="120">Vì học viện này có nhiều quý tộc nên đồ ăn ở đây cũng rất ngon.</p><p id="121">Tôi cảm thấy hối lỗi khi mẹ đã nuôi nấng tôi, nhưng sau khi nếm thử đồ ăn ở đây, tôi đã nghĩ rằng tất cả những bữa cơm nhà mà tôi đã từng ăn trước đây đều dở ẹc.</p><p id="122">Cảm giác như đã bỏ lỡ một nửa cuộc đời là thế này đây.</p><p id="123">Tôi của quá khứ đã học hành chăm chỉ để đỗ thủ khoa và nhận học bổng toàn phần, làm tốt lắm!</p><p id="124">Lộp cộp.</p><p id="125">Đột nhiên, một sự tồn tại xuất hiện trong nhà ăn học viên, thu hút sự chú ý của mọi người xung quanh chỉ bằng cách bước đi.</p><p id="126">Tôi không biết rõ lắm nên đã hỏi Caroline bằng giọng thì thầm.</p><p id="127">"Cô ấy là ai vậy?"</p><p id="128">"Suỵt. Đó là Công chúa Isabel đấy. Cứ ăn đi."</p><p id="129">Caroline trả lời một cách thận trọng.</p><p id="130">"Tại sao công chúa lại học ở học viện này?"</p><p id="131">Tôi đã thoáng nghĩ như vậy nhưng rồi lại suy nghĩ lại.</p><p id="132">Việc hoàng tộc theo học ở học viện là điều hiển nhiên trong các câu chuyện học đường mà.</p><p id="133">Mà, dù là hoàng tộc thì cũng chẳng liên quan gì đến tôi, một thường dân.</p><p id="134">Tôi phớt lờ và bắt đầu ăn cơm trở lại.</p><p id="135">Lộp cộp.</p><p id="136">Nhưng tại sao tiếng bước chân lại gần hơn nhỉ?</p><p id="137">Thịch.</p><p id="138">"Neon và Caroline, hai người là người đã phát triển máy tính phải không? Ta có thể nói chuyện với hai người một lát được không?"</p>
+
+                    
+                    <!-- <div class="flex justify-center mt-10 mb-7 space-x-3">
+                        <a
+                            href="https://hako.vn/discord"
+                            target="_blank"
+                            type="button"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                            style="background-color: #7289da; text-decoration: initial; color: white !important;">
+                            <svg
+                                class="mr-2 h-4 w-4"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                viewbox="0 0 24 24">
+                                <path
+                                d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+                            </svg>
+                            Discord
+                        </a>
+                        <a
+                            href="https://fb.com/hako.page"
+                            target="_blank"
+                            type="button"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                            style="background-color: #1877f2; text-decoration: initial; color: white !important;">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="mr-2 h-4 w-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                            Facebook
+                        </a>
+                    </div> -->
+
+                                        <a href="/truyen/14281" target="__blank">
+                        <img src="https://i.hako.vn/ln/series/chapter-banners/14281/6a79c3c2-f796-4ed8-9290-20460bef9b1d.jpg?t=1726807125" class="d-none d-md-block" style="width: 970px; height: auto">
+                    </a>
+                    <a href="/truyen/14281" target="__blank">
+                        <img src="https://i.hako.vn/ln/series/chapter-banners/14281/c12ce435-bc7d-46d0-9bed-d2648a33edcf.jpg?t=1726807125" class="d-md-none" style="width: 100%; height: auto">
+                    </a>
+                    
+                                    </div>
+
+                <div style="text-align: center; margin: 20px auto 10px auto;">
+                                                        </div>
+                
+                <section class="rd-basic_icon row">
+                    <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai/c145632-chuong-14-ngon-ngu-may" class="dark:text-black col text-center "><i class="fas fa-backward"></i></a>
+                    <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai" class="dark:text-black col text-center"><i class="fas fa-home"></i></a>
+                    <a href="/truyen/19380-lap-trinh-vien-may-tinh-isekai" class="dark:text-black col text-center  disabled "><i class="fas fa-forward"></i></a>
+                </section>
+                
+                <!--the code style is important to keep this comment section be out of the effect of user reading's setting-->
+            </div>
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <section id="chapter-comments" class="basic-section dark:bg-[#1f1f1f] dark:text-white dark:border dark:border-[#1f1f1f]">
+                    <header class="sect-header tab-list dark:bg-[#2a2a2a] dark:border-[#2a2a2a]"> 
+                        <span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(0)</span></span>
+                    </header>
+                    <main id="fbcmt_root" class="sect-body">
+                        <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
+                        <div id="tab-content-1" class="tab-content clear">
+                            <section class="ln-comment">
+    <header>
+        <h3 class="text-lg font-bold dark:text-white">0 Bình luận </h3>
+        <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
+    </header>
+
+    <main class="ln-comment-body">
+                    <div class="ln-comment_sign-in long-text">
+                Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+            </div>
+                
+        
+        
+        <div class="ln-comment-page">
+</div>    </main>
+
+    <script>
+        var token = 'bgYFZ3E2WAzPdjjDRv4okCoJdCtoimlB2seioXh5';
+        var comment_type = 'chapter';
+        var comment_typeid = '145647';
+    </script>
+
+    </section>
+
+
+                        </div>
+                    </main>
+                </section>
+            </div> 
+        </div>
+    </div>
+</main>
+
+<script>
+    token = 'bgYFZ3E2WAzPdjjDRv4okCoJdCtoimlB2seioXh5';
+        
+    function turnoffall() {
+        $(".rdtoggle").removeClass("on");
+        $(".rdtoggle_body").removeClass("animation fade-in-left-big fade-in-down");
+        $("html").removeClass("overflow-hiden");
+    }
+    
+    function rdtoggle(classicon, effect) {
+        if ($(classicon).hasClass("on")) {
+            turnoffall();
+        } else {
+            turnoffall();
+            $(classicon).addClass("on");
+            $("html").addClass("overflow-hiden");
+            $(classicon + " .rdtoggle_body").addClass("animation " + effect);
+        } 
+    };
+    
+    $("#rd-setting_icon").on('click', function() {
+        rdtoggle("#setting", "fade-in-down");                   
+    });
+        
+    $("#rd-info_icon").on('click', function() {
+        rdtoggle("#chapters", "fade-in-left-big");              
+    });
+        
+    $("#rd-bookmark_icon").on('click', function() {
+        rdtoggle("#bookmarks", "fade-in-left-big");                     
+    });
+        
+    $(".black-click").on('click', function() {
+        turnoffall();
+        $("#rd-side_icon").hide();
+        $("#bookmark_top").removeClass("on");
+    });
+        
+    var bgcolor    = Cookies.get('color') || (Cookies.get('night_mode') ? 6 : 4);
+    var fontfamily = Cookies.get('fontfamily') || '';
+    var fontsize   = Cookies.get('font') || 18; 
+    var margin     = Cookies.get('margin') || 0;
+    var textAlign  = Cookies.get('textAlign') || 'text-justify';
+        
+    function setcolor(alter = true) {
+        var switcher = $(".set-color .set-input span").eq(bgcolor);
+        switcher.addClass("current");
+
+        if (alter) {
+            for (var i = 0; i < $(".set-color .set-input span").length; i++) {
+                $("#mainpart").removeClass('style-' + i);
+                $("#mainpart").removeClass('dark');
+            }
+            $("#mainpart").addClass('style-' + bgcolor);
+
+            // Manually hardcoded to dark
+            if (bgcolor >= 6) {
+                $("#mainpart").addClass('dark');
+            }
+        }
+    }
+
+    // This creates unsmooth experience so we only use it for select box
+    function setfontfamily() {
+        $('.set-font-family select option').filter(function () {
+            return fontfamily.split(',')[0].indexOf($(this).text()) != -1 ;
+        }).attr('selected', true);
+    }
+        
+    function setfontstyle(alter = true) {
+        $(".set-font input.set-slide_input").val(fontsize + "px"); 
+
+        if (alter) {
+            $("div#chapter-content").css("font-size", fontsize + "px");
+
+            var lineheight = +fontsize + 10;
+            $("#chapter-content").css("line-height", lineheight + "px");
+        }
+    }
+        
+    function setmargin() {
+        $(".set-margin input.set-slide_input").val(margin + "px"); 
+        $("#chapter-content").css({
+            'padding-left': margin + "px",
+            'padding-right': margin + "px"
+        });
+    }
+
+    function setTextAlign(alter = true) {
+        var switcher = $(".set-text-align .set-input span[data-align='" + textAlign + "']");
+        switcher.addClass("current");
+
+        if (alter) {
+            $(".set-text-align .set-input span").each(function () {
+                $("#chapter-content").removeClass($(this).attr('data-align'));
+            });
+
+            $("#chapter-content").addClass(textAlign);
+        }
+    }
+    
+    setcolor(false);
+    setfontfamily();
+    setfontstyle(false);
+    setmargin();
+    setTextAlign(true);
+    
+    //1px = 0.0625rem;
+    //16px = 1rem (default);
+    
+    $(".set-color .set-input span").click(function(){
+        bgcolor = $(this).data("id");
+        $(".set-color .set-input span").removeClass("current");
+        setcolor();            
+        Cookies.set('color', bgcolor, { expires: 365 });
+    });
+
+    $('.set-font-family select').on('change', function () {
+        fontfamily = "'" + $('option:selected', this).text() + "', " + '\'Times New Roman\', Georgia, serif';
+        
+        $('div#chapter-content').css('font-family', fontfamily);
+
+        Cookies.set('fontfamily', fontfamily, { expires: 365 });
+    });
+    
+    $(".set-font .set-slide_button.set-smaller").click(function () {
+        fontsize = fontsize - 2;
+        if (fontsize < 0) fontsize = 0;
+        setfontstyle();
+        Cookies.set('font', fontsize, { expires: 365 });
+    });
+    
+    $(".set-font .set-slide_button.set-bigger").click(function () {
+        fontsize = +fontsize + 2;
+        setfontstyle();
+        Cookies.set('font', fontsize, { expires: 365 });
+    });
+    
+    $(".set-margin .set-slide_button.set-smaller").click(function () {
+        margin = margin - 20;
+        if (margin < 0) margin = 0;
+        setmargin();
+        Cookies.set('margin', margin, { expires: 365 });
+    });
+    
+    $(".set-margin .set-slide_button.set-bigger").click(function () {
+        margin = +margin + 20;
+        setmargin();
+        Cookies.set('margin', margin, { expires: 365 });
+    }); 
+
+    $(".set-text-align .set-input span").click(function(){
+        textAlign = $(this).data("align");
+        $(".set-text-align .set-input span").removeClass("current");
+        setTextAlign();        
+        Cookies.set('textAlign', textAlign, { expires: 365 });
+    });
+        
+    $("#bookmarks_list li").each(function(){
+        var linepr = $(this).data("line");
+        var preview = $(".reading-content p#" + linepr).text();
+
+        var shortText = preview.trim().substring(0, 30) + "...";
+        $(this).find(".pos_bookmark small").text(shortText);
+    });
+
+    $('div#chapter-content').html(
+        $('div#chapter-content').html().replace(
+            /\[note(\d+)\]/gi, 
+            '<span id="anchor-note$1" class="note-icon none-print inline note-tooltip" data-tooltip-content="#note$1 .note-content" data-note-id="note$1"><i class="fas fa-sticky-note"></i></span><a id="anchor-note$1" class="inline-print none" href="#note$1">[note]</a>'
+        )
+    )
+    
+    tippy('.note-tooltip', {
+        delay: 50,
+        maxWidth: 240,
+        interactive: true,
+        content(ref) {
+            const selector = ref.getAttribute('data-tooltip-content');
+            const template = document.querySelector(selector);
+            return template ? template.innerHTML : 'Đặt sai ID của note';
+        }
+    });
+        
+    isLoggedIn = 0;
+    series_id = parseInt('19380');
+    chapter_id = parseInt('145647');
+
+    readingObject = {
+        series_id: series_id,
+        series_title: 'Lập Trình Viên Máy Tính Isekai',
+        series_url: $('i.fa-home').first().parent().attr('href'),
+        series_cover: $('.rd_sidebar-header a.img').css('background-image'),
+        chapter_title: $('ul.sub-chap_list li.current a').text().trim(),
+        chapter_url: $('ul.sub-chap_list li.current a').attr('href'),
+        book_title: $('ul#chap_list > li.current a').text(),
+        book_url: $('ul#chap_list > li.current a').attr('href'),
+        read_time: +new Date() / 1000 | 0,
+    };
+</script>
+
+
+
+    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="bgYFZ3E2WAzPdjjDRv4okCoJdCtoimlB2seioXh5" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+
+    
+    <script type='text/javascript' src='//pl16314303.cpmrevenuegate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+
+        
+            <footer id="footer">
+    <div class="container">
+        <!--<span><a href="">Hako.re</a></span>-->
+        <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
+
+        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+    </div>
+</footer>    
+    <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+    <div class="flex">
+        <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+        <div>
+            <p class="font-bold capitalize">Chú ý</p>
+            <p class="text-sm" x-text="$store.toast.message"></p>
+        </div>
+    </div>
+</div></body>
+</html>
