@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="vi" class="light">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+    <title>Đọc Sắc Nét Chiến Cơ - Chương 48: Thiết kế 2-sao - Cổng Light Novel - Đọc Light Novel</title>
+
+    <meta name="description" content="Thời đại của Chiến cơ đã đến! Xui xẻo thay, Ves Larkinson lại không có năng khiếu di truyền để trở thành một phi công chiến cơ nổi tiếng. Không bỏ cuộc trước số phận, cậu đã học cách thiết kế chiến cơ để thể hiện niềm đam mê của...">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="eoqyJXoZSrBK3i8xSPrziAeHITJloSAIpdMt1yK9">
+    <meta name="logged-in" content="0">
+    <meta property="fb:app_id" content="1864643850436909">
+
+    <link rel="canonical" href="https://docln.net/truyen/19370-sac-net-chien-co/c153320-chuong-48-thiet-ke-2-sao">
+    <meta property="og:image" content="https://i.hako.vn/ln/series/covers/s19370-b90a12a6-5e14-486e-9297-0b6c9f410458.jpg">
+
+
+<style type="text/css">@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Lora;font-style:normal;font-weight:400;src:url(/cf-fonts/v/lora/5.0.11/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Merriweather;font-style:normal;font-weight:400;src:url(/cf-fonts/s/merriweather/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/devanagari/wght/normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Noto Sans;font-style:normal;font-weight:400;src:url(/cf-fonts/v/noto-sans/5.0.18/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Nunito;font-style:normal;font-weight:400;src:url(/cf-fonts/v/nunito/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Roboto;font-style:normal;font-weight:400;src:url(/cf-fonts/s/roboto/5.0.11/greek/400/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}</style>
+    <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <link rel="shortcut icon" href="/img/favicon.png?v=3">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
+
+    <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
+    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+            
+    
+    <script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+      gtag('config', 'UA-34864968-3');
+    </script>
+</head>
+
+<body>
+	
+	<style>
+    body {
+        background: inherit;
+    }
+
+    #footer {
+        display: none;
+    }
+</style>
+
+
+<main id="mainpart" class="reading-page style-4">
+    <section id="rd-side_icon" class="none force-block-l">
+                <a class="rd_sd-button_item rd_top-left" href="/truyen/19370-sac-net-chien-co/c152698-chuong-47-phat-trien-lau-dai"><i class="fas fa-backward"></i></a>
+        
+        <a class="rd_sd-button_item" href="/truyen/19370-sac-net-chien-co"><i class="fas fa-home"></i></a>     
+        <a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
+        <a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
+        <a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
+
+        
+                <a class="rd_sd-button_item rd_top-right" href="/truyen/19370-sac-net-chien-co/c153321-chuong-49-bo-giap-thao-roi"><i class="fas fa-forward"></i></a>
+            </section>    
+    
+    <section id="chapters" class="rd_sidebar rdtoggle">
+        <main class="rdtoggle_body">
+            <header class="rd_sidebar-header clear">
+                <a class="img" href="/truyen/19370-sac-net-chien-co/c153320-chuong-48-thiet-ke-2-sao" style="background: url('https://i.hako.vn/ln/series/covers/s19370-b90a12a6-5e14-486e-9297-0b6c9f410458.jpg') no-repeat"></a> 
+                <div class="rd_sidebar-name">                    
+                    <h5><a href="/truyen/19370-sac-net-chien-co">Sắc Nét Chiến Cơ</a></h5>
+                    <small><i class="fas fa-pen"></i>ML &quot;Exlor&quot; Duong</small>
+                    <small><i class="fas fa-paint-brush"></i></small>                
+                </div>
+            </header>
+
+            <ul id="chap_list" class="unstyled">
+                                                            <li class="current"><a href="/truyen/19370-sac-net-chien-co/t26254-tap-01">Web Novel</a></li>
+                        <ul class="sub-chap_list unstyled">
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144364-chuong-1-thoi-dai-chien-co">
+                                                                        Chương 1: Thời Đại Chiến Cơ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144372-chuong-2-he-thong-thiet-ke-chien-co">
+                                                                            <i class="fas fa-picture-o" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                                        Chương 2: Hệ thống Thiết kế Chiến cơ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144373-chuong-3-thiet-ke-dau-tien">
+                                                                        Chương 3: Thiết kế đầu tiên
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144450-chuong-4-hay-xem-chieu-cuoi-ta-day">
+                                                                        Chương 4: Hãy xem chiêu cuối ta đây!
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144535-chuong-5-cuoc-dau-tu">
+                                                                        Chương 5: Cuộc đầu tư
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144602-chuong-6-cat-canh">
+                                                                        Chương 6: Cất cánh
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c144603-chuong-7-nu-hoang-bau-troi">
+                                                                        Chương 7: Nữ Hoàng Bầu Trời
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145001-chuong-8-khach-ghe-tham">
+                                                                        Chương 8: Khách ghé thăm
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145075-chuong-9-psst-mua-chien-co-khong">
+                                                                        Chương 9: Psst, mua chiến cơ không?
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145077-chuong-10-bach-tuong">
+                                                                        Chương 10: Bạch Tượng
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145092-chuong-11-viem-mang-tui">
+                                                                        Chương 11: Viêm màng túi
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145294-chuong-12-dau-doi">
+                                                                        Chương 12: Đấu đôi
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145775-chuong-13-che-tao-lan-dau">
+                                                                        Chương 13: Chế tạo lần đầu
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145777-chuong-14-tay-may">
+                                                                        Chương 14: Táy máy
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145860-chuong-15-nguoi-cha">
+                                                                        Chương 15: Người cha
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c145867-chuong-16-manh-ghep-xep-hinh">
+                                                                        Chương 16: Mảnh ghép Xếp hình
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c146102-chuong-17-cuop-co">
+                                                                        Chương 17: Cướp cờ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c146103-chuong-18-su-song">
+                                                                        Chương 18: Sự sống
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c146619-chuong-19-tai-sinh">
+                                                                        Chương 19: Tái sinh
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147050-chuong-20-ao-giap">
+                                                                        Chương 20: Áo giáp
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147052-chuong-21-lop-ben-ngoai">
+                                                                        Chương 21: Lớp bên ngoài
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147271-chuong-22-niem-kieu-hanh-cua-nghe-nhan">
+                                                                        Chương 22: Niềm kiêu hãnh của nghệ nhân
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147273-chuong-23-ban-hang">
+                                                                        Chương 23: Bán hàng
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147369-chuong-24-melinda">
+                                                                        Chương 24: Melinda
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c147610-chuong-25-tu-chien-tuc-thoi">
+                                                                        Chương 25: Tử chiến Tức thời
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c148219-chuong-26-muc-tieu">
+                                                                        Chương 26: Mục tiêu
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c148644-chuong-27-suc-manh-cuc-dai">
+                                                                        Chương 27: Sức mạnh cực đại
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c148651-chuong-28-chuan-bi">
+                                                                        Chương 28: Chuẩn bị
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c148653-chuong-29-bentheim">
+                                                                        Chương 29: Bentheim
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c148654-chuong-30-vong-loai">
+                                                                        Chương 30: Vòng loại
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149147-chuong-31-drake">
+                                                                        Chương 31: Drake
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149148-chuong-32-bai-thu-nghiem">
+                                                                        Chương 32: Bài thử nghiệm
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149414-chuong-33-buoi-trinh-dien">
+                                                                        Chương 33: Buổi trình diễn
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149668-chuong-34-tay-va-chan">
+                                                                        Chương 34: Tay và chân
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149794-chuong-35-san-khau-chinh">
+                                                                        Chương 35: Sân khấu chính
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c149795-chuong-36-cup-lien-hop">
+                                                                        Chương 36: Cúp Liên Hợp
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150087-chuong-37-kirby">
+                                                                        Chương 37: Kirby
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150385-chuong-38-ben-bi">
+                                                                        Chương 38: Bền bỉ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150488-chuong-39-may-man-hay-ki-nang">
+                                                                        Chương 39: May mắn hay kĩ năng
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150492-chuong-40-vong-chung-ket">
+                                                                        Chương 40: Vòng chung kết
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150762-chuong-41-chao-hang">
+                                                                        Chương 41: Chào hàng
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c150914-chuong-42-nguoi-moi-gioi">
+                                                                        Chương 42: Người môi giới
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c151439-chuong-43-nho-tao-khong-he-thong">
+                                                                        Chương 43: Nhớ tao không, Hệ thống?
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c151442-chuong-44-su-ra-doi-cua-chien-co">
+                                                                        Chương 44: Sự ra đời của chiến cơ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c151647-chuong-45-hiep-hoi-thuong-mai-chien-co">
+                                                                        Chương 45: Hiệp hội Thương mại Chiến cơ
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c152380-chuong-46-goc-nhin-moi">
+                                                                        Chương 46: Góc nhìn mới
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c152698-chuong-47-phat-trien-lau-dai">
+                                                                        Chương 47: Phát triển lâu dài
+                                </a>
+                            </li>
+                                                        <li  class="current" >
+                                <a href="/truyen/19370-sac-net-chien-co/c153320-chuong-48-thiet-ke-2-sao">
+                                                                        Chương 48: Thiết kế 2-sao
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c153321-chuong-49-bo-giap-thao-roi">
+                                                                        Chương 49: Bộ giáp tháo rời
+                                </a>
+                            </li>
+                                                        <li >
+                                <a href="/truyen/19370-sac-net-chien-co/c153323-chuong-50-tho-san">
+                                                                        Chương 50: Thợ săn
+                                </a>
+                            </li>
+                                                    </ul>
+                                        
+                                        
+            </ul>
+        </main>
+        <div class="black-click"></div>
+    </section>
+    
+    <section id="bookmarks" class="rd_sidebar rdtoggle">
+        <main class="rdtoggle_body">
+            <div class="rd_sidebar-header">
+                <h2 class="rd_s-name"><i class="fas fa-bookmark"></i><a href="/bookmark" style="color: white;"> Bookmarks</a></h2>
+            </div>
+            <ul id="bookmarks_list" class="unstyled">
+                                            <li>Bạn phải đăng nhập để sử dụng bookmark</li>
+                                        </ul>
+        </main>
+        <div class="black-click"></div>
+    </section>
+
+    <section id="setting" class="rdtoggle">
+        <section class="re_set-in basic-section clear rdtoggle_body">
+        <header class="sect-header"><span class="sect-title">Tùy chỉnh</span></header>
+            <main class="sect-body">
+                <div class="set-list set-color clear">
+                    <label class="font-bold">Màu nền</label>
+                    <div class="set-input clear justify-center">
+                        <span data-color="#ffffff" data-id="0" style="background-color: #ffffff"></span>
+                        <span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
+                        <span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
+                        <span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+                        <span data-color="#eae4d3" data-id="4" style="background-color: #eae4d3"></span>
+                        <span data-color="#f5e9ef" data-id="5" style="background-color: #f5e9ef"></span>
+                        <span data-color="#222222" data-id="6" style="background-color: #222222"></span>
+                        <span data-color="#000000" data-id="7" style="background-color: #000000"></span>
+                    </div>
+                </div>
+                <div class="set-list set-font-family clear">
+                    <label class="font-bold">Font chữ</label>
+                    <div class="set-slide set-input justify-center">    
+                        <select>
+                            <option>Times New Roman</option>
+                            <option>Merriweather</option>
+                            <option>Lora</option>
+                            <option>Roboto</option>
+                            <option>Noto Sans</option>
+                            <option>Nunito</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="set-list set-font clear">
+                    <label class="font-bold">Kích cỡ chữ</label>
+                    <div class="set-slide set-input justify-center">    
+                        <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+                        <input class="set-slide_input" disabled="" value="16px" type="text">
+                        <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                <div class="set-list set-margin clear">
+                    <label class="font-bold">Bản lề</label>
+                    <div class="set-slide set-input justify-center">
+                        <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+                        <input class="set-slide_input" disabled="" value="20px" type="text">
+                        <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                <div class="set-list set-text-align clear">
+                    <label class="font-bold">Kiểu căn chỉnh</label>
+                    <div class="set-input clear justify-center font-medium text-2xl flex flex-row gap-10">
+                        <span data-align="text-left" class="p-1"><i class="fas fa-align-left"></i></span>
+                        <span data-align="text-center" class="p-1"><i class="fas fa-align-center"></i></span>
+                        <span data-align="text-right" class="p-1"><i class="fas fa-align-right"></i></span>
+                        <span data-align="text-justify" class="p-1"><i class="fas fa-align-justify"></i></span>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <div class="black-click"></div>
+    </section>
+    
+    <div class="container">
+        <div class="row">
+            <div class="reading-content col-12 col-lg-10 offset-lg-1" style="word-wrap: break-word;">
+                <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
+                <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
+                
+                
+                
+                <div class="title-top" style="padding-top: 20px">
+                    <h2 class="title-item text-xl font-bold" align="center">Web Novel</h2>
+                    <h4 class="title-item text-base font-bold" align="center">Chương 48: Thiết kế 2-sao</h4>
+                    <h6 class="title-item font-bold" align="center">
+                        <a href="https://docln.net/truyen/19370-sac-net-chien-co/c153320-chuong-48-thiet-ke-2-sao#chapter-comments" style="text-decoration: underline">0 Bình luận</a> -
+                        Độ dài: 4,407 từ - Cập nhật: 
+                        <time class="topic-time timeago" title="31-12-2024 08:45:39" datetime="2024-12-31T08:45:39+07:00"></time>                    </h6>
+                </div>
+
+                <div style="text-align: center; margin: 20px auto -20px auto;">
+                                                            
+                </div>
+
+                <div id="chapter-content" class="long-text no-select text-justify">
+                    <p id="1">Ves đã cân nhắc thuê thêm nhân viên lắp ráp để giảm bớt áp lực thời gian cho mình. Nếu cậu muốn trau dồi kỹ năng của mình hơn nữa, thì cậu phải liên tục cho ra mắt nhiều mẫu thiết kế khác. Và nếu cậu muốn kiếm thêm thu nhập thì cậu phải chế tạo và lắp ráp thật nhiều chiến cơ để chị Marcella giúp cậu bán chúng. Cậu chỉ không có đủ thời gian để đầu tư cho cả hai công việc ấy cùng lúc nếu cậu phải bán hơn ba chiếc chiến cơ mỗi tháng.</p><p id="2">Vấn đề duy nhất mà cậu phải đối mặt khi thuê thêm nhân viên chính là cậu sẽ khó mà che giấu Hệ Thống hơn trước. Trông Hệ Thống có vẻ vô hại thế thôi, nhưng nó thực sự là một phát minh kì diệu đã thách thức các quy luật tự nhiên mà Ves đã chứng kiến đến nay. Một báu vật vô giá như thế sẽ thu hút nhiều ánh nhìn tham lam từ kẻ khác, và họ dư sức đè bẹp cậu như một con bọ dưới chân. Thế nên nếu Hệ Thống mà bị bại lộ thì chỉ tổ chuốc lấy thêm rắc rối cho cậu mà thôi.</p><p id="3">Một vấn đề khác khiến Ves lo ngại chính là việc thuê người khác để lắp ráp chiến cơ cho cậu sẽ dẫn đến khả năng thành phẩm cuối cùng sẽ không đạt tiêu chuẩn. Một thợ chế tạo lành nghề có thể sở hữu nhiều kỹ năng chế tác thành thạo với máy in 3D và máy lắp ráp, nhưng nếu họ không biết gì về yếu tố X thì sản phẩm của họ sẽ không mang lại sức sống một chút nào cả. Nếu cậu mà bán các sản phẩm rẻ tiền như thế thì chỉ tổ tổn hại đến danh tiếng trong khi cậu đang muốn xây dựng thương hiệu của mình.</p><p id="4">Do Ves không thể tìm ra giải pháp cho vấn đề này, nên cậu đành gọi điện cho chị Marcella.</p><p id="5">“Hê lô Ves, chị đang khá là bận cho nên là nói ngắn gọn thôi nhé.”</p><p id="6">“Em đang gặp chút vấn đề.” Ves nói, rồi thuật lại suy nghĩ của mình về việc tuyển dụng các nhân viên tiềm năng.</p><p id="7">Chị Marcella mỉm cười với cậu như thể vấn đề đó chỉ là chuyện nhỏ. “Cơ mà, em vẫn còn quá sớm để thuê nhân viên lắp ráp nhỉ, cho nên em vẫn còn nhiều thời gian để quyết định mà. Nếu em muốn hỏi ý kiến của chị, thì tại sao không thử cả hai xem? Em có thể bán chiến cơ do nhân viên của em chế tạo với giá tiêu chuẩn và tính giá cao hơn nếu khách hàng muốn một cỗ máy do đích thân nhà thiết kế chế tạo thủ công cũng được á. Em chỉ cần ra mức giá đủ cao để em không bị quá áp lực nè.”</p><p id="8">Ý tưởng này nghe cũng hay thiệt sự. Nó vẫn giúp Ves luôn bận rộn mà không để nhân viên lắp ráp quá nhàn rỗi. Cậu chỉ đơn giản là giao công việc nặng nhọc cho thợ của mình và chỉ cần đích thân chế tạo chiến cơ nếu cậu nhận được số tiền xứng đáng. Thế nhưng, điều đó còn phụ thuộc vào việc khách hàng có sẵn sàng chi thêm tiền hay không.</p><p id="9">“Đừng lo lắng về doanh thu của các biến thể cao cấp của em. Chị sẽ cố gắng giúp em nếu em có nhu cầu để em không tốn quá nhiều thời gian suy nghĩ về việc này. Thể nào cũng có ít nhất một vài người muốn sửa đổi mẫu thiết kế một chút. Đôi khi họ muốn chiến cơ họ phải đầy đủ hoa lá hẹ hơn. Nhiều lúc họ lại muốn chiến cơ mình phải mang biểu tượng riêng của họ trên lớp áo giáp. Chị nghĩ chi phí cho các sửa đổi đó cũng khoảng tầm hai triệu hiện kim đó em.”</p><p id="10">Có thêm hai triệu hiện kim cho mỗi chiếc chiến cơ quả là một số tiền khá lớn. Đương nhiên cậu sẽ lấy phí cao hơn nếu khách hàng yêu cầu điều chỉnh nhiều thứ hơn như thế.</p><p id="11">Chị Marcella liền cúp máy để quay lại với công việc của chỉ. Trước khi đi, chị ấy còn báo với cậu rằng sẽ có một cuộc giao dịch tiềm năng khác trong khoảng bốn tuần nữa. Khoảng thời gian đó là vừa đủ để cho khách hàng đầu tiên của cậu đưa ra phản hồi về hiệu suất của chiếc Lệ Phượng Hoàng trong thực chiến.</p><p id="12">Cậu sẽ cân nhắc thuê nhân viên lắp ráp vào lúc khác một khi cậu biết được tần suất doanh thu mà chị Marcella có thể giao dịch thành công. Thay vào đó, cậu chuyển sự chú ý của mình vào thứ khác thú vị hơn nhiều.</p><p id="13">Cậu đã sẵn sàng quay lại với công việc thiết kế chiến cơ ảo. Cậu nhớ lại kinh nghiệm thiết kế các biến thể khác nhau của chiếc Fantasia và chiếc Caesar Augustus cũng như các trải nghiệm của bản thân khi áp dụng các kỹ năng mới thành thạo của mình. Nếu Ves muốn phát triển bản thân để thiết kế một mẫu chiến cơ nguyên bản, thì cậu phải trở nên am hiểu và thành thạo hơn như các nhà sản xuất chiến cơ dày dạn kinh nghiệm sở hữu một vài mẫu chiến cơ xuất sắc trong tay họ.</p><p id="14">Với 2,8 triệu hiện kim trong tài khoản chi tiêu, nên Ves giờ đây có nhiều lựa chọn hơn nhiều. Mặc dù cậu có thể dễ dàng truy cập vào khu mua sắm của Iron Spirit và mua các mẫu thiết kế 1-sao kia, nhưng làm vậy thì được gì? Cậu chỉ có thể kiếm được một vài đồng DP nhỏ lẻ cho mỗi mẫu thiết kế mà thôi.</p><p id="15">“Ê Hệ Thống, tao hỏi mi cái này? Nếu tao kiếm được 1 DP cho mỗi chiến cơ 1-sao và 50 DP cho mỗi chiến cơ 5-sao, vậy phần thưởng cho chiến cơ 2,3, và 4 sao là bao nhiêu?”</p><p id="16">[Phần thưởng cơ bản cho các một thiết kế chiến cơ 2-sao là 5 Điểm Thiết Kế. Phần thưởng sẽ tăng đến 10 Điểm Thiết Kế cho mỗi chiến cơ 3-sao và 25 Điểm Thiết Kế cho chiến cơ 4-sao. Xin lưu ý rằng phần thưởng này sẽ thấp hơn khi bán những chiến cơ dựa trên thiết kế của cậu. Hãy vui lòng làm việc chăm chỉ hơn để cải thiện thiết kế của cậu để sau này cậu sẽ làm việc thành thạo với các mẫu thiết kế cao cấp hơn.]</p><p id="17">Nói cách khác, Hệ Thống vừa bảo cậu phải nhấc cái mông lên và bắt đầu thiết kế những cỗ máy cấp sao cao hơn.</p><p id="18">Mặc dù cậu sở hữu hai giấy phép ảo 5-sao, nhưng kỹ năng của cậu thì vẫn chưa đủ đô. Chiếc Marc Antony chỉ thu được doanh số rất nhỏ và Ves nghi rằng nó sẽ không thay đổi trong tương lai bởi vì cậu chưa thật sự mang lại thứ gì khác độc đáo cho mẫu thiết kế của cậu ngoài yếu tố X. Và kể cả yếu tố X cũng sẽ bị hao mòn dần khi Ves dựa vào máy chủ của trò chơi để tạo ra các bản sao mới cho chiến cơ của cậu.</p><p id="19">“Mình không được ôm quá nhiều việc cùng lúc. Nếu cứ mãi ám ảnh với chiếc Caesar Augustus thì sẽ khiến mình bị cuốn theo triết lí thiết kế của Kozlowski mất. Mình nên linh hoạt hơn và tự mình lập ra phong thái của bản thân mới được.”</p><p id="20">Xét đến khoảng ngân sách hào phóng của cậu, thì cậu cảm thấy nên bắt đầu thiết kế các mẫu 2-sao. Thật sự mà nói thì, cậu có thể nhảy qua một bậc và mua một vài giấy phép ảo 3-sao giá rẻ cực kì ưu đãi trên thị trường, nhưng cậu vẫn còn khá nhiều thời gian để để đạt đến cấp độ này với số tiền dự trữ thích hợp. Hiện tại thì, cậu muốn trải nghiệm từ từ qua từng nhóm thế hệ chiến cơ để Ves có thể nâng cao hiểu biết của mình về lịch sử và quá trình phát triển của chúng.</p><p id="21">Sau khi quyết định xong, Ves háo hức đăng nhập vào trò chơi lần đầu tiên trong suốt mấy tuần qua. Cậu vui vẻ nhảy chân sáo đến các địa điểm trong thành phố ảo nơi họ rao bán các giấy phép bên trong các cửa hàng xung quanh. Khi cậu bước vào một cửa hàng có vô số giấy phép 2-sao khác nhau, Ves có cảm giác như mình đang vào cửa hàng bán kẹo vậy.</p><p id="22">Những chiếc chiến cơ 2-sao đại diện cho thời đại xưa khi mà những ý tưởng táo bạo từ thế hệ trước đã được cải thiện và trau chuốt hơn. Sự phân chia rõ ràng giữa các hệ cân hạng nhẹ, trung và nặng đã được thiết lập và các nhà thiết kế chiến cơ thời đó đã bắt đầu sử dụng các bộ phận chỉ dành riêng cho từng hệ cân đó. Ví dụ như, một khẩu súng laser chỉ dành cho chiến cơ hạng nặng mà gắn lên chiến cơ hạng nhẹ sẽ cực kì khó sử dụng nó bởi vì trọng lượng và năng lượng cần thiết để vận hành là quá khả năng của cái cỗ máy nhẹ cân kia.</p><p id="23">“Từ giờ trở đi mình sẽ chỉ tập trung vào chiến cơ hạng trung, cho nên mình sẽ lọc hết tất cả những thứ rác rưởi khác ra ngoài.”</p><p id="24">Các danh mục chiến cơ và phụ tùng liền được sắp xếp lại và trông có vẻ bớt lộn xộn hơn trước.</p><p id="25">“Được hơn rồi đấy.”</p><p id="26">Số lượng mặt hàng lại càng giảm đi lần nữa sau khi cậu loại bỏ các chiến cơ biến thể. Cậu không có khùng đến mức đi thiết kế biến thể cho biến thể khác.</p><p id="27">Ves bắt đầu lướt qua các mẫu chiến cơ nguyên bản trước. Nếu cậu muốn thiết kế một biến thể mới, thì lựa chọn mẫu nguyên bản là điều tối quan trọng. Trong những lần trước, cậu được Hệ Thống trao tặng một mẫu nguyên bản miễn phí. Đây là lần đầu tiên cậu thực sự có quyền lựa chọn cho hướng đi tương lai của mình.</p><p id="28">Cậu đã suy nghĩ đến việc thử nghiệm với các loại chiến cơ động vật. Những chiếc chiến cơ dạng chim và động vật có vú đã bắt đầu xuất hiện ở cấp độ 2 sao kết hợp với các triết lý thiết kế vẫn còn sử dụng đến ngày nay. Nếu cậu muốn rẽ nhánh sang các mẫu thiết kế chiến cơ khác ngoài các cỗ máy hai chân thông thường kia thì đây sẽ là cơ hội hoàn hảo để thực hiện điều đó.</p><p id="29">“Hm, chiến cơ động vật ít phổ biến hơn nhiều so với các chiến cơ hình người. Mặc dù mình sẽ không phải đối mặt với nhiều đối thủ khác, nhưng phạm vi khách hàng của mình sẽ ít hơn trước.”</p><p id="30">Xét đến doanh thu tiềm năng mà cậu có thể kiếm được thì Ves không mấy lạc quan về khả năng thiết kế chiến cơ động vật của mình. Các nhà thiết kế chiến cơ làm việc với thể loại chiến cơ bất thường đó thường bỏ ra toàn bộ sự nghiệp của mình để tối ưu hóa các mẫu thiết kế đấy. Nhìn lại mình, một tên lính mới chỉ vừa bắt đầu nhúng tay vào lĩnh vực thiết kế các chiến cơ khác thường như thế này, thì cậu không bao giờ thành công nếu cậu chỉ thiết kế chúng một cách nửa vời được.</p><p id="31">Cho nên là, Ves đã lọc hết tất cả thể loại chiến cơ trừ chiến cơ hình người, nhưng cửa hàng vẫn mang lại cho cậu nhiều lựa chọn khác nhau mà không sợ bị phân tâm.</p><p id="32">“Chiến cơ nào tốt nhất để thiết kế biến thể nhỉ?”</p><p id="33">Nếu cậu muốn cân bằng áo giáp và tốc độ, thì tốt nhất là nên chọn chiến cơ nào có thông số khác thường nhất. Những chiếc chiến cơ vốn đã có sự cân bằng giữa hai số liệu trên thường rất khó để cải thiện và dễ gặp thất bại lắm. Cậu thì muốn mua một chiếc hạng trung có tốc độ cao nhưng áo giáp mỏng, hoặc một chiếc bọc giáp tốt nhưng lại chậm chạp hơn là được rồi.</p><p id="34">“Do mình cũng đã táy máy với chiếc Caesar Augustus hồi đó nên mình cũng đã có kinh nghiệm làm việc với chiến cơ hạng nặng rồi.”</p><p id="35">Ves liền loại bỏ những chiếc chiến cơ có trọng tải nhất định khỏi màn hình. Thế là cuối cùng thì cậu đã có một cái nhìn tổng quát hơn về các mẫu thiết kế có sẵn. Cậu đoán rằng mình sẽ có khoảng vài trăm cỗ máy để lựa chọn, nghe thì có vẻ khó nhằn nhưng cũng không đến nỗi quá sức.</p><p id="36">Giá cả vẫn là yếu tố quan trọng cho lựa chọn của cậu. Hầu hết giấy phép chiến cơ 1-sao đều tốn khoảng 100.000 hiện kim để sở hữu. Còn những giấy phép ảo cho chiến cơ 2-sao sẽ tăng trung bình lên đến 1 triệu hiện kim rồi. Còn giấy phép chiến cơ 3-sao thì cậu phải sẵn sàng bỏ ra tận 5 triệu hiện kim mới mua được nó.</p><p id="37">Chi phí giấy phép ảo mà trò chơi đặt ra luôn phản ánh giá trị thực tế khi mua chúng. Nếu một nhà thiết kế chiến cơ có tài năng đặc biệt nào đó, thì người ta có thể kiếm lại thu nhập từ thiết kế của họ. Số tiền đầu tư tương đối thấp khá là lý tưởng để giúp cho các nhà thiết kế nghèo khó bắt đầu kiếm sống bằng chính thực lực của mình.</p><p id="38">Là một người vốn đã sở hữu khu xưởng riêng cho bản thân và đã bán một cỗ máy ngoài đời, Ves không tham gia trò chơi này là vì tiền. Mặc dù có thêm thu nhập bên ngoài thì cũng được đấy, nhưng cậu muốn kiếm thêm DP hơn kìa. Bằng cách rao bán mẫu thiết kế của cậu ở mức giá thấp, cậu có thể đảm bảo doanh số bán hàng sẽ cao hơn so với những người phải dựa vào mẫu thiết kế của họ để kiếm sống.</p><p id="39">“Tại sao phải kiếm từng đồng hiện kim trong game trong khi mình có thể kiếm hàng triệu hiện kim từ mỗi chiếc chiến cơ mình bán chứ?”</p><p id="40">Mẫu giảm giá chỉ có thể hấp dẫn người mua nếu giá thành của mẫu nguyên bản quá cao. Ves đã loại bỏ các mẫu thiết kế thông thường và các mẫu phổ biến trên thị trường, rồi chỉ để lại những mẫu chiến cơ cao cấp mà thôi. Giá thành của chúng khá là cao, cho nên chúng không được ưa chuộng bởi các thanh thiếu niên và những phi công chưa qua đào tạo đang loay hoay với chiến cơ của họ ở cấp độ 2 sao này.</p><p id="41">Sau khi tra cứu khoảng năm mươi mẫu còn lại, Ves thôi không kén chọn nữa mà thay vào đó chỉ nhìn qua những hình ảnh ba chiều lướt qua trước mắt. Cậu bỗng dưng chú ý đến một hình ảnh mô phỏng bắt mắt và rồi sau đó cậu liền phóng to chiếc chiến cơ đó lên.</p><p id="42">Một mẫu chiến cơ mạ crôm sáng bóng liền hiện ra. Đó là chiếc Bát Quái (Octagon) O-225C của Tập Đoàn Globe-Elstar. Bề mặt phản chiếu của nó khá là bắt mắt, nhưng không phải theo hướng tốt đẹp cho lắm. Chính bề mặt kim loại này vốn đã không hề bổ sung thêm khả năng phòng thủ để chống lại bất kì vũ khí nào mà chỉ tổ kêu gọi địch nhắm vào nó mà thôi.</p><p id="43">Có lẽ nhận thức được xu hướng này, nhà thiết kế chính chủ của nó đã tập trung vào việc nâng tốc độ của nó lên cao nhất có thể. Mặc dù người ta đã cắt bỏ rất nhiều lớp giáp ở gần các khớp nối và một vài chỗ hiểm yếu khác, nhưng nó đã khiến cho cỗ máy trở nên dẻo dai và linh hoạt hơn, thậm chí còn có thể thực hiện một số pha nhào lộn mà các phi công không bao giờ dám làm trên một chiếc chiến cơ hạng trung thông thường.</p><p id="44">“Thật thú vị. Nâng cấp bộ giáp cho mẫu thiết kế này mà không ảnh hưởng tiêu cực đến khả năng chuyển động của nó sẽ khá là khó nhằn đây.”</p><p id="45">Một thử thách thiết kế một mẫu biến thể cải tiến của mẫu nguyên bản này đã khiến Ves cảm thấy hứng thú. Mặc dù cậu luôn tập trung vào tốc độ của nhiều mẫu chiến cơ trước đây của cậu, nhưng cậu chỉ chủ yếu gia tăng tốc độ di chuyển bằng cách rút ngắn thời gian chiến cơ chạy từ điểm A đến điểm B mà thôi.</p><p id="46">Còn độ nhanh nhẹn là một khái niệm hoàn toàn khác. Nó liên quan đến việc kết hợp nhiều chuyển động đa dạng với khả năng phản ứng nhanh giữa các chi để biến chiếc chiến cơ thành một nhà vô địch chuyên gia né tránh.</p><p id="47">Dòng chiến cơ dạng khỉ bọc giáp mỏng thường áp dụng các kiểu thiết kế như thế này. Với tư thế khom lưng và cánh tay khỏe mạnh của chúng, những chiến cơ hình vượn sở hữu độ ổn định đáng kinh ngạc khi chúng chạy nhảy quanh khu rừng hoặc các môi trường đô thị phức tạp.</p><p id="48">Còn đối với các cỗ máy hình người nhanh nhẹn khác, chúng dựa vào cơ cấu phức tạp của các bộ phận bên trong thay vì sử dụng mô hình cơ học tự nhiên để đứng thẳng người. Chiếc Bát Quái có một con quay hồi chuyển tiên tiến nhất trong thế hệ của nó để duy trì sự cân bằng ngay cả khi nó bật nhảy né tránh sang hai bên. Đó là lý do mà mẫu chiến cơ này có mức giá cao đến vậy.</p><p id="49">Đối với những thông số khác, hiệu suất của nó lại khá là trung bình. Tốc độ của nó rất đáng nể, nhưng không nhanh bằng những chiếc chuyên chạy nước rút. Bộ giáp không có gì đáng để tự hào  cả, nhưng nó vẫn hoạt động tốt trừ những vị trí khớp nối. Chiếc Bát Quái còn đi kèm với một bộ trang bị tiêu chuẩn bao gồm hai con dao nhiệt và một ngọn giáo có thể ném trong trường hợp khẩn cấp. Đa số phi công sử dụng chiến cơ này đều thêm một khẩu súng lục hoặc một khẩu tiểu liên để biến nó thành một chiếc chiến cơ biệt kích đánh cận chiến tốt hơn.</p><p id="50">Nói chung thì, chiếc Bát Quái có khá nhiều sắc nét riêng biệt. Ves thích người đã thiết kế cỗ máy này bởi vì người ta không ngại phá luật để tạo ra một thành phẩm độc nhất như thế này.</p><p id="51">Cậu thêm giấy phép ảo của chiếc này vào giỏ hàng của mình. “Và thế là thiệt hại 650.000 hiện kim. Giờ thì mình chỉ cần mua thêm một số bộ phận khác để điều chỉnh cho mẫu thiết kế này là xong.”</p><p id="52">Bề ngoài bằng crôm của nó đã là một điểm chấm phá của mẫu nguyên bản này. Mặc dù nó không hoàn toàn phù hợp với tính thẩm mỹ đương đại, nhưng Ves vẫn muốn giữ nguyên vẻ ngoài sáng bóng của nó. Nhưng không có nghĩa là cậu không được thay đổi áo giáp của nó. Cậu chỉ cần làm thêm bước nữa bằng cách phủ sơn phản chiếu lên bề mặt của nó trong quá trình sản xuất là được.</p><p id="53">Lựa chọn bộ giáp cho chiến cơ này phải đáp ứng nhiều tiêu chí nhất định. Đầu tiên, nó phải có tỷ lệ phòng thủ cao hơn trọng lượng của nó. Thứ hai, nó phải hoạt động hiệu quả mà không cần đắp quá nhiều lớp giáp lên bộ khung. Một vài bộ giáp chỉ hiệu quả khi chúng đạt tới độ dày tối thiểu. Đặc điểm chính của chiếc Bát Quái chính là sự nhanh nhẹn và lắp đặt quá nhiều lớp giáp sẽ ảnh hưởng xấu đến lợi thế đó.</p><p id="54">Mục tra cứu của cậu hiện lên nhiều kết quả thú vị. Đầu tiên là Lớp Giáp-Dẻo Alpha Phiên bản III của Tập Đoàn Grayson. Cậu đã tìm thấy một loại áo giáp tổng hợp thử nghiệm có tính linh hoạt nhất định bên trong lớp mạ của nó. Nó có thể uốn cong như một mẫu cao su và sở hữu khả năng hấp thụ chấn động từ lực tác động mạnh khá là tốt. Nó thật hoàn hảo để lắp đặt ở những vùng khớp nối hiểm yếu, và thực tế thì nó cũng thường được sử dụng theo cách đó.</p><p id="55">Để bổ sung cho một số khu vực khác của bộ giáp, cậu liền tra thêm lớp Giáp-Vuông Phiên bản I, một loại hệ thống áo giáp tháo rời của cùng một tập đoàn. Những loại áo giáp này thường được sử dụng cho các cỗ máy nhẹ cân hơn, nhưng cái hệ thống mà cậu đang tìm đọc được thiết kế dành riêng cho chiến cơ hạng trung. Lắp đặt một hệ thống áo giáp như thế cho một chiếc chiến cơ thì khá là khó nhằn tại vì yêu cầu mà nó đặt ra cho vị trí lắp đặt trên bộ khung khá là phức tạp. Tuy nhiên, lớp giáp đó sẽ mang lại lợi ích đáng kể cho chiếc chiến cơ đó nếu nó được lắp đặt một cách cẩn thận.</p><p id="56">Lớp mạ giáp thông thường chỉ sử dụng một số tấm giáp vừa vặn để che phủ bộ khung bên trong của cỗ máy. Nếu được lắp đặt tốt, thì nó sẽ có khả năng phòng thủ ở khu vực đó gần như tối đa về mặt lý thuyết dựa vào trọng lượng và độ dày của nó. Tuy nhiên, nếu một một tấm bị thiệt hại nặng nề, thì nó vẫn bám vào bộ khung trong khi chẳng làm được tích sự gì cả. Nếu một chiếc chiến cơ chịu một số thiệt hại trên toàn bộ bộ khung của nó, thì những tấm giáp vô tích sự kia sẽ chỉ tổ làm giảm tốc độ mà không thể bảo vệ các bộ phận bên trong như trước.</p><p id="57">Cho nên, hệ thống áo giáp tháo rời giải quyết vấn đề đó bằng cách lắp đặt các tấm giáp xung quanh theo hình tứ giác hoặc lục giác đều. Nó khiến cho cỗ máy trông có hơi góc cạnh hay gập ghềnh một chút, nhưng nó lại mang lại sự tiện nghi trong việc loại bỏ các lớp vỏ bị hư hại trên chiến trường. Chiến cơ càng chịu nhiều thiệt hại, thì các tấm giáp đó sẽ càng rơi ra nhiều hơn, từ đó làm giảm bớt gánh nặng khi phải di chuyển xung quanh. Điều này mang lại một lợi thế đặc biệt cho các chiến cơ sử dụng hệ thống áo giáp tháo rời này trong giai đoạn sau của cuộc chiến.</p><p id="58">Đương nhiên, một hệ thống như vậy phải đi kèm với một số khuyết điểm của nó, bằng không thì nó đã trở nên thông dụng rồi. Những tấm giáp cố định của nó chỉ có một vài kích thước xác định. Bộ Giáp-Vuông chỉ có ba kích cỡ khác nhau. Một tấm giáp cỡ lớn cho phần ngực hoặc tương tự, một tấm cỡ vừa dành cho cánh tay và các chi, và một tấm nhỏ hơn dành cho các góc cạnh và ngón tay phức tạp. Lắp đặt ba loại kích cỡ áo giáp này sẽ khiến cho bất kì biến thể nào cũng sẽ mất đi bộ giáp tối ưu nhất của nó. Chính điều đó và những yếu tố khác khiến cho hệ thống áo giáp tháo rời hấp thụ ít sát thương hơn so với hệ thống áo giáp thông thường.</p><p id="59">“Nó cũng có hoạt động khá tốt bất chấp nhược điểm đó.” Ves kết luận. Cậu chưa bao giờ làm việc với áo giáp tháo rời bao giờ, nhưng cậu vẫn bị thu hút bởi vô vàn khả năng của nó. Áo giáp tháo rời là một trong những giải pháp tốt nhất hiện nay để kết hợp phòng thủ với tốc độ. Nếu Ves thực sự nghiêm túc về việc phát triển chuyên môn của mình trong lĩnh vực này, thì cậu không thể không sử dụng cái phát minh tiện lợi này.</p><p id="60">Hóa đơn của cậu liền tăng lên 150.000 hiện kim sau khi cậu thêm Giáp-Dẻo và Giáp-Vuông vào giỏ hàng của mình. Ves coi như đã xong việc mua sắm. Cậu giờ chỉ muốn vắt óc làm việc ngay lập tức và không muốn suy nghĩ thêm nữa về việc thay thế các bộ phận nào khác trước khi nghiên cứu thêm về chiếc Bát Quái.</p><p id="61">Tổng cộng 800.000 hiện kim đã bay cái vèo từ tài khoản ngân hàng của cậu sau khi Ves mua ba chiếc giấy phép ảo đó. Sự khác biệt về chi phí so với chiến cơ 1-sao dễ làm nản lòng bất kì nhà thiết kế chiến cơ học việc nào. Bây giờ cậu đã tiến vào giai đoạn làm việc hoàn toàn khác và hậu quả tiềm ẩn cho những sai sót của cậu đã tăng lên một khoảng đáng kể. May mắn thay, cậu đã có kinh nghiệm thực địa sau khi làm việc với một cỗ máy tương đương với cấp độ 5-sao, cho nên Ves vẫn giữ vững sự tự tin của bản thân.</p>
+
+                    
+                    <!-- <div class="flex justify-center mt-10 mb-7 space-x-3">
+                        <a
+                            href="https://hako.vn/discord"
+                            target="_blank"
+                            type="button"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                            style="background-color: #7289da; text-decoration: initial; color: white !important;">
+                            <svg
+                                class="mr-2 h-4 w-4"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                viewbox="0 0 24 24">
+                                <path
+                                d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+                            </svg>
+                            Discord
+                        </a>
+                        <a
+                            href="https://fb.com/hako.page"
+                            target="_blank"
+                            type="button"
+                            data-te-ripple-init
+                            data-te-ripple-color="light"
+                            class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                            style="background-color: #1877f2; text-decoration: initial; color: white !important;">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="mr-2 h-4 w-4"
+                                fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                            Facebook
+                        </a>
+                    </div> -->
+
+                                        <a href="/truyen/8115" target="__blank">
+                        <img src="https://i.hako.vn/ln/series/chapter-banners/8115/8e9d37e7-1dcc-46db-bd40-ababb6d1d9c0.jpg?t=1711960608" class="d-none d-md-block" style="width: 970px; height: auto">
+                    </a>
+                    <a href="/truyen/8115" target="__blank">
+                        <img src="https://i.hako.vn/ln/series/chapter-banners/8115/9f35362e-c2a5-4267-bfdf-5d9ff615732b.jpg?t=1711960608" class="d-md-none" style="width: 100%; height: auto">
+                    </a>
+                    
+                                    </div>
+
+                <div style="text-align: center; margin: 20px auto 10px auto;">
+                                                        </div>
+                
+                <section class="rd-basic_icon row">
+                    <a href="/truyen/19370-sac-net-chien-co/c152698-chuong-47-phat-trien-lau-dai" class="dark:text-black col text-center "><i class="fas fa-backward"></i></a>
+                    <a href="/truyen/19370-sac-net-chien-co" class="dark:text-black col text-center"><i class="fas fa-home"></i></a>
+                    <a href="/truyen/19370-sac-net-chien-co/c153321-chuong-49-bo-giap-thao-roi" class="dark:text-black col text-center "><i class="fas fa-forward"></i></a>
+                </section>
+                
+                <!--the code style is important to keep this comment section be out of the effect of user reading's setting-->
+            </div>
+            <div class="col-12 col-lg-10 offset-lg-1">
+                <section id="chapter-comments" class="basic-section dark:bg-[#1f1f1f] dark:text-white dark:border dark:border-[#1f1f1f]">
+                    <header class="sect-header tab-list dark:bg-[#2a2a2a] dark:border-[#2a2a2a]"> 
+                        <span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(0)</span></span>
+                    </header>
+                    <main id="fbcmt_root" class="sect-body">
+                        <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
+                        <div id="tab-content-1" class="tab-content clear">
+                            <section class="ln-comment">
+    <header>
+        <h3 class="text-lg font-bold dark:text-white">0 Bình luận </h3>
+        <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
+    </header>
+
+    <main class="ln-comment-body">
+                    <div class="ln-comment_sign-in long-text">
+                Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
+            </div>
+                
+        
+        
+        <div class="ln-comment-page">
+</div>    </main>
+
+    <script>
+        var token = 'eoqyJXoZSrBK3i8xSPrziAeHITJloSAIpdMt1yK9';
+        var comment_type = 'chapter';
+        var comment_typeid = '153320';
+    </script>
+
+    </section>
+
+
+                        </div>
+                    </main>
+                </section>
+            </div> 
+        </div>
+    </div>
+</main>
+
+<script>
+    token = 'eoqyJXoZSrBK3i8xSPrziAeHITJloSAIpdMt1yK9';
+        
+    function turnoffall() {
+        $(".rdtoggle").removeClass("on");
+        $(".rdtoggle_body").removeClass("animation fade-in-left-big fade-in-down");
+        $("html").removeClass("overflow-hiden");
+    }
+    
+    function rdtoggle(classicon, effect) {
+        if ($(classicon).hasClass("on")) {
+            turnoffall();
+        } else {
+            turnoffall();
+            $(classicon).addClass("on");
+            $("html").addClass("overflow-hiden");
+            $(classicon + " .rdtoggle_body").addClass("animation " + effect);
+        } 
+    };
+    
+    $("#rd-setting_icon").on('click', function() {
+        rdtoggle("#setting", "fade-in-down");                   
+    });
+        
+    $("#rd-info_icon").on('click', function() {
+        rdtoggle("#chapters", "fade-in-left-big");              
+    });
+        
+    $("#rd-bookmark_icon").on('click', function() {
+        rdtoggle("#bookmarks", "fade-in-left-big");                     
+    });
+        
+    $(".black-click").on('click', function() {
+        turnoffall();
+        $("#rd-side_icon").hide();
+        $("#bookmark_top").removeClass("on");
+    });
+        
+    var bgcolor    = Cookies.get('color') || (Cookies.get('night_mode') ? 6 : 4);
+    var fontfamily = Cookies.get('fontfamily') || '';
+    var fontsize   = Cookies.get('font') || 18; 
+    var margin     = Cookies.get('margin') || 0;
+    var textAlign  = Cookies.get('textAlign') || 'text-justify';
+        
+    function setcolor(alter = true) {
+        var switcher = $(".set-color .set-input span").eq(bgcolor);
+        switcher.addClass("current");
+
+        if (alter) {
+            for (var i = 0; i < $(".set-color .set-input span").length; i++) {
+                $("#mainpart").removeClass('style-' + i);
+                $("#mainpart").removeClass('dark');
+            }
+            $("#mainpart").addClass('style-' + bgcolor);
+
+            // Manually hardcoded to dark
+            if (bgcolor >= 6) {
+                $("#mainpart").addClass('dark');
+            }
+        }
+    }
+
+    // This creates unsmooth experience so we only use it for select box
+    function setfontfamily() {
+        $('.set-font-family select option').filter(function () {
+            return fontfamily.split(',')[0].indexOf($(this).text()) != -1 ;
+        }).attr('selected', true);
+    }
+        
+    function setfontstyle(alter = true) {
+        $(".set-font input.set-slide_input").val(fontsize + "px"); 
+
+        if (alter) {
+            $("div#chapter-content").css("font-size", fontsize + "px");
+
+            var lineheight = +fontsize + 10;
+            $("#chapter-content").css("line-height", lineheight + "px");
+        }
+    }
+        
+    function setmargin() {
+        $(".set-margin input.set-slide_input").val(margin + "px"); 
+        $("#chapter-content").css({
+            'padding-left': margin + "px",
+            'padding-right': margin + "px"
+        });
+    }
+
+    function setTextAlign(alter = true) {
+        var switcher = $(".set-text-align .set-input span[data-align='" + textAlign + "']");
+        switcher.addClass("current");
+
+        if (alter) {
+            $(".set-text-align .set-input span").each(function () {
+                $("#chapter-content").removeClass($(this).attr('data-align'));
+            });
+
+            $("#chapter-content").addClass(textAlign);
+        }
+    }
+    
+    setcolor(false);
+    setfontfamily();
+    setfontstyle(false);
+    setmargin();
+    setTextAlign(true);
+    
+    //1px = 0.0625rem;
+    //16px = 1rem (default);
+    
+    $(".set-color .set-input span").click(function(){
+        bgcolor = $(this).data("id");
+        $(".set-color .set-input span").removeClass("current");
+        setcolor();            
+        Cookies.set('color', bgcolor, { expires: 365 });
+    });
+
+    $('.set-font-family select').on('change', function () {
+        fontfamily = "'" + $('option:selected', this).text() + "', " + '\'Times New Roman\', Georgia, serif';
+        
+        $('div#chapter-content').css('font-family', fontfamily);
+
+        Cookies.set('fontfamily', fontfamily, { expires: 365 });
+    });
+    
+    $(".set-font .set-slide_button.set-smaller").click(function () {
+        fontsize = fontsize - 2;
+        if (fontsize < 0) fontsize = 0;
+        setfontstyle();
+        Cookies.set('font', fontsize, { expires: 365 });
+    });
+    
+    $(".set-font .set-slide_button.set-bigger").click(function () {
+        fontsize = +fontsize + 2;
+        setfontstyle();
+        Cookies.set('font', fontsize, { expires: 365 });
+    });
+    
+    $(".set-margin .set-slide_button.set-smaller").click(function () {
+        margin = margin - 20;
+        if (margin < 0) margin = 0;
+        setmargin();
+        Cookies.set('margin', margin, { expires: 365 });
+    });
+    
+    $(".set-margin .set-slide_button.set-bigger").click(function () {
+        margin = +margin + 20;
+        setmargin();
+        Cookies.set('margin', margin, { expires: 365 });
+    }); 
+
+    $(".set-text-align .set-input span").click(function(){
+        textAlign = $(this).data("align");
+        $(".set-text-align .set-input span").removeClass("current");
+        setTextAlign();        
+        Cookies.set('textAlign', textAlign, { expires: 365 });
+    });
+        
+    $("#bookmarks_list li").each(function(){
+        var linepr = $(this).data("line");
+        var preview = $(".reading-content p#" + linepr).text();
+
+        var shortText = preview.trim().substring(0, 30) + "...";
+        $(this).find(".pos_bookmark small").text(shortText);
+    });
+
+    $('div#chapter-content').html(
+        $('div#chapter-content').html().replace(
+            /\[note(\d+)\]/gi, 
+            '<span id="anchor-note$1" class="note-icon none-print inline note-tooltip" data-tooltip-content="#note$1 .note-content" data-note-id="note$1"><i class="fas fa-sticky-note"></i></span><a id="anchor-note$1" class="inline-print none" href="#note$1">[note]</a>'
+        )
+    )
+    
+    tippy('.note-tooltip', {
+        delay: 50,
+        maxWidth: 240,
+        interactive: true,
+        content(ref) {
+            const selector = ref.getAttribute('data-tooltip-content');
+            const template = document.querySelector(selector);
+            return template ? template.innerHTML : 'Đặt sai ID của note';
+        }
+    });
+        
+    isLoggedIn = 0;
+    series_id = parseInt('19370');
+    chapter_id = parseInt('153320');
+
+    readingObject = {
+        series_id: series_id,
+        series_title: 'Sắc Nét Chiến Cơ',
+        series_url: $('i.fa-home').first().parent().attr('href'),
+        series_cover: $('.rd_sidebar-header a.img').css('background-image'),
+        chapter_title: $('ul.sub-chap_list li.current a').text().trim(),
+        chapter_url: $('ul.sub-chap_list li.current a').attr('href'),
+        book_title: $('ul#chap_list > li.current a').text(),
+        book_url: $('ul#chap_list > li.current a').attr('href'),
+        read_time: +new Date() / 1000 | 0,
+    };
+</script>
+
+
+
+    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="eoqyJXoZSrBK3i8xSPrziAeHITJloSAIpdMt1yK9" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+
+    
+    <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+
+        
+            <footer id="footer">
+    <div class="container">
+        <!--<span><a href="">Hako.re</a></span>-->
+        <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
+
+        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+    </div>
+</footer>    
+    <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+    <div class="flex">
+        <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+        <div>
+            <p class="font-bold capitalize">Chú ý</p>
+            <p class="text-sm" x-text="$store.toast.message"></p>
+        </div>
+    </div>
+</div></body>
+</html>
