@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="6quM2DMnOAxbFoAq1qgM2K0ffNrpQtTBAjZiQY9I">
+    <meta name="csrf-token" content="FEcpNrHrSqzwwCnUd2ceom7QBf7hfqte9g6h9wKm">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -229,7 +258,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 362 </span>
+                                                <span class="block feature-name"> 370 </span>
                                             </a>
                                                                                         </div>
 
@@ -279,20 +308,20 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="06/02/2025 11:20:30" datetime="2025-02-06T11:20:30+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="14/02/2025 11:51:33" datetime="2025-02-14T11:51:33+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">228.235</div>
+                                            <div class="statistic-value">231.770</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">5,00 / <small>19</small></div>
+                                            <div class="statistic-value">5,00 / <small>21</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">144.908</div>
+                                            <div class="statistic-value">147.665</div>
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +448,7 @@
                 <a href="https://docln.net/truyen/18063/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">longwasu</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">weaboo</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -446,7 +475,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Đây là một tác phẩm hiếm hoi mình cảm thấy hay tro...
+                                    Top 1 Korean novel hako
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -454,7 +483,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="28-01-2025 23:08:44" datetime="2025-01-28T23:08:44+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="10-02-2025 01:03:16" datetime="2025-02-10T01:03:16+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -464,7 +493,7 @@
                 <a href="https://docln.net/truyen/18063/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">kanaluvu</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Thanh bằng</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -491,7 +520,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    5/5 no drama +1 🗣️🔥🔥🔥
+                                    Không cần diễn tả truyện rất chi là hay
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -499,7 +528,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="15-01-2025 06:40:11" datetime="2025-01-15T06:40:11+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="08-02-2025 22:33:43" datetime="2025-02-08T22:33:43+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -1135,9 +1164,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia/c156840-chuong-68-nguoi-mong-du-6" title="Chương 68 - Người mộng du (6)">Chương 68 - Người mộng du (6)</a>
@@ -1145,9 +1171,21 @@
                                                                                             </div>
                                             <div class="chapter-time">06/02/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia/c157722-chuong-69-nguoi-ghi-lai-1" title="Chương 69 - Người ghi lại (1)">Chương 69 - Người ghi lại (1)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">14/02/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (63 chương)</span>
+                                            <span>Xem tiếp (64 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1158,7 +1196,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18063,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;TXJsBHYyLClSac006C0C&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;508514dbe67313a7c2d4331364205eccfca7d4c5179e8d8e8eba916ec1db3a07&quot;}" wire:effects="[]" wire:id="TXJsBHYyLClSac006C0C" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18063,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Bz6s7FiZ3zppNDUFlB2Y&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;a4f5fb4a706d844ae1462a41209a8bff842e78760ab4f4b3e8bccf3ae9660d85&quot;}" wire:effects="[]" wire:id="Bz6s7FiZ3zppNDUFlB2Y" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1177,14 +1215,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(661)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(664)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">160 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">163 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -1196,13 +1234,154 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2747454"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2747454" data-parent="2747454">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/41029">lCiel</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Đây là có lẽ là bộ web novel Hàn hay nhất t từng đọc (dù chưa end). T đã đọc tới chap mới nhất (329) bên raw, phải nói là truyện càng lúc càng hay, ko hề bị đuối. Tình tiết đc kể phi tuyến tính, foreshadow rải rác khắp nơi, sự thật được bóc dỡ theo lớp mà ko hề rối rắm hay khó theo dõi. Ncl story telling vừa độc lạ vừa hay.<br>
+Main thì đỉnh. Đây chắc là main t thích nhất trong các bộ WN đã đọc. Main đc build đa chiều và sâu sắc, nhma ko hề khô khan. Trái lại ổng có những mặt rất hài.<br>
+Thêm nữa là bút lực của tác giả tốt, tính trong giới WN thì phải nằm ở tốp trên. Câu văn cô đọng và trau chuốt. T đọc bản Hàn bằng gg dịch mà vẫn thấy hay là hiểu.<br>
+Ncl truyện peak, thật sự tâm đắc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia?comment_id=2747454#ln-comment-2747454"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-02-2025 22:04:12"
+                                datetime="2025-02-13T22:04:12+07:00">
+                                13-02-2025 22:04:12
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2747460"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2747460" data-parent="2747454">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/41029">lCiel</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Thêm cái nữa là bộ này ko dính yếu tố chính trị =)))<br>Nhiều tác giả Hàn khác bị cái... Bài Nhật (lâu lâu có cả Trung). Đụng Nhật là chởi vs viết dơ khủng khiếp. Thêm cái tính tự tôn dân tộc cao nữa. Thành ra đọc lâu lâu bị ngượng.<br>Nhma ông tác giả này thì nước nào cũng hơi khịa kể cả (nhất là) nước ổng (khịa nhẹ nhàng thôi). Và văn hoá nào cx thích, nhất là Nhật (ref 1 đống M-A, LN), ổng cx thích tiếng Trung nữa. Từ tác phẩm trước tới bộ này ổng cx đem yếu tố chữ Hán vào r.<br>
+Ncl như thế thì người đọc thoải mái. Ko bị cuồng abc, bài xyz
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia?comment_id=2747454&amp;reply_id=2747460#ln-comment-2747460"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-02-2025 22:14:27"
+                                datetime="2025-02-13T22:14:27+07:00">
+                                13-02-2025 22:14:27
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2747480"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2747480" data-parent="2747454">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/158095">Timmie2407</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/41029">@lCiel:</a> Truyện quá peak luôn ấy. T còn thấy bộ này đỉnh ở chỗ là các bài học nhân văn được lồng ghép rất tinh tế. Đôi khi chỉ là quan sát 1 hiện tượng, đôi khi là tương tác với 1 con người mà Người Đưa Tang vẫn phát hiện ra được những điểm đáng quý của họ. Thế giới quan của Người Đưa Tang thực sự sâu sắc, cách kể cũng rất có duyên, từng khoảnh khắc trôi qua không hề bị uổng phí (Thậm chí gợi lại chi tiết ở hàng trăm chương trước mà người đọc vẫn còn ấn tượng).
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia?comment_id=2747454&amp;reply_id=2747480#ln-comment-2747480"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-02-2025 22:33:40"
+                                datetime="2025-02-13T22:33:40+07:00">
+                                13-02-2025 22:33:40
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">2</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2734258"
     class="ln-comment-item mt-3 clear"
     data-comment="2734258" data-parent="2734258">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1253,7 +1432,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u55505-f30a3c7f-62a8-4554-9c6e-22f3830d8a64.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1392,7 +1571,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u55505-f30a3c7f-62a8-4554-9c6e-22f3830d8a64.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1614,7 +1793,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1760,50 +1939,6 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2666842"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2666842" data-parent="2666842">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u68528-e27bf1d3-d5cc-4a10-853d-7249d776ac6f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/68528">Jinshi</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Tuyệt vời 🥰🥰
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18063-chuyen-ke-cua-vo-tan-hoi-quy-gia?comment_id=2666842#ln-comment-2666842"
-                            class="text-slate-500">
-                            <time class="timeago" title="25-11-2024 19:43:36"
-                                datetime="2024-11-25T19:43:36+07:00">
-                                25-11-2024 19:43:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -1816,7 +1951,7 @@
 </div>    </main>
 
     <script>
-        var token = '6quM2DMnOAxbFoAq1qgM2K0ffNrpQtTBAjZiQY9I';
+        var token = 'MqLtaNOta3o5On6ZM0DIFYhcJVvjQispnhpK4Kne';
         var comment_type = 'series';
         var comment_typeid = '18063';
     </script>
@@ -1860,8 +1995,8 @@
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="6quM2DMnOAxbFoAq1qgM2K0ffNrpQtTBAjZiQY9I" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="FEcpNrHrSqzwwCnUd2ceom7QBf7hfqte9g6h9wKm" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
