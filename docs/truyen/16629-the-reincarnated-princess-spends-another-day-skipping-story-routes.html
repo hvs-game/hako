@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="XOb0zO1gPxyGajnNt0ECfq5lOYk6OiX3LrFjx3aM">
+    <meta name="csrf-token" content="2fxeuq6dAIBQd1KfuHRNTloqlb8qiApXuDHEKYQB">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -236,7 +265,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 67 </span>
+                                                <span class="block feature-name"> 69 </span>
                                             </a>
                                                                                         </div>
 
@@ -286,11 +315,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="07/02/2025 22:40:02" datetime="2025-02-07T22:40:02+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="20/02/2025 17:19:42" datetime="2025-02-20T17:19:42+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">31.992</div>
+                                            <div class="statistic-value">34.553</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -299,7 +328,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">13.988</div>
+                                            <div class="statistic-value">14.605</div>
                                         </div>
                                     </div>
                                 </div>
@@ -337,9 +366,9 @@
                         <section class="series-users">
                             <main>
                                 <div class="series-owner group-mem">
-                                    <img width="50px" height="50px" src="https://i.docln.net/lightnovel/users/ua175731-d307a378-c5cd-4cd4-8180-b9ae457addb2.jpg" alt="Poster's avatar">
+                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u175731-dbcae0f8-29a2-4618-a2fd-77ccc4aa1a4a.jpg" alt="Poster's avatar">
                                     <div class="series-owner-title">
-                                        <span class="series-owner_name"><a href="/thanh-vien/175731">noveltrans75</a></span>
+                                        <span class="series-owner_name"><a href="/thanh-vien/175731">RopanTrans</a></span>
                                                                             </div>
                                 </div>
                                 <div class="fantrans-section">
@@ -363,7 +392,7 @@
                         <div class="long-text" style='word-wrap: break-word;'>
                         <p>Bản dịch được dịch từ bản e-book tiếng Anh light novel được phát hành bởi bởi J-Novel Club mà mình đã mua trên Google Play Sách </p>
 <p>- <strong>Link mua bản ENG của J-Novel Club: </strong><a href="https://play.google.com/store/books/series?id=YFItGwAAABBMSM" rel="nofollow noreferrer noopener" target="_blank">Google Play</a></p>
-<p>- <strong>Lịch đăng: </strong>1 chương/tuần - 9h tối thứ 6 hàng tuần</p>
+<p>Trước định có lịch đăng cụ thể nhưng mà xem xét lại lịch trình của tui thì không thể tuân thủ như vậy được, nên là rảnh được lúc nào thì tui dịch vậy</p>
                         </div>
                     </main>
                 </section>
@@ -506,9 +535,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/16629-the-reincarnated-princess-spends-another-day-skipping-story-routes/c156965-chuong-08-su-da-cam-cua-nang-cong-chua-tai-sinh" title="Chương 08: Sự đa cảm của nàng công chúa tái sinh">Chương 08: Sự đa cảm của nàng công chúa tái sinh</a>
@@ -516,9 +542,21 @@
                                                                                             </div>
                                             <div class="chapter-time">07/02/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/16629-the-reincarnated-princess-spends-another-day-skipping-story-routes/c158467-chuong-09-quyet-tam-cua-nhi-hoang-tu" title="Chương 09: Quyết tâm của Nhị Hoàng tử">Chương 09: Quyết tâm của Nhị Hoàng tử</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">20/02/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (4 chương)</span>
+                                            <span>Xem tiếp (5 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -737,7 +775,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16629,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;7GOzzUkB1fbgMgjneRh8&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16629-the-reincarnated-princess-spends-another-day-skipping-story-routes&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;16ea53b29d8b0c14c5f7058905f5fdb907ec50e94917b876148c1a4d6b2992cb&quot;}" wire:effects="[]" wire:id="7GOzzUkB1fbgMgjneRh8" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16629,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;grmhlNbkWWDtPYDLFlCS&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16629-the-reincarnated-princess-spends-another-day-skipping-story-routes&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;35504453eb5fd1ec0f1ffda30eb399eaa02d31a48eab5f6239ebc5dcbb313027&quot;}" wire:effects="[]" wire:id="grmhlNbkWWDtPYDLFlCS" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -756,14 +794,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(8)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(10)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">4 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">6 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -773,13 +811,13 @@
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-2734505"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2734505" data-parent="2734505">
+    <div id="ln-comment-2749152"
+    class="ln-comment-item mt-3 clear deleted disabled"
+    data-comment="2749152" data-parent="2749152">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua175731-d307a378-c5cd-4cd4-8180-b9ae457addb2.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u175731-dbcae0f8-29a2-4618-a2fd-77ccc4aa1a4a.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -788,7 +826,109 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">noveltrans75</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">RopanTrans</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Bình luận đã bị xóa bởi RopanTrans
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>        
+        
+        <div class="ln-comment-group">
+    <div id="ln-comment-2750575"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2750575" data-parent="2750575">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u175731-dbcae0f8-29a2-4618-a2fd-77ccc4aa1a4a.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">RopanTrans</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Trước định có lịch đăng cụ thể nhưng mà xem xét lại lịch trình của tui thì không thể tuân thủ như vậy được, nên là rảnh được lúc nào thì tui dịch vậy
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/16629-the-reincarnated-princess-spends-another-day-skipping-story-routes?comment_id=2750575#ln-comment-2750575"
+                            class="text-slate-500">
+                            <time class="timeago" title="16-02-2025 22:42:19"
+                                datetime="2025-02-16T22:42:19+07:00">
+                                16-02-2025 22:42:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2734505"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2734505" data-parent="2734505">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u175731-dbcae0f8-29a2-4618-a2fd-77ccc4aa1a4a.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">RopanTrans</a>
     </div>
                         <div class="self-center">
                 <div
@@ -830,16 +970,15 @@
     </div>
 </div>
 
-    </div>        
-        
-        <div class="ln-comment-group">
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2727033"
     class="ln-comment-item mt-3 clear"
     data-comment="2727033" data-parent="2727033">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua175731-d307a378-c5cd-4cd4-8180-b9ae457addb2.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u175731-dbcae0f8-29a2-4618-a2fd-77ccc4aa1a4a.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -848,7 +987,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">noveltrans75</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175731">RopanTrans</a>
     </div>
                         <div class="self-center">
                 <div
@@ -1039,7 +1178,7 @@
 </div>    </main>
 
     <script>
-        var token = 'XOb0zO1gPxyGajnNt0ECfq5lOYk6OiX3LrFjx3aM';
+        var token = 'EMLpYkCaracJgteDDW1lxNrjfQAtjdrEq0qVgq8F';
         var comment_type = 'series';
         var comment_typeid = '16629';
     </script>
@@ -1083,8 +1222,8 @@
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="XOb0zO1gPxyGajnNt0ECfq5lOYk6OiX3LrFjx3aM" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="2fxeuq6dAIBQd1KfuHRNTloqlb8qiApXuDHEKYQB" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
