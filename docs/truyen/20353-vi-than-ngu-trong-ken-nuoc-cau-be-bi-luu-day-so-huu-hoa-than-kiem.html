@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="JNC3mKqcvaccqf9jggijdTMkqvx4YoU3rSdBBEJe">
+    <meta name="csrf-token" content="GDFCj3njIDCf8SdJaULu5bpOX98umXOw8dkYBgDa">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +150,41 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -210,6 +239,9 @@
 		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/romance" x-show="more" :class="{ 'fade-in': more }">
 		Romance
 	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/adapted-to-manga" x-show="more" :class="{ 'fade-in': more }">
+		Adapted to Manga
+	</a>
 	
 		<a class="series-gerne-item" x-show="!more" @click="more = true;"><i class="fas fa-ellipsis-h"></i></a>
 	</div>                                        <div class="info-item">
@@ -236,7 +268,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 144 </span>
+                                                <span class="block feature-name"> 157 </span>
                                             </a>
                                                                                         </div>
 
@@ -286,11 +318,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="27/01/2025 18:30:23" datetime="2025-01-27T18:30:23+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="23/02/2025 00:42:11" datetime="2025-02-23T00:42:11+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">6.824</div>
+                                            <div class="statistic-value">10.692</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -299,7 +331,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">7.858</div>
+                                            <div class="statistic-value">9.613</div>
                                         </div>
                                     </div>
                                 </div>
@@ -368,7 +400,7 @@
                         <p>Link novelupdate: <a href="https://www.novelupdates.com/series/god-slumbers-in-a-bubble/" rel="nofollow noreferrer noopener" target="_blank">Link</a></p>
 <p>Link raw: <a href="https://ncode.syosetu.com/n6274hb/1/" rel="nofollow noreferrer noopener" target="_blank">Link</a></p>
 <p>Link manga(raw): <a href="https://rawkuma.com/manga/utakata-ni-kami-wa-madoromu/" rel="nofollow noreferrer noopener" target="_blank">Link</a></p>
-<p>Link manga: <strong><a href="https://www.facebook.com/groups/634532448924708" rel="nofollow noreferrer noopener" target="_blank">Chapter 1</a></strong>(Yup, chỉ dịch 1 chap thôi, dịch mệt lắm ;-;)</p>
+<p>Link manga: <a href="https://www.facebook.com/groups/634532448924708" rel="nofollow noreferrer noopener" target="_blank">Chapter 1</a>(Yup, chỉ dịch 1 chap thôi, dịch mệt lắm ;-;)</p>
                         </div>
                     </main>
                 </section>
@@ -448,15 +480,24 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20353-vi-than-ngu-trong-ken-nuoc-cau-be-bi-luu-day-so-huu-hoa-than-kiem/c155793-chuong-02-mo-dau-hoi-uc-song-dong-ve-mua-ve-sau-nam-ay" title="Chương 02: Mở đầu - Hồi Ức Sống Động Về Mùa Ve Sầu Năm Ấy (2)">Chương 02: Mở đầu - Hồi Ức Sống Động Về Mùa Ve Sầu Năm Ấy (2)</a>
 
                                                                                             </div>
                                             <div class="chapter-time">27/01/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/20353-vi-than-ngu-trong-ken-nuoc-cau-be-bi-luu-day-so-huu-hoa-than-kiem/c158722-chuong-11-tan-huong-cuoc-song-o-karen" title="Chương 1.1: Tận Hưởng Tháng Ngày Bình Yên Ở Karen">Chương 1.1: Tận Hưởng Tháng Ngày Bình Yên Ở Karen</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">23/02/2025</div>
                                         </li>
                                                                                                         </ul>
                             </div>
@@ -544,7 +585,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20353,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;gHpWpH85IBcd9pzvBoik&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20353-vi-than-ngu-trong-ken-nuoc-cau-be-bi-luu-day-so-huu-hoa-than-kiem&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;385a01e0b11bfe2e71cd770956ab40f6dc0e6fa14912e27fe35ef8613b97e189&quot;}" wire:effects="[]" wire:id="gHpWpH85IBcd9pzvBoik" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20353,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;0zYOe5FxK155l52t65ye&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20353-vi-than-ngu-trong-ken-nuoc-cau-be-bi-luu-day-so-huu-hoa-than-kiem&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;1fe6f381b33a145f3d4989b9de414edd374e0bafee619726be5d3056fc4fe3a7&quot;}" wire:effects="[]" wire:id="0zYOe5FxK155l52t65ye" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -563,14 +604,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(50)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(53)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">24 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">25 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -641,6 +682,50 @@ Link manga - <a href="https://www.facebook.com/groups/634532448924708" rel="nofo
     </div>        
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2742376"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2742376" data-parent="2742376">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u64381-0a2217db-f9e6-4f6a-b527-e733f5f93387.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64381">PHT|Elaina|</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        ayame? <br>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20353-vi-than-ngu-trong-ken-nuoc-cau-be-bi-luu-day-so-huu-hoa-than-kiem?comment_id=2742376#ln-comment-2742376"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-02-2025 21:25:11"
+                                datetime="2025-02-08T21:25:11+07:00">
+                                08-02-2025 21:25:11
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2729085"
     class="ln-comment-item mt-3 clear"
     data-comment="2729085" data-parent="2729085">
@@ -927,7 +1012,7 @@ Link manga - <a href="https://www.facebook.com/groups/634532448924708" rel="nofo
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u156386-fcde3e11-817a-438e-a0d9-43062b6b9dc2.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-207e4491-2ae4-4814-8753-0b9e5805014f.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1345,7 +1430,7 @@ Link manga - <a href="https://www.facebook.com/groups/634532448924708" rel="nofo
 </div>    </main>
 
     <script>
-        var token = 'JNC3mKqcvaccqf9jggijdTMkqvx4YoU3rSdBBEJe';
+        var token = 'GDFCj3njIDCf8SdJaULu5bpOX98umXOw8dkYBgDa';
         var comment_type = 'series';
         var comment_typeid = '20353';
     </script>
@@ -1389,8 +1474,8 @@ Link manga - <a href="https://www.facebook.com/groups/634532448924708" rel="nofo
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="JNC3mKqcvaccqf9jggijdTMkqvx4YoU3rSdBBEJe" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="GDFCj3njIDCf8SdJaULu5bpOX98umXOw8dkYBgDa" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
