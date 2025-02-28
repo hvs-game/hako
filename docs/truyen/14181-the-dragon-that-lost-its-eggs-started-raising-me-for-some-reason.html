@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="lutCjj7nKXnqh3H1NQz4gBzjiIThHHdg1Z6FsoJd">
+    <meta name="csrf-token" content="ttLrMiueJ7JhrYahlaPGT6a662ON3CsfcKc6eKWy">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -222,7 +251,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 800 </span>
+                                                <span class="block feature-name"> 814 </span>
                                             </a>
                                                                                         </div>
 
@@ -272,11 +301,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 22:34:17" datetime="2025-01-28T22:34:17+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="28/02/2025 22:48:46" datetime="2025-02-28T22:48:46+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">150.538</div>
+                                            <div class="statistic-value">152.760</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -285,7 +314,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">321.364</div>
+                                            <div class="statistic-value">333.820</div>
                                         </div>
                                     </div>
                                 </div>
@@ -378,6 +407,7 @@
                         <ol class="list-volume unstyled no-margin no-padding">
                                                                                     <li data-scrollTo="#volume_19914"><span class="list_vol-order">01.</span><span class="list_vol-title">Vol 1</span></li>
                                                         <li data-scrollTo="#volume_21635"><span class="list_vol-order">02.</span><span class="list_vol-title">Vol 2</span></li>
+                                                        <li data-scrollTo="#volume_28211"><span class="list_vol-order">03.</span><span class="list_vol-title">Vol 3</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -908,7 +938,7 @@
                     <header id="volume_21635" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Vol 2 <span style="color: red">*</span>
+                            Vol 2
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1206,9 +1236,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155923-chuong-32-su-ke-thua" title="Chương 32: Sự kế thừa">Chương 32: Sự kế thừa</a>
@@ -1218,9 +1245,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155924-chuong-33-thu-khong-the-ke-thua" title="Chương 33: Thứ không thể kế thừa">Chương 33: Thứ không thể kế thừa</a>
@@ -1230,9 +1254,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155925-chuong-34-bao-ve-ngon-nui" title="Chương 34: Bảo vệ ngọn núi">Chương 34: Bảo vệ ngọn núi</a>
@@ -1242,9 +1263,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155927-chuong-35-bat-dau-tran-chien" title="Chương 35: Bắt đầu trận chiến">Chương 35: Bắt đầu trận chiến</a>
@@ -1254,9 +1272,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155928-chuong-36-vua-danh-vua-lui" title="Chương 36: Vừa đánh vừa lui">Chương 36: Vừa đánh vừa lui</a>
@@ -1266,9 +1281,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155929-chuong-37-ngoi-no-cho-su-huy-diet" title="Chương 37: Ngòi nổ cho sự hủy diệt">Chương 37: Ngòi nổ cho sự hủy diệt</a>
@@ -1278,9 +1290,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155930-chuong-38-phep-mau-cua-chien-tranh" title="Chương 38: Phép màu của chiến tranh">Chương 38: Phép màu của chiến tranh</a>
@@ -1290,9 +1299,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155931-chuong-39-nguoi-minh-mong-cho-se-den" title="Chương 39: Người mình mong chờ sẽ đến">Chương 39: Người mình mong chờ sẽ đến</a>
@@ -1302,9 +1308,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155932-chuong-40-francesca" title="Chương 40: Francesca">Chương 40: Francesca</a>
@@ -1314,9 +1317,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155933-chuong-41-sau-con-mua-troi-lai-sang" title="Chương 41: Sau cơn mưa trời lại sáng">Chương 41: Sau cơn mưa trời lại sáng</a>
@@ -1326,9 +1326,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155934-chuong-42-mat-troi" title="Chương 42: Mặt trời">Chương 42: Mặt trời</a>
@@ -1338,9 +1335,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c155942-chuong-43-bua-sang" title="Chương 43: Bữa sáng">Chương 43: Bữa sáng</a>
@@ -1358,10 +1352,48 @@
                         </div>
                     </main>
                 </section>
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+                    <header id="volume_28211" class="sect-header">
+                                                <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="sect-title">
+                            Vol 3 <span style="color: red">*</span>
+                        </span>
+                    </header>
+                    <main class="d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <div class="volume-cover">
+                                    <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/t28211-vol-3">
+                                        <div class="a6-ratio">
+                                            <div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                                                <ul class="list-chapters at-series">
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason/c159461-chuong-01-nhung-nguoi-buoc-tiep-tung-ngay" title="Chương 01: Những người bước tiếp từng ngày">Chương 01: Những người bước tiếp từng ngày</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/02/2025</div>
+                                        </li>
+                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14181,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;QnXlrdNjUDbxBqev3vtz&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;1075e972c41c119b87e20e4aab40f22067235a78eed0bdddf688f1e0c7ca2f91&quot;}" wire:effects="[]" wire:id="QnXlrdNjUDbxBqev3vtz" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14181,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;6u1HF3KjycpofYgQUFNQ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14181-the-dragon-that-lost-its-eggs-started-raising-me-for-some-reason&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;2476e5f0f0742f8dbbf5c88512d10e0731491532014bf729c6a16d64cd3fbfb8&quot;}" wire:effects="[]" wire:id="6u1HF3KjycpofYgQUFNQ" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1380,7 +1412,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(861)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(900)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1582,7 +1614,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u182870-69d226b0-d7a8-4e8d-82d3-608d24b6e0d4.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1721,7 +1753,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u60948-36b1e8c2-e645-4c1c-bda8-84c03614913f.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u60948-9b2021da-1d24-4e9d-8d75-d3bc10251318.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2013,7 +2045,7 @@
 </div>    </main>
 
     <script>
-        var token = '4AAF4h0HNjoqGLbIHz5lUToyz2jAzCQr6i4S8Mb4';
+        var token = 'D4R8x6h60VxovA1pj0UYANIOMzti0iBEgDhiWerm';
         var comment_type = 'series';
         var comment_typeid = '14181';
     </script>
@@ -2057,8 +2089,8 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="lutCjj7nKXnqh3H1NQz4gBzjiIThHHdg1Z6FsoJd" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="ttLrMiueJ7JhrYahlaPGT6a662ON3CsfcKc6eKWy" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>

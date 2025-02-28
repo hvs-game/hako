@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="qnh2pnbxTXb54RNIbojZxE6MghfSpWsj49K5RRGh">
+    <meta name="csrf-token" content="KY3bPPOLV9dRXbKSNgVCuev9YtjvGfRjE5qbq9TC">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -242,7 +271,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 67 </span>
+                                                <span class="block feature-name"> 72 </span>
                                             </a>
                                                                                         </div>
 
@@ -292,11 +321,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="10/02/2025 17:54:47" datetime="2025-02-10T17:54:47+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="28/02/2025 19:38:29" datetime="2025-02-28T19:38:29+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">18.032</div>
+                                            <div class="statistic-value">22.032</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -305,7 +334,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">4.445</div>
+                                            <div class="statistic-value">5.120</div>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +440,7 @@
                             <i class="fas fa-times"></i>
                         </span>
                         <ol class="list-volume unstyled no-margin no-padding">
-                                                                                    <li data-scrollTo="#volume_27771"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 01 - Sự trong sạch</span></li>
+                                                                                    <li data-scrollTo="#volume_27771"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 01 - Sự thuần khiết</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -425,7 +454,7 @@
                     <header id="volume_27771" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 01 - Sự trong sạch <span style="color: red">*</span>
+                            Tập 01 - Sự thuần khiết <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -462,15 +491,24 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20551-su-thi-anh-hung-khong-mong-muon-cua-thieu-nu/c157356-chuong-11-nhan-thuc-va-dieu-co-gai-mong-muon" title="Chương 11 - Nhận thức và điều cô gái mong muốn">Chương 11 - Nhận thức và điều cô gái mong muốn</a>
 
                                                                                             </div>
                                             <div class="chapter-time">10/02/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/20551-su-thi-anh-hung-khong-mong-muon-cua-thieu-nu/c159430-chuong-12-dieu-co-gai-gioi" title="Chương 12 - Điều cô gái giỏi">Chương 12 - Điều cô gái giỏi</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/02/2025</div>
                                         </li>
                                                                                                         </ul>
                             </div>
@@ -480,7 +518,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20551,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;UdbaJeg1PrT8XLH6bbGZ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20551-su-thi-anh-hung-khong-mong-muon-cua-thieu-nu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;61465a8c68f803a431b52cd47e27cae5f97ed45501e28010b0f91f393db0d192&quot;}" wire:effects="[]" wire:id="UdbaJeg1PrT8XLH6bbGZ" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20551,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;dt1B36t5nM7ua2iQaIFF&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20551-su-thi-anh-hung-khong-mong-muon-cua-thieu-nu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;e4282fd5c93089b9f89f5884e95e2d203ae3d7576258b60e8de96047eb3b4b41&quot;}" wire:effects="[]" wire:id="dt1B36t5nM7ua2iQaIFF" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -499,7 +537,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(17)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(19)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -542,7 +580,14 @@
                     <div class="leading-4">CHỦ THỚT</div>
                 </div>
             </div>
-                                    <div class="self-center">
+                                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+                <img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+                <div class="leading-4">AUTHOR</div>
+            </div>
+        </div>
+                <div class="self-center">
             <div
                 class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
                 <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
@@ -566,7 +611,7 @@
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">2</span>
+                            <span class="likecount font-semibold">3</span>
                         </a>
                                             </div>
                             </div>
@@ -915,7 +960,7 @@ cuối cùng cũng có người nối tiếp bộ này
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">2</span>
+                            <span class="likecount font-semibold">3</span>
                         </a>
                                             </div>
                             </div>
@@ -929,7 +974,7 @@ cuối cùng cũng có người nối tiếp bộ này
 </div>    </main>
 
     <script>
-        var token = 'qnh2pnbxTXb54RNIbojZxE6MghfSpWsj49K5RRGh';
+        var token = 'su0I9xBHbfnhcZQqKlHcjS8vEQnwGvCARwb0crg0';
         var comment_type = 'series';
         var comment_typeid = '20551';
     </script>
@@ -973,8 +1018,8 @@ cuối cùng cũng có người nối tiếp bộ này
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="qnh2pnbxTXb54RNIbojZxE6MghfSpWsj49K5RRGh" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="KY3bPPOLV9dRXbKSNgVCuev9YtjvGfRjE5qbq9TC" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
