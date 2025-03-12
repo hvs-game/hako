@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Pick Me Up! Gacha Vô Hạn! - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,12 +11,12 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="ftk4MhIL1bepX5PyM5OWySbQGTOAT7YjTEFGV9J6">
+    <meta name="csrf-token" content="rCsZ40I3M8Ww6fVdWMkQmWkDsCE2LGlgsa2WtFlF">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
     <link rel="canonical" href="https://docln.net/truyen/17876-pick-me-up-gacha-vo-han">
-    <meta property="og:image" content="https://i.hako.vn/ln/series/covers/s17876-f441a877-bf04-4d43-aa72-b9773f58e852.jpg">
+    <meta property="og:image" content="https://i.hako.vn/ln/series/covers/s17876-3a150206-8f2e-42e1-b260-2d10e398cf23.jpg">
     <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="preconnect" href="https://www.google-analytics.com">
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=18235c05854744068080fd05ed06fe9f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +155,61 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -183,7 +237,7 @@
                                                                                         <span>Truyện dịch</span>
                                                                                     </div>
                                         <div class="a6-ratio">
-                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/series/covers/s17876-f441a877-bf04-4d43-aa72-b9773f58e852.jpg')">
+                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/series/covers/s17876-3a150206-8f2e-42e1-b260-2d10e398cf23.jpg')">
                                             </div>
                                         </div>
                                     </div>
@@ -225,7 +279,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 300 </span>
+                                                <span class="block feature-name"> 307 </span>
                                             </a>
                                                                                         </div>
 
@@ -275,11 +329,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="19/01/2025 18:28:06" datetime="2025-01-19T18:28:06+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="12/03/2025 09:41:43" datetime="2025-03-12T09:41:43+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">210.137</div>
+                                            <div class="statistic-value">212.815</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -288,7 +342,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">124.752</div>
+                                            <div class="statistic-value">139.103</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1166,9 +1220,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17876-pick-me-up-gacha-vo-han/c154622-chuong-74-thuan-phuc-1" title="Chương 74: Thuần phục (1)">Chương 74: Thuần phục (1)</a>
@@ -1178,9 +1229,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17876-pick-me-up-gacha-vo-han/c155130-chuong-75-thuan-phuc-2" title="Chương 75: Thuần phục (2)">Chương 75: Thuần phục (2)</a>
@@ -1188,9 +1236,21 @@
                                                                                             </div>
                                             <div class="chapter-time">19/01/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17876-pick-me-up-gacha-vo-han/c160916-chuong-76-me-cung-1" title="Chương 76: Mê Cung (1)">Chương 76: Mê Cung (1)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">12/03/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (70 chương)</span>
+                                            <span>Xem tiếp (71 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1201,7 +1261,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17876,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;NScm3Ndn2AY0FpKJ7m2m&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17876-pick-me-up-gacha-vo-han&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c718b00a4d819d640d42bd177219b3a2ada69440298a7bf2890cf3f6991aaac1&quot;}" wire:effects="[]" wire:id="NScm3Ndn2AY0FpKJ7m2m" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17876,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;dAXqztI87IPdcYxtUqxk&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17876-pick-me-up-gacha-vo-han&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d1978be1a3166b89b673ae42e82d8c0bd4ab79648c8c5f415ade8dcc28aa4b09&quot;}" wire:effects="[]" wire:id="dAXqztI87IPdcYxtUqxk" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1220,14 +1280,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(288)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(291)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">98 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">100 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -1239,13 +1299,101 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2780509"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2780509" data-parent="2780509">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54813">danng2002</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Lâu lâu mới thấy trans ngoi lại
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/17876-pick-me-up-gacha-vo-han?comment_id=2780509#ln-comment-2780509"
+                            class="text-slate-500">
+                            <time class="timeago" title="12-03-2025 09:56:36"
+                                datetime="2025-03-12T09:56:36+07:00">
+                                12-03-2025 09:56:36
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2753180"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2753180" data-parent="2753180">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206243-f06740c5-5e25-4c4d-af4c-1cfe8ce509df.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206243">Ha dang pai</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Đào lên đọc ae
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/17876-pick-me-up-gacha-vo-han?comment_id=2753180#ln-comment-2753180"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-02-2025 14:27:01"
+                                datetime="2025-02-19T14:27:01+07:00">
+                                19-02-2025 14:27:01
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2717867"
     class="ln-comment-item mt-3 clear"
     data-comment="2717867" data-parent="2717867">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u199454-7b1acafb-8ba2-46d7-9a3a-38934428c8a3.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u199454-e2ddbe39-aa34-4813-9b32-8e98be78e276.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1256,7 +1404,14 @@
     <div class="self-center">
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/199454">Piser-chan</a>
     </div>
-                                    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         Bộ này dịch từ nguồn nào vậy trans?
@@ -1289,7 +1444,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u182870-74d7e872-3ac2-43ba-8464-a68a8fbb598e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1720,7 +1875,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u184859-7cd37208-3cd7-44c9-a842-85e2d4b9003c.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u184859-4c4c00a3-45f4-44a8-8211-efbeae2202de.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1731,7 +1886,14 @@
     <div class="self-center">
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184859">Vux Thanh</a>
     </div>
-                                    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         Mahwa anh tôi nhìn chad bao nhiêu Novel anh tôi nhìn như nghiện bấy nhiêu🤡
@@ -1763,7 +1925,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u176255-d89ac7bd-a8b2-424a-a638-c6c6406b2463.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u176255-531536df-0433-4e98-82a0-ba42e8893cc4.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1772,9 +1934,16 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">_proslimevn</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">S͏͏</a>
     </div>
-                                    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         Anh này chăm cmt ác😳👍
@@ -1804,7 +1973,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u184859-7cd37208-3cd7-44c9-a842-85e2d4b9003c.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u184859-4c4c00a3-45f4-44a8-8211-efbeae2202de.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1815,7 +1984,14 @@
     <div class="self-center">
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184859">Vux Thanh</a>
     </div>
-                                    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         <a href="/thanh-vien/176255">@_proslimevn:</a> sao bằng bác được 😅
@@ -1891,94 +2067,6 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2572918"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2572918" data-parent="2572918">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u169944-74f3bab3-39d5-484c-b577-94049a9b597f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169944">holy cow</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        trans quá mạnh 🗣🔥
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/17876-pick-me-up-gacha-vo-han?comment_id=2572918#ln-comment-2572918"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-08-2024 01:26:00"
-                                datetime="2024-08-31T01:26:00+07:00">
-                                31-08-2024 01:26:00
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2546364"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2546364" data-parent="2546364">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/143301">nolikepvp</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Cố lên ngài ơi ;-;
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/17876-pick-me-up-gacha-vo-han?comment_id=2546364#ln-comment-2546364"
-                            class="text-slate-500">
-                            <time class="timeago" title="14-08-2024 02:51:08"
-                                datetime="2024-08-14T02:51:08+07:00">
-                                14-08-2024 02:51:08
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -1991,7 +2079,7 @@
 </div>    </main>
 
     <script>
-        var token = 'ftk4MhIL1bepX5PyM5OWySbQGTOAT7YjTEFGV9J6';
+        var token = '0xfwbZksm5d02gkinvsbscphx36wQPYae2529hQp';
         var comment_type = 'series';
         var comment_typeid = '17876';
     </script>
@@ -2035,8 +2123,11 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="ftk4MhIL1bepX5PyM5OWySbQGTOAT7YjTEFGV9J6" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=2"></script>
+
+    <script src="/scripts/app.js?id=665844ddd7d0c161950aa3503fe99328"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="rCsZ40I3M8Ww6fVdWMkQmWkDsCE2LGlgsa2WtFlF" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
