@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Yasei no Lastboss ga Arawareta! - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="4C0M8vCkDa2xH3OYPCHbxWqOStAWz8t62ltw98RI">
+    <meta name="csrf-token" content="9tHfr2MUHPoEkd0C5B9BeGheFP36zVtagf4LMtuI">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=18235c05854744068080fd05ed06fe9f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/thao-luan/2591">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+                <a href="/truyen/15047">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -236,7 +290,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 258 </span>
+                                                <span class="block feature-name"> 270 </span>
                                             </a>
                                                                                         </div>
 
@@ -286,11 +340,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="24/10/2024 23:58:20" datetime="2024-10-24T23:58:20+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="14/03/2025 13:59:28" datetime="2025-03-14T13:59:28+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">40.665</div>
+                                            <div class="statistic-value">44.506</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -299,7 +353,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">53.469</div>
+                                            <div class="statistic-value">60.879</div>
                                         </div>
                                     </div>
                                 </div>
@@ -546,9 +600,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -557,9 +608,21 @@
                                                                                             </div>
                                             <div class="chapter-time">24/10/2024</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14425-yasei-no-lastboss-ga-arawareta/c161177-chuong-87-ruphas-tung-cu-dam-tap-trung-karkinos-bi-ha-guc" title="Chương 87: Ruphas tung Cú đấm tập trung! Karkinos bị hạ gục!">Chương 87: Ruphas tung Cú đấm tập trung! Karkinos bị hạ gục!</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">14/03/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (8 chương)</span>
+                                            <span>Xem tiếp (9 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -570,7 +633,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14425,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;n1iT73XGnLbQ3xghnz4a&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14425-yasei-no-lastboss-ga-arawareta&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;cff3cb5e26b4ca174fa4d42ef1e6fe8444312df0bc1c9cdc88cd8e35847a6a61&quot;}" wire:effects="[]" wire:id="n1iT73XGnLbQ3xghnz4a" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14425,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;hlqeFlxxLLRM9cEvnOW9&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14425-yasei-no-lastboss-ga-arawareta&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ed8c6e0916e7d1fd461ad1161692cad959c98a50e797be209b845210a461ea5a&quot;}" wire:effects="[]" wire:id="hlqeFlxxLLRM9cEvnOW9" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -589,7 +652,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(154)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(155)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -630,7 +693,14 @@
                     <div class="leading-4">PHÓ THỚT</div>
                 </div>
             </div>
-                                </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         vì thằng edit nó <s>lười</s> sủi nên nếu các bạn muốn mình sẽ tiếp tục chạy bộ này mà không có edit nên mình không chắc chất lượng có thể như những chap trước. Có vấn đề gì thì mong mọi người có thể góp ý<br><br>Thân ái!
@@ -836,7 +906,14 @@
                     <div class="leading-4">PHÓ THỚT</div>
                 </div>
             </div>
-                                </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
                         đang thúc đít thằng e đít bạn ơi :)))
@@ -2086,7 +2163,7 @@
 </div>    </main>
 
     <script>
-        var token = '4C0M8vCkDa2xH3OYPCHbxWqOStAWz8t62ltw98RI';
+        var token = '9tHfr2MUHPoEkd0C5B9BeGheFP36zVtagf4LMtuI';
         var comment_type = 'series';
         var comment_typeid = '14425';
     </script>
@@ -2130,8 +2207,11 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="4C0M8vCkDa2xH3OYPCHbxWqOStAWz8t62ltw98RI" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=2"></script>
+
+    <script src="/scripts/app.js?id=665844ddd7d0c161950aa3503fe99328"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="9tHfr2MUHPoEkd0C5B9BeGheFP36zVtagf4LMtuI" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
@@ -2142,7 +2222,7 @@
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
