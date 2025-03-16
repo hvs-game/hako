@@ -2,9 +2,8 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
-    <title>Ma Pháp Thiếu Nữ Tyrant Sylph - Cổng Light Novel - Đọc Light Novel</title>
+    <title>`Ma Pháp Thiếu Nữ Tyrant Sylph - Cổng Light Novel - Đọc Light Novel</title>
 
     <meta name="description" content="Mizukami Ryoichi, một nhân viên làm công ăn lương bị stress nặng, đã vô tình chứng kiến cảnh tượng một cô gái sở hữu phép thuật chiến đấu với một con quái vật dị dạng vào ngày sinh nhật thứ 30 của mình. Sau đó, anh bị tiếp cận bởi...">
     <meta name="theme-color" content="#000">
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="WLl4sp2G8antV76N3FNILP6AMbPrkp2x0jyQIIBa">
+    <meta name="csrf-token" content="V1mrXQyTDUrn9IefLfbOh8pRxcBIZ8TOKC153l9G">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=18235c05854744068080fd05ed06fe9f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +155,61 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -192,7 +246,7 @@
                                     <div class="flex-1">
                                     <div class="series-name-group">
                                                                                 <span class="series-name">
-                                            <a href="/truyen/14347-magical-girl-tyrant-sylph">Ma Pháp Thiếu Nữ Tyrant Sylph</a>
+                                            <a href="/truyen/14347-magical-girl-tyrant-sylph">`Ma Pháp Thiếu Nữ Tyrant Sylph</a>
                                         </span>
                                     </div>
                                     <div class="series-information mb-0 flex flex-col">
@@ -232,7 +286,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 562 </span>
+                                                <span class="block feature-name"> 578 </span>
                                             </a>
                                                                                         </div>
 
@@ -268,7 +322,7 @@
                                                 <div class="sharing-box">
                                                     <a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14347'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
                                                     <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F14347-magical-girl-tyrant-sylph" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                                    <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Ma Pháp Thiếu Nữ Tyrant Sylph&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F14347-magical-girl-tyrant-sylph" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                    <a class="sharing-item" href="https://twitter.com/intent/tweet?text=`Ma Pháp Thiếu Nữ Tyrant Sylph&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F14347-magical-girl-tyrant-sylph" target="_blank"><i class="fab fa-twitter"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,11 +336,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="12/01/2025 21:14:22" datetime="2025-01-12T21:14:22+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="16/03/2025 11:12:12" datetime="2025-03-16T11:12:12+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">203.587</div>
+                                            <div class="statistic-value">207.838</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -295,7 +349,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">295.379</div>
+                                            <div class="statistic-value">319.257</div>
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +393,7 @@
                                 </div>
                                 <div class="fantrans-section">
                                     <div class="fantrans-name">Nhóm dịch</div>
-                                    <div class="fantrans-value"><a href="https://docln.net/nhom-dich/2498-galaxy-thirtear-team">Galaxy Thirtear Team</a></div>
+                                    <div class="fantrans-value"><a href="https://docln.net/nhom-dich/2498-galaxy-thirtear-team">Galaxy Thirtear Team - Dịch Giả Cụt Tay</a></div>
                                 </div>
                                                                 <div class="series-owner_share">
                                     <span class="owner_share-title" title="Tham gia">Tham gia</span>
@@ -869,7 +923,7 @@
                                             <div class="chapter-name">
                                                 
                                                 
-                                                <a href="/truyen/14347-magical-girl-tyrant-sylph/c125291-28-tap-1-giai-tri-ma-phep-thieu-nu-chu-de-noi-ve-nhung-ma-phap-thieu-nu-moi" title="28 • Chapter 1–Giải trí [Ma Phép Thiếu Nữ] Kênh chat nói về những Ma Pháp Thiếu Nữ mới × △">28 • Chapter 1–Giải trí [Ma Phép Thiếu Nữ] Kênh chat nói về những Ma Pháp Thiếu Nữ mới × △</a>
+                                                <a href="/truyen/14347-magical-girl-tyrant-sylph/c125291-28-tap-1-giai-tri-ma-phep-thieu-nu-chu-de-noi-ve-nhung-ma-phap-thieu-nu-moi" title="27 • Chapter 1–Giải trí [Ma Phép Thiếu Nữ] Kênh chat nói về những Ma Pháp Thiếu Nữ mới × △">27 • Chapter 1–Giải trí [Ma Phép Thiếu Nữ] Kênh chat nói về những Ma Pháp Thiếu Nữ mới × △</a>
 
                                                                                             </div>
                                             <div class="chapter-time">14/01/2024</div>
@@ -1382,15 +1436,24 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14347-magical-girl-tyrant-sylph/c154501-78-lan-dau-tham-gia" title="78 • Lần đầu tham gia ②">78 • Lần đầu tham gia ②</a>
 
                                                                                             </div>
                                             <div class="chapter-time">12/01/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14347-magical-girl-tyrant-sylph/c161425-79-lan-dau-tham-gia" title="79 • Lần đầu tham gia ③">79 • Lần đầu tham gia ③</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">16/03/2025</div>
                                         </li>
                                                                                                         </ul>
                             </div>
@@ -1513,7 +1576,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14347,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;ZzAEvmnAoexo7R7VXipw&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14347-magical-girl-tyrant-sylph&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;64622396646d73c3cfa324ddac5311cba1d649030a4cc982356d2c97944b9c72&quot;}" wire:effects="[]" wire:id="ZzAEvmnAoexo7R7VXipw" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14347,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;AbdGxYVOilh6x58oSSRf&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14347-magical-girl-tyrant-sylph&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;0a18dea6057e7a23e4f9a443bba7ea1b5e9778b4b9f3e399d12927c01a11400a&quot;}" wire:effects="[]" wire:id="AbdGxYVOilh6x58oSSRf" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1532,14 +1595,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(930)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(987)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">239 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">244 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -1549,9 +1612,9 @@
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-2688835"
+    <div id="ln-comment-2767466"
     class="ln-comment-item mt-3 clear"
-    data-comment="2688835" data-parent="2688835">
+    data-comment="2767466" data-parent="2767466">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1583,24 +1646,23 @@
         </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
-                        <strong>Có một tin vui là tác phẩm mới nhất của tác giả cánh cụt lửa thân thương đã ra minh họa đầu tiên:</strong><br>
-<img src="https://pbs.twimg.com/media/GewhzHXbcAAftuN?format=jpg&amp;name=4096x4096" alt="GewhzHXbcAAftuN?format=jpg&amp;name=4096x4096"><br>
-Tác phẩm lấy bối cảnh thế giới 7 năm sau trận chiến cuối cùng với Vua Biến Dạng Diest cùng với một nhân vật chính mới toanh là Nagi Himuro( tất nhiên cũng genben luôn), không biết nhân Nagi-chan của chúng ta sẽ gặp gỡ ai trước nhỉ? Sylph, Rabbit Foot hay là Croso? Vann không biết và chẳng ai biết cả.<br>
-Mọi người có thể đón đọc chương mới nhất tại syosetu: <a href="https://ncode.syosetu.com/n6950iq/" rel="nofollow noreferrer noopener" target="_blank">Jap</a>
+                        Bạn thắc mắc sao bé Sylph mãi không có chương mới? Thế thì đây là câu trả lời:<br>
+<img src="https://i.imgur.com/DDrEDSz.png" alt="DDrEDSz.png"><br>
+=&gt; tất cả là tại edit
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835#ln-comment-2688835"
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2767466#ln-comment-2767466"
                             class="text-slate-500">
-                            <time class="timeago" title="16-12-2024 18:49:53"
-                                datetime="2024-12-16T18:49:53+07:00">
-                                16-12-2024 18:49:53
+                            <time class="timeago" title="02-03-2025 18:23:24"
+                                datetime="2025-03-02T18:23:24+07:00">
+                                02-03-2025 18:23:24
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">5</span>
+                            <span class="likecount font-semibold">1</span>
                         </a>
                                             </div>
                             </div>
@@ -1609,50 +1671,9 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
 </div>
 
         <div class="ln-comment-reply">
-                <div id="ln-comment-2688981"
+                <div id="ln-comment-2767468"
     class="ln-comment-item mt-3 clear"
-    data-comment="2688981" data-parent="2688835">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u178774-dc6726c4-760f-4581-9370-2d8a817f6916.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178774">.****.</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Ơ thế là bộ này end lâu rồi hả
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835&amp;reply_id=2688981#ln-comment-2688981"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-12-2024 20:38:40"
-                                datetime="2024-12-16T20:38:40+07:00">
-                                16-12-2024 20:38:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2689031"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2689031" data-parent="2688835">
+    data-comment="2767468" data-parent="2767466">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1684,21 +1705,63 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
         </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/178774">@.****.:</a> từ tháng 7 năm ngoái rồi nhé, thiếu mỗi nước tăng lực đổ vào mồm trans để năng suất hơn thôi
+                        Rất thái độ nhá<br>
+<strong><img src="https://i.imgur.com/OhFvDNt.png" alt="OhFvDNt.png"></strong>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835&amp;reply_id=2689031#ln-comment-2689031"
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2767466&amp;reply_id=2767468#ln-comment-2767468"
                             class="text-slate-500">
-                            <time class="timeago" title="16-12-2024 21:12:00"
-                                datetime="2024-12-16T21:12:00+07:00">
-                                16-12-2024 21:12:00
+                            <time class="timeago" title="02-03-2025 18:24:25"
+                                datetime="2025-03-02T18:24:25+07:00">
+                                02-03-2025 18:24:25
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2770596"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2770596" data-parent="2767466">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua175781-02888c47-fc7f-4ce8-97af-7bf99b3ce513.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175781">Minh Huyền</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/66934">@Vannesith:</a> vãi :l
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2767466&amp;reply_id=2770596#ln-comment-2770596"
+                            class="text-slate-500">
+                            <time class="timeago" title="04-03-2025 21:08:53"
+                                datetime="2025-03-04T21:08:53+07:00">
+                                04-03-2025 21:08:53
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
                         </a>
                                             </div>
                             </div>
@@ -1706,15 +1769,158 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
     </div>
 </div>
     
-                <div class="fetch_reply" data-parent="2688835">
-            Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
                 
     </div>
     </div>        
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2785435"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2785435" data-parent="2785435">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u59395-273b42f6-f1b8-42f1-8b3b-940b4be89ca9.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/59395">Mieki</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Mừng Vann trở lại
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2785435#ln-comment-2785435"
+                            class="text-slate-500">
+                            <time class="timeago" title="16-03-2025 12:05:33"
+                                datetime="2025-03-16T12:05:33+07:00">
+                                16-03-2025 12:05:33
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2757286"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2757286" data-parent="2757286">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u205317-a58dbffe-a8e3-45f1-b1c1-d552b38aff68.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205317">Đại tá Kengun</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Uây , tính ra 7 năm sau thì toàn bộ nhân vật trong đây nghỉ hưu còn gì nữa. Còn mỗi con chân thỏ , Sylph và Bé băng :)))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2757286#ln-comment-2757286"
+                            class="text-slate-500">
+                            <time class="timeago" title="23-02-2025 02:03:51"
+                                datetime="2025-02-23T02:03:51+07:00">
+                                23-02-2025 02:03:51
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2758893"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2758893" data-parent="2757286">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        cái này là tính trong nội bộ tiệc trà thôi, vẫn còn mấy gái phase 1, 2 khác mà
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2757286&amp;reply_id=2758893#ln-comment-2758893"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-02-2025 07:06:58"
+                                datetime="2025-02-24T07:06:58+07:00">
+                                24-02-2025 07:06:58
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2716976"
     class="ln-comment-item mt-3 clear"
     data-comment="2716976" data-parent="2716976">
@@ -1903,6 +2109,171 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
     </div>
     </div>
 <div class="ln-comment-group">
+    <div id="ln-comment-2688835"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2688835" data-parent="2688835">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        <strong>Có một tin vui là tác phẩm mới nhất của tác giả cánh cụt lửa thân thương đã ra minh họa đầu tiên:</strong><br>
+<img src="https://pbs.twimg.com/media/GewhzHXbcAAftuN?format=jpg&amp;name=4096x4096" alt="GewhzHXbcAAftuN?format=jpg&amp;name=4096x4096"><br>
+Tác phẩm lấy bối cảnh thế giới 7 năm sau trận chiến cuối cùng với Vua Biến Dạng Diest cùng với một nhân vật chính mới toanh là Nagi Himuro( tất nhiên cũng genben luôn), không biết nhân Nagi-chan của chúng ta sẽ gặp gỡ ai trước nhỉ? Sylph, Rabbit Foot hay là Croso? Vann không biết và chẳng ai biết cả.<br>
+Mọi người có thể đón đọc chương mới nhất tại syosetu: <a href="https://ncode.syosetu.com/n6950iq/" rel="nofollow noreferrer noopener" target="_blank">Jap</a>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835#ln-comment-2688835"
+                            class="text-slate-500">
+                            <time class="timeago" title="16-12-2024 18:49:53"
+                                datetime="2024-12-16T18:49:53+07:00">
+                                16-12-2024 18:49:53
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">6</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2688981"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2688981" data-parent="2688835">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u178774-6dd669de-52f6-410a-aec6-14a53ecd5724.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178774">.****.</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Ơ thế là bộ này end lâu rồi hả
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835&amp;reply_id=2688981#ln-comment-2688981"
+                            class="text-slate-500">
+                            <time class="timeago" title="16-12-2024 20:38:40"
+                                datetime="2024-12-16T20:38:40+07:00">
+                                16-12-2024 20:38:40
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2689031"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2689031" data-parent="2688835">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/178774">@.****.:</a> từ tháng 7 năm ngoái rồi nhé, thiếu mỗi nước tăng lực đổ vào mồm trans để năng suất hơn thôi
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2688835&amp;reply_id=2689031#ln-comment-2689031"
+                            class="text-slate-500">
+                            <time class="timeago" title="16-12-2024 21:12:00"
+                                datetime="2024-12-16T21:12:00+07:00">
+                                16-12-2024 21:12:00
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="2688835">
+            Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2680464"
     class="ln-comment-item mt-3 clear"
     data-comment="2680464" data-parent="2680464">
@@ -1994,7 +2365,7 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
+                            <span class="likecount font-semibold">1</span>
                         </a>
                                             </div>
                             </div>
@@ -2388,312 +2759,6 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2644798"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2644798" data-parent="2644798">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        5 cup 👌
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2644798#ln-comment-2644798"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-11-2024 02:57:23"
-                                datetime="2024-11-03T02:57:23+07:00">
-                                03-11-2024 02:57:23
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">2</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2644345"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2644345" data-parent="2644345">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Ai ra Hà Đông cổ vũ cho tê liệt với t không<br>
-<img src="https://i.ytimg.com/vi/tF8nTlXTsRQ/hq720.jpg?v=6724946c&amp;sqp=CPCxmLkG-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLAfQNDekIUOm4zsoF2HuwGPkHkrag" alt="hq720.jpg?v=6724946c&amp;sqp=CPCxmLkG-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLAfQNDekIUOm4zsoF2HuwGPkHkrag">
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2644345#ln-comment-2644345"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-11-2024 19:43:59"
-                                datetime="2024-11-02T19:43:59+07:00">
-                                02-11-2024 19:43:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">4</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2685092"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2685092" data-parent="2644345">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua175781-02888c47-fc7f-4ce8-97af-7bf99b3ce513.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175781">Minh Huyền</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        tấm ảnh này làm t nhớ đến khoảng khác t1 thua đội tuyển quốc gia Việt Nam :)
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2644345&amp;reply_id=2685092#ln-comment-2685092"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-12-2024 01:27:25"
-                                datetime="2024-12-13T01:27:25+07:00">
-                                13-12-2024 01:27:25
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2604737"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2604737" data-parent="2604737">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua175781-02888c47-fc7f-4ce8-97af-7bf99b3ce513.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175781">Minh Huyền</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        oh ye nhìn hơn 20 chap mà t đã tích sướng thật
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2604737#ln-comment-2604737"
-                            class="text-slate-500">
-                            <time class="timeago" title="25-09-2024 07:21:09"
-                                datetime="2024-09-25T07:21:09+07:00">
-                                25-09-2024 07:21:09
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2645489"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2645489" data-parent="2604737">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u66934-54b47269-af43-4a6b-881e-f69d4fa9e8ec.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/66934">Vannesith</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        giờ là 30 rồi nhé
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2604737&amp;reply_id=2645489#ln-comment-2645489"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-11-2024 20:12:39"
-                                datetime="2024-11-03T20:12:39+07:00">
-                                03-11-2024 20:12:39
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2646005"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2646005" data-parent="2604737">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua175781-02888c47-fc7f-4ce8-97af-7bf99b3ce513.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175781">Minh Huyền</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/66934">@Vannesith:</a> ms đọc xong r sếp :))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14347-magical-girl-tyrant-sylph?comment_id=2604737&amp;reply_id=2646005#ln-comment-2646005"
-                            class="text-slate-500">
-                            <time class="timeago" title="04-11-2024 07:53:41"
-                                datetime="2024-11-04T07:53:41+07:00">
-                                04-11-2024 07:53:41
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -2706,7 +2771,7 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
 </div>    </main>
 
     <script>
-        var token = 'WLl4sp2G8antV76N3FNILP6AMbPrkp2x0jyQIIBa';
+        var token = 'V1mrXQyTDUrn9IefLfbOh8pRxcBIZ8TOKC153l9G';
         var comment_type = 'series';
         var comment_typeid = '14347';
     </script>
@@ -2750,8 +2815,11 @@ Mọi người có thể đón đọc chương mới nhất tại syosetu: <a hr
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="WLl4sp2G8antV76N3FNILP6AMbPrkp2x0jyQIIBa" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=2"></script>
+
+    <script src="/scripts/app.js?id=665844ddd7d0c161950aa3503fe99328"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="V1mrXQyTDUrn9IefLfbOh8pRxcBIZ8TOKC153l9G" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
