@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Ra mắt hay Ra đi - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="UMzGOzfniHH9rQJGe4VWhdZy9nKN3dsXpwFReqMZ">
+    <meta name="csrf-token" content="Mpc4W31VHxPAb2IbOrdJuhUDGgnS6zpw0htDqTYc">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d330f8eb21c3461ece4ec2ca09a990da">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -224,7 +278,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 152 </span>
+                                                <span class="block feature-name"> 167 </span>
                                             </a>
                                                                                         </div>
 
@@ -259,8 +313,8 @@
                                                 <input type="checkbox" id="open-sharing"/>
                                                 <div class="sharing-box">
                                                     <a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/17387'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
-                                                    <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fdocln.net%2Ftruyen%2F17387-ra-mat-hay-ra-di" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                                    <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Ra mắt hay Ra đi&url=http%3A%2F%2Fdocln.net%2Ftruyen%2F17387-ra-mat-hay-ra-di" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                    <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F17387-ra-mat-hay-ra-di" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                                    <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Ra mắt hay Ra đi&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F17387-ra-mat-hay-ra-di" target="_blank"><i class="fab fa-twitter"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,11 +328,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="25/11/2024 17:10:07" datetime="2024-11-25T17:10:07+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="24/03/2025 10:33:36" datetime="2025-03-24T10:33:36+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">190.995</div>
+                                            <div class="statistic-value">197.367</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -287,7 +341,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">83.424</div>
+                                            <div class="statistic-value">104.494</div>
                                         </div>
                                     </div>
                                 </div>
@@ -801,9 +855,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149814-chuong-46-dien-bien-tap-9" title="Chương 46: Diễn biến tập 9">Chương 46: Diễn biến tập 9</a>
@@ -813,9 +864,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149815-chuong-47-tam-su-cua-moondae" title="Chương 47: Tâm sự của Moondae">Chương 47: Tâm sự của Moondae</a>
@@ -825,9 +873,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149816-chuong-48-casting-call" title="Chương 48: Casting Call">Chương 48: Casting Call</a>
@@ -837,12 +882,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149817-chuong-49-gap-dai-than-tuong-cheongryu" title="Chương 49: Gặp đại thần tượng CheongRyu">Chương 49: Gặp đại thần tượng CheongRyu</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">25/11/2024</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/17387-ra-mat-hay-ra-di/c149818-chuong-50-choi-wongil-roi-show" title="Chương 50: Choi WonGil rời show">Chương 50: Choi WonGil rời show</a>
 
                                                                                             </div>
                                             <div class="chapter-time">25/11/2024</div>
@@ -854,14 +905,26 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/17387-ra-mat-hay-ra-di/c149818-chuong-50-choi-wongil-roi-show" title="Chương 50: Choi WonGil rời show">Chương 50: Choi WonGil rời show</a>
+                                                <a href="/truyen/17387-ra-mat-hay-ra-di/c162590-chuong-51-tam-biet-vang-1" title="Chương 51: Tạm biệt Vàng 1">Chương 51: Tạm biệt Vàng 1</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">25/11/2024</div>
+                                            <div class="chapter-time">24/03/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17387-ra-mat-hay-ra-di/c162601-chuong-52-lap-team-cho-chung-ket" title="Chương 52: Lập team cho chung kết">Chương 52: Lập team cho chung kết</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">24/03/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (45 chương)</span>
+                                            <span>Xem tiếp (47 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -873,7 +936,7 @@
                     <header id="volume_23830" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Phần 2: Cuộc sống của một idol <span style="color: red">*</span>
+                            Phần 2: Cuộc sống của một idol
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -973,9 +1036,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149455-chuong-196-ban-banh-o-que-nha-cua-yoojin" title="Chương 196: Bán bánh ở quê nhà của Yoojin">Chương 196: Bán bánh ở quê nhà của Yoojin</a>
@@ -985,9 +1045,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17387-ra-mat-hay-ra-di/c149813-chuong-197-nhom-hau-boi-chuan-bi-debut" title="Chương 197: Nhóm hậu bối chuẩn bị debut">Chương 197: Nhóm hậu bối chuẩn bị debut</a>
@@ -1008,7 +1065,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17387,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;STUAKZoeg4r1Bt1dfH3i&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17387-ra-mat-hay-ra-di&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;e5d7961c9962a9cadcb3ea2d41f4a5ef273cecfea9ef2fd357819334e89d3a42&quot;}" wire:effects="[]" wire:id="STUAKZoeg4r1Bt1dfH3i" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17387,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;aHkNXbDovQSiVujCoz8E&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17387-ra-mat-hay-ra-di&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;2ee63513e63fa09d81228886869153c2d3ecac9fa6a768fe692e7e5c4dbd2334&quot;}" wire:effects="[]" wire:id="aHkNXbDovQSiVujCoz8E" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1027,16 +1084,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(65)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(67)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">32 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">33 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -1046,9 +1103,60 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2721596"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2721596" 
+    data-parent="2721596" 
+    data-type="series" 
+    data-typeid="17387">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u209674-8611d35b-1135-4502-acd8-afc1797d373a.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/209674">Thynè</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        tiếp đi sốp T.T
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/17387-ra-mat-hay-ra-di?comment_id=2721596#ln-comment-2721596"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-01-2025 15:24:50"
+                                datetime="2025-01-18T15:24:50+07:00">
+                                18-01-2025 15:24:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2660594"
     class="ln-comment-item mt-3 clear"
-    data-comment="2660594" data-parent="2660594">
+    data-comment="2660594" 
+    data-parent="2660594" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1064,8 +1172,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200917">vanne</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Ýe có chap mới r😭😭
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1090,38 +1199,12 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2657336"
-    class="ln-comment-item mt-3 clear deleted disabled"
-    data-comment="2657336" data-parent="2657336">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u56738-fbbe060b-2184-4232-a612-146cc6ade2fa.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56738">Bụng bia</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Bình luận đã bị xóa bởi Bụng bia
-                    </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
     <div id="ln-comment-2657307"
     class="ln-comment-item mt-3 clear"
-    data-comment="2657307" data-parent="2657307">
+    data-comment="2657307" 
+    data-parent="2657307" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1137,8 +1220,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/94989">Nagoid</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Cảm ơn sốp vì đã quay lạiiiii 🔥🔥🔥
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1165,7 +1249,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2651428"
     class="ln-comment-item mt-3 clear"
-    data-comment="2651428" data-parent="2651428">
+    data-comment="2651428" 
+    data-parent="2651428" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1181,8 +1268,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/94989">Nagoid</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Sốp ơi về đi đừng drop mà 😭
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1209,11 +1297,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2646349"
     class="ln-comment-item mt-3 clear"
-    data-comment="2646349" data-parent="2646349">
+    data-comment="2646349" 
+    data-parent="2646349" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1225,8 +1316,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205197">Bach_cot_tinh</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Thớt ơi đừng drop mà bùn lắm ấy
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1253,7 +1345,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2608799"
     class="ln-comment-item mt-3 clear"
-    data-comment="2608799" data-parent="2608799">
+    data-comment="2608799" 
+    data-parent="2608799" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1269,8 +1364,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200917">vanne</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         ra chap mới đi mà😭
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1297,11 +1393,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2569415"
     class="ln-comment-item mt-3 clear"
-    data-comment="2569415" data-parent="2569415">
+    data-comment="2569415" 
+    data-parent="2569415" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u184859-d6883f88-1929-460a-bfe6-d53f0beaa192.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u184859-4c4c00a3-45f4-44a8-8211-efbeae2202de.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1312,9 +1411,17 @@
     <div class="self-center">
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184859">Vux Thanh</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Adi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1341,11 +1448,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2544559"
     class="ln-comment-item mt-3 clear"
-    data-comment="2544559" data-parent="2544559">
+    data-comment="2544559" 
+    data-parent="2544559" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1357,8 +1467,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/143410">Viian</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Trans drop tr r ạ??  Sao buồn z
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1385,11 +1496,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2522644"
     class="ln-comment-item mt-3 clear"
-    data-comment="2522644" data-parent="2522644">
+    data-comment="2522644" 
+    data-parent="2522644" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1401,8 +1515,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/196870">Ariesx</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         1 tháng rồi truyện drop hay sao vậy ạ! Nhóm trans vừa hay vừa dễ hiểu mà drop tui buồn quá ii
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1429,11 +1544,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2496670"
     class="ln-comment-item mt-3 clear"
-    data-comment="2496670" data-parent="2496670">
+    data-comment="2496670" 
+    data-parent="2496670" 
+    data-type="series" 
+    data-typeid="17387">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1445,8 +1563,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/57166">Vịt thích đọc</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         huhu hay quá
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1476,13 +1595,13 @@
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/17387-ra-mat-hay-ra-di?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/17387-ra-mat-hay-ra-di?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'UMzGOzfniHH9rQJGe4VWhdZy9nKN3dsXpwFReqMZ';
+        var token = 'rxs1jYTr5L8mubOn4GarGhgB53TlLn6DmUPnU7dO';
         var comment_type = 'series';
         var comment_typeid = '17387';
     </script>
@@ -1526,8 +1645,11 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="UMzGOzfniHH9rQJGe4VWhdZy9nKN3dsXpwFReqMZ" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=ddb65a4bf081e2d13caa61cc71beeb4f"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="Mpc4W31VHxPAb2IbOrdJuhUDGgnS6zpw0htDqTYc" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
@@ -1538,7 +1660,7 @@
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
