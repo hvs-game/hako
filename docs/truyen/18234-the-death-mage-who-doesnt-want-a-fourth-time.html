@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>The Death Mage Who Doesn&#039;t Want a Fourth Time - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="O1scTcSPn5AA0Mg172Kasag4caT0DJZiP0bsGBX6">
+    <meta name="csrf-token" content="t9zzWSCMhuFHg58ixPEsaY88PYyQzJbleNnT7NBK">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d330f8eb21c3461ece4ec2ca09a990da">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/thao-luan/2591">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -241,7 +295,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 567 </span>
+                                                <span class="block feature-name"> 600 </span>
                                             </a>
                                                                                         </div>
 
@@ -291,11 +345,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="06/11/2024 15:52:10" datetime="2024-11-06T15:52:10+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="06/04/2025 18:13:11" datetime="2025-04-06T18:13:11+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">802.603</div>
+                                            <div class="statistic-value">808.882</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -304,7 +358,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">159.730</div>
+                                            <div class="statistic-value">216.480</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1786,9 +1840,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -1797,9 +1848,21 @@
                                                                                             </div>
                                             <div class="chapter-time">06/11/2024</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time/c164042-chuong-105-ke-chang-can-ai-ho-tong" title="Chương 105: Kẻ chẳng cần ai hộ tống">Chương 105: Kẻ chẳng cần ai hộ tống</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">06/04/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (4 chương)</span>
+                                            <span>Xem tiếp (5 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1810,13 +1873,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18234,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;PaCTXDANF5FwuqD8Qom8&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18234-the-death-mage-who-doesnt-want-a-fourth-time&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3630ff8beb651e90ac146a8ae4dcb677ab8fa2d6abc7b78b9b6ab652972367a8&quot;}" wire:effects="[]" wire:id="PaCTXDANF5FwuqD8Qom8" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18234,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;NV9SqscFa5dprxwEqdlp&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18234-the-death-mage-who-doesnt-want-a-fourth-time&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c71c06abc2473032526e1d58fb481893ad414f61b9e841e580b550c861f31781&quot;}" wire:effects="[]" wire:id="NV9SqscFa5dprxwEqdlp" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -1829,16 +1892,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1048)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1080)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">161 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">173 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -1848,7 +1911,10 @@
                     <div class="ln-comment-group">
     <div id="ln-comment-2607005"
     class="ln-comment-item mt-3 clear"
-    data-comment="2607005" data-parent="2607005">
+    data-comment="2607005" 
+    data-parent="2607005" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1878,8 +1944,9 @@
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Sắp tới trans bận làm khóa luận tốt nghiệp nên khi nào rảnh thì ra chap mới nhé. Cảm ơn mọi người
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1894,7 +1961,7 @@
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">14</span>
+                            <span class="likecount font-semibold">16</span>
                         </a>
                                             </div>
                             </div>
@@ -1905,7 +1972,10 @@
         <div class="ln-comment-reply">
                 <div id="ln-comment-2609427"
     class="ln-comment-item mt-3 clear"
-    data-comment="2609427" data-parent="2607005">
+    data-comment="2609427" 
+    data-parent="2607005" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1921,8 +1991,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180269">Kongg</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Chúc may mắn nhé. Bác dịch năng suất quá, 0 có chap thì tụi em nhớ bác lắm
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1946,7 +2017,10 @@
 </div>
             <div id="ln-comment-2611382"
     class="ln-comment-item mt-3 clear"
-    data-comment="2611382" data-parent="2607005">
+    data-comment="2611382" 
+    data-parent="2607005" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1962,8 +2036,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/41271">vinh2072003</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         xong hết r thả boom cũng dc bác cứ lặng<br>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1991,13 +2066,16 @@
     </div>        
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2649836"
+    <div id="ln-comment-2810808"
     class="ln-comment-item mt-3 clear"
-    data-comment="2649836" data-parent="2649836">
+    data-comment="2810808" 
+    data-parent="2810808" 
+    data-type="chapter" 
+    data-typeid="164042">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u19747-2ec6eac2-39a4-49f6-8aa8-ddb2e76a6070.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u180269-736355d3-5acf-456d-bac5-a0c0a1d062ce.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2006,20 +2084,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19747">Happh</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180269">Kongg</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Omg trở lại thiệt rồi nè :)))
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time/c164042-chuong-105-ke-chang-can-ai-ho-tong"
+                        class="text-slate-500 inline-block">Chương 105: Kẻ chẳng cần ai hộ tống</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        <em>temmmm. Tối đọc sauuuuuu yehhhhhh</em>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2649836#ln-comment-2649836"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810808#ln-comment-2810808"
                             class="text-slate-500">
-                            <time class="timeago" title="08-11-2024 11:26:16"
-                                datetime="2024-11-08T11:26:16+07:00">
-                                08-11-2024 11:26:16
+                            <time class="timeago" title="06-04-2025 19:02:47"
+                                datetime="2025-04-06T19:02:47+07:00">
+                                06-04-2025 19:02:47
                             </time>
                         </a>
                         <a
@@ -2035,13 +2116,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2646788"
+    <div id="ln-comment-2810807"
     class="ln-comment-item mt-3 clear"
-    data-comment="2646788" data-parent="2646788">
+    data-comment="2810807" 
+    data-parent="2810807" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua47626-0ee95bb2-8017-4bb3-99a0-eeee198b9467.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u180269-736355d3-5acf-456d-bac5-a0c0a1d062ce.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2050,20 +2134,167 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/47626">cross12</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180269">Kongg</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        mong là lời nguyền của bộ này chỉ là lời đồn ~~!
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Đây rroiif. Tôi đâyyyyyyy, vẫn yêuu
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2646788#ln-comment-2646788"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810807#ln-comment-2810807"
                             class="text-slate-500">
-                            <time class="timeago" title="05-11-2024 00:15:25"
-                                datetime="2024-11-05T00:15:25+07:00">
-                                05-11-2024 00:15:25
+                            <time class="timeago" title="06-04-2025 19:02:11"
+                                datetime="2025-04-06T19:02:11+07:00">
+                                06-04-2025 19:02:11
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2810799"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2810799" 
+    data-parent="2810799" 
+    data-type="series" 
+    data-typeid="18234">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua51304-367a87e8-5120-4623-a2e5-8742cbebb685.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/51304">sonblade198</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Những cặp mông đã chai, những chiếc dép đã mòn, nhưng cuối cùng sinh khí cũng đã trở lại trên những đôi mắt chờ mong ấy =)). Mừng trans trở lại
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810799#ln-comment-2810799"
+                            class="text-slate-500">
+                            <time class="timeago" title="06-04-2025 18:52:28"
+                                datetime="2025-04-06T18:52:28+07:00">
+                                06-04-2025 18:52:28
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2810785"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2810785" 
+    data-parent="2810785" 
+    data-type="series" 
+    data-typeid="18234">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/121331">Fliesmale</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        S-sống lại roi
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810785#ln-comment-2810785"
+                            class="text-slate-500">
+                            <time class="timeago" title="06-04-2025 18:39:05"
+                                datetime="2025-04-06T18:39:05+07:00">
+                                06-04-2025 18:39:05
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2810221"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2810221" 
+    data-parent="2810221" 
+    data-type="chapter" 
+    data-typeid="141592">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u29699-c5de3cef-29e4-46a5-936a-e36f3cc3f421.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/29699">Yuuka-con</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time/c141592-ngoai-truyen-1-tai-than-vuc"
+                        class="text-slate-500 inline-block">Ngoại truyện 1: Tại thần vực</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Lời nguyền cònaij cũng k có tác dụng đâu
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810221#ln-comment-2810221"
+                            class="text-slate-500">
+                            <time class="timeago" title="06-04-2025 07:56:22"
+                                datetime="2025-04-06T07:56:22+07:00">
+                                06-04-2025 07:56:22
                             </time>
                         </a>
                         <a
@@ -2078,13 +2309,16 @@
 </div>
 
         <div class="ln-comment-reply">
-            <div id="ln-comment-2647644"
+            <div id="ln-comment-2810356"
     class="ln-comment-item mt-3 clear"
-    data-comment="2647644" data-parent="2646788">
+    data-comment="2810356" 
+    data-parent="2810221" 
+    data-type="chapter" 
+    data-typeid="141592">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u19747-2ec6eac2-39a4-49f6-8aa8-ddb2e76a6070.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u9028-9a77d7c3-7437-41ef-9963-d7618d7071da.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2093,22 +2327,37 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19747">Happh</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/9028">Phantom Blade</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Nó là thật ko phải lời đồn đâu.<br>
-Ông có thể thấy ở chỗ "có thể bạn quan tâm" ấy, bị drop nhiều lấm rồi.<br>
-Chỉ mong nó ko lập lại nữa thôi. :_(
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time/c141592-ngoai-truyen-1-tai-than-vuc"
+                        class="text-slate-500 inline-block">Ngoại truyện 1: Tại thần vực</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        =))) Xong rồi. Sắp tới ra chương lại nhé<br>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2646788&amp;reply_id=2647644#ln-comment-2647644"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2810221&amp;reply_id=2810356#ln-comment-2810356"
                             class="text-slate-500">
-                            <time class="timeago" title="05-11-2024 22:32:45"
-                                datetime="2024-11-05T22:32:45+07:00">
-                                05-11-2024 22:32:45
+                            <time class="timeago" title="06-04-2025 10:36:11"
+                                datetime="2025-04-06T10:36:11+07:00">
+                                06-04-2025 10:36:11
                             </time>
                         </a>
                         <a
@@ -2126,142 +2375,12 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
     </div>
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2642070"
+    <div id="ln-comment-2759714"
     class="ln-comment-item mt-3 clear"
-    data-comment="2642070" data-parent="2642070">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua30303-a5e0aaec-0563-4d4f-bdef-92a394921395.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/30303">shiina...</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <s>Chotoithuocccc</s>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2642070#ln-comment-2642070"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-10-2024 16:32:34"
-                                datetime="2024-10-31T16:32:34+07:00">
-                                31-10-2024 16:32:34
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2641533"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2641533" data-parent="2641533">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua96932-563becd7-2243-4ff0-90c5-bc73d999facc.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/96932">Livliv</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Chẳng lẽ ... :))<br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2641533#ln-comment-2641533"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-10-2024 01:00:32"
-                                datetime="2024-10-31T01:00:32+07:00">
-                                31-10-2024 01:00:32
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2641650"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2641650" data-parent="2641533">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u146730-77a495f3-290b-41b7-a53f-a1a053a3789f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/146730">Gravety</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Chưa được tháng nên chưa biết drop hay ko đâu, đợi đủ tháng r bỏ tym
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2641533&amp;reply_id=2641650#ln-comment-2641650"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-10-2024 07:35:06"
-                                datetime="2024-10-31T07:35:06+07:00">
-                                31-10-2024 07:35:06
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2623699"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2623699" data-parent="2623699">
+    data-comment="2759714" 
+    data-parent="2759714" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2277,17 +2396,18 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19747">Happh</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        6 ngày ko ra chương mới rồi cảm giác nó ghê ghê ấy. :^_))
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        A đù gần nữa năm 🐸
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2623699#ln-comment-2623699"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2759714#ln-comment-2759714"
                             class="text-slate-500">
-                            <time class="timeago" title="15-10-2024 21:22:48"
-                                datetime="2024-10-15T21:22:48+07:00">
-                                15-10-2024 21:22:48
+                            <time class="timeago" title="24-02-2025 21:44:08"
+                                datetime="2025-02-24T21:44:08+07:00">
+                                24-02-2025 21:44:08
                             </time>
                         </a>
                         <a
@@ -2303,9 +2423,12 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2618625"
+    <div id="ln-comment-2746276"
     class="ln-comment-item mt-3 clear"
-    data-comment="2618625" data-parent="2618625">
+    data-comment="2746276" 
+    data-parent="2746276" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2321,17 +2444,18 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/4612">Death Walker</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trans năng suất ác vậy, mỗi ngày 1 chương
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Hóng trans từng ngày
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2618625#ln-comment-2618625"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2746276#ln-comment-2746276"
                             class="text-slate-500">
-                            <time class="timeago" title="10-10-2024 00:28:50"
-                                datetime="2024-10-10T00:28:50+07:00">
-                                10-10-2024 00:28:50
+                            <time class="timeago" title="12-02-2025 16:42:33"
+                                datetime="2025-02-12T16:42:33+07:00">
+                                12-02-2025 16:42:33
                             </time>
                         </a>
                         <a
@@ -2347,13 +2471,16 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2617788"
+    <div id="ln-comment-2741724"
     class="ln-comment-item mt-3 clear"
-    data-comment="2617788" data-parent="2617788">
+    data-comment="2741724" 
+    data-parent="2741724" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u31902-eb8e2cbf-6524-427e-922d-6d26071928d5.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua47626-0ee95bb2-8017-4bb3-99a0-eeee198b9467.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2362,157 +2489,21 @@ Chỉ mong nó ko lập lại nữa thôi. :_(
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/31902">Song Hồng</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/47626">cross12</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Ờm tôi nhớ bộ này trước được dịch nhiều lắm  rồi mà nhỉ?<br>
-Mấy đạo hữu biết gì cho tôi biết với... 🦧🦧
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        hóng từng ngày ~~
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2617788#ln-comment-2617788"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2741724#ln-comment-2741724"
                             class="text-slate-500">
-                            <time class="timeago" title="09-10-2024 08:37:26"
-                                datetime="2024-10-09T08:37:26+07:00">
-                                09-10-2024 08:37:26
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2617789"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2617789" data-parent="2617788">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u31902-eb8e2cbf-6524-427e-922d-6d26071928d5.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/31902">Song Hồng</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        À thôi tôi mò được rồi 🦍🦍<br>
-Ngoo thì chịu <br>
-<a href="/truyen/3424-yondome-wa-iyana-shi-zokusei-majutsushi" rel="nofollow noreferrer noopener" target="_blank">/truyen/3424-yondome-wa-iyana-shi-zokusei-majutsushi</a>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2617788&amp;reply_id=2617789#ln-comment-2617789"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-10-2024 08:42:17"
-                                datetime="2024-10-09T08:42:17+07:00">
-                                09-10-2024 08:42:17
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2641423"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2641423" data-parent="2617788">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98448">noob1902</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/31902">@Song Hồng:</a> ko vào đc b ơi :(((
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2617788&amp;reply_id=2641423#ln-comment-2641423"
-                            class="text-slate-500">
-                            <time class="timeago" title="30-10-2024 23:13:21"
-                                datetime="2024-10-30T23:13:21+07:00">
-                                30-10-2024 23:13:21
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                <div class="fetch_reply" data-parent="2617788">
-            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2616374"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2616374" data-parent="2616374">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/163484">Tung23</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Đc 1/4 truyện mà đã 800k chữ lận
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2616374#ln-comment-2616374"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2024 17:59:17"
-                                datetime="2024-10-07T17:59:17+07:00">
-                                07-10-2024 17:59:17
+                            <time class="timeago" title="08-02-2025 01:19:52"
+                                datetime="2025-02-08T01:19:52+07:00">
+                                08-02-2025 01:19:52
                             </time>
                         </a>
                         <a
@@ -2528,13 +2519,16 @@ Ngoo thì chịu <br>
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2614056"
+    <div id="ln-comment-2724768"
     class="ln-comment-item mt-3 clear"
-    data-comment="2614056" data-parent="2614056">
+    data-comment="2724768" 
+    data-parent="2724768" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u156836-05ad519a-b372-46b7-b1c1-a0f3782356cd.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u180269-736355d3-5acf-456d-bac5-a0c0a1d062ce.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2543,20 +2537,21 @@ Ngoo thì chịu <br>
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156836">minhanh_t1</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180269">Kongg</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Xin tý review bộ này với mn ơi
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Tết rồi trans ơi... boom tới chưa
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2614056#ln-comment-2614056"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2724768#ln-comment-2724768"
                             class="text-slate-500">
-                            <time class="timeago" title="05-10-2024 00:16:10"
-                                datetime="2024-10-05T00:16:10+07:00">
-                                05-10-2024 00:16:10
+                            <time class="timeago" title="21-01-2025 23:14:47"
+                                datetime="2025-01-21T23:14:47+07:00">
+                                21-01-2025 23:14:47
                             </time>
                         </a>
                         <a
@@ -2570,14 +2565,18 @@ Ngoo thì chịu <br>
     </div>
 </div>
 
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2614118"
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2706716"
     class="ln-comment-item mt-3 clear"
-    data-comment="2614118" data-parent="2614056">
+    data-comment="2706716" 
+    data-parent="2706716" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u146730-77a495f3-290b-41b7-a53f-a1a053a3789f.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua47626-0ee95bb2-8017-4bb3-99a0-eeee198b9467.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2586,20 +2585,21 @@ Ngoo thì chịu <br>
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/146730">Gravety</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/47626">cross12</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Cuốn, chill, ko phải mì ăn liền
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        giờ thì t đã tin lời nguyền của bộ này là có thật =((
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2614056&amp;reply_id=2614118#ln-comment-2614118"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2706716#ln-comment-2706716"
                             class="text-slate-500">
-                            <time class="timeago" title="05-10-2024 03:07:15"
-                                datetime="2024-10-05T03:07:15+07:00">
-                                05-10-2024 03:07:15
+                            <time class="timeago" title="01-01-2025 17:01:16"
+                                datetime="2025-01-01T17:01:16+07:00">
+                                01-01-2025 17:01:16
                             </time>
                         </a>
                         <a
@@ -2612,61 +2612,18 @@ Ngoo thì chịu <br>
         </div>
     </div>
 </div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2613349"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2613349" data-parent="2613349">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/179550">Skitleya</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Tốc độ gì đây mà 3 tháng đã hơn 700k từ 🙄 mới hồi nào mới tạm bookmark vào để đấy đợi ra nhiều nhiều mới đọc mà. Ngoài bà trans trâu bò bên Thone of magical arcana ra chap vừa đều vừa nhanh ra thì tôi thấy ông trans bên này năng suất là khiếp nhất rồi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2613349#ln-comment-2613349"
-                            class="text-slate-500">
-                            <time class="timeago" title="04-10-2024 09:47:43"
-                                datetime="2024-10-04T09:47:43+07:00">
-                                04-10-2024 09:47:43
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
 
         <div class="ln-comment-reply">
-            <div id="ln-comment-2614222"
+            <div id="ln-comment-2708766"
     class="ln-comment-item mt-3 clear"
-    data-comment="2614222" data-parent="2613349">
+    data-comment="2708766" 
+    data-parent="2706716" 
+    data-type="series" 
+    data-typeid="18234">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189083-aa8c4e93-a062-4115-9e16-783060b15717.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u9028-9a77d7c3-7437-41ef-9963-d7618d7071da.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2675,26 +2632,41 @@ Ngoo thì chịu <br>
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189083">Ô Thiên Cơ</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/9028">Phantom Blade</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Xét về tốc độ thì ông trans này nhanh hơn, 3 tháng 700k từ cơ mà, nhg chắc tốc độ này cũng 1 phần nhờ chỉnh sửa từ bản dịch cũ nữa chứ kp dịch mới 100%. Còn bà kia thì quá xịn rồi :))
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        tui bận thiệt mà. Tết đến nơi rồi =))). Vẫn còn đây không drop đâu
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2613349&amp;reply_id=2614222#ln-comment-2614222"
+                        <a href="/truyen/18234-the-death-mage-who-doesnt-want-a-fourth-time?comment_id=2706716&amp;reply_id=2708766#ln-comment-2708766"
                             class="text-slate-500">
-                            <time class="timeago" title="05-10-2024 10:36:51"
-                                datetime="2024-10-05T10:36:51+07:00">
-                                05-10-2024 10:36:51
+                            <time class="timeago" title="03-01-2025 15:12:36"
+                                datetime="2025-01-03T15:12:36+07:00">
+                                03-01-2025 15:12:36
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
+                            <span class="likecount font-semibold">4</span>
                         </a>
                                             </div>
                             </div>
@@ -2717,7 +2689,7 @@ Ngoo thì chịu <br>
 </div>    </main>
 
     <script>
-        var token = 'O1scTcSPn5AA0Mg172Kasag4caT0DJZiP0bsGBX6';
+        var token = 't9zzWSCMhuFHg58ixPEsaY88PYyQzJbleNnT7NBK';
         var comment_type = 'series';
         var comment_typeid = '18234';
     </script>
@@ -2761,8 +2733,11 @@ Ngoo thì chịu <br>
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="O1scTcSPn5AA0Mg172Kasag4caT0DJZiP0bsGBX6" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="t9zzWSCMhuFHg58ixPEsaY88PYyQzJbleNnT7NBK" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
@@ -2773,7 +2748,7 @@ Ngoo thì chịu <br>
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
