@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Hangyakusha Toshite Oukoku de Shokei sareta Kakure Saikyou Kishi - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="zT5LgqV3xrSErUQ1sbfCcoHsqY20VAsZUp7MhJAI">
+    <meta name="csrf-token" content="8KyyU5wU0IzsHfUggoRziA2izCP0xP70pJeKOxcJ">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d330f8eb21c3461ece4ec2ca09a990da">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/truyen/14280">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-03-17/14289-d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-03-17/14280-m.png'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -229,7 +283,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 1864 </span>
+                                                <span class="block feature-name"> 1887 </span>
                                             </a>
                                                                                         </div>
 
@@ -279,11 +333,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="03/02/2025 23:45:03" datetime="2025-02-03T23:45:03+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="19/04/2025 22:40:56" datetime="2025-04-19T22:40:56+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">116.133</div>
+                                            <div class="statistic-value">138.306</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -292,7 +346,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">441.489</div>
+                                            <div class="statistic-value">471.772</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1518,9 +1572,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c156541-arc-6-chuong-68-theo-dung-ke-hoach" title="Arc 6 - Chương 68. Theo đúng kế hoạch">Arc 6 - Chương 68. Theo đúng kế hoạch</a>
@@ -1530,12 +1581,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c156542-arc-6-chuong-69-dieu-cam-ky" title="Arc 6 - Chương 69: Điều cấm kỵ">Arc 6 - Chương 69: Điều cấm kỵ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">03/02/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c156543-arc-6-chuong-70-cong-chua-van-de-thuong-nhu-moi-ngay" title="Arc 6 - Chương 70: Công chúa vẫn dễ thương như mọi ngày">Arc 6 - Chương 70: Công chúa vẫn dễ thương như mọi ngày</a>
 
                                                                                             </div>
                                             <div class="chapter-time">03/02/2025</div>
@@ -1547,14 +1604,278 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c156543-arc-6-chuong-70-cong-chua-van-de-thuong-nhu-moi-ngay" title="Arc 6 - Chương 70: Công chúa vẫn dễ thương như mọi ngày">Arc 6 - Chương 70: Công chúa vẫn dễ thương như mọi ngày</a>
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166019-arc-6-chuong-71-lai-bi-quay-ray" title="Arc 6 - Chương 71. Lại bị quấy rầy">Arc 6 - Chương 71. Lại bị quấy rầy</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">03/02/2025</div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166020-arc-6-chuong-72-khi-phach-cua-chang" title="Arc 6 - Chương 72. Khí phách của chàng">Arc 6 - Chương 72. Khí phách của chàng</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166021-arc-6-chuong-73-ket-qua-my-man" title="Arc 6 - Chương 73. Kết quả mỹ mãn">Arc 6 - Chương 73. Kết quả mỹ mãn</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166022-arc-6-chuong-74-the-hien-suc-manh" title="Arc 6 - Chương 74. Thể hiện Sức mạnh">Arc 6 - Chương 74. Thể hiện Sức mạnh</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166023-arc-6-chuong-75-nhung-ke-phien-phuc-khong-ngung-xuat-hien" title="Arc 6 - Chương 75. Những kẻ phiền phức không ngừng xuất hiện">Arc 6 - Chương 75. Những kẻ phiền phức không ngừng xuất hiện</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166024-arc-6-chuong-76-can-hay-bi-can" title="Arc 6 - Chương 76. Cắn hay bị cắn?">Arc 6 - Chương 76. Cắn hay bị cắn?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166025-arc-6-chuong-77-ky-vong" title="Arc 6 - Chương 77. Kỳ vọng">Arc 6 - Chương 77. Kỳ vọng</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166026-arc-7-chuong-78-ngay-dinh-menh" title="Arc 7 - Chương 78. Ngày định mệnh">Arc 7 - Chương 78. Ngày định mệnh</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166027-arc-7-chuong-79-truoc-gio-khai-chien" title="Arc 7 - Chương 79. Trước giờ khai chiến">Arc 7 - Chương 79. Trước giờ khai chiến</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166028-arc-7-chuong-80-nghenh-chien" title="Arc 7 - Chương 80. Nghênh chiến">Arc 7 - Chương 80. Nghênh chiến</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166029-arc-7-chuong-81-trong-trach-lon-lao" title="Arc 7 - Chương 81. Trọng trách lớn lao">Arc 7 - Chương 81. Trọng trách lớn lao</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166030-arc-7-chuong-82-tran-chien-voi-giao-doan-svel" title="Arc 7 - Chương 82. Trận chiến với Giáo đoàn Svel">Arc 7 - Chương 82. Trận chiến với Giáo đoàn Svel</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166033-arc-7-chuong-83-bat-dau-ke-hoach" title="Arc 7 - Chương 83. Bắt đầu kế hoạch">Arc 7 - Chương 83. Bắt đầu kế hoạch</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166034-arc-7-chuong-84-ke-sach" title="Arc 7 - Chương 84. Kế sách">Arc 7 - Chương 84. Kế sách</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166035-arc-7-chuong-85-hiep-si-manh-nhat-xuat-tran" title="Arc 7 - Chương 85. Hiệp sĩ mạnh nhất xuất trận">Arc 7 - Chương 85. Hiệp sĩ mạnh nhất xuất trận</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166036-arc-7-chuong-86-bach-xa" title="Arc 7 - Chương 86. Bạch xà">Arc 7 - Chương 86. Bạch xà</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166037-arc-7-chuong-87-nhung-con-quai-thu" title="Arc 7 - Chương 87. Những con quái thú">Arc 7 - Chương 87. Những con quái thú</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166038-arc-7-chuong-88-ket-thuc" title="Arc 7 - Chương 88. Kết thúc">Arc 7 - Chương 88. Kết thúc</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166039-chuong-89-mo-man-va-chia-ly" title="Arc 7 - Chương 89. Mở màn và Chia ly">Arc 7 - Chương 89. Mở màn và Chia ly</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166040-arc-7-chuong-90-giua-phut-tro-ve" title="Arc 7 - Chương 90. Giữa phút trở về">Arc 7 - Chương 90. Giữa phút trở về</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166041-arc-8-chuong-91-cai-gia-cua-phan-nghich" title="Arc 8 - Chương 91. Cái giá của phản nghịch">Arc 8 - Chương 91. Cái giá của phản nghịch</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166044-arc-8-chuong-92-vi-ly-tuong" title="Arc 8 - Chương 92. Vì lý tưởng">Arc 8 - Chương 92. Vì lý tưởng</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166045-arc-8-chuong-93-chiem-nguong-cuoc-doan-tu-cam-dong" title="Arc 8 - Chương 93. Chiêm ngưỡng cuộc đoàn tụ cảm động">Arc 8 - Chương 93. Chiêm ngưỡng cuộc đoàn tụ cảm động</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">19/04/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (65 chương)</span>
+                                            <span>Xem tiếp (88 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1565,13 +1886,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14960,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;peZwQNJ2jYB9Xy13h3xP&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;5e22ec33e52f650364ca7900bba0448b2566a894860a826d43dac0edd3935453&quot;}" wire:effects="[]" wire:id="peZwQNJ2jYB9Xy13h3xP" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14960,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;PwCczsBtRnaANH08je15&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;bb0b3fff237e86f51e1b48ce0d27fe1df330c26ebe3332d18664cd4ffb3d509f&quot;}" wire:effects="[]" wire:id="PwCczsBtRnaANH08je15" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -1584,32 +1905,97 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(940)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(966)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">239 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">241 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
                 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
             </div>
                 
-        
-        
-        <div class="ln-comment-group">
-    <div id="ln-comment-2726558"
+                    <div class="ln-comment-group">
+    <div id="ln-comment-2826469"
     class="ln-comment-item mt-3 clear"
-    data-comment="2726558" data-parent="2726558">
+    data-comment="2826469" 
+    data-parent="2826469" 
+    data-type="series" 
+    data-typeid="14960">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua50783-c9a2a4f2-403a-4407-ab67-39603fc6e379.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ring-2 ring-cyan-500 dark:ring-cyan-900">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Skin con vợ Carlotta quá peak, lổ ít chap ăn mừng👍 (part 1) <br>
+<img src="https://imgur.com/8jYfymQ.png" alt="8jYfymQ.png">
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826469#ln-comment-2826469"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-04-2025 22:13:52"
+                                datetime="2025-04-19T22:13:52+07:00">
+                                19-04-2025 22:13:52
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>        
+        
+        <div class="ln-comment-group">
+    <div id="ln-comment-2826512"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2826512" 
+    data-parent="2826512" 
+    data-type="series" 
+    data-typeid="14960">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u117961-73c41975-bb18-4a5a-93cc-8c70c3cf2381.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1618,20 +2004,76 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/50783">Boyonechampveigar</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/117961">Mê firefly vclll</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        mà ln bộ mày ngỏm rồi à
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Đù
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2726558#ln-comment-2726558"
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826512#ln-comment-2826512"
                             class="text-slate-500">
-                            <time class="timeago" title="24-01-2025 00:55:28"
-                                datetime="2025-01-24T00:55:28+07:00">
-                                24-01-2025 00:55:28
+                            <time class="timeago" title="19-04-2025 22:45:19"
+                                datetime="2025-04-19T22:45:19+07:00">
+                                19-04-2025 22:45:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2826499"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2826499" 
+    data-parent="2826499" 
+    data-type="chapter" 
+    data-typeid="166030">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u105655-54d913ce-9cac-42b9-965d-995944efa8ef.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/105655">AlexanderCkd</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166030-arc-7-chuong-82-tran-chien-voi-giao-doan-svel"
+                        class="text-slate-500 inline-block">Arc 7 - Chương 82. Trận chiến với Giáo đoàn Svel</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        E góp ý thơ 1 chút ạ (ykr): <br>
+Câu 1: tiến bước -&gt; dấn bước<br>
+ngại chi -&gt; nề chi<br>
+Câu 4: Bỏ xác -&gt; vong mạng<br>
+nơi đây -&gt; nơi này/chốn này<br>
+Mn bổ sung và góp ý cho e vs ạ. Cảm ơn mn
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826499#ln-comment-2826499"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-04-2025 22:36:23"
+                                datetime="2025-04-19T22:36:23+07:00">
+                                19-04-2025 22:36:23
                             </time>
                         </a>
                         <a
@@ -1646,9 +2088,12 @@
 </div>
 
         <div class="ln-comment-reply">
-            <div id="ln-comment-2727279"
+            <div id="ln-comment-2826505"
     class="ln-comment-item mt-3 clear"
-    data-comment="2727279" data-parent="2726558">
+    data-comment="2826505" 
+    data-parent="2826499" 
+    data-type="chapter" 
+    data-typeid="166030">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1678,8 +2123,420 @@
             </div>
         </div>
         </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166030-arc-7-chuong-82-tran-chien-voi-giao-doan-svel"
+                        class="text-slate-500 inline-block">Arc 7 - Chương 82. Trận chiến với Giáo đoàn Svel</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        hảo thơ hảo thơ 👍
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826499&amp;reply_id=2826505#ln-comment-2826505"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-04-2025 22:41:29"
+                                datetime="2025-04-19T22:41:29+07:00">
+                                19-04-2025 22:41:29
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2826484"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2826484" 
+    data-parent="2826484" 
+    data-type="series" 
+    data-typeid="14960">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u178122-89da820b-c2f0-4fa2-bf07-457dd88c82d8.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178122">IATB</a>
+    </div>
                                     </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        wha??
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826484#ln-comment-2826484"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-04-2025 22:24:29"
+                                datetime="2025-04-19T22:24:29+07:00">
+                                19-04-2025 22:24:29
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2826475"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2826475" 
+    data-parent="2826475" 
+    data-type="chapter" 
+    data-typeid="166020">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u211656-936035c2-ffe5-467e-bd06-7328b2a47749.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/211656">monachikos</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c166020-arc-6-chuong-72-khi-phach-cua-chang"
+                        class="text-slate-500 inline-block">Arc 6 - Chương 72. Khí phách của chàng</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        temmmmm
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2826475#ln-comment-2826475"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-04-2025 22:18:45"
+                                datetime="2025-04-19T22:18:45+07:00">
+                                19-04-2025 22:18:45
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2815251"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2815251" 
+    data-parent="2815251" 
+    data-type="chapter" 
+    data-typeid="114075">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c114075-chuong-4-buoc-ngoat-dau-tien"
+                        class="text-slate-500 inline-block">Arc 1 - Chương 4: Bước ngoặt đầu tiên.</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans, vì gái mà bán nước 🐧
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2815251#ln-comment-2815251"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-04-2025 01:48:24"
+                                datetime="2025-04-10T01:48:24+07:00">
+                                10-04-2025 01:48:24
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2815248"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2815248" 
+    data-parent="2815248" 
+    data-type="chapter" 
+    data-typeid="114052">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c114052-chuong-03-khoi-dau-cua-hy-vong"
+                        class="text-slate-500 inline-block">Arc 1 - Chương 3: Khởi đầu của hy vọng.</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2815248#ln-comment-2815248"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-04-2025 01:36:08"
+                                datetime="2025-04-10T01:36:08+07:00">
+                                10-04-2025 01:36:08
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2815242"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2815242" 
+    data-parent="2815242" 
+    data-type="chapter" 
+    data-typeid="113994">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c113994-chuong-02-dieu-uoc-se-khong-tro-thanh-hien-thuc"
+                        class="text-slate-500 inline-block">Arc 1 - Chương 2: Điều ước sẽ không trở thành hiện thực.</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Đọc wn cũng hay
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2815242#ln-comment-2815242"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-04-2025 01:20:21"
+                                datetime="2025-04-10T01:20:21+07:00">
+                                10-04-2025 01:20:21
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2815231"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2815231" 
+    data-parent="2815231" 
+    data-type="chapter" 
+    data-typeid="113184">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor/c113184-chuong-01-nang-cong-chua-de-quoc-song-mai-trong-trai-tim-nay"
+                        class="text-slate-500 inline-block">Arc 1 - Chương 1: Nàng công chúa Đế quốc sẽ sống mãi trong trái tim này.</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2815231#ln-comment-2815231"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-04-2025 01:05:03"
+                                datetime="2025-04-10T01:05:03+07:00">
+                                10-04-2025 01:05:03
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2726558"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2726558" 
+    data-parent="2726558" 
+    data-type="series" 
+    data-typeid="14960">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua50783-c9a2a4f2-403a-4407-ab67-39603fc6e379.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/50783">Boyonechampveigar</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        mà ln bộ mày ngỏm rồi à
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2726558#ln-comment-2726558"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-01-2025 00:55:28"
+                                datetime="2025-01-24T00:55:28+07:00">
+                                24-01-2025 00:55:28
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2727279"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2727279" 
+    data-parent="2726558" 
+    data-type="series" 
+    data-typeid="14960">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         ngỏm r, h có nhóm nào chạy Eng tiếp thì hồi sinh
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1708,7 +2565,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2726557"
     class="ln-comment-item mt-3 clear"
-    data-comment="2726557" data-parent="2726557">
+    data-comment="2726557" 
+    data-parent="2726557" 
+    data-type="series" 
+    data-typeid="14960">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1724,8 +2584,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/50783">Boyonechampveigar</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         đọc 1 mạch 32 chap<br>
 phê thật
                     </div>
@@ -1750,859 +2611,19 @@ phê thật
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2720347"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2720347" data-parent="2720347">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182985-95e22c9a-6379-4076-951d-bbcf82538978.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182985">bmond</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Bom này là atomic r:))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2720347#ln-comment-2720347"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-01-2025 22:47:45"
-                                datetime="2025-01-16T22:47:45+07:00">
-                                16-01-2025 22:47:45
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2720389"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2720389" data-parent="2720347">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        mới là kíp nổ thôi &lt;(")
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2720347&amp;reply_id=2720389#ln-comment-2720389"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-01-2025 23:13:58"
-                                datetime="2025-01-16T23:13:58+07:00">
-                                16-01-2025 23:13:58
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2720754"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2720754" data-parent="2720347">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u160904-35ccaa42-9d84-4674-a4c5-a2097cf7a6bc.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160904">Nqloi</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/10433">@Sakuya Kotobuki:</a> đốt cho nổ đi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2720347&amp;reply_id=2720754#ln-comment-2720754"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-01-2025 11:30:47"
-                                datetime="2025-01-17T11:30:47+07:00">
-                                17-01-2025 11:30:47
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                <div class="fetch_reply" data-parent="2720347">
-            Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719354"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719354" data-parent="2719354">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u123672-4e127e5a-6640-4f06-88a2-68c018164ced.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123672">machan</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Nên đọc wn hay ln trước vậy mọi người
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719354#ln-comment-2719354"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 20:17:28"
-                                datetime="2025-01-15T20:17:28+07:00">
-                                15-01-2025 20:17:28
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2719583"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719583" data-parent="2719354">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u149620-78a76077-c402-454f-96d6-8841b5458980.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Tại sao k chọn cả hai🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719354&amp;reply_id=2719583#ln-comment-2719583"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-01-2025 00:25:19"
-                                datetime="2025-01-16T00:25:19+07:00">
-                                16-01-2025 00:25:19
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2719591"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719591" data-parent="2719354">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        LN edit kĩ hơn, xong sang WN là đẹp vì nội dung cơ bản là giống nhau<br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719354&amp;reply_id=2719591#ln-comment-2719591"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-01-2025 00:31:28"
-                                datetime="2025-01-16T00:31:28+07:00">
-                                16-01-2025 00:31:28
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719280"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719280" data-parent="2719280">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u178122-b3704883-4923-433f-8e37-42bc3ed5962d.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178122">IATB</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        quên luôn mình có tym bộ này =))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719280#ln-comment-2719280"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 18:17:42"
-                                datetime="2025-01-15T18:17:42+07:00">
-                                15-01-2025 18:17:42
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719261"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719261" data-parent="2719261">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u86406-7a4a36f9-5c6d-4a93-bdbe-0396d7fb363f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86406">Ozu</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Quên nd r ní ơi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719261#ln-comment-2719261"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 17:17:40"
-                                datetime="2025-01-15T17:17:40+07:00">
-                                15-01-2025 17:17:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719251"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719251" data-parent="2719251">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u123947-1ae38c9d-d058-4f18-bf78-e5d85d37aab8.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123947">Somebody like rom-com</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        bom nổ căng thế🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719251#ln-comment-2719251"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 16:39:16"
-                                datetime="2025-01-15T16:39:16+07:00">
-                                15-01-2025 16:39:16
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2719279"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719279" data-parent="2719251">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        còn nữa, chưa tạm ngưng là chưa hết 💀
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719251&amp;reply_id=2719279#ln-comment-2719279"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 18:16:48"
-                                datetime="2025-01-15T18:16:48+07:00">
-                                15-01-2025 18:16:48
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2719799"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719799" data-parent="2719251">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u123947-1ae38c9d-d058-4f18-bf78-e5d85d37aab8.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123947">Somebody like rom-com</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/10433">@Sakuya Kotobuki:</a> ngol🐧<br><br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719251&amp;reply_id=2719799#ln-comment-2719799"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-01-2025 10:46:41"
-                                datetime="2025-01-16T10:46:41+07:00">
-                                16-01-2025 10:46:41
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719208"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719208" data-parent="2719208">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u179315-af7c7503-f46e-4e30-9cb6-5bc19fe100e2.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/179315">materbeo</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Nhớ đc gì 💀 liền 💀💀💀
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719208#ln-comment-2719208"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 14:51:44"
-                                datetime="2025-01-15T14:51:44+07:00">
-                                15-01-2025 14:51:44
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719195"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719195" data-parent="2719195">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u149620-78a76077-c402-454f-96d6-8841b5458980.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Quên hết nd òi=(
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719195#ln-comment-2719195"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 14:35:06"
-                                datetime="2025-01-15T14:35:06+07:00">
-                                15-01-2025 14:35:06
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2719221"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2719221" data-parent="2719195">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        thớt đọc lại từ đầu xem, có khi là nhớ lại đc đấy 🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2719195&amp;reply_id=2719221#ln-comment-2719221"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 15:30:59"
-                                datetime="2025-01-15T15:30:59+07:00">
-                                15-01-2025 15:30:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2661967"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2661967" data-parent="2661967">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua50783-c9a2a4f2-403a-4407-ab67-39603fc6e379.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/50783">Boyonechampveigar</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        lâu rồi vào lại hóng truyện
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2661967#ln-comment-2661967"
-                            class="text-slate-500">
-                            <time class="timeago" title="21-11-2024 01:11:07"
-                                datetime="2024-11-21T01:11:07+07:00">
-                                21-11-2024 01:11:07
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2663743"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2663743" data-parent="2661967">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u10433-f057e47b-d745-47ff-9abb-e618e705e856.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/10433">Sakuya Kotobuki</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        không hứa trước nhưng trước 2025 sẽ nổ 1 phát cực to khiến pj về chế độ tạm ngưng luôn 👍
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2661967&amp;reply_id=2663743#ln-comment-2663743"
-                            class="text-slate-500">
-                            <time class="timeago" title="22-11-2024 23:43:57"
-                                datetime="2024-11-22T23:43:57+07:00">
-                                22-11-2024 23:43:57
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2664749"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2664749" data-parent="2661967">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u142700-220569ce-0b2c-4ef2-b7a2-15945e9d09db.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142700">Dat Dat</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/10433">@Sakuya Kotobuki:</a> 💀
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?comment_id=2661967&amp;reply_id=2664749#ln-comment-2664749"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-11-2024 23:14:05"
-                                datetime="2024-11-23T23:14:05+07:00">
-                                23-11-2024 23:14:05
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                <div class="fetch_reply" data-parent="2661967">
-            Xem thêm 7 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-                
-    </div>
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/14960-the-hidden-strongest-knight-executed-in-the-kingdom-as-a-traitor?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'zT5LgqV3xrSErUQ1sbfCcoHsqY20VAsZUp7MhJAI';
+        var token = 'BzSaYgSEPlz7kGnnjMp4lLIuoc47Jv4omUqBSTEr';
         var comment_type = 'series';
         var comment_typeid = '14960';
     </script>
@@ -2646,8 +2667,11 @@ phê thật
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="zT5LgqV3xrSErUQ1sbfCcoHsqY20VAsZUp7MhJAI" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="8KyyU5wU0IzsHfUggoRziA2izCP0xP70pJeKOxcJ" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
