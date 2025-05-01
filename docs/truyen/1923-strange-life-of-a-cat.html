@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Strange Life of a Cat - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="t1kq8ZWXUmKIdEby1VpnPzGTAzXKrXb8tb33oeX1">
+    <meta name="csrf-token" content="JccfLi2wSXdNe6Tyd1eetc3SxDUpjnGuhms66L9d">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -233,7 +287,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 169 </span>
+                                                <span class="block feature-name"> 170 </span>
                                             </a>
                                                                                         </div>
 
@@ -283,11 +337,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 23:24:18" datetime="2025-01-28T23:24:18+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="01/05/2025 20:33:05" datetime="2025-05-01T20:33:05+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">134.874</div>
+                                            <div class="statistic-value">165.905</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -296,7 +350,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">81.214</div>
+                                            <div class="statistic-value">88.192</div>
                                         </div>
                                     </div>
                                 </div>
@@ -868,12 +922,18 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/1923-strange-life-of-a-cat/c155995-chuong-41-hac-than-nguoi-lam-sao-the" title="Chương 41: Hắc Thán, ngươi làm sao thế?">Chương 41: Hắc Thán, ngươi làm sao thế?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/01/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c155996-chuong-42-ten-khon-sahara-kia-muon-an-danh-ma" title="Chương 42: Tên khốn Sahara kia muốn ăn đánh mà!">Chương 42: Tên khốn Sahara kia muốn ăn đánh mà!</a>
 
                                                                                             </div>
                                             <div class="chapter-time">28/01/2025</div>
@@ -885,14 +945,98 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/1923-strange-life-of-a-cat/c155996-chuong-42-ten-khon-sahara-kia-muon-an-danh-ma" title="Chương 42: Tên khốn Sahara kia muốn ăn đánh mà!">Chương 42: Tên khốn Sahara kia muốn ăn đánh mà!</a>
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168105-chuong-43-thieu-mot-chai-ruou" title="Chương 43: Thiếu một chai rượu">Chương 43: Thiếu một chai rượu</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">28/01/2025</div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168106-chuong-44-con-meo-den-nay-thi-khac" title="Chương 44: Con mèo đen này thì khác">Chương 44: Con mèo đen này thì khác</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168107-chuong-45-an-trom" title="Chương 45: Ăn trộm?">Chương 45: Ăn trộm?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168108-chuong-46-mot-con-meo-dang-theo-doi-nguoi" title="Chương 46: Một con mèo đang theo dõi ngươi">Chương 46: Một con mèo đang theo dõi ngươi</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168109-chuong-47-mot-chut-tiet-thao-cung-khong-co" title="Chương 47: Một chút &#039;tiết tháo&#039; cũng không có!!">Chương 47: Một chút &#039;tiết tháo&#039; cũng không có!!</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168110-chuong-48-su-huynh-qua-than-cua-anh" title="Chương 48: Sư huynh, quả thận của anh">Chương 48: Sư huynh, quả thận của anh</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168111-chuong-49-coi-chung-con-meo" title="Chương 49: Coi chừng con mèo">Chương 49: Coi chừng con mèo</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1923-strange-life-of-a-cat/c168112-chuong-50-long-bat-meo-dai-vien-lai-nao-nhiet" title="Chương 50: Lồng bắt mèo, đại viện lại náo nhiệt">Chương 50: Lồng bắt mèo, đại viện lại náo nhiệt</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (2 chương)</span>
+                                            <span>Xem tiếp (10 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1189,13 +1333,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:1923,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;3f8b2mUDjOj8UivzupE9&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/1923-strange-life-of-a-cat&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;5f5532865282b6abc5745163e368af5cf82699f704ad4369bb2a6c3d45409760&quot;}" wire:effects="[]" wire:id="3f8b2mUDjOj8UivzupE9" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:1923,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;j8uQMM7XGajXFif4r5WJ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/1923-strange-life-of-a-cat&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ef008c541e2390ab8e9884ba6c430c690d206b11cd7e1faba8afb52cf04f4f7f&quot;}" wire:effects="[]" wire:id="j8uQMM7XGajXFif4r5WJ" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -1217,7 +1361,7 @@
     <header>
         <h3 class="text-lg font-bold dark:text-white">15 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -1229,7 +1373,10 @@
         <div class="ln-comment-group">
     <div id="ln-comment-2678133"
     class="ln-comment-item mt-3 clear"
-    data-comment="2678133" data-parent="2678133">
+    data-comment="2678133" 
+    data-parent="2678133" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1245,8 +1392,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/32549">Averos</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Hàng cổ
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1273,7 +1421,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2587597"
     class="ln-comment-item mt-3 clear"
-    data-comment="2587597" data-parent="2587597">
+    data-comment="2587597" 
+    data-parent="2587597" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1286,11 +1437,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/33965">Ikawashi</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/33965">sakura12</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Z-zombie<br>
 :V
                     </div>
@@ -1318,11 +1470,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2576462"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576462" data-parent="2576462">
+    data-comment="2576462" 
+    data-parent="2576462" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u182870-efb4e18f-0b4d-4deb-809a-b84e7f6834eb.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1331,11 +1486,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182870">Light Key</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username line-through decoration-4" href="/thanh-vien/182870">Light Key</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Oat
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1362,7 +1518,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2524554"
     class="ln-comment-item mt-3 clear"
-    data-comment="2524554" data-parent="2524554">
+    data-comment="2524554" 
+    data-parent="2524554" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1392,8 +1551,9 @@
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Đội mồ
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1420,7 +1580,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2488558"
     class="ln-comment-item mt-3 clear"
-    data-comment="2488558" data-parent="2488558">
+    data-comment="2488558" 
+    data-parent="2488558" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1436,8 +1599,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/179394">Minh Thích Truyện</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         K,Không thể nào!<br>
 Bộ này ra từ khi nào thế mn?
                     </div>
@@ -1465,11 +1629,14 @@ Bộ này ra từ khi nào thế mn?
 <div class="ln-comment-group">
     <div id="ln-comment-2488463"
     class="ln-comment-item mt-3 clear"
-    data-comment="2488463" data-parent="2488463">
+    data-comment="2488463" 
+    data-parent="2488463" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua119687-b8d3fd8a-940c-4f00-b794-42a2abcecdb5.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u119687-d59dc841-f2cd-4d6f-9838-8466dde40538.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1488,8 +1655,9 @@ Bộ này ra từ khi nào thế mn?
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Huh
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1516,7 +1684,10 @@ Bộ này ra từ khi nào thế mn?
 <div class="ln-comment-group">
     <div id="ln-comment-311739"
     class="ln-comment-item mt-3 clear"
-    data-comment="311739" data-parent="311739">
+    data-comment="311739" 
+    data-parent="311739" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1532,8 +1703,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/12430">Mưa Đom Đóm</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Bộ này là của Trung nên nếu ai đọc được convert thì có thể qua bên tàng thư viện mà tìm nhé, nếu kiếm không thấy thì mình gửi link. Chứ lâu quá :((
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1559,7 +1731,10 @@ Bộ này ra từ khi nào thế mn?
         <div class="ln-comment-reply">
             <div id="ln-comment-1018557"
     class="ln-comment-item mt-3 clear"
-    data-comment="1018557" data-parent="311739">
+    data-comment="1018557" 
+    data-parent="311739" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1575,8 +1750,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/17560">Kid7448</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         @Mưa Đom Đóm cho tui xin link với :
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1600,7 +1776,10 @@ Bộ này ra từ khi nào thế mn?
 </div>
             <div id="ln-comment-1219734"
     class="ln-comment-item mt-3 clear"
-    data-comment="1219734" data-parent="311739">
+    data-comment="1219734" 
+    data-parent="311739" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1616,8 +1795,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/57781">Puckun</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Linkkkkkkkk
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1646,7 +1826,10 @@ Bộ này ra từ khi nào thế mn?
 <div class="ln-comment-group">
     <div id="ln-comment-282880"
     class="ln-comment-item mt-3 clear"
-    data-comment="282880" data-parent="282880">
+    data-comment="282880" 
+    data-parent="282880" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1662,8 +1845,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/26104">Viresty</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         co link raw ko thế trans?
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1690,7 +1874,10 @@ Bộ này ra từ khi nào thế mn?
 <div class="ln-comment-group">
     <div id="ln-comment-249899"
     class="ln-comment-item mt-3 clear"
-    data-comment="249899" data-parent="249899">
+    data-comment="249899" 
+    data-parent="249899" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1706,8 +1893,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/21471">Tyaraak</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Thêm cái tag animal và romance thì phơ phẹc
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1734,7 +1922,10 @@ Bộ này ra từ khi nào thế mn?
 <div class="ln-comment-group">
     <div id="ln-comment-141076"
     class="ln-comment-item mt-3 clear"
-    data-comment="141076" data-parent="141076">
+    data-comment="141076" 
+    data-parent="141076" 
+    data-type="series" 
+    data-typeid="1923">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1750,8 +1941,9 @@ Bộ này ra từ khi nào thế mn?
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/24138">Coffe~</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Drop r  :&lt;
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1787,7 +1979,7 @@ Bộ này ra từ khi nào thế mn?
 </div>    </main>
 
     <script>
-        var token = 't1kq8ZWXUmKIdEby1VpnPzGTAzXKrXb8tb33oeX1';
+        var token = 'JccfLi2wSXdNe6Tyd1eetc3SxDUpjnGuhms66L9d';
         var comment_type = 'series';
         var comment_typeid = '1923';
     </script>
@@ -1831,8 +2023,11 @@ Bộ này ra từ khi nào thế mn?
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="t1kq8ZWXUmKIdEby1VpnPzGTAzXKrXb8tb33oeX1" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="JccfLi2wSXdNe6Tyd1eetc3SxDUpjnGuhms66L9d" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>

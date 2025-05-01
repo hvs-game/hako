@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Virus Girlfriend - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="Pgh18mhUJmcB3s6Qmqwhso33MlPFniPe0gFeXg9J">
+    <meta name="csrf-token" content="vp8UuN6iP2yHmhgQ8Z3FfuPb2t4mSm7DVPGPhttA">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -232,7 +286,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 268 </span>
+                                                <span class="block feature-name"> 276 </span>
                                             </a>
                                                                                         </div>
 
@@ -282,11 +336,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 23:16:40" datetime="2025-01-28T23:16:40+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="01/05/2025 20:41:37" datetime="2025-05-01T20:41:37+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">186.979</div>
+                                            <div class="statistic-value">211.425</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -295,7 +349,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">115.569</div>
+                                            <div class="statistic-value">130.043</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1142,9 +1196,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155964-chuong-81-su-dien-cuong-cuoi-cung" title="Chương 81: Sự điên cuồng cuối cùng">Chương 81: Sự điên cuồng cuối cùng</a>
@@ -1154,9 +1205,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155965-chuong-82-mut-vao-luc-dut-do-an" title="Chương 82: Mút vào lúc đút đồ ăn">Chương 82: Mút vào lúc đút đồ ăn</a>
@@ -1166,9 +1214,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155966-chuong-83-ten-da-ban-khoi-cung-khong-the-quay-lai" title="Chương 83: &#039;Tên đã bắn khỏi cung không thể quay lại&#039;">Chương 83: &#039;Tên đã bắn khỏi cung không thể quay lại&#039;</a>
@@ -1178,9 +1223,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155967-chuong-84-cai-chet-cua-ke-phan-boi" title="Chương 84: Cái chết của kẻ phản bội">Chương 84: Cái chết của kẻ phản bội</a>
@@ -1190,9 +1232,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155968-chuong-85-zombie-thu-pham-khiem-khuyet" title="Chương 85: Zombie Thứ phẩm khiếm khuyết">Chương 85: Zombie Thứ phẩm khiếm khuyết</a>
@@ -1202,9 +1241,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155969-chuong-86-giet-sach-se" title="Chương 86: Giết sạch sẽ">Chương 86: Giết sạch sẽ</a>
@@ -1214,9 +1250,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155970-chuong-87-chang-le-co-den-ky-kinh-nguyet" title="Chương 87: Chẳng lẽ cô đến kỳ kinh nguyệt?">Chương 87: Chẳng lẽ cô đến kỳ kinh nguyệt?</a>
@@ -1226,9 +1259,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155971-chuong-88-thuc-don-cua-zombie" title="Chương 88: Thực đơn của Zombie">Chương 88: Thực đơn của Zombie</a>
@@ -1238,12 +1268,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/5987-virus-girlfriend/c155972-chuong-89-bat-quai-roi-sau-do-xau-ho" title="Chương 89: &#039;Bát quái&#039; rồi sau đó xấu hổ">Chương 89: &#039;Bát quái&#039; rồi sau đó xấu hổ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/01/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c155973-chuong-90-toi-biet-may-vo-co-duoc-hay-khong" title="Chương 90: Tôi biết may vớ có được hay không?">Chương 90: Tôi biết may vớ có được hay không?</a>
 
                                                                                             </div>
                                             <div class="chapter-time">28/01/2025</div>
@@ -1255,14 +1291,122 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/5987-virus-girlfriend/c155973-chuong-90-toi-biet-may-vo-co-duoc-hay-khong" title="Chương 90: Tôi biết may vớ có được hay không?">Chương 90: Tôi biết may vớ có được hay không?</a>
+                                                <a href="/truyen/5987-virus-girlfriend/c168127-chuong-91-xin-chao-moi-nguoi-chung-toi-la-to-doi-hai-zombie" title="Chương 91: Xin chào mọi người, chúng tôi là tổ đội hai &#039;Zombie&#039;">Chương 91: Xin chào mọi người, chúng tôi là tổ đội hai &#039;Zombie&#039;</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">28/01/2025</div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168128-chuong-92-hoa-cuc-va-mieng-doi-vi-tri-cho-nhau-a" title="Chương 92: &#039;Hoa cúc&#039; và miệng đổi vị trí cho nhau à?">Chương 92: &#039;Hoa cúc&#039; và miệng đổi vị trí cho nhau à?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168129-chuong-93-luong-tri-chua-bien-mat" title="Chương 93: Lương tri chưa biến mất">Chương 93: Lương tri chưa biến mất</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168130-chuong-94-di-dao-truoc-cua-dia-nguc-mot-lan" title="Chương 94: Đi dạo trước cửa địa ngục một lần">Chương 94: Đi dạo trước cửa địa ngục một lần</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168131-chuong-95-da-mo-mom-qua-den" title="Chương 95: Đã mở &#039;mồm quạ đen&#039;">Chương 95: Đã mở &#039;mồm quạ đen&#039;</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168132-chuong-96-thuc-luc-cung-la-mot-loai-van-khi" title="Chương 96: Thực lực cũng là một loại vận khí">Chương 96: Thực lực cũng là một loại vận khí</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168133-chuong-97-mot-nguoi-co-di-nang-khac" title="Chương 97: Một người có dị năng khác">Chương 97: Một người có dị năng khác</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168134-chuong-98-thay-tinh-the-khong-on-lien-chay-ra" title="Chương 98: Thấy tình thế không ổn liền chạy ra">Chương 98: Thấy tình thế không ổn liền chạy ra</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168135-chuong-99-lua-chon-mat-tri-nho" title="Chương 99: Lựa chọn mất trí nhớ">Chương 99: Lựa chọn mất trí nhớ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168137-chuong-100-sau-nay-con-gap-lai" title="Chương 100: Sau này còn gặp lại">Chương 100: Sau này còn gặp lại</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (86 chương)</span>
+                                            <span>Xem tiếp (96 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1270,11 +1414,11 @@
                         </div>
                     </main>
                 </section>
-                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
                     <header id="volume_12341" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 02 Web Novel
+                            Tập 02 Web Novel <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1291,6 +1435,30 @@
                             </div>
                             <div class="col-12 col-md-10">
                                                                 <ul class="list-chapters at-series">
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168138-chuong-101-ong-len-hay-toi-len" title="Chương 101: Ông lên hay tôi lên?">Chương 101: Ông lên hay tôi lên?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/5987-virus-girlfriend/c168139-chuong-102-ban-ra-xuc-tu" title="Chương 102: Bắn ra xúc tu">Chương 102: Bắn ra xúc tu</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
                                                                                                         </ul>
                             </div>
                         </div>
@@ -1299,13 +1467,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:5987,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;MOf2hrQKz44RQb2YVigR&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/5987-virus-girlfriend&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;888b6dde5cca269a0bd63dbddd7b997a6fffdc5746adc1ab5df6de0c69854756&quot;}" wire:effects="[]" wire:id="MOf2hrQKz44RQb2YVigR" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:5987,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;SLCY4ilnVPglRW7XqbCE&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/5987-virus-girlfriend&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;bac92c9950a8cd0a6ab04715527757ccc7c72d8903919603f15ccf0cde6407a9&quot;}" wire:effects="[]" wire:id="SLCY4ilnVPglRW7XqbCE" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -1318,7 +1486,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(168)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(170)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1327,7 +1495,7 @@
     <header>
         <h3 class="text-lg font-bold dark:text-white">94 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -1337,9 +1505,62 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2841630"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2841630" 
+    data-parent="2841630" 
+    data-type="chapter" 
+    data-typeid="168139">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua154519-a2dea527-8832-4109-9e0f-c4f97f0c73f2.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/154519">Hanashiraki raki</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/5987-virus-girlfriend/c168139-chuong-102-ban-ra-xuc-tu"
+                        class="text-slate-500 inline-block">Chương 102: Bắn ra xúc tu</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/5987-virus-girlfriend?comment_id=2841630#ln-comment-2841630"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-05-2025 22:36:00"
+                                datetime="2025-05-01T22:36:00+07:00">
+                                01-05-2025 22:36:00
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2631745"
     class="ln-comment-item mt-3 clear"
-    data-comment="2631745" data-parent="2631745">
+    data-comment="2631745" 
+    data-parent="2631745" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1355,8 +1576,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180660">SodaK</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         uầy bộ này có tiểu thuyết á, bất ngờ thật sự =))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1383,7 +1605,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2576612"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576612" data-parent="2576612">
+    data-comment="2576612" 
+    data-parent="2576612" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1399,8 +1624,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/154519">Hanashiraki raki</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Sao đột nhiên hnay nhiều hs thế
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1427,11 +1653,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2576472"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576472" data-parent="2576472">
+    data-comment="2576472" 
+    data-parent="2576472" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u182870-efb4e18f-0b4d-4deb-809a-b84e7f6834eb.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1440,11 +1669,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182870">Light Key</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username line-through decoration-4" href="/thanh-vien/182870">Light Key</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Vl
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1470,7 +1700,10 @@
         <div class="ln-comment-reply">
             <div id="ln-comment-2576483"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576483" data-parent="2576472">
+    data-comment="2576483" 
+    data-parent="2576472" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1486,8 +1719,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103595">(||-_-)</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Vl j lắm vậy
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1511,11 +1745,14 @@
 </div>
             <div id="ln-comment-2576486"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576486" data-parent="2576472">
+    data-comment="2576486" 
+    data-parent="2576472" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u176255-bbfe7ab4-9c0c-4d2d-bef9-1a685799e2aa.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u176255-0755e5b1-118d-4be5-9406-69823cbf5d21.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1524,11 +1761,19 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">_proslimevn</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">S͏͏</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Spam j lắm thế....
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1557,7 +1802,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2444943"
     class="ln-comment-item mt-3 clear"
-    data-comment="2444943" data-parent="2444943">
+    data-comment="2444943" 
+    data-parent="2444943" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1573,8 +1821,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/61381">Hamataro</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         nhớ đây truyện trung
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1601,7 +1850,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2374143"
     class="ln-comment-item mt-3 clear"
-    data-comment="2374143" data-parent="2374143">
+    data-comment="2374143" 
+    data-parent="2374143" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1617,8 +1869,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/83877">Vuquocdung1336</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Đội mồ sống dậy à =)))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1645,7 +1898,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1172521"
     class="ln-comment-item mt-3 clear"
-    data-comment="1172521" data-parent="1172521">
+    data-comment="1172521" 
+    data-parent="1172521" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1668,8 +1924,9 @@
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         mà bộ này có truyện tranh nè. vẫn hóng.
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1696,7 +1953,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1159919"
     class="ln-comment-item mt-3 clear"
-    data-comment="1159919" data-parent="1159919">
+    data-comment="1159919" 
+    data-parent="1159919" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1712,8 +1972,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/47431">Hải Evil</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         52 chương mak đã 102 nghìn từ thì t mới đọc đến 371 thì đc bn từ rồi ? :)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1740,7 +2001,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1159334"
     class="ln-comment-item mt-3 clear"
-    data-comment="1159334" data-parent="1159334">
+    data-comment="1159334" 
+    data-parent="1159334" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1756,8 +2020,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18910">Christ</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         hóng bô này dịch full ghê luôn á, mặc dù xem cv rồi, thật đấy
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1784,7 +2049,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1101318"
     class="ln-comment-item mt-3 clear"
-    data-comment="1101318" data-parent="1101318">
+    data-comment="1101318" 
+    data-parent="1101318" 
+    data-type="series" 
+    data-typeid="5987">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1800,8 +2068,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18910">Christ</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         virus trong mấy gái thì tiến hóa, main thì lại đồng hóa
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1825,136 +2094,6 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1065245"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1065245" data-parent="1065245">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua24101-25136762-20f6-4a03-9cbf-d07aefe9edf3.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/24101">tên hề</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Nào kịp bên truyện tranh nhỉ
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/5987-virus-girlfriend?comment_id=1065245#ln-comment-1065245"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-12-2020 15:14:17"
-                                datetime="2020-12-31T15:14:17+07:00">
-                                31-12-2020 15:14:17
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-1101320"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1101320" data-parent="1065245">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua18910-2b193999-0ef6-4adf-8772-99ad173351c9.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18910">Christ</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        convert full, cơ mà dịch đọc thích hơn
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/5987-virus-girlfriend?comment_id=1065245&amp;reply_id=1101320#ln-comment-1101320"
-                            class="text-slate-500">
-                            <time class="timeago" title="12-02-2021 13:34:51"
-                                datetime="2021-02-12T13:34:51+07:00">
-                                12-02-2021 13:34:51
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-1101695"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1101695" data-parent="1065245">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua24101-25136762-20f6-4a03-9cbf-d07aefe9edf3.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/24101">tên hề</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/18910">@Christ:</a> biết chứ thì tui cũng thích dịch nên mới hóng nó bắt kịp truyện tranh
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/5987-virus-girlfriend?comment_id=1065245&amp;reply_id=1101695#ln-comment-1101695"
-                            class="text-slate-500">
-                            <time class="timeago" title="12-02-2021 19:39:30"
-                                datetime="2021-02-12T19:39:30+07:00">
-                                12-02-2021 19:39:30
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -1967,7 +2106,7 @@
 </div>    </main>
 
     <script>
-        var token = 'xfovYfSgRndkvSFFMwC3Mz8U4EvrYJalENNYQeic';
+        var token = 'iG9sE9iR7UjcMKvqXu5wCysb8QDjnjCf6o8EOJgz';
         var comment_type = 'series';
         var comment_typeid = '5987';
     </script>
@@ -2011,8 +2150,11 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="Pgh18mhUJmcB3s6Qmqwhso33MlPFniPe0gFeXg9J" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="vp8UuN6iP2yHmhgQ8Z3FfuPb2t4mSm7DVPGPhttA" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>

@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Love Dependency Disease - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="g6YYBowDhsIM8hX5PX2Z7PBecGc2WUpG1G9RrdOu">
+    <meta name="csrf-token" content="4AOXJqUeRpuQrZhtvUaoQJ4Vhw8HmE696RF8nu8a">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/13957">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.docln.net/ln/banners/2024-06-23/13957_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.docln.net/ln/banners/2024-06-23/13957_m.png'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -239,7 +293,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 549 </span>
+                                                <span class="block feature-name"> 570 </span>
                                             </a>
                                                                                         </div>
 
@@ -289,11 +343,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="02/09/2024 21:51:49" datetime="2024-09-02T21:51:49+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="01/05/2025 20:47:40" datetime="2025-05-01T20:47:40+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">82.471</div>
+                                            <div class="statistic-value">96.830</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -302,7 +356,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">155.371</div>
+                                            <div class="statistic-value">180.983</div>
                                         </div>
                                     </div>
                                 </div>
@@ -830,9 +884,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/1869-love-dependency-disease/c142504-chuong-28-xuat-phat-di-bien" title="Chương 28: Xuất phát đi biển">Chương 28: Xuất phát đi biển</a>
@@ -842,12 +893,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/1869-love-dependency-disease/c142505-chuong-29-muc-tieu-dao-da-minh" title="Chương 29: Mục tiêu, đảo Dạ Minh!">Chương 29: Mục tiêu, đảo Dạ Minh!</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">02/09/2024</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c142506-chuong-30-em-hoan-toan-khong-biet-ho-hap-nhan-tao" title="Chương 30: Em hoàn toàn không biết hô hấp nhân tạo">Chương 30: Em hoàn toàn không biết hô hấp nhân tạo</a>
 
                                                                                             </div>
                                             <div class="chapter-time">02/09/2024</div>
@@ -859,14 +916,74 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/1869-love-dependency-disease/c142506-chuong-30-em-hoan-toan-khong-biet-ho-hap-nhan-tao" title="Chương 30: Em hoàn toàn không biết hô hấp nhân tạo">Chương 30: Em hoàn toàn không biết hô hấp nhân tạo</a>
+                                                <a href="/truyen/1869-love-dependency-disease/c168156-chuong-31-qua-nhien-la-dao-da-minh-co-van-de" title="Chương 31: Quả nhiên là đảo Dạ Minh có vấn đề">Chương 31: Quả nhiên là đảo Dạ Minh có vấn đề</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">02/09/2024</div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c168157-chuong-32-tap-kich-dem-khuya" title="Chương 32: Tập kích đêm khuya?">Chương 32: Tập kích đêm khuya?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c168158-chuong-33-bao-to-den" title="Chương 33: Bão tố đến">Chương 33: Bão tố đến</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c168159-chuong-34-diep-tu" title="Chương 34: Diệp Tử">Chương 34: Diệp Tử</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c168160-chuong-35-di-dao-ban-dem" title="Chương 35: Đi dạo ban đêm">Chương 35: Đi dạo ban đêm</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/1869-love-dependency-disease/c168161-chuong-36-binh-minh" title="Chương 36: Bình minh">Chương 36: Bình minh</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (26 chương)</span>
+                                            <span>Xem tiếp (32 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -903,13 +1020,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:1869,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;lqrzlDmulSxLgAg6Kk6G&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/1869-love-dependency-disease&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3d2a1644727a906b1988e5c793caab21bec9f51a3ae99dee24d7d45b9258f03e&quot;}" wire:effects="[]" wire:id="lqrzlDmulSxLgAg6Kk6G" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:1869,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;7jYS1dzgihxXXB3vRhiL&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/1869-love-dependency-disease&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3fc12a0a3c882dde91f107a748f5efbbfb5bfccc4583671a8cfdcf80eeb94fd6&quot;}" wire:effects="[]" wire:id="7jYS1dzgihxXXB3vRhiL" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -922,16 +1039,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(203)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(222)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">61 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">63 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -941,13 +1058,16 @@
         
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2576935"
+    <div id="ln-comment-2812714"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576935" data-parent="2576935">
+    data-comment="2812714" 
+    data-parent="2812714" 
+    data-type="chapter" 
+    data-typeid="31493">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua26821-e5765404-233b-4a7c-a250-094fb0b0e9c2.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -956,20 +1076,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/26821">Memes</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Quá đã
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c31493-chuong-08-bua-an-nguy-hiem"
+                        class="text-slate-500 inline-block">Chương 08 : Bữa ăn nguy hiểm</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Thú tính trỗi dậy
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=2576935#ln-comment-2576935"
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812714#ln-comment-2812714"
                             class="text-slate-500">
-                            <time class="timeago" title="03-09-2024 03:11:59"
-                                datetime="2024-09-03T03:11:59+07:00">
-                                03-09-2024 03:11:59
+                            <time class="timeago" title="08-04-2025 00:01:46"
+                                datetime="2025-04-08T00:01:46+07:00">
+                                08-04-2025 00:01:46
                             </time>
                         </a>
                         <a
@@ -985,13 +1108,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2576607"
+    <div id="ln-comment-2812672"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576607" data-parent="2576607">
+    data-comment="2812672" 
+    data-parent="2812672" 
+    data-type="chapter" 
+    data-typeid="31492">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua154519-a2dea527-8832-4109-9e0f-c4f97f0c73f2.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1000,20 +1126,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/154519">Hanashiraki raki</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Hs một loạt luôn
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c31492-chuong-7-bi-hon-roi"
+                        class="text-slate-500 inline-block">Chương 7 : Bị hôn rồi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Vì miếng ăn mà phải nhục vậy
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=2576607#ln-comment-2576607"
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812672#ln-comment-2812672"
                             class="text-slate-500">
-                            <time class="timeago" title="02-09-2024 22:42:18"
-                                datetime="2024-09-02T22:42:18+07:00">
-                                02-09-2024 22:42:18
+                            <time class="timeago" title="07-04-2025 23:32:39"
+                                datetime="2025-04-07T23:32:39+07:00">
+                                07-04-2025 23:32:39
                             </time>
                         </a>
                         <a
@@ -1029,9 +1158,360 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2576503"
+    <div id="ln-comment-2812137"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576503" data-parent="2576503">
+    data-comment="2812137" 
+    data-parent="2812137" 
+    data-type="chapter" 
+    data-typeid="30911">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c30911-chuong-06-cuoc-hoi-mat-cua-5-ke-can-ba"
+                        class="text-slate-500 inline-block">Chương 06 : Cuộc hội mặt của 5 kẻ cặn bã</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812137#ln-comment-2812137"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 18:04:44"
+                                datetime="2025-04-07T18:04:44+07:00">
+                                07-04-2025 18:04:44
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2812094"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2812094" 
+    data-parent="2812094" 
+    data-type="chapter" 
+    data-typeid="27324">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c27324-chuong-05-nguoi-quan-li-cam-thu"
+                        class="text-slate-500 inline-block">Chương 05 : Người Quản Lí Cấm Thư</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        A main có nhiều sách thế
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812094#ln-comment-2812094"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 17:28:50"
+                                datetime="2025-04-07T17:28:50+07:00">
+                                07-04-2025 17:28:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2812066"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2812066" 
+    data-parent="2812066" 
+    data-type="chapter" 
+    data-typeid="26700">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c26700-chuong-04-bi-giat-dien"
+                        class="text-slate-500 inline-block">Chương 04 : Bị giật điện</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812066#ln-comment-2812066"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 17:11:06"
+                                datetime="2025-04-07T17:11:06+07:00">
+                                07-04-2025 17:11:06
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2812046"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2812046" 
+    data-parent="2812046" 
+    data-type="chapter" 
+    data-typeid="26685">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c26685-chuong-03-nho-loli-song-ke-ben"
+                        class="text-slate-500 inline-block">Chương 03 : Nhỏ Loli sống kế bên</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Loli là chân ái
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812046#ln-comment-2812046"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 16:59:23"
+                                datetime="2025-04-07T16:59:23+07:00">
+                                07-04-2025 16:59:23
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2812013"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2812013" 
+    data-parent="2812013" 
+    data-type="chapter" 
+    data-typeid="26329">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c26329-chuong-02-yeu-cau-phai-doi-mat-voi-tinh-cam"
+                        class="text-slate-500 inline-block">Chương 02 : Bị Yandere Phát hiện</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Đỉnh vI
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2812013#ln-comment-2812013"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 16:41:36"
+                                datetime="2025-04-07T16:41:36+07:00">
+                                07-04-2025 16:41:36
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2811991"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2811991" 
+    data-parent="2811991" 
+    data-type="chapter" 
+    data-typeid="26323">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u156386-4364076d-de9b-4ee0-9799-3ce31d70c4ce.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/156386">Priscilla</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/1869-love-dependency-disease/c26323-chuong-01-mot-bat-dau-moi"
+                        class="text-slate-500 inline-block">Chương 01 : Khởi đầu mới</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2811991#ln-comment-2811991"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-04-2025 16:31:24"
+                                datetime="2025-04-07T16:31:24+07:00">
+                                07-04-2025 16:31:24
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2765370"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2765370" 
+    data-parent="2765370" 
+    data-type="series" 
+    data-typeid="1869">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua25427-05b0f74e-91c2-4f25-85f5-827c5bca2a58.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/25427">THẾ GIỚI MỚI</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Hi vọng sẽ có nhóm nào đó dịch típ
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2765370#ln-comment-2765370"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-03-2025 03:30:49"
+                                datetime="2025-03-01T03:30:49+07:00">
+                                01-03-2025 03:30:49
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2604940"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2604940" 
+    data-parent="2604940" 
+    data-type="series" 
+    data-typeid="1869">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1047,418 +1527,18 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/162719">Phatproxyz</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Call of the haunted
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        tiếp đi trans
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=2576503#ln-comment-2576503"
+                        <a href="/truyen/1869-love-dependency-disease?comment_id=2604940#ln-comment-2604940"
                             class="text-slate-500">
-                            <time class="timeago" title="02-09-2024 22:02:08"
-                                datetime="2024-09-02T22:02:08+07:00">
-                                02-09-2024 22:02:08
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2576493"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2576493" data-parent="2576493">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua83542-cb804dfb-8676-43ba-9e51-1c136a61509a.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/83542">KxSnake</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Xác chết sống dậy 💀
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=2576493#ln-comment-2576493"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-09-2024 21:57:46"
-                                datetime="2024-09-02T21:57:46+07:00">
-                                02-09-2024 21:57:46
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2576480"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2576480" data-parent="2576480">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i2.docln.net/ln/users/avatars/u182870-c8e407f8-7811-45f4-a113-4723c5d55a61.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182870">Light Key</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Cuộc đại hồi sinh😱
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=2576480#ln-comment-2576480"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-09-2024 21:53:40"
-                                datetime="2024-09-02T21:53:40+07:00">
-                                02-09-2024 21:53:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1996300"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1996300" data-parent="1996300">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/127813">Tóc vàng</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trans lặn hơi lâu rồi đó
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1996300#ln-comment-1996300"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2022 21:59:41"
-                                datetime="2022-10-07T21:59:41+07:00">
-                                07-10-2022 21:59:41
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1840070"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1840070" data-parent="1840070">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua103751-5f0076b8-5807-4a3a-825e-542f5985245b.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103751">Togashi Yuuta</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Sống lại đi trans ơi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1840070#ln-comment-1840070"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-06-2022 01:39:28"
-                                datetime="2022-06-17T01:39:28+07:00">
-                                17-06-2022 01:39:28
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1709523"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1709523" data-parent="1709523">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua101771-b9bd2629-fa36-44e0-ade9-2930be6d9945.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/101771">yotsuaba</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trans drop rồi à
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1709523#ln-comment-1709523"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-03-2022 09:34:23"
-                                datetime="2022-03-09T09:34:23+07:00">
-                                09-03-2022 09:34:23
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1578618"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1578618" data-parent="1578618">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua61159-253f0615-faf4-4c7a-9ff3-25d0658c9cfb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/61159">HellTakeR</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        tuyệt vời, ae cho tại hạ vài bộ yan đi :3<br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1578618#ln-comment-1578618"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-12-2021 20:33:55"
-                                datetime="2021-12-09T20:33:55+07:00">
-                                09-12-2021 20:33:55
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-1578625"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1578625" data-parent="1578618">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua95565-34b4b2b9-9f71-472f-b4eb-c6baeef2e71e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95565">Nekov2 - Yandere mode</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Bộ nằm chình ình trên top 1 đó<br>bộ thuần hóa yandere nữa<br>Đại thần Taidsphn chuyên dịch mấy bộ có yan đấy<br>ông loli666 nữa<br>Tui thì đang dịch 1 bộ.
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1578618&amp;reply_id=1578625#ln-comment-1578625"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-12-2021 20:37:34"
-                                datetime="2021-12-09T20:37:34+07:00">
-                                09-12-2021 20:37:34
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-1584061"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1584061" data-parent="1578618">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua61159-253f0615-faf4-4c7a-9ff3-25d0658c9cfb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/61159">HellTakeR</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/95565" rel="nofollow noreferrer noopener" target="_blank">@Syke Chim Bé:</a> voaix, toanf maays booj tui ddang xem :))))<br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1578618&amp;reply_id=1584061#ln-comment-1584061"
-                            class="text-slate-500">
-                            <time class="timeago" title="12-12-2021 20:13:38"
-                                datetime="2021-12-12T20:13:38+07:00">
-                                12-12-2021 20:13:38
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-1469273"
-    class="ln-comment-item mt-3 clear"
-    data-comment="1469273" data-parent="1469273">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua89971-d51f7e35-77f1-4573-bc5d-557d4719bd36.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/89971">Kenji-san</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trans còn sống ko thế???
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/1869-love-dependency-disease?comment_id=1469273#ln-comment-1469273"
-                            class="text-slate-500">
-                            <time class="timeago" title="14-10-2021 20:08:39"
-                                datetime="2021-10-14T20:08:39+07:00">
-                                14-10-2021 20:08:39
+                            <time class="timeago" title="25-09-2024 15:05:24"
+                                datetime="2024-09-25T15:05:24+07:00">
+                                25-09-2024 15:05:24
                             </time>
                         </a>
                         <a
@@ -1485,7 +1565,7 @@
 </div>    </main>
 
     <script>
-        var token = 'g6YYBowDhsIM8hX5PX2Z7PBecGc2WUpG1G9RrdOu';
+        var token = '4AOXJqUeRpuQrZhtvUaoQJ4Vhw8HmE696RF8nu8a';
         var comment_type = 'series';
         var comment_typeid = '1869';
     </script>
@@ -1529,11 +1609,14 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="g6YYBowDhsIM8hX5PX2Z7PBecGc2WUpG1G9RrdOu" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="4AOXJqUeRpuQrZhtvUaoQJ4Vhw8HmE696RF8nu8a" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script async type='text/javascript' src='//pl16314303.highcpmgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+    <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
@@ -1541,7 +1624,7 @@
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">

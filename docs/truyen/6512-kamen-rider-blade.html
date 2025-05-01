@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Kamen Rider Blade - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="ZSJhX2p3k9rQTyW0Ob1cHCoFX0ZKgRwfUe2H1Jfn">
+    <meta name="csrf-token" content="UnWpa1ivr0wfBglEII4Q5IkWrWeE5yeJxUG5DvDN">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -210,7 +264,7 @@
                                         <div class="info-item">
                                             <span class="info-name">Tình trạng:</span>
                                             <span class="info-value">
-                                                <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
+                                                <a href="https://docln.net/truyen-hoan-thanh">Đã hoàn thành</a>
                                             </span>
                                         </div>
 
@@ -222,7 +276,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 53 </span>
+                                                <span class="block feature-name"> 56 </span>
                                             </a>
                                                                                         </div>
 
@@ -272,11 +326,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 23:27:31" datetime="2025-01-28T23:27:31+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="01/05/2025 20:29:08" datetime="2025-05-01T20:29:08+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">65.141</div>
+                                            <div class="statistic-value">65.773</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -285,7 +339,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">46.694</div>
+                                            <div class="statistic-value">50.302</div>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +358,10 @@
                                                                         <div class="series-summary">
                                         <h4 class="font-bold">Tóm tắt</h4>
                                         <div class="summary-content">
-                                            <p>Phần tiếp theo của TV Series Kamen Rider Blade, câu chuyện lấy bối cảnh 300 năm sau cái kết ở trên TV Series. Nó là biên niên sử của Kenzaki trong sứ mệnh kết thúc số phận mình như một Navy Joker sau 3 thế kỷ. Thời điểm đó, Kenzaki bị bắt bởi một tổ chức tội phạm bí ẩn và bị tra tấn nhưng cậu vẫn không chết.</p><p>Cuối cùng ở trong tiểu thuyết, Kenzaki trở thành một nhiếp anh gia chiến trường và tất cả mọi thứ cậu thấy là cái chết. Sau đó, cậu nhập ngũ ở trong một đội quân nước ngoài, giẫm phải mìn và nổ tung. Và cũng xuất hiện Kamen Rider Garren và Leangle mới, Tachihara và Satsuki.</p><p>Đồng thời, các nhân vật quay trở lại duy nhất trong tiểu thuyết là Kenzaki và Hajime. Kenzaki là một nhân vật yếu đuối hơn so với trong TV Series do cậu ta phải sống quá lâu và nhìn thấy nhiều điều khủng khiếp. Satsuki, Leangle mới tương tự như Leangle ban đầu, Mutsuki. Anh bị bỏ lại đằng sau.</p><p>Mặc dù Kenzaki muốn chết nhưng cậu không cho phép bản thân làm điều đó. Từ khi Kenzaki sống rất lâu thì Hajime cũng giống như vậy. Có nghĩa là nếu Kenzaki chết, Hajime sẽ biến đổi trở thành Joker một lần nữa và tiêu diệt nhân loại như là kẻ sống sót cuối cùng của Battle Royal.</p>
+                                            <p>Phần tiếp theo của TV Series Kamen Rider Blade, câu chuyện lấy bối cảnh 300 năm sau cái kết ở trên TV Series. Nó là biên niên sử của Kenzaki trong sứ mệnh kết thúc số phận mình như một Navy Joker sau 3 thế kỷ. Thời điểm đó, Kenzaki bị bắt bởi một tổ chức tội phạm bí ẩn và bị tra tấn nhưng cậu vẫn không chết.</p>
+<p>Cuối cùng ở trong tiểu thuyết, Kenzaki trở thành một nhiếp anh gia chiến trường và tất cả mọi thứ cậu thấy là cái chết. Sau đó, cậu nhập ngũ ở trong một đội quân nước ngoài, giẫm phải mìn và nổ tung. Và cũng xuất hiện Kamen Rider Garren và Leangle mới, Tachihara và Satsuki.</p>
+<p>Đồng thời, các nhân vật quay trở lại duy nhất trong tiểu thuyết là Kenzaki và Hajime. Kenzaki là một nhân vật yếu đuối hơn so với trong TV Series do cậu ta phải sống quá lâu và nhìn thấy nhiều điều khủng khiếp. Satsuki, Leangle mới tương tự như Leangle ban đầu, Mutsuki. Anh bị bỏ lại đằng sau.</p>
+<p>Mặc dù Kenzaki muốn chết nhưng cậu không cho phép bản thân làm điều đó. Từ khi Kenzaki sống rất lâu thì Hajime cũng giống như vậy. Có nghĩa là nếu Kenzaki chết, Hajime sẽ biến đổi trở thành Joker một lần nữa và tiêu diệt nhân loại như là kẻ sống sót cuối cùng của Battle Royal.</p>
                                         </div>
                                         <div class="summary-more none more-state">
                                             <div class="see_more">Xem thêm</div>
@@ -503,9 +560,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -514,9 +568,21 @@
                                                                                             </div>
                                             <div class="chapter-time">28/01/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/6512-kamen-rider-blade/c168099-chuong-ket" title="Chương kết">Chương kết</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (6 chương)</span>
+                                            <span>Xem tiếp (7 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -527,13 +593,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:6512,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;4H1a4CYvCtdArmZQ0HYe&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/6512-kamen-rider-blade&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;5705d0d3cf97ca2ba7d7d9813a3c36d6050d313a69b35879ca76fb703e0a93a2&quot;}" wire:effects="[]" wire:id="4H1a4CYvCtdArmZQ0HYe" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:6512,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;lLIhFDA78FJpa2Fpa30W&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/6512-kamen-rider-blade&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;cb263eab0b021d26ef96636b8216f28a9d82d45234229ecd53eb11b4e0277ed4&quot;}" wire:effects="[]" wire:id="lLIhFDA78FJpa2Fpa30W" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -555,7 +621,7 @@
     <header>
         <h3 class="text-lg font-bold dark:text-white">26 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -567,7 +633,10 @@
         <div class="ln-comment-group">
     <div id="ln-comment-2731136"
     class="ln-comment-item mt-3 clear"
-    data-comment="2731136" data-parent="2731136">
+    data-comment="2731136" 
+    data-parent="2731136" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -583,8 +652,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200392">The Eternal Sweetness</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         2 năm/ lần à bác :))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -611,7 +681,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2122321"
     class="ln-comment-item mt-3 clear"
-    data-comment="2122321" data-parent="2122321">
+    data-comment="2122321" 
+    data-parent="2122321" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -627,8 +700,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153582">lilung</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Mịnh lần đầu đọc novel nên mn cho mình hỏi là khi mình ana vào thì mấy bộ ghi ep 4/4 5/5 là chương cuối của novel hay là có đủ các chươnh vậy ạ( như bộ blade này thì đọc vào là thấy chương 9 ngay thì các chương trước có ko ạ
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -655,7 +729,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1920735"
     class="ln-comment-item mt-3 clear"
-    data-comment="1920735" data-parent="1920735">
+    data-comment="1920735" 
+    data-parent="1920735" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -671,8 +748,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/102615">The novel reader</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         đọc tt thấy dảk vc
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -699,7 +777,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1919596"
     class="ln-comment-item mt-3 clear"
-    data-comment="1919596" data-parent="1919596">
+    data-comment="1919596" 
+    data-parent="1919596" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -715,8 +796,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/30402">Meme king</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Vl dark thế
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -743,7 +825,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1919416"
     class="ln-comment-item mt-3 clear"
-    data-comment="1919416" data-parent="1919416">
+    data-comment="1919416" 
+    data-parent="1919416" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -756,11 +841,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/108952">Concábịnướcbọtdìmchết</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/108952">Tôi bị lạc</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         wtf siêu nhân j 18+ đây :))??
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -787,7 +873,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-1919353"
     class="ln-comment-item mt-3 clear"
-    data-comment="1919353" data-parent="1919353">
+    data-comment="1919353" 
+    data-parent="1919353" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -803,8 +892,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/42619">Bánh 2 trứng cút</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Ơ vl thả bom sau 2 năm trời à :v
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -831,7 +921,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-956389"
     class="ln-comment-item mt-3 clear"
-    data-comment="956389" data-parent="956389">
+    data-comment="956389" 
+    data-parent="956389" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -847,8 +940,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/28724">Zarc</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Ark  Blade? Ark lây lan ra cả Blade rồi à<br>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -875,7 +969,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-848515"
     class="ln-comment-item mt-3 clear"
-    data-comment="848515" data-parent="848515">
+    data-comment="848515" 
+    data-parent="848515" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -891,8 +988,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/17785">DR-Ryuga</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Chỉ có 2 chương thôi hả Trans
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -919,7 +1017,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-655311"
     class="ln-comment-item mt-3 clear"
-    data-comment="655311" data-parent="655311">
+    data-comment="655311" 
+    data-parent="655311" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -935,8 +1036,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/17785">DR-Ryuga</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Trans có đăng truyện trên đây không?<br><a href="https://ln.3ktan.site/truyen/140-kamen-rider-blade" rel="nofollow noreferrer noopener" target="_blank">https://ln.3ktan.site/truyen/140-kamen-rider-blade</a>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -962,7 +1064,10 @@
         <div class="ln-comment-reply">
             <div id="ln-comment-655339"
     class="ln-comment-item mt-3 clear"
-    data-comment="655339" data-parent="655311">
+    data-comment="655339" 
+    data-parent="655311" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -992,8 +1097,9 @@
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         có
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1022,7 +1128,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-636498"
     class="ln-comment-item mt-3 clear"
-    data-comment="636498" data-parent="636498">
+    data-comment="636498" 
+    data-parent="636498" 
+    data-type="series" 
+    data-typeid="6512">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1038,8 +1147,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username line-through decoration-4" href="/thanh-vien/48151">Cross-Z Build</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Solo ko ? :D
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1075,7 +1185,7 @@
 </div>    </main>
 
     <script>
-        var token = 'ZSJhX2p3k9rQTyW0Ob1cHCoFX0ZKgRwfUe2H1Jfn';
+        var token = 'SUweBhEsoWGIR6D6V5xhwuKlUdfiafEYUdMyiuS1';
         var comment_type = 'series';
         var comment_typeid = '6512';
     </script>
@@ -1132,8 +1242,11 @@
     </div>
 </div>
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="ZSJhX2p3k9rQTyW0Ob1cHCoFX0ZKgRwfUe2H1Jfn" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="UnWpa1ivr0wfBglEII4Q5IkWrWeE5yeJxUG5DvDN" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>

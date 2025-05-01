@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Gender Bent Loli Is Not Cute! - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="lqLRvGGmmU6lGKbqX738uXaCP8reTAgSnXgwfSsb">
+    <meta name="csrf-token" content="7EvZL3BRPnF3bAZHihjlRfeFHusYD3qhRzK4f2y2">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +155,61 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -224,7 +278,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 176 </span>
+                                                <span class="block feature-name"> 184 </span>
                                             </a>
                                                                                         </div>
 
@@ -274,11 +328,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 23:28:24" datetime="2025-01-28T23:28:24+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="01/05/2025 20:28:29" datetime="2025-05-01T20:28:29+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">29.899</div>
+                                            <div class="statistic-value">45.160</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -287,7 +341,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">39.088</div>
+                                            <div class="statistic-value">44.498</div>
                                         </div>
                                     </div>
                                 </div>
@@ -543,9 +597,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155954-chuong-04" title="Chương 04">Chương 04</a>
@@ -555,9 +606,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155955-chuong-05" title="Chương 05">Chương 05</a>
@@ -567,9 +615,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155956-chuong-06" title="Chương 06">Chương 06</a>
@@ -579,9 +624,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155957-chuong-07" title="Chương 07">Chương 07</a>
@@ -591,9 +633,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155958-chuong-08" title="Chương 08">Chương 08</a>
@@ -603,9 +642,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155959-chuong-09" title="Chương 09">Chương 09</a>
@@ -615,12 +651,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8194-gender-bent-loli-is-not-cute/c155960-chuong-10" title="Chương 10">Chương 10</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/01/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c156003-chuong-11" title="Chương 11">Chương 11</a>
 
                                                                                             </div>
                                             <div class="chapter-time">28/01/2025</div>
@@ -632,14 +674,122 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c156003-chuong-11" title="Chương 11">Chương 11</a>
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168089-chuong-12" title="Chương 12">Chương 12</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">28/01/2025</div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168090-chuong-13" title="Chương 13">Chương 13</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168091-chuong-14" title="Chương 14">Chương 14</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168092-chuong-15" title="Chương 15">Chương 15</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168093-chuong-16" title="Chương 16">Chương 16</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168094-chuong-17" title="Chương 17">Chương 17</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168095-chuong-18" title="Chương 18">Chương 18</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168096-chuong-ket" title="Chương kết">Chương kết</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168097-giao-doan" title="Giao đoạn">Giao đoạn</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8194-gender-bent-loli-is-not-cute/c168098-loi-cuoi-sach" title="Lời cuối sách">Lời cuối sách</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">01/05/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (6 chương)</span>
+                                            <span>Xem tiếp (16 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -650,13 +800,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8194,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;pm62ZyYo7BPUFehGUKng&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8194-gender-bent-loli-is-not-cute&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;2952a278ab4a4795a192eb4f1395c54a811dfab03397680f4f007a4eb505b52d&quot;}" wire:effects="[]" wire:id="pm62ZyYo7BPUFehGUKng" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8194,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;5c6waO8GeYbPFCNk0KU3&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8194-gender-bent-loli-is-not-cute&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;64253de71dc74b7bed18a18fbb0e57ae9675e297460486ad418fb1910555d473&quot;}" wire:effects="[]" wire:id="5c6waO8GeYbPFCNk0KU3" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -669,16 +819,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(68)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(72)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">42 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">44 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -688,9 +838,60 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2841430"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2841430" 
+    data-parent="2841430" 
+    data-type="series" 
+    data-typeid="8194">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u215930-396571ef-cd8c-4fad-9bd6-19ccca0679fd.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/215930">Thứ Ba Tuesday</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Wooooowwwe
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8194-gender-bent-loli-is-not-cute?comment_id=2841430#ln-comment-2841430"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-05-2025 20:31:19"
+                                datetime="2025-05-01T20:31:19+07:00">
+                                01-05-2025 20:31:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2709024"
     class="ln-comment-item mt-3 clear"
-    data-comment="2709024" data-parent="2709024">
+    data-comment="2709024" 
+    data-parent="2709024" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -706,8 +907,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/44553">Crossu</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         ô truyện vẫn còn ra à =))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -734,7 +936,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2707137"
     class="ln-comment-item mt-3 clear"
-    data-comment="2707137" data-parent="2707137">
+    data-comment="2707137" 
+    data-parent="2707137" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -750,8 +955,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103483">Ciel-simp</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Tôi không chắc ai còn sống để chứng kiến cảnh này không
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -777,7 +983,10 @@
         <div class="ln-comment-reply">
             <div id="ln-comment-2707405"
     class="ln-comment-item mt-3 clear"
-    data-comment="2707405" data-parent="2707137">
+    data-comment="2707405" 
+    data-parent="2707137" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -807,8 +1016,9 @@
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Sang bên 3ktan đọc bác ơi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -830,18 +1040,16 @@
         </div>
     </div>
 </div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2629327"
+            <div id="ln-comment-2792613"
     class="ln-comment-item mt-3 clear"
-    data-comment="2629327" data-parent="2629327">
+    data-comment="2792613" 
+    data-parent="2707137" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u142163-e13df074-bbe8-4814-bb6a-72dff3919f3b.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u135848-1b28f120-e799-4a48-ad19-49f28cf1ed45.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -850,11 +1058,63 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Miễn Khống</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/135848">ScaNicore༺ᵏᵘᵐᵃ</a>
     </div>
                                     </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/59023">@-Lyrith-:</a> Cơ mà bên đó có phí, còn tui thì nghèo ak. <br>
+Ak vừa mới biết vụ điểm danh dc xu, nên lặng lẽ quay lại sửa cmt :))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8194-gender-bent-loli-is-not-cute?comment_id=2707137&amp;reply_id=2792613#ln-comment-2792613"
+                            class="text-slate-500">
+                            <time class="timeago" title="22-03-2025 02:33:37"
+                                datetime="2025-03-22T02:33:37+07:00">
+                                22-03-2025 02:33:37
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2629327"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2629327" 
+    data-parent="2629327" 
+    data-type="series" 
+    data-typeid="8194">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u142163-4346cae2-e05d-4671-a6f0-6ff4ba250467.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Cloaf</a>
+    </div>
                                     </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Cuốn phết
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -881,7 +1141,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2586022"
     class="ln-comment-item mt-3 clear"
-    data-comment="2586022" data-parent="2586022">
+    data-comment="2586022" 
+    data-parent="2586022" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -897,8 +1160,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/143301">nolikepvp</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         <em>Tôi tim bộ này cho vui thôi ai ngờ nó back thật </em>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -925,11 +1189,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2577990"
     class="ln-comment-item mt-3 clear"
-    data-comment="2577990" data-parent="2577990">
+    data-comment="2577990" 
+    data-parent="2577990" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u184859-4d46226c-8705-4010-a807-64178daa64a4.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u184859-4c4c00a3-45f4-44a8-8211-efbeae2202de.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -940,9 +1207,17 @@
     <div class="self-center">
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184859">Vux Thanh</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Không thể tin được
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -969,7 +1244,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2577978"
     class="ln-comment-item mt-3 clear"
-    data-comment="2577978" data-parent="2577978">
+    data-comment="2577978" 
+    data-parent="2577978" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -999,8 +1277,9 @@
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         =))))))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1027,7 +1306,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2577121"
     class="ln-comment-item mt-3 clear"
-    data-comment="2577121" data-parent="2577121">
+    data-comment="2577121" 
+    data-parent="2577121" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1043,8 +1325,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/160305">PIXONIC EVOL</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Aothatday,sau 3 năm
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1071,7 +1354,10 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2576557"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576557" data-parent="2576557">
+    data-comment="2576557" 
+    data-parent="2576557" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1094,8 +1380,9 @@
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Nay  lễ hay sao nổ quá trg chương v ad
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1122,11 +1409,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2576488"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576488" data-parent="2576488">
+    data-comment="2576488" 
+    data-parent="2576488" 
+    data-type="series" 
+    data-typeid="8194">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua87663-b2be6828-6d6e-4d32-a86c-7630832de0f0.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u87663-9e6421a7-e069-46c7-8a24-56005d5aef12.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1138,8 +1428,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/87663">Shota Natsume</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Vl thiệt:v
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1149,50 +1440,6 @@
                             <time class="timeago" title="02-09-2024 21:56:20"
                                 datetime="2024-09-02T21:56:20+07:00">
                                 02-09-2024 21:56:20
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2576475"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2576475" data-parent="2576475">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182870">Light Key</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Vl
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/8194-gender-bent-loli-is-not-cute?comment_id=2576475#ln-comment-2576475"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-09-2024 21:51:21"
-                                datetime="2024-09-02T21:51:21+07:00">
-                                02-09-2024 21:51:21
                             </time>
                         </a>
                         <a
@@ -1219,7 +1466,7 @@
 </div>    </main>
 
     <script>
-        var token = 'lqLRvGGmmU6lGKbqX738uXaCP8reTAgSnXgwfSsb';
+        var token = '7EvZL3BRPnF3bAZHihjlRfeFHusYD3qhRzK4f2y2';
         var comment_type = 'series';
         var comment_typeid = '8194';
     </script>
@@ -1263,8 +1510,11 @@
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="lqLRvGGmmU6lGKbqX738uXaCP8reTAgSnXgwfSsb" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="7EvZL3BRPnF3bAZHihjlRfeFHusYD3qhRzK4f2y2" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
