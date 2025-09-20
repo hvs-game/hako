@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="YmfB8FaxOGiRDTp5a2koZXy9Ve0UUTaKRHvCxbyA">
+    <meta name="csrf-token" content="QHicThaQ6z4tbHtiMIdGRetL6L7SvMsOjPqnHsK4">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=fb4e79a08dafcda49ae8049780e5949d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -184,31 +184,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -232,7 +208,7 @@
                         <div class="top-part">
                             <div class="row">
                                 <div class="left-column col-12 col-md-3">
-                                    <div class="series-cover">
+                                    <div class="series-cover" data-nosnippet>
                                         <div class="series-type">
                                                                                         <span>Truyện dịch</span>
                                                                                     </div>
@@ -283,7 +259,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 814 </span>
+                                                <span class="block feature-name"> 834 </span>
                                             </a>
                                                                                         </div>
 
@@ -333,11 +309,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="17/05/2025 20:32:36" datetime="2025-05-17T20:32:36+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="20/09/2025 17:11:38" datetime="2025-09-20T17:11:38+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">92.749</div>
+                                            <div class="statistic-value">96.141</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -346,15 +322,16 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">171.197</div>
+                                            <div class="statistic-value">201.494</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">친구 하렘이 나한테 집착한다</div>
-                                        </div>
+                                        <div class="fact-value" data-nosnippet>
+                                                                                            <div class="block pad-bottom-5">친구 하렘이 나한테 집착한다</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -380,7 +357,7 @@
                         <section class="series-users">
                             <main>
                                 <div class="series-owner group-mem">
-                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u140496-44e6ac5b-e1f7-4ce5-a2ea-d296802de057.gif" alt="Poster's avatar">
+                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u140496-87720cf4-ea9f-4b83-bce9-acb56a279e60.gif" alt="Poster's avatar">
                                     <div class="series-owner-title">
                                         <span class="series-owner_name"><a href="/thanh-vien/140496">Muen</a></span>
                                                                             </div>
@@ -400,10 +377,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Lần đầu mình muốn thử sang mảng truyện dịch nên trình độ có thể còn non kém. Nếu có gì sai sót thì mong mọi người có thể góp ý cho mình ạ.</p>
 <p>Link Eng: <a href="https://arcanetranslations.com/series/my-friends-harem-is-obsessed-with-me/" rel="nofollow noreferrer noopener" target="_blank">Here</a></p>
 <p>Link Raw: <a href="https://cyborg-tl.com/series/my-friends-harem-is-obsessed-with-me/" rel="nofollow noreferrer noopener" target="_blank">Here</a></p>
@@ -864,9 +841,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c169940-chuong-33-co-ay-trong-tuong-lai" title="Chương 33: Cô Ấy Trong Tương Lai">Chương 33: Cô Ấy Trong Tương Lai</a>
@@ -876,9 +850,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170666-chuong-34-tap-kich" title="Chương 34: Tập Kích">Chương 34: Tập Kích</a>
@@ -888,9 +859,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat" title="Chương 35: Cuộc Thi Ca Hát">Chương 35: Cuộc Thi Ca Hát</a>
@@ -898,9 +866,21 @@
                                                                                             </div>
                                             <div class="chapter-time">17/05/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c232091-chuong-36-tinh-cam" title="Chương 36: Tình Cảm">Chương 36: Tình Cảm</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">20/09/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (31 chương)</span>
+                                            <span>Xem tiếp (32 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -911,7 +891,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19309,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;fAJe1jR9F6ILnjP2Yg2A&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19309-my-friends-harem-is-obsessed-with-me&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;34ac5d7eec52c132ec09d07826c674cb6342ed46a2ac40fc577185ea0e97f210&quot;}" wire:effects="[]" wire:id="fAJe1jR9F6ILnjP2Yg2A" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19309,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;PUSMX8tWdV026sbaVLdH&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19309-my-friends-harem-is-obsessed-with-me&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3d72688dec701b6d1f2022e549b5c4666831981e2643b9c36aa60171a2796927&quot;}" wire:effects="[]" wire:id="PUSMX8tWdV026sbaVLdH" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -930,14 +910,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(673)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(701)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">177 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">191 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -949,62 +929,12 @@
         
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2860648"
+    <div id="ln-comment-3030662"
     class="ln-comment-item mt-3 clear"
-    data-comment="2860648" 
-    data-parent="2860648" 
+    data-comment="3030662" 
+    data-parent="3030662" 
     data-type="chapter" 
-    data-typeid="170820">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua137380-221f8b85-9292-4b69-a727-2b6665c28b21.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/137380">VAKiet</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
-                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        TFNC
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860648#ln-comment-2860648"
-                            class="text-slate-500">
-                            <time class="timeago" title="18-05-2025 06:47:08"
-                                datetime="2025-05-18T06:47:08+07:00">
-                                18-05-2025 06:47:08
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2860457"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2860457" 
-    data-parent="2860457" 
-    data-type="chapter" 
-    data-typeid="170820">
+    data-typeid="232091">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1017,23 +947,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/198255">Noi_gi</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/218680">Mariana23</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
-                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
+                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c232091-chuong-36-tinh-cam"
+                        class="text-slate-500 inline-block">Chương 36: Tình Cảm</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tfnc
+                        Lâu quá rồi giờ quên gần hết nd :))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860457#ln-comment-2860457"
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=3030662#ln-comment-3030662"
                             class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 23:24:26"
-                                datetime="2025-05-17T23:24:26+07:00">
-                                17-05-2025 23:24:26
+                            <time class="timeago" title="20-09-2025 18:56:55"
+                                datetime="2025-09-20T18:56:55+07:00">
+                                20-09-2025 18:56:55
                             </time>
                         </a>
                         <a
@@ -1049,16 +979,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2860352"
+    <div id="ln-comment-3030579"
     class="ln-comment-item mt-3 clear"
-    data-comment="2860352" 
-    data-parent="2860352" 
+    data-comment="3030579" 
+    data-parent="3030579" 
     data-type="chapter" 
-    data-typeid="170820">
+    data-typeid="232091">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u191804-ad8766d8-6a15-41ed-8adb-0df173a490a1.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1067,23 +997,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/191804">Shr</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225173">Có yan thì đến</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
-                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
+                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c232091-chuong-36-tinh-cam"
+                        class="text-slate-500 inline-block">Chương 36: Tình Cảm</a></span>
                                                     <div class="ln-comment-content long-text">
-                        💀
+                        Tờ em mờ em tờ em tem🐧🐧🐧
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860352#ln-comment-2860352"
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=3030579#ln-comment-3030579"
                             class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 22:07:35"
-                                datetime="2025-05-17T22:07:35+07:00">
-                                17-05-2025 22:07:35
+                            <time class="timeago" title="20-09-2025 17:25:35"
+                                datetime="2025-09-20T17:25:35+07:00">
+                                20-09-2025 17:25:35
                             </time>
                         </a>
                         <a
@@ -1099,16 +1029,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2860281"
+    <div id="ln-comment-3002490"
     class="ln-comment-item mt-3 clear"
-    data-comment="2860281" 
-    data-parent="2860281" 
-    data-type="chapter" 
-    data-typeid="170820">
+    data-comment="3002490" 
+    data-parent="3002490" 
+    data-type="series" 
+    data-typeid="19309">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u111799-9c0eacb6-77c5-479c-ad26-f88e6f2cb7dd.gif" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1117,23 +1047,127 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/111799">mak15699</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/207981">Forest</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
-                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Toàn người bình thường
+                        Có ai có link eng bộ này ko
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860281#ln-comment-2860281"
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=3002490#ln-comment-3002490"
                             class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 21:09:36"
-                                datetime="2025-05-17T21:09:36+07:00">
-                                17-05-2025 21:09:36
+                            <time class="timeago" title="29-08-2025 21:44:15"
+                                datetime="2025-08-29T21:44:15+07:00">
+                                29-08-2025 21:44:15
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3002501"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3002501" 
+    data-parent="3002490" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u184859-7941d154-d198-4d5b-843a-3d647964e72d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184859">Vux Thanh</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        trên chú thích thêm kìa bác
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=3002490&amp;reply_id=3002501#ln-comment-3002501"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-08-2025 21:48:47"
+                                datetime="2025-08-29T21:48:47+07:00">
+                                29-08-2025 21:48:47
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2986750"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2986750" 
+    data-parent="2986750" 
+    data-type="chapter" 
+    data-typeid="162968">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u129322-c5ad8355-5dd3-480f-9a59-4a459374172e.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/129322">Shunju</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c162968-chuong-32-demalico"
+                        class="text-slate-500 inline-block">Chương 32: Demalico</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Trc bỏ dỡ bộ này, đọc lại cx tạm ổn
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2986750#ln-comment-2986750"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-08-2025 23:25:04"
+                                datetime="2025-08-18T23:25:04+07:00">
+                                18-08-2025 23:25:04
                             </time>
                         </a>
                         <a
@@ -1149,12 +1183,375 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2860275"
+    <div id="ln-comment-2986633"
     class="ln-comment-item mt-3 clear"
-    data-comment="2860275" 
-    data-parent="2860275" 
+    data-comment="2986633" 
+    data-parent="2986633" 
+    data-type="chapter" 
+    data-typeid="162202">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u129322-c5ad8355-5dd3-480f-9a59-4a459374172e.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/129322">Shunju</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c162202-chuong-28-chi-la-hieu-lam-thoi"
+                        class="text-slate-500 inline-block">Chương 28: Chỉ Là Hiểu Lầm Thôi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tội nghiệp hiệu trưởng, lần này ông xứng đáng the liem
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2986633#ln-comment-2986633"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-08-2025 22:44:06"
+                                datetime="2025-08-18T22:44:06+07:00">
+                                18-08-2025 22:44:06
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2968277"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2968277" 
+    data-parent="2968277" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/92803">Kagami Maizel</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        ad ơi cho hỏi, khi đọc hết raw thì tác giả có nói là sẽ viết tiếp phần tiếp theo của bộ này. Bạn biết tên truyện ko
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2968277#ln-comment-2968277"
+                            class="text-slate-500">
+                            <time class="timeago" title="06-08-2025 23:19:48"
+                                datetime="2025-08-06T23:19:48+07:00">
+                                06-08-2025 23:19:48
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2958042"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2958042" 
+    data-parent="2958042" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/207981">Forest</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Truyện drop hay dịch chậm v ad
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2958042#ln-comment-2958042"
+                            class="text-slate-500">
+                            <time class="timeago" title="30-07-2025 19:34:34"
+                                datetime="2025-07-30T19:34:34+07:00">
+                                30-07-2025 19:34:34
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2963418"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2963418" 
+    data-parent="2958042" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u140496-87720cf4-ea9f-4b83-bce9-acb56a279e60.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/140496">Muen</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+                <img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+                <div class="leading-4">AUTHOR</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Cả hai nhé 🐧
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2958042&amp;reply_id=2963418#ln-comment-2963418"
+                            class="text-slate-500">
+                            <time class="timeago" title="03-08-2025 19:33:14"
+                                datetime="2025-08-03T19:33:14+07:00">
+                                03-08-2025 19:33:14
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2964860"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2964860" 
+    data-parent="2958042" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/207981">Forest</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/140496">@Muen:</a> thèm quá r ad sang bản eng dịch cho đọc đi 🥺
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2958042&amp;reply_id=2964860#ln-comment-2964860"
+                            class="text-slate-500">
+                            <time class="timeago" title="04-08-2025 18:53:25"
+                                datetime="2025-08-04T18:53:25+07:00">
+                                04-08-2025 18:53:25
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="2958042">
+            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2955446"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2955446" 
+    data-parent="2955446" 
+    data-type="series" 
+    data-typeid="19309">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/199877">Kimigawahakira</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Đăng tiếp đi trans owiii<br>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2955446#ln-comment-2955446"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-07-2025 00:08:35"
+                                datetime="2025-07-29T00:08:35+07:00">
+                                29-07-2025 00:08:35
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2938583"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2938583" 
+    data-parent="2938583" 
     data-type="chapter" 
     data-typeid="170820">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u163746-2de52f92-c378-4a12-8da9-b50c4032741b.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/163746">Drata</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
+                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tưởng tượng hát một bài hát bình thường không có nhạc gì, giọng thanh lánh lót trong căn nhà kèm theo những tiếng xương gãy răng rắc và tiếng la hét thất thanh thì đúng ghê=))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2938583#ln-comment-2938583"
+                            class="text-slate-500">
+                            <time class="timeago" title="17-07-2025 16:12:25"
+                                datetime="2025-07-17T16:12:25+07:00">
+                                17-07-2025 16:12:25
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2938032"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2938032" 
+    data-parent="2938032" 
+    data-type="series" 
+    data-typeid="19309">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1172,268 +1569,17 @@
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170820-chuong-35-cuoc-thi-ca-hat"
-                        class="text-slate-500 inline-block">Chương 35: Cuộc Thi Ca Hát</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tfnc
+                        Mò lên đây mong cầu chương mới<br>
+Lại chui xuống vì đời méo như mơ
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860275#ln-comment-2860275"
+                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2938032#ln-comment-2938032"
                             class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 21:04:10"
-                                datetime="2025-05-17T21:04:10+07:00">
-                                17-05-2025 21:04:10
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2860255"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2860255" 
-    data-parent="2860255" 
-    data-type="chapter" 
-    data-typeid="170666">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u111799-9c0eacb6-77c5-479c-ad26-f88e6f2cb7dd.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/111799">mak15699</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c170666-chuong-34-tap-kich"
-                        class="text-slate-500 inline-block">Chương 34: Tập Kích</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        anh là người bình thường nhất Ver for sure
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860255#ln-comment-2860255"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 20:47:53"
-                                datetime="2025-05-17T20:47:53+07:00">
-                                17-05-2025 20:47:53
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2860012"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2860012" 
-    data-parent="2860012" 
-    data-type="chapter" 
-    data-typeid="147314">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua114305-f40ea0f5-661e-4ced-9108-2ca69b861de4.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/114305">Hiki-san</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c147314-chuong-17-tro-choi-vuong-quyen"
-                        class="text-slate-500 inline-block">Chương 17: Trò Chơi Vương Quyền</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Mei dễ thương quá!Dễ thương thật sự luôn!
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2860012#ln-comment-2860012"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 17:17:06"
-                                datetime="2025-05-17T17:17:06+07:00">
-                                17-05-2025 17:17:06
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2859869"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2859869" 
-    data-parent="2859869" 
-    data-type="chapter" 
-    data-typeid="145425">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u150290-60fc4ca8-6402-43d7-a079-d533d17ce671.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150290">Whit</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c145425-chuong-5-manh-moi-giai-quyet"
-                        class="text-slate-500 inline-block">Chương 05: Manh Mối Giải Quyết</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Vừa yan vừa stalker thì thứ nào chịu nổi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2859869#ln-comment-2859869"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 15:18:45"
-                                datetime="2025-05-17T15:18:45+07:00">
-                                17-05-2025 15:18:45
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2859851"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2859851" 
-    data-parent="2859851" 
-    data-type="chapter" 
-    data-typeid="144055">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u150290-60fc4ca8-6402-43d7-a079-d533d17ce671.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150290">Whit</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c144055-chuong-02-loi-khuyen"
-                        class="text-slate-500 inline-block">Chương 02: Lời Khuyên</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Bố dặn con này🗣️🔥🔥
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2859851#ln-comment-2859851"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 15:04:32"
-                                datetime="2025-05-17T15:04:32+07:00">
-                                17-05-2025 15:04:32
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2859809"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2859809" 
-    data-parent="2859809" 
-    data-type="chapter" 
-    data-typeid="143976">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u150290-60fc4ca8-6402-43d7-a079-d533d17ce671.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150290">Whit</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/19309-my-friends-harem-is-obsessed-with-me/c143976-chuong-01-prologue"
-                        class="text-slate-500 inline-block">Chương 01: Prologue</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Kết bài hoang dã quá :))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19309-my-friends-harem-is-obsessed-with-me?comment_id=2859809#ln-comment-2859809"
-                            class="text-slate-500">
-                            <time class="timeago" title="17-05-2025 14:14:01"
-                                datetime="2025-05-17T14:14:01+07:00">
-                                17-05-2025 14:14:01
+                            <time class="timeago" title="17-07-2025 03:02:09"
+                                datetime="2025-07-17T03:02:09+07:00">
+                                17-07-2025 03:02:09
                             </time>
                         </a>
                         <a
@@ -1460,7 +1606,7 @@
 </div>    </main>
 
     <script>
-        var token = 'YmfB8FaxOGiRDTp5a2koZXy9Ve0UUTaKRHvCxbyA';
+        var token = 'hPwrj66jCEktpwklSINRmv7veUeZwaRWowRKwgDb';
         var comment_type = 'series';
         var comment_typeid = '19309';
     </script>
@@ -1505,13 +1651,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
-    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="YmfB8FaxOGiRDTp5a2koZXy9Ve0UUTaKRHvCxbyA" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="QHicThaQ6z4tbHtiMIdGRetL6L7SvMsOjPqnHsK4" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//bugscrawled.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
