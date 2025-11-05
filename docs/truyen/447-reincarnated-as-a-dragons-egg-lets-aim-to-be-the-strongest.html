@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="KXSMBV9IIpQhbrQQnFgm3yfzBOVEf1Dk31DEx3Qi">
+    <meta name="csrf-token" content="L4eRDyJL0uNNPE3SYxvOoGkxKa49VrX8icgpABT8">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,13 +149,13 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/21354">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_m.jpg'); background-size: cover"></div>
+                <a href="/truyen/16221">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
@@ -169,10 +169,13 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
             <div class="ml-auto pl-3">
                 <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
                     <span class="sr-only">Dismiss</span>
                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -184,31 +187,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -299,7 +278,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 5159 </span>
+                                                <span class="block feature-name"> 5169 </span>
                                             </a>
                                                                                         </div>
 
@@ -349,11 +328,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="06/09/2025 18:59:28" datetime="2025-09-06T18:59:28+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="05/11/2025 20:41:37" datetime="2025-11-05T20:41:37+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">1.101.797</div>
+                                            <div class="statistic-value">1.103.258</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -362,16 +341,17 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">9.820.126</div>
+                                            <div class="statistic-value">10.049.195</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">Reincarnated as a Dragon’s Egg ~ Lets Aim to Be the Strongest ~</div>
-                                                                                <div class="block pad-bottom-5">Tái sinh là một quả trứng rồng ~ Hướng về mục tiêu trở thành kẻ mạnh nhất ~</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">Reincarnated as a Dragon’s Egg ~ Lets Aim to Be the Strongest ~</div>
+                                                                                            <div class="block pad-bottom-5">Tái sinh là một quả trứng rồng ~ Hướng về mục tiêu trở thành kẻ mạnh nhất ~</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -419,10 +399,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Link Eng (chap 219 trở đi do những nhóm Eng trước kia đều drop và bay màu):</p>
 <p><a href="https://cheldra.wordpress.com/reincarnated-as-a-dragons-egg-%EF%BD%9Elets-aim-to-be-the-strongest%EF%BD%9E/" rel="nofollow noreferrer noopener" target="_blank">https://cheldra.wordpress.com/reincarnated-as-a-dragons-egg-%ef%bd%9elets-aim-to-be-the-strongest%ef%bd%9e/</a></p>
 <p>Link raw Nhật:</p>
@@ -8285,9 +8265,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse" title="Chương 757 - Cô gái bên cạnh con rồng Apocalypse">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a>
@@ -8295,9 +8272,21 @@
                                                                                             </div>
                                             <div class="chapter-time">06/09/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c254800-chuong-758-tran-chien-cuoi-cung" title="Chương 758 - Trận chiến cuối cùng">Chương 758 - Trận chiến cuối cùng</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">05/11/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (8 chương)</span>
+                                            <span>Xem tiếp (9 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -8308,7 +8297,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:447,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;o5HnDAdDsmngjcln2lxp&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;37095dd23ec8d83426e3a3ead94fbfab335ff17c23e5e5fce3bd91fbf568eb81&quot;}" wire:effects="[]" wire:id="o5HnDAdDsmngjcln2lxp" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:447,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;XFBWbIjgzZLgxcOrrCG5&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;6035392b09dfe65fdc887a6fe9297820c57f5fa39d413d220572cb1fe92a3ec8&quot;}" wire:effects="[]" wire:id="XFBWbIjgzZLgxcOrrCG5" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -8327,14 +8316,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(25067)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(25104)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">3006 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">3010 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -8396,7 +8385,7 @@
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">5</span>
+                            <span class="likecount font-semibold">6</span>
                         </a>
                                             </div>
                             </div>
@@ -8505,160 +8494,12 @@
     </div>        
         
         <div class="ln-comment-group">
-    <div id="ln-comment-3014156"
+    <div id="ln-comment-3080520"
     class="ln-comment-item mt-3 clear"
-    data-comment="3014156" 
-    data-parent="3014156" 
+    data-comment="3080520" 
+    data-parent="3080520" 
     data-type="chapter" 
-    data-typeid="224251">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua860-e6f059da-4aa2-48c6-aba0-ec1fb95c47e0.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/860">Vati</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse"
-                        class="text-slate-500 inline-block">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Thanks trans !
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3014156#ln-comment-3014156"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-09-2025 01:03:58"
-                                datetime="2025-09-07T01:03:58+07:00">
-                                07-09-2025 01:03:58
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3014095"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3014095" 
-    data-parent="3014095" 
-    data-type="series" 
-    data-typeid="447">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua62578-55c38ce2-7e4a-461e-9605-05c66c5a2cff.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/62578">Just a random weeb.</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        vc bộ này còn chạy à
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3014095#ln-comment-3014095"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-09-2025 00:15:19"
-                                datetime="2025-09-07T00:15:19+07:00">
-                                07-09-2025 00:15:19
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3013678"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3013678" 
-    data-parent="3013678" 
-    data-type="chapter" 
-    data-typeid="224251">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u180462-7cb82cd0-97dc-4243-9009-634ef6a60c7e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180462">Cáo phù thủy</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse"
-                        class="text-slate-500 inline-block">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Mộc quái hắc hóa rồi ư?🥲🥲
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3013678#ln-comment-3013678"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-09-2025 20:09:43"
-                                datetime="2025-09-06T20:09:43+07:00">
-                                06-09-2025 20:09:43
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3013656"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3013656" 
-    data-parent="3013656" 
-    data-type="chapter" 
-    data-typeid="224251">
+    data-typeid="254800">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -8676,18 +8517,18 @@
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse"
-                        class="text-slate-500 inline-block">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a></span>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c254800-chuong-758-tran-chien-cuoi-cung"
+                        class="text-slate-500 inline-block">Chương 758 - Trận chiến cuối cùng</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Thank trans
+                        Hóng
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3013656#ln-comment-3013656"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3080520#ln-comment-3080520"
                             class="text-slate-500">
-                            <time class="timeago" title="06-09-2025 19:57:26"
-                                datetime="2025-09-06T19:57:26+07:00">
-                                06-09-2025 19:57:26
+                            <time class="timeago" title="05-11-2025 23:13:19"
+                                datetime="2025-11-05T23:13:19+07:00">
+                                05-11-2025 23:13:19
                             </time>
                         </a>
                         <a
@@ -8703,16 +8544,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3013587"
+    <div id="ln-comment-3080441"
     class="ln-comment-item mt-3 clear"
-    data-comment="3013587" 
-    data-parent="3013587" 
-    data-type="chapter" 
-    data-typeid="215161">
+    data-comment="3080441" 
+    data-parent="3080441" 
+    data-type="series" 
+    data-typeid="447">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158617-346d1fe8-02bd-47fb-8bea-452d1faaa306.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua28974-8f3a2da7-4373-4caf-b293-5e8700455d2e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -8721,23 +8562,21 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/158617">NonNerd</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/28974">Anata</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c215161-chuong-756-vao-ngay-tan-the-goc-nhin-tu-nina"
-                        class="text-slate-500 inline-block">Chương 756 - Vào ngày tận thế (Góc nhìn từ Nina)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Umukahime dùng ảo ảnh lên Irushia, cảm giác như Kurenai dùng ảo thuật với Itachi vậy...Vô nghĩa vkl =))
+                        tôi sẽ đọc lại lần 3 khi bộ này end
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3013587#ln-comment-3013587"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3080441#ln-comment-3080441"
                             class="text-slate-500">
-                            <time class="timeago" title="06-09-2025 19:18:27"
-                                datetime="2025-09-06T19:18:27+07:00">
-                                06-09-2025 19:18:27
+                            <time class="timeago" title="05-11-2025 22:22:52"
+                                datetime="2025-11-05T22:22:52+07:00">
+                                05-11-2025 22:22:52
                             </time>
                         </a>
                         <a
@@ -8753,12 +8592,127 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3013580"
+    <div id="ln-comment-3080356"
     class="ln-comment-item mt-3 clear"
-    data-comment="3013580" 
-    data-parent="3013580" 
-    data-type="series" 
-    data-typeid="447">
+    data-comment="3080356" 
+    data-parent="3080356" 
+    data-type="chapter" 
+    data-typeid="254800">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua19205-f9fa2712-0526-4b3b-8f59-6ec6b7028151.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19205">phcom0101</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c254800-chuong-758-tran-chien-cuoi-cung"
+                        class="text-slate-500 inline-block">Chương 758 - Trận chiến cuối cùng</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        còn sống và còn thở 🤣
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3080356#ln-comment-3080356"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-11-2025 20:43:34"
+                                datetime="2025-11-05T20:43:34+07:00">
+                                05-11-2025 20:43:34
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3080513"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3080513" 
+    data-parent="3080356" 
+    data-type="chapter" 
+    data-typeid="254800">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua60452-46e0aca7-ea2f-45d8-9a78-662b08d35f9e.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/60452">Yosshi</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c254800-chuong-758-tran-chien-cuoi-cung"
+                        class="text-slate-500 inline-block">Chương 758 - Trận chiến cuối cùng</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        lâu quá làm quên hết r<br>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3080356&amp;reply_id=3080513#ln-comment-3080513"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-11-2025 23:09:14"
+                                datetime="2025-11-05T23:09:14+07:00">
+                                05-11-2025 23:09:14
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3078970"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3078970" 
+    data-parent="3078970" 
+    data-type="chapter" 
+    data-typeid="224251">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -8771,21 +8725,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182114">Tuấn văn đoàn</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19189">tivthg</a>
     </div>
                                     </div>
                                         
                 </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse"
+                        class="text-slate-500 inline-block">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Vừa xem trailer của bộ này. Trừ mấy quái nhỏ , mấy quái lớn được tái hiện bằng animation với 3d ( mong ko thô kệch với thảm họa) . Minh họa và tạo hình của mấy nhân vật cũng được vẽ lại ko như trong light với manga. . Nói chung là mong triển khai cốt truyện tốt tốt :))
+                        Tích chap 7 năm, đợi ko đc nữa nên đọc nhưng công nhận đáng và dm lão ko ra chap mới
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3013580#ln-comment-3013580"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3078970#ln-comment-3078970"
                             class="text-slate-500">
-                            <time class="timeago" title="06-09-2025 19:16:33"
-                                datetime="2025-09-06T19:16:33+07:00">
-                                06-09-2025 19:16:33
+                            <time class="timeago" title="04-11-2025 01:53:12"
+                                datetime="2025-11-04T01:53:12+07:00">
+                                04-11-2025 01:53:12
                             </time>
                         </a>
                         <a
@@ -8801,16 +8757,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3013555"
+    <div id="ln-comment-3067165"
     class="ln-comment-item mt-3 clear"
-    data-comment="3013555" 
-    data-parent="3013555" 
-    data-type="series" 
-    data-typeid="447">
+    data-comment="3067165" 
+    data-parent="3067165" 
+    data-type="chapter" 
+    data-typeid="109088">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158617-346d1fe8-02bd-47fb-8bea-452d1faaa306.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -8819,21 +8775,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/158617">NonNerd</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19189">tivthg</a>
     </div>
                                     </div>
                                         
                 </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c109088-chuong-691-cong-kich-don-dap"
+                        class="text-slate-500 inline-block">Chương 691 – Công kích dồn dập</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Lâu quá không đọc giờ quên gần hết nội dung rồi 🙂
+                        1 sự kết hợp của python với chronos, chuyên về kĩ năng nhưng gặp mấy th up stat vù vù cũng cút thôi, đúng kiểu lệch hạng cân thì bạn cút chấp bạn kĩ năng thượng thừa
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3013555#ln-comment-3013555"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3067165#ln-comment-3067165"
                             class="text-slate-500">
-                            <time class="timeago" title="06-09-2025 19:05:21"
-                                datetime="2025-09-06T19:05:21+07:00">
-                                06-09-2025 19:05:21
+                            <time class="timeago" title="24-10-2025 19:21:57"
+                                datetime="2025-10-24T19:21:57+07:00">
+                                24-10-2025 19:21:57
                             </time>
                         </a>
                         <a
@@ -8849,16 +8807,116 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3002956"
+    <div id="ln-comment-3064045"
     class="ln-comment-item mt-3 clear"
-    data-comment="3002956" 
-    data-parent="3002956" 
+    data-comment="3064045" 
+    data-parent="3064045" 
+    data-type="chapter" 
+    data-typeid="101311">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19189">tivthg</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c101311-chuong-579-huy-diet-the-gioi"
+                        class="text-slate-500 inline-block">Chương 579 – Hủy diệt thế giới</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Dựa theo chap trước về thần ngôn sure kèo thanh niên chả khác nào đang bị nhốt trong thế giới này, nên muốn phá hủy hết để Giải thoát bản thân khỏi xiềng xích thế giới
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3064045#ln-comment-3064045"
+                            class="text-slate-500">
+                            <time class="timeago" title="21-10-2025 02:41:29"
+                                datetime="2025-10-21T02:41:29+07:00">
+                                21-10-2025 02:41:29
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3061866"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3061866" 
+    data-parent="3061866" 
+    data-type="chapter" 
+    data-typeid="224251">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/6003">Toan Ho</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c224251-chuong-757-co-gai-ben-canh-con-rong-apocalypse"
+                        class="text-slate-500 inline-block">Chương 757 - Cô gái bên cạnh con rồng Apocalypse</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        thank trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3061866#ln-comment-3061866"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-10-2025 08:48:31"
+                                datetime="2025-10-19T08:48:31+07:00">
+                                19-10-2025 08:48:31
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3061863"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3061863" 
+    data-parent="3061863" 
     data-type="chapter" 
     data-typeid="215161">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua55367-dc12bf41-9c1e-46e1-995a-98be5ba15864.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -8867,7 +8925,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/55367">Lefi</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/6003">Toan Ho</a>
     </div>
                                     </div>
                                         
@@ -8875,15 +8933,15 @@
                                     <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c215161-chuong-756-vao-ngay-tan-the-goc-nhin-tu-nina"
                         class="text-slate-500 inline-block">Chương 756 - Vào ngày tận thế (Góc nhìn từ Nina)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Vợ lên cái tịt luôn
+                        thanks trans
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3002956#ln-comment-3002956"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3061863#ln-comment-3061863"
                             class="text-slate-500">
-                            <time class="timeago" title="30-08-2025 06:45:24"
-                                datetime="2025-08-30T06:45:24+07:00">
-                                30-08-2025 06:45:24
+                            <time class="timeago" title="19-10-2025 08:42:50"
+                                datetime="2025-10-19T08:42:50+07:00">
+                                19-10-2025 08:42:50
                             </time>
                         </a>
                         <a
@@ -8899,16 +8957,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2995428"
+    <div id="ln-comment-3061734"
     class="ln-comment-item mt-3 clear"
-    data-comment="2995428" 
-    data-parent="2995428" 
+    data-comment="3061734" 
+    data-parent="3061734" 
     data-type="chapter" 
-    data-typeid="106652">
+    data-typeid="93442">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u77815-7ebef5c1-e5ad-4d3a-b8da-c5927604e6df.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -8917,23 +8975,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/77815">Sakatan2ko</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19189">tivthg</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c106652-chuong-662-nhung-nhanh-tien-hoa-tuong-lai"
-                        class="text-slate-500 inline-block">Chương 662 – Những nhánh tiến hóa tương lai</a></span>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c93442-chuong-456-con-song-ma-tro-ve"
+                        class="text-slate-500 inline-block">Chương 456 – Còn sống mà trở về</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Chronos mà rank L+ là rồng ngáo chọn chắc rồi
+                        Đánh 4 trận lớn trong 1 ngày, còn sống đúng nhờ hào quang nvc
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=2995428#ln-comment-2995428"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3061734#ln-comment-3061734"
                             class="text-slate-500">
-                            <time class="timeago" title="24-08-2025 14:04:45"
-                                datetime="2025-08-24T14:04:45+07:00">
-                                24-08-2025 14:04:45
+                            <time class="timeago" title="19-10-2025 01:52:55"
+                                datetime="2025-10-19T01:52:55+07:00">
+                                19-10-2025 01:52:55
                             </time>
                         </a>
                         <a
@@ -8949,16 +9007,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2993398"
+    <div id="ln-comment-3060947"
     class="ln-comment-item mt-3 clear"
-    data-comment="2993398" 
-    data-parent="2993398" 
-    data-type="series" 
-    data-typeid="447">
+    data-comment="3060947" 
+    data-parent="3060947" 
+    data-type="chapter" 
+    data-typeid="90439">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua48323-bde41472-e2f3-488c-a073-aa09dff3ad16.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -8967,21 +9025,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/48323">count5lk</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19189">tivthg</a>
     </div>
                                     </div>
                                         
                 </div>
+                                    <span class="text-sm"><a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest/c90439-chuong-408-rogueheil-tay-kiem-lien-hoan"
+                        class="text-slate-500 inline-block">Chương 408 – Rogueheil tay kiếm liên hoàn</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Khi nào có chap mới vậy trans
+                        Th main có cheat exp mà cày sml mới lên đc, trong khi tụi slime này đứa nào cũng exp cao đoé biết lấy đâu ra xác để luyện cấp nữa
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=2993398#ln-comment-2993398"
+                        <a href="/truyen/447-reincarnated-as-a-dragons-egg-lets-aim-to-be-the-strongest?comment_id=3060947#ln-comment-3060947"
                             class="text-slate-500">
-                            <time class="timeago" title="23-08-2025 09:37:17"
-                                datetime="2025-08-23T09:37:17+07:00">
-                                23-08-2025 09:37:17
+                            <time class="timeago" title="18-10-2025 11:47:44"
+                                datetime="2025-10-18T11:47:44+07:00">
+                                18-10-2025 11:47:44
                             </time>
                         </a>
                         <a
@@ -9008,7 +9068,7 @@
 </div>    </main>
 
     <script>
-        var token = 'KXSMBV9IIpQhbrQQnFgm3yfzBOVEf1Dk31DEx3Qi';
+        var token = 'L4eRDyJL0uNNPE3SYxvOoGkxKa49VrX8icgpABT8';
         var comment_type = 'series';
         var comment_typeid = '447';
     </script>
@@ -9053,13 +9113,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="KXSMBV9IIpQhbrQQnFgm3yfzBOVEf1Dk31DEx3Qi" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="L4eRDyJL0uNNPE3SYxvOoGkxKa49VrX8icgpABT8" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
