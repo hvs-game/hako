@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="izb89u1nSMqsfUlrONEN3agKUmZhkVcRxMwWsE7H">
+    <meta name="csrf-token" content="txo0BWA33stlwR9lXSomqWFVF0QAq81XhTHYEs41">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,13 +149,13 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/21354">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_m.jpg'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
@@ -169,10 +169,13 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
             <div class="ml-auto pl-3">
                 <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
                     <span class="sr-only">Dismiss</span>
                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -184,31 +187,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -275,7 +254,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 31 </span>
+                                                <span class="block feature-name"> 37 </span>
                                             </a>
                                                                                         </div>
 
@@ -325,11 +304,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="19/08/2025 23:51:31" datetime="2025-08-19T23:51:31+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="21/11/2025 21:33:41" datetime="2025-11-21T21:33:41+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">10.070</div>
+                                            <div class="statistic-value">13.364</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -338,17 +317,18 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">3.386</div>
+                                            <div class="statistic-value">4.939</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">Hikikomori VTuber wa tsutaetai</div>
-                                                                                <div class="block pad-bottom-5">引きこもりVTuberは伝えたい</div>
-                                                                                <div class="block pad-bottom-5">Hikikomori VTuber Wants to Tell You Something</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">Hikikomori VTuber wa tsutaetai</div>
+                                                                                            <div class="block pad-bottom-5">引きこもりVTuberは伝えたい</div>
+                                                                                            <div class="block pad-bottom-5">Hikikomori VTuber Wants to Tell You Something</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -401,10 +381,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Link nguồn:</p>
 <p><a href="https://www.novelupdates.com/series/hikikomori-vtuber-wants-to-tell-you-something/?pg=2#myTable" target="_blank" rel="nofollow noreferrer noopener">https://www.novelupdates.com/series/hikikomori-vtuber-wants-to-tell-you-something/?pg=2#myTable</a></p>
 <p>Lịch ra chap: Dopamine detox goes hard, thế nên tôi sẽ chăm dịch mà đăng thì chẹp chắc sẽ khó nói</p>
@@ -501,15 +481,24 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/22587-vtuber-hikikomori-muon-noi-voi-ban-doi-dieu/c216237-chuong-05" title="Chương 05: Tôi đã xem xét kĩ mấy thứ khác và phang bằng mặt phẳng">Chương 05: Tôi đã xem xét kĩ mấy thứ khác và phang bằng mặt phẳng</a>
 
                                                                                             </div>
                                             <div class="chapter-time">19/08/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/22587-vtuber-hikikomori-muon-noi-voi-ban-doi-dieu/c263178-chuong-06-quai-vat-hu-ao" title="Chương 06. Quái vật hư ảo">Chương 06. Quái vật hư ảo</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">21/11/2025</div>
                                         </li>
                                                                                                         </ul>
                             </div>
@@ -519,7 +508,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:22587,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;yFiTxQ4ERGpzkXPA1RD1&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/22587-vtuber-hikikomori-muon-noi-voi-ban-doi-dieu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d55f0789e657da6c8c633842203da4bfe5e6f6d15e57aa2c475a2d755d37199b&quot;}" wire:effects="[]" wire:id="yFiTxQ4ERGpzkXPA1RD1" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:22587,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;bseu8FrRUTg5uheO3jXW&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/22587-vtuber-hikikomori-muon-noi-voi-ban-doi-dieu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c7ed159135522f19141eeeacb693fc27e0bba9e777e5427dcd19446500608298&quot;}" wire:effects="[]" wire:id="bseu8FrRUTg5uheO3jXW" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -627,7 +616,7 @@ Dù sau thì tôi sẽ bám bộ này đến cùng. Cảm ơn!<br>
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175356-1308dd82-b31d-467b-951c-e71f019305fb.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u175356-057ecdf7-111b-431e-862b-30034c2359f0.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -914,7 +903,7 @@ dự đoán hơn 5 chap
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u162313-0fbd9b61-8f49-427a-a3dc-ad3a27bcb067.gif" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u162313-856c3b8e-d425-4fb7-a496-d3ba42b2c5bf.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1020,7 +1009,7 @@ dự đoán hơn 5 chap
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u162313-0fbd9b61-8f49-427a-a3dc-ad3a27bcb067.gif" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u162313-856c3b8e-d425-4fb7-a496-d3ba42b2c5bf.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1074,7 +1063,7 @@ dự đoán hơn 5 chap
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158617-346d1fe8-02bd-47fb-8bea-452d1faaa306.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158617-b44ef92e-138b-4926-898d-e40a4a39c252.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1313,7 +1302,7 @@ btw để tôi chỉnh lại🎶
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187359-dc6b1d9f-7215-44b3-9848-775ecc41a0ad.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u187359-cfd9f173-935e-4f53-a094-d9441f77c195.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1429,7 +1418,7 @@ Phantom trigger vlù
 </div>    </main>
 
     <script>
-        var token = 'izb89u1nSMqsfUlrONEN3agKUmZhkVcRxMwWsE7H';
+        var token = 'txo0BWA33stlwR9lXSomqWFVF0QAq81XhTHYEs41';
         var comment_type = 'series';
         var comment_typeid = '22587';
     </script>
@@ -1474,13 +1463,13 @@ Phantom trigger vlù
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="izb89u1nSMqsfUlrONEN3agKUmZhkVcRxMwWsE7H" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="txo0BWA33stlwR9lXSomqWFVF0QAq81XhTHYEs41" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
