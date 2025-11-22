@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="daFEjdpxoqckgGLkPVLJxK3H7ktwbbaZVaoQhXpk">
+    <meta name="csrf-token" content="Olc5grpnHZPhlfNGt5geBChyvut1NTe5ZUb3TrDd">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,13 +149,13 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/21354">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_m.jpg'); background-size: cover"></div>
+                <a href="/truyen/16221">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
@@ -169,10 +169,13 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
             <div class="ml-auto pl-3">
                 <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
                     <span class="sr-only">Dismiss</span>
                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -184,31 +187,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -276,7 +255,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 1726 </span>
+                                                <span class="block feature-name"> 1724 </span>
                                             </a>
                                                                                         </div>
 
@@ -326,11 +305,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="03/07/2025 20:57:28" datetime="2025-07-03T20:57:28+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="22/11/2025 22:44:07" datetime="2025-11-22T22:44:07+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">45.317</div>
+                                            <div class="statistic-value">45.755</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -339,16 +318,17 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">705.748</div>
+                                            <div class="statistic-value">754.587</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">付き合ってるようで付き合ってない、でも周囲からはどう見ても付き合ってるようにしか見えない幼馴染の男女の日常会話</div>
-                                                                                <div class="block pad-bottom-5">Những cuộc đối thoại giữa hai người bạn thuở nhỏ, nhìn cứ tưởng là đang hẹn hò, nhưng thực tế thì không hẳn là như vậy, thế nhưng trông bọn họ lại chẳng khác gì đang hẹn hò.</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">付き合ってるようで付き合ってない、でも周囲からはどう見ても付き合ってるようにしか見えない幼馴染の男女の日常会話</div>
+                                                                                            <div class="block pad-bottom-5">Những cuộc đối thoại giữa hai người bạn thuở nhỏ, nhìn cứ tưởng là đang hẹn hò, nhưng thực tế thì không hẳn là như vậy, thế nhưng trông bọn họ lại chẳng khác gì đang hẹn hò.</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -422,10 +402,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Eng: <a href="https://www.novelupdates.com/series/conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/" rel="nofollow noreferrer noopener" target="_blank">https://www.novelupdates.com/series/conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/</a></p>
 <p>Raw: <a href="https://ncode.syosetu.com/n3509gs/" rel="nofollow noreferrer noopener" target="_blank">https://ncode.syosetu.com/n3509gs/</a></p>
 <p>Trans mới vào nghề, gạch đá thoải mái ạ:3</p>
@@ -1604,9 +1584,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c189478-cuoc-doi-thoai-87-truot-nuoc-cung-nhau" title="Cuộc đối thoại 87: Trượt nước (cùng nhau)">Cuộc đối thoại 87: Trượt nước (cùng nhau)</a>
@@ -1614,9 +1591,21 @@
                                                                                             </div>
                                             <div class="chapter-time">03/07/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c263484-pov-nguoi-ngoai-28-tren-duong-ve" title="POV Người ngoài 28: Trên đường về">POV Người ngoài 28: Trên đường về</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">22/11/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (109 chương)</span>
+                                            <span>Xem tiếp (110 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1627,7 +1616,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8420,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;T22OxbwmQe48DDYWnaO1&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;023cf02085fb180af695e4a454c86c89b13a2970adc0cf0803c9a0cfc66c01f9&quot;}" wire:effects="[]" wire:id="T22OxbwmQe48DDYWnaO1" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:8420,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Mbr697bNFstWb5h7faUC&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;dc7f133d446be8b954c0db3a8d1c9006255498273c8a28dac1c2a887093fddbe&quot;}" wire:effects="[]" wire:id="Mbr697bNFstWb5h7faUC" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1646,7 +1635,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1936)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1943)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1831,6 +1820,208 @@
     </div>        
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3099369"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3099369" 
+    data-parent="3099369" 
+    data-type="chapter" 
+    data-typeid="263484">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u139405-525d11de-6601-4de1-99c7-1826b7f13617.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/139405">đọc mọi loại truyện</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c263484-pov-nguoi-ngoai-28-tren-duong-ve"
+                        class="text-slate-500 inline-block">POV Người ngoài 28: Trên đường về</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Lâu lắm mới thấy tập mới, thơm phức.
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=3099369#ln-comment-3099369"
+                            class="text-slate-500">
+                            <time class="timeago" title="22-11-2025 22:54:44"
+                                datetime="2025-11-22T22:54:44+07:00">
+                                22-11-2025 22:54:44
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3027969"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3027969" 
+    data-parent="3027969" 
+    data-type="chapter" 
+    data-typeid="125553">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u202433-ac1dbe5c-b457-48cc-a6e9-c66e4bac382b.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/202433">Starry</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c125553-cuoc-doi-thoai-50-ca-ri-cay"
+                        class="text-slate-500 inline-block">Cuộc đối thoại 50: Cà ri cay</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Mấy con gà thì biết cái j<br>
+Vợ chồng &lt; bạn thuở nhỏ 🐧
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=3027969#ln-comment-3027969"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-09-2025 15:50:31"
+                                datetime="2025-09-18T15:50:31+07:00">
+                                18-09-2025 15:50:31
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2972945"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2972945" 
+    data-parent="2972945" 
+    data-type="chapter" 
+    data-typeid="189478">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u141733-b5cee9dc-9f79-43a3-9fb7-b765534c7c10.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/141733">Zuxng</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c189478-cuoc-doi-thoai-87-truot-nuoc-cung-nhau"
+                        class="text-slate-500 inline-block">Cuộc đối thoại 87: Trượt nước (cùng nhau)</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Lai drop a
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2972945#ln-comment-2972945"
+                            class="text-slate-500">
+                            <time class="timeago" title="09-08-2025 23:38:58"
+                                datetime="2025-08-09T23:38:58+07:00">
+                                09-08-2025 23:38:58
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2938551"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2938551" 
+    data-parent="2938551" 
+    data-type="chapter" 
+    data-typeid="189478">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u176416-4680621f-6087-43df-b695-a313fdc538fa.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176416">ZawnFM</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c189478-cuoc-doi-thoai-87-truot-nuoc-cung-nhau"
+                        class="text-slate-500 inline-block">Cuộc đối thoại 87: Trượt nước (cùng nhau)</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        uohhhhhhh<br>
+Tks trans
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2938551#ln-comment-2938551"
+                            class="text-slate-500">
+                            <time class="timeago" title="17-07-2025 15:41:36"
+                                datetime="2025-07-17T15:41:36+07:00">
+                                17-07-2025 15:41:36
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2919373"
     class="ln-comment-item mt-3 clear"
     data-comment="2919373" 
@@ -1890,7 +2081,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua158708-0ea84df7-87a8-4f9e-b688-d79e8034f2b6.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158708-ed4bcb1e-e08a-4a2a-a42c-10c7835cc149.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2137,228 +2328,19 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2918959"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2918959" 
-    data-parent="2918959" 
-    data-type="series" 
-    data-typeid="8420">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u74333-9e42aa46-a441-4e00-8326-0e8ecf5fb879.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/74333">Kifflom Trirgeen</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Yes sir. Welcome to back 2 đứa bạn thuở nhỏ té giếng :)))) 🐧<br>
-(Cmn mấy ngày của ổng nghĩ như 1 năm của người ta vậy 🥴😆)
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2918959#ln-comment-2918959"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-07-2025 21:08:18"
-                                datetime="2025-07-03T21:08:18+07:00">
-                                03-07-2025 21:08:18
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2918948"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2918948" 
-    data-parent="2918948" 
-    data-type="chapter" 
-    data-typeid="189478">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u86406-c0ab5613-29d9-4491-b216-2e79953fde4c.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86406">Ozu</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating/c189478-cuoc-doi-thoai-87-truot-nuoc-cung-nhau"
-                        class="text-slate-500 inline-block">Cuộc đối thoại 87: Trượt nước (cùng nhau)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Yay
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2918948#ln-comment-2918948"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-07-2025 21:02:33"
-                                datetime="2025-07-03T21:02:33+07:00">
-                                03-07-2025 21:02:33
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2918945"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2918945" 
-    data-parent="2918945" 
-    data-type="series" 
-    data-typeid="8420">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189230-f8226164-9e09-4536-8bf1-ba4baec45f30.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">TĐD</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-                <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
-                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
-                <div class="leading-4">AI MASTER</div>
-            </div>
-        </div>
-    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        vc, dell nhớ j nx r:)
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2918945#ln-comment-2918945"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-07-2025 20:58:06"
-                                datetime="2025-07-03T20:58:06+07:00">
-                                03-07-2025 20:58:06
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2680851"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2680851" 
-    data-parent="2680851" 
-    data-type="series" 
-    data-typeid="8420">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/174977">dcuong246</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Trans bao giờ dịch tiếp vậy
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?comment_id=2680851#ln-comment-2680851"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-12-2024 13:08:09"
-                                datetime="2024-12-09T13:08:09+07:00">
-                                09-12-2024 13:08:09
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/8420-conversations-between-two-childhood-friends-that-seem-like-theyre-dating-but-arent-actually-dating-but-they-totally-look-like-theyre-dating?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'daFEjdpxoqckgGLkPVLJxK3H7ktwbbaZVaoQhXpk';
+        var token = 'FSAvHDjOQ8qlQl6tum9lAoT4Wy4MUg91KWbQwiSj';
         var comment_type = 'series';
         var comment_typeid = '8420';
     </script>
@@ -2403,13 +2385,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="daFEjdpxoqckgGLkPVLJxK3H7ktwbbaZVaoQhXpk" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="Olc5grpnHZPhlfNGt5geBChyvut1NTe5ZUb3TrDd" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
