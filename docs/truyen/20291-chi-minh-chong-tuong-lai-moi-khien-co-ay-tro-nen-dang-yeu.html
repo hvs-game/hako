@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="vuZOOl5gbWVvoYKVWEPqFzEQabDJcf3kPVqUdmz9">
+    <meta name="csrf-token" content="DAAnmTDd87GGDLze5nXva5yvrJ41G49CMWJv9BdR">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,13 +149,13 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/21354">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_m.jpg'); background-size: cover"></div>
+                <a href="/truyen/16221">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
@@ -169,10 +169,13 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
             <div class="ml-auto pl-3">
                 <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
                     <span class="sr-only">Dismiss</span>
                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -184,31 +187,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -282,7 +261,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 2562 </span>
+                                                <span class="block feature-name"> 2652 </span>
                                             </a>
                                                                                         </div>
 
@@ -332,30 +311,31 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="23/06/2025 21:27:08" datetime="2025-06-23T21:27:08+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="26/11/2025 19:11:45" datetime="2025-11-26T19:11:45+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">127.374</div>
+                                            <div class="statistic-value">128.541</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">4,91 / <small>54</small></div>
+                                            <div class="statistic-value">4,91 / <small>56</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">934.885</div>
+                                            <div class="statistic-value">1.113.020</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">彼女をデレさせる方法を、将来結婚する俺だけが知っている</div>
-                                                                                <div class="block pad-bottom-5">Kanojo wo deresaseru houhou wo, Shorai kekkon suru oredake ga shitteiru</div>
-                                                                                <div class="block pad-bottom-5">Kanodere (かのデレ)</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">彼女をデレさせる方法を、将来結婚する俺だけが知っている</div>
+                                                                                            <div class="block pad-bottom-5">Kanojo wo deresaseru houhou wo, Shorai kekkon suru oredake ga shitteiru</div>
+                                                                                            <div class="block pad-bottom-5">Kanodere (かのデレ)</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -401,10 +381,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Lại là Yuga, nhưng mama đã minh họa bộ mới héhé<br><br><strong>Số lượng tập (LN):</strong> 2<br><strong><em>Vol. 2 Phát hành: </em></strong>12-04-2025<br><strong>Link đặt Vol.2: <a href="https://amzn.asia/d/cwzFqWZ" rel="nofollow noreferrer noopener" target="_blank">Amazon</a></strong><br><br><strong>Nguồn WN: <a href="https://kakuyomu.jp/works/16818093086645781988" rel="nofollow noreferrer noopener" target="_blank">Kakuyomu</a><br>Nguồn LN: </strong>Sách order hong phải ebook khum share đc<br><br><strong>Tiến độ</strong>: <br>- WN Arc nhập học (Arc 1): ĐÃ HOÀN THÀNH<br><strong>- WN Arc nửa sau Học kì 1 (Arc 2): Đang tiến hành</strong><br><br><strong>- LN Vol.1: Đang tiến hành<br><br></strong><em><strong>Bản LN sẽ chỉnh chu về nội dung và mạch truyện</strong> hơn bản WN, LN sẽ có 1-2 Interlude khác với WN để mạch chính không bị đứt quãng</em><br><br><em><strong>Hối chap mikayy</strong></em> ở <a href="https://www.facebook.com/mik4yyne" rel="nofollow noreferrer noopener" target="_blank"><strong>Page này nhé</strong></a><br><br>Vừa trans vừa edit vừa solo nên sẽ có nhiều sai sót... mà tiếng Nhật tớ chưa chắc lắm, mong được mọi người để lại góp ý bên dưới để cải thiện, xin cảm ơn mọi người nhìu.<br><br></p>
 <p><em><strong>Xin cảm ơn bạn LE DANG KHOA cùng các bạn giấu tên đã mở bát donate mikayy ạ</strong></em></p>
 <p>-----------------------------------------</p>
@@ -456,7 +436,7 @@
                 <a href="https://docln.net/truyen/20291/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">NAK Wibu</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">PikaBoom</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -483,7 +463,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    10 Điểm đéo có nhưng,có 100 sao tui cũng vote.
+                                    Đọc rất cuốn tiếc là không đánh giá dc 6 sao
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -491,7 +471,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="23-06-2025 20:11:26" datetime="2025-06-23T20:11:26+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="26-06-2025 15:04:29" datetime="2025-06-26T15:04:29+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -501,7 +481,7 @@
                 <a href="https://docln.net/truyen/20291/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Hmmmmmmmmmm</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Tabx4y1l</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -528,7 +508,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Mong trans dịch hết truyện này
+                                    Truyện cuốn vcl.
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -536,7 +516,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="23-06-2025 14:48:11" datetime="2025-06-23T14:48:11+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="26-06-2025 04:42:08" datetime="2025-06-26T04:42:08+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -1166,7 +1146,7 @@
                     <header id="volume_27807" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            [WN] Arc Nửa sau Học kì 1. Chap 51 ~ 109  [ĐÃ HOÀN THÀNH] <span style="color: red">*</span>
+                            [WN] Arc Nửa sau Học kì 1. Chap 51 ~ 109  [ĐÃ HOÀN THÀNH]
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1671,9 +1651,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c182816-chuong-97-hom-thu-tu-van-2" title="Chương 97: Hòm Thư Tư Vấn (2)">Chương 97: Hòm Thư Tư Vấn (2)</a>
@@ -1683,9 +1660,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c182817-chuong-98-hom-thu-tu-van-3" title="Chương 98: Hòm Thư Tư Vấn (3)">Chương 98: Hòm Thư Tư Vấn (3)</a>
@@ -1695,9 +1669,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c182822-chuong-99-hom-thu-tu-van-4" title="Chương 99: Hòm Thư Tư Vấn (4)">Chương 99: Hòm Thư Tư Vấn (4)</a>
@@ -1707,9 +1678,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185033-chuong-100-sinh-vien-dai-hoc-vs-hoc-sinh-cao-trung-chi-ve-the-xac-1" title="Chương 100: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (1)">Chương 100: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (1)</a>
@@ -1719,9 +1687,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185034-chuong-101-sinh-vien-dai-hoc-vs-hoc-sinh-cao-trung-chi-ve-the-xac-2" title="Chương 101: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (2)">Chương 101: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (2)</a>
@@ -1731,9 +1696,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185035-chuong-102-sinh-vien-dai-hoc-vs-hoc-sinh-cao-trung-chi-ve-the-xac-3" title="Chương 102: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (3)">Chương 102: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (3)</a>
@@ -1743,9 +1705,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185200-chuong-103-sinh-vien-dai-hoc-vs-hoc-sinh-cao-trung-chi-ve-the-xac-4" title="Chương 103: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (4)">Chương 103: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (4)</a>
@@ -1755,9 +1714,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185228-chuong-104-sinh-vien-dai-hoc-vs-hoc-sinh-cao-trung-chi-ve-the-xac-5" title="Chương 104: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (5)">Chương 104: Sinh Viên Đại Học VS. Học Sinh Cao Trung (Chỉ Về Thể Xác) (5)</a>
@@ -1767,9 +1723,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185296-chuong-105-duong-ve-nha" title="Chương 105: Đường về nhà">Chương 105: Đường về nhà</a>
@@ -1779,9 +1732,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185301-chuong-106-su-that-sau-cai-om" title="Chương 106: Sự thật sau cái ôm">Chương 106: Sự thật sau cái ôm</a>
@@ -1791,9 +1741,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185328-chuong-107-hau-truong-chien-luoc" title="Chương 107: Hậu trường chiến lược">Chương 107: Hậu trường chiến lược</a>
@@ -1803,9 +1750,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185338-chuong-108-hop-tac" title="Chương 108: Hợp tác">Chương 108: Hợp tác</a>
@@ -1815,9 +1759,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185347-chuong-109-loi-to-tinh-thu-hai" title="Chương 109: Lời tỏ tình thứ hai">Chương 109: Lời tỏ tình thứ hai</a>
@@ -1839,7 +1780,7 @@
                     <header id="volume_27442" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            [LN] Vol 1 [Đang tiến hành]
+                            [LN] Vol 1 [Đang tiến hành] <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1931,9 +1872,21 @@
                                                                                             </div>
                                             <div class="chapter-time">11/05/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c265075-bonus-1-giay-dang-ky-ket-hon-va-nhan-dinh-hontuong-lai" title="Bonus 1: ♥♥♥ Giấy đăng ký kết hôn và Nhẫn đính hôn《Tương lai》">Bonus 1: ♥♥♥ Giấy đăng ký kết hôn và Nhẫn đính hôn《Tương lai》</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">26/11/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (3 chương)</span>
+                                            <span>Xem tiếp (4 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1980,7 +1933,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20291,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;P4DUydwYyT6pazDxsyct&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;7829e9501d0bbb132c6c53e7371344814d1a772bd329b0e603481b293c5b7e0c&quot;}" wire:effects="[]" wire:id="P4DUydwYyT6pazDxsyct" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20291,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Z0QkM449n9E1Iiqcl21L&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;88cf8c5ba5cce9fa5093a78fa581dda3d3752054ad1876b76ec10b502f4b4533&quot;}" wire:effects="[]" wire:id="Z0QkM449n9E1Iiqcl21L" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1999,14 +1952,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(4829)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(5017)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">591 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">618 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -2016,10 +1969,10 @@
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-2904286"
+    <div id="ln-comment-2963444"
     class="ln-comment-item mt-3 clear"
-    data-comment="2904286" 
-    data-parent="2904286" 
+    data-comment="2963444" 
+    data-parent="2963444" 
     data-type="series" 
     data-typeid="20291">
     <div class="flex gap-1 max-w-full">
@@ -2054,21 +2007,22 @@
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        <em><strong>WN đã chính thức chạm raw cùng nụ cười ấy</strong></em>... <em>Bản LN sẽ được mikayy triển khai, tăng độ ngọt lên, nấu ngon hơn cho mọi người cùng thưởng thức miễn phí</em> (chứ không hơi đâu đi góp lúa về nấu mà chẳng ngon gì cả)<br><br>Cảm ơn mọi người đã đồng hành tới lúc WN chạm raw như thế này. <strong>Đừng quên đá sang các prj khác của mikayy nhé, hihi</strong>🥰<br><br><img src="https://images2.imgbox.com/11/63/dV5VKl2N_o.png" alt="dV5VKl2N_o.png">
+                        Hiện tại <a href="https://www.facebook.com/mik4yyne" target="_blank" rel="nofollow noreferrer noopener"><strong>page Mikayy ;3</strong></a> đang có <strong><em>Give Away Kanodere mừng 1M view và 1000 follow</em></strong>. Hôm 09.08 sẽ có livestream, ngoài 2 phần quà chính sẽ có những phần quà nho nhỏ nữa, mọi người có thể tham gia nha.<br>
+<em><strong><a href="https://www.facebook.com/photo?fbid=122162835662753425&amp;set=a.122100588686753425" target="_blank" rel="nofollow noreferrer noopener">Link post GA</a></strong></em><br>Xin cảm ơn mọi người nhìu nhìu😃<br><img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/528327806_122162796908753425_2219941249977906131_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=ppNYK4AIauIQ7kNvwGKqgiD&amp;_nc_oc=AdlTM5m55DIp5-YCgoRjiUFDEoqKhaDUXrS_78tnc8hZ6MfzDIhhqAcBWe9pZhwAj_Q&amp;_nc_zt=23&amp;_nc_ht=scontent.fsgn5-15.fna&amp;_nc_gid=DsBGOrjRiR5y2rNVpfUJuQ&amp;oh=00_AfRgDp1L3jD7ETODSbmzI5zITr4HZuSH9Dt5yG0OPUvejg&amp;oe=68952D80" alt="528327806_122162796908753425_2219941249977906131_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=ppNYK4AIauIQ7kNvwGKqgiD&amp;_nc_oc=AdlTM5m55DIp5-YCgoRjiUFDEoqKhaDUXrS_78tnc8hZ6MfzDIhhqAcBWe9pZhwAj_Q&amp;_nc_zt=23&amp;_nc_ht=scontent.fsgn5-15.fna&amp;_nc_gid=DsBGOrjRiR5y2rNVpfUJuQ&amp;oh=00_AfRgDp1L3jD7ETODSbmzI5zITr4HZuSH9Dt5yG0OPUvejg&amp;oe=68952D80">
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2904286#ln-comment-2904286"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2963444#ln-comment-2963444"
                             class="text-slate-500">
-                            <time class="timeago" title="23-06-2025 21:33:58"
-                                datetime="2025-06-23T21:33:58+07:00">
-                                23-06-2025 21:33:58
+                            <time class="timeago" title="03-08-2025 19:52:13"
+                                datetime="2025-08-03T19:52:13+07:00">
+                                03-08-2025 19:52:13
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">11</span>
+                            <span class="likecount font-semibold">17</span>
                         </a>
                                             </div>
                             </div>
@@ -2077,16 +2031,130 @@
 </div>
 
         <div class="ln-comment-reply">
-                <div id="ln-comment-2904295"
+                <div id="ln-comment-2981310"
     class="ln-comment-item mt-3 clear"
-    data-comment="2904295" 
-    data-parent="2904286" 
+    data-comment="2981310" 
+    data-parent="2963444" 
     data-type="series" 
     data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u212058-27fe4985-3fba-4057-a929-665748691543.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/212058">Caffeine</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Sao ảnh death r ad<br>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2963444&amp;reply_id=2981310#ln-comment-2981310"
+                            class="text-slate-500">
+                            <time class="timeago" title="15-08-2025 01:35:53"
+                                datetime="2025-08-15T01:35:53+07:00">
+                                15-08-2025 01:35:53
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2981320"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2981320" 
+    data-parent="2963444" 
+    data-type="series" 
+    data-typeid="20291">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-8fe2ef95-5537-441c-8335-f8bd310c8d05.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">Mr.Σrr0r</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/212058">@Let's forget the past:</a> do máy bạn yếu hoặc mạng yếu
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2963444&amp;reply_id=2981320#ln-comment-2981320"
+                            class="text-slate-500">
+                            <time class="timeago" title="15-08-2025 01:44:06"
+                                datetime="2025-08-15T01:44:06+07:00">
+                                15-08-2025 01:44:06
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="2963444">
+            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>        
+        
+        <div class="ln-comment-group">
+    <div id="ln-comment-3103569"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3103569" 
+    data-parent="3103569" 
+    data-type="series" 
+    data-typeid="20291">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2101,15 +2169,15 @@
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        tác giả còn viết wn nx ko mikayy, hay drop wn r :v
+                        Trans sống dậy r hả :)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2904286&amp;reply_id=2904295#ln-comment-2904295"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3103569#ln-comment-3103569"
                             class="text-slate-500">
-                            <time class="timeago" title="23-06-2025 21:36:05"
-                                datetime="2025-06-23T21:36:05+07:00">
-                                23-06-2025 21:36:05
+                            <time class="timeago" title="26-11-2025 19:17:15"
+                                datetime="2025-11-26T19:17:15+07:00">
+                                26-11-2025 19:17:15
                             </time>
                         </a>
                         <a
@@ -2122,16 +2190,19 @@
         </div>
     </div>
 </div>
-            <div id="ln-comment-2904299"
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3103566"
     class="ln-comment-item mt-3 clear"
-    data-comment="2904299" 
-    data-parent="2904286" 
-    data-type="series" 
-    data-typeid="20291">
+    data-comment="3103566" 
+    data-parent="3103566" 
+    data-type="chapter" 
+    data-typeid="265075">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182387-eb231eb6-806d-4ded-ab3d-7a3868d2e799.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u216796-00a4489c-212f-416a-b072-46df16ddab9d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2140,16 +2211,9 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182387">.mikayy ;3.</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/216796">Yuuki?</a>
     </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
+                                        <div class="self-center">
             <div
                 class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
                 <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
@@ -2159,73 +2223,18 @@
         </div>
                                         
                 </div>
+                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c265075-bonus-1-giay-dang-ky-ket-hon-va-nhan-dinh-hontuong-lai"
+                        class="text-slate-500 inline-block">Bonus 1: ♥♥♥ Giấy đăng ký kết hôn và Nhẫn đính hôn《Tương lai》</a></span>
                                                     <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/188725">@Minhlỏ2007:</a> ông ăn chơi lười chảy thây dồi, đợi xem sao
+                        Ngon thí chap mới
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2904286&amp;reply_id=2904299#ln-comment-2904299"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3103566#ln-comment-3103566"
                             class="text-slate-500">
-                            <time class="timeago" title="23-06-2025 21:37:02"
-                                datetime="2025-06-23T21:37:02+07:00">
-                                23-06-2025 21:37:02
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">3</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                <div class="fetch_reply" data-parent="2904286">
-            Xem thêm 12 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-                
-    </div>
-    </div>        
-        
-        <div class="ln-comment-group">
-    <div id="ln-comment-2905618"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2905618" 
-    data-parent="2905618" 
-    data-type="chapter" 
-    data-typeid="154547">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u213043-6d1aa0e6-4363-4e7a-a95f-a6054f125253.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/213043">Tabx4y1l</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154547-chuong-10-theo-sau-co-ay"
-                        class="text-slate-500 inline-block">Chương 10: Theo sau cô ấy</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Lord
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905618#ln-comment-2905618"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 19:03:41"
-                                datetime="2025-06-24T19:03:41+07:00">
-                                24-06-2025 19:03:41
+                            <time class="timeago" title="26-11-2025 19:16:11"
+                                datetime="2025-11-26T19:16:11+07:00">
+                                26-11-2025 19:16:11
                             </time>
                         </a>
                         <a
@@ -2241,16 +2250,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905611"
+    <div id="ln-comment-3103564"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905611" 
-    data-parent="2905611" 
+    data-comment="3103564" 
+    data-parent="3103564" 
     data-type="chapter" 
-    data-typeid="154257">
+    data-typeid="265075">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u213043-6d1aa0e6-4363-4e7a-a95f-a6054f125253.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u173503-0da90f67-c4ef-4938-9bca-0d59a7db702c.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2259,23 +2268,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/213043">Tabx4y1l</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173503">Kien-__-</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154257-tuong-lai-arisugawa-yuuma-2"
-                        class="text-slate-500 inline-block">《Tương lai》 Arisugawa Yuuma (2)</a></span>
+                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c265075-bonus-1-giay-dang-ky-ket-hon-va-nhan-dinh-hontuong-lai"
+                        class="text-slate-500 inline-block">Bonus 1: ♥♥♥ Giấy đăng ký kết hôn và Nhẫn đính hôn《Tương lai》</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Gạo nấu thành cơm
+                        sống dậy r nek:)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905611#ln-comment-2905611"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3103564#ln-comment-3103564"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:59:14"
-                                datetime="2025-06-24T18:59:14+07:00">
-                                24-06-2025 18:59:14
+                            <time class="timeago" title="26-11-2025 19:14:32"
+                                datetime="2025-11-26T19:14:32+07:00">
+                                26-11-2025 19:14:32
                             </time>
                         </a>
                         <a
@@ -2291,16 +2300,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905597"
+    <div id="ln-comment-3103561"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905597" 
-    data-parent="2905597" 
-    data-type="chapter" 
-    data-typeid="154009">
+    data-comment="3103561" 
+    data-parent="3103561" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u213043-6d1aa0e6-4363-4e7a-a95f-a6054f125253.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-8fe2ef95-5537-441c-8335-f8bd310c8d05.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2309,23 +2318,35 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/213043">Tabx4y1l</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">Mr.Σrr0r</a>
     </div>
-                                    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154009-chuong-7-cong-cuoc-chinh-phuc-bat-dau"
-                        class="text-slate-500 inline-block">Chương 7: Công cuộc chinh phục bắt đầu</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Chad
+                        sự trở lại của nhà vua?
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905597#ln-comment-2905597"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3103561#ln-comment-3103561"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:47:45"
-                                datetime="2025-06-24T18:47:45+07:00">
-                                24-06-2025 18:47:45
+                            <time class="timeago" title="26-11-2025 19:13:36"
+                                datetime="2025-11-26T19:13:36+07:00">
+                                26-11-2025 19:13:36
                             </time>
                         </a>
                         <a
@@ -2341,16 +2362,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905587"
+    <div id="ln-comment-3093584"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905587" 
-    data-parent="2905587" 
-    data-type="chapter" 
-    data-typeid="154006">
+    data-comment="3093584" 
+    data-parent="3093584" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u213043-6d1aa0e6-4363-4e7a-a95f-a6054f125253.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u180900-2fdf1321-fa29-4cce-8188-b8d322912aeb.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2359,23 +2380,21 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/213043">Tabx4y1l</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180900">Sasaki Kiyoshi</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154006-chuong-5-le-nhap-hoc-lan-thu-hai"
-                        class="text-slate-500 inline-block">Chương 5: Lễ nhập học lần thứ hai</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Cần lắm giáo trình ôn thi của main
+                        Chết tiệt hóng phần tiếp theo quá
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905587#ln-comment-2905587"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3093584#ln-comment-3093584"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:41:02"
-                                datetime="2025-06-24T18:41:02+07:00">
-                                24-06-2025 18:41:02
+                            <time class="timeago" title="17-11-2025 13:44:02"
+                                datetime="2025-11-17T13:44:02+07:00">
+                                17-11-2025 13:44:02
                             </time>
                         </a>
                         <a
@@ -2391,16 +2410,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905569"
+    <div id="ln-comment-3081745"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905569" 
-    data-parent="2905569" 
-    data-type="chapter" 
-    data-typeid="185301">
+    data-comment="3081745" 
+    data-parent="3081745" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u149620-39835157-c0bc-4f4e-acb8-c9623465e98e.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u141733-b5cee9dc-9f79-43a3-9fb7-b765534c7c10.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2409,23 +2428,21 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/141733">Zuxng</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185301-chuong-106-su-that-sau-cai-om"
-                        class="text-slate-500 inline-block">Chương 106: Sự thật sau cái ôm</a></span>
                                                     <div class="ln-comment-content long-text">
-                        TFNC
+                        Lên chap
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905569#ln-comment-2905569"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3081745#ln-comment-3081745"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:23:20"
-                                datetime="2025-06-24T18:23:20+07:00">
-                                24-06-2025 18:23:20
+                            <time class="timeago" title="07-11-2025 00:06:58"
+                                datetime="2025-11-07T00:06:58+07:00">
+                                07-11-2025 00:06:58
                             </time>
                         </a>
                         <a
@@ -2441,16 +2458,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905566"
+    <div id="ln-comment-3057364"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905566" 
-    data-parent="2905566" 
-    data-type="chapter" 
-    data-typeid="185296">
+    data-comment="3057364" 
+    data-parent="3057364" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u149620-39835157-c0bc-4f4e-acb8-c9623465e98e.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u188165-22e715d3-0648-4f20-ab3b-f22a5fc3976b.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2459,23 +2476,21 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/188165">Charlotte Lilith-_-</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185296-chuong-105-duong-ve-nha"
-                        class="text-slate-500 inline-block">Chương 105: Đường về nhà</a></span>
                                                     <div class="ln-comment-content long-text">
-                        TFNC
+                        Thớt ơi dậy đê 4 tháng rồi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905566#ln-comment-2905566"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3057364#ln-comment-3057364"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:22:25"
-                                datetime="2025-06-24T18:22:25+07:00">
-                                24-06-2025 18:22:25
+                            <time class="timeago" title="14-10-2025 17:16:12"
+                                datetime="2025-10-14T17:16:12+07:00">
+                                14-10-2025 17:16:12
                             </time>
                         </a>
                         <a
@@ -2489,18 +2504,17 @@
     </div>
 </div>
 
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2905546"
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3057404"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905546" 
-    data-parent="2905546" 
-    data-type="chapter" 
-    data-typeid="154009">
+    data-comment="3057404" 
+    data-parent="3057364" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua151775-7136f547-ffe7-4f6f-847f-7011b525c5d3.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u84752-80366e2b-c450-4855-b9a2-ef21e90eb32a.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2509,123 +2523,21 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/151775">BoChi</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/84752">Việt2636</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154009-chuong-7-cong-cuoc-chinh-phuc-bat-dau"
-                        class="text-slate-500 inline-block">Chương 7: Công cuộc chinh phục bắt đầu</a></span>
                                                     <div class="ln-comment-content long-text">
-                        đã tổng tài bá đạo lại còn học bá ngầu lòi thế này thì cần gì học nữa
+                        Tác tạm dừng wn để viết tập 3 rồi. Mà tập 3 cũng chưa ra thì lấy gì dịch bác. Cứ hóng đi, tui cũng đang hóng mòn đít đây.
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905546#ln-comment-2905546"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3057364&amp;reply_id=3057404#ln-comment-3057404"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:08:04"
-                                datetime="2025-06-24T18:08:04+07:00">
-                                24-06-2025 18:08:04
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2905538"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2905538" 
-    data-parent="2905538" 
-    data-type="chapter" 
-    data-typeid="154006">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua151775-7136f547-ffe7-4f6f-847f-7011b525c5d3.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/151775">BoChi</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154006-chuong-5-le-nhap-hoc-lan-thu-hai"
-                        class="text-slate-500 inline-block">Chương 5: Lễ nhập học lần thứ hai</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        học bá ❌<br>Học khá ✅
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905538#ln-comment-2905538"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 18:00:37"
-                                datetime="2025-06-24T18:00:37+07:00">
-                                24-06-2025 18:00:37
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2905388"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2905388" 
-    data-parent="2905388" 
-    data-type="chapter" 
-    data-typeid="185338">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u186713-6369cf63-afa7-4701-a40a-46305474b95f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186713">TrPhat</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185338-chuong-108-hop-tac"
-                        class="text-slate-500 inline-block">Chương 108: Hợp tác</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Hai bố này cỏ lúa bằng nhau thôi ăn nhau ở chuyện 1 ông chăm vợ, 1 ông chơi gái thôi:))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905388#ln-comment-2905388"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 15:31:17"
-                                datetime="2025-06-24T15:31:17+07:00">
-                                24-06-2025 15:31:17
+                            <time class="timeago" title="14-10-2025 18:08:53"
+                                datetime="2025-10-14T18:08:53+07:00">
+                                14-10-2025 18:08:53
                             </time>
                         </a>
                         <a
@@ -2638,19 +2550,21 @@
         </div>
     </div>
 </div>
-
+    
+                
+    </div>
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2905378"
+    <div id="ln-comment-3054634"
     class="ln-comment-item mt-3 clear"
-    data-comment="2905378" 
-    data-parent="2905378" 
-    data-type="chapter" 
-    data-typeid="185296">
+    data-comment="3054634" 
+    data-parent="3054634" 
+    data-type="series" 
+    data-typeid="20291">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u186713-6369cf63-afa7-4701-a40a-46305474b95f.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua87560-1e5668d3-46bd-4235-8e5b-ba40c9f3d9ea.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2659,23 +2573,119 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186713">TrPhat</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/87560">KazutoKz</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c185296-chuong-105-duong-ve-nha"
-                        class="text-slate-500 inline-block">Chương 105: Đường về nhà</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Trình của tổng giám đốc công ty lớn khi còn trẻ thì mấy thằng sinh viên sao ăn được:))
+                        Dậy thôi ad ơi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=2905378#ln-comment-2905378"
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3054634#ln-comment-3054634"
                             class="text-slate-500">
-                            <time class="timeago" title="24-06-2025 15:26:25"
-                                datetime="2025-06-24T15:26:25+07:00">
-                                24-06-2025 15:26:25
+                            <time class="timeago" title="12-10-2025 02:19:20"
+                                datetime="2025-10-12T02:19:20+07:00">
+                                12-10-2025 02:19:20
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3046082"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3046082" 
+    data-parent="3046082" 
+    data-type="chapter" 
+    data-typeid="154257">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua48335-e212d57e-4a48-423c-9c48-9438536a2527.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/48335">Doctor&lt;3Skadi</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu/c154257-tuong-lai-arisugawa-yuuma-2"
+                        class="text-slate-500 inline-block">《Tương lai》 Arisugawa Yuuma (2)</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Ông anh từ cha
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3046082#ln-comment-3046082"
+                            class="text-slate-500">
+                            <time class="timeago" title="04-10-2025 11:38:35"
+                                datetime="2025-10-04T11:38:35+07:00">
+                                04-10-2025 11:38:35
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3038898"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3038898" 
+    data-parent="3038898" 
+    data-type="series" 
+    data-typeid="20291">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u216691-09e6b671-5258-47b6-919c-9cfac4e4cf1c.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/216691">Mdarke</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Wake up
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?comment_id=3038898#ln-comment-3038898"
+                            class="text-slate-500">
+                            <time class="timeago" title="27-09-2025 12:45:59"
+                                datetime="2025-09-27T12:45:59+07:00">
+                                27-09-2025 12:45:59
                             </time>
                         </a>
                         <a
@@ -2696,13 +2706,13 @@
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://ln.hako.vn/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.net/truyen/20291-chi-minh-chong-tuong-lai-moi-khien-co-ay-tro-nen-dang-yeu?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'JbDrvpZHQiwdvKypbKYVQPfxiYskGp21VFkRs7Xn';
+        var token = 'gpOZfVklNrQxHuuOMo038TM4puqTqmqNfhTjNYRK';
         var comment_type = 'series';
         var comment_typeid = '20291';
     </script>
@@ -2747,13 +2757,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="vuZOOl5gbWVvoYKVWEPqFzEQabDJcf3kPVqUdmz9" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="DAAnmTDd87GGDLze5nXva5yvrJ41G49CMWJv9BdR" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
