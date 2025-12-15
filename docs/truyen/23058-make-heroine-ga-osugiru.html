@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="2vgXg8jYyaMj7weUKhdIrfCF3xcIRnXBCaZo2yHK">
+    <meta name="csrf-token" content="WO6kQGcSC3S77WC3VqcnczIICAaJMVz2V5skvdnh">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=9128bdee617e5eb876ffd418ed3597bf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -84,7 +84,7 @@
             </div>
 
             <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')" title="Trang chủ"></a>
+                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-xmas-2025.png')" title="Trang chủ"></a>
             </div>
              
             <div id="navbar-user" class="guest">						
@@ -149,19 +149,22 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/16221">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -169,17 +172,11 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -263,7 +260,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 249 </span>
+                                                <span class="block feature-name"> 292 </span>
                                             </a>
                                                                                         </div>
 
@@ -313,20 +310,20 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="07/10/2025 18:16:54" datetime="2025-10-07T18:16:54+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="15/12/2025 16:01:29" datetime="2025-12-15T16:01:29+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">94.787</div>
+                                            <div class="statistic-value">95.591</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">0 / <small>0</small></div>
+                                            <div class="statistic-value">5,00 / <small>2</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">33.533</div>
+                                            <div class="statistic-value">48.752</div>
                                         </div>
                                     </div>
                                 </div>
@@ -349,16 +346,11 @@
 <p>“Chính xác thì cậu ta nói thế lúc nào vậy?”</p>
 <p>“Khi mà tụi tớ mới khoảng 4-5 tuổi gì đó nha.”</p>
 <p>.<em>..Vậy thì đâu có tính?</em></p>
-<p> </p>
-<p>Bắt đầu từ đây, một sân khấu đã được dựng lên với sự tham gia của nhiều cô nàng khác như  Remon Yakishio từ Câu lạc bộ Điền kinh, hay Chika Komari từ Câu lạc bộ Văn học; tất cả đều mang trong mình điểm chung với nhau - họ đều là những nữ chính thua cuộc.</p>
-<p> </p>
+<p>Bắt đầu từ đây, một sân khấu đã được dựng lên với sự tham gia của nhiều cô nàng khác như Remon Yakishio từ Câu lạc bộ Điền kinh, hay Chika Komari từ Câu lạc bộ Văn học; tất cả đều mang trong mình điểm chung với nhau - họ đều là những nữ chính thua cuộc.</p>
 <p>"Nukumizu-kun nè, nếu cậu không biết ấy, thì con gái chỉ có thể chia làm hai loại thôi nha. Một là bạn thời thơ ấu, còn lại thì chỉ là lũ mèo cái vụng trộm mà thôi.”</p>
 <p>“Uầy, khẳng định tự tin phết nhể?"</p>
-<p> </p>
 <p>Xin được gửi lời chúc tốt đẹp đến tất cả những cô gái mà toả sáng nhất sau khi thua cuộc!</p>
 <p>Một câu chuyện thanh xuân học đường đầy bí ẩn đan xen với những nữ chính thua cuộc, "Makeines", chuẩn bị khai màn!</p>
-<p> </p>
-<p> </p>
                                         </div>
                                         <div class="summary-more none more-state">
                                             <div class="see_more">Xem thêm</div>
@@ -376,14 +368,14 @@
                         <section class="series-users">
                             <main>
                                 <div class="series-owner group-mem">
-                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u169701-ae2747b4-d5ab-4bc7-870c-ebe5bd3b5f0a.jpg" alt="Poster's avatar">
+                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u169701-e6514b0b-1602-4e44-9a12-92ba0d881baf.jpg" alt="Poster's avatar">
                                     <div class="series-owner-title">
                                         <span class="series-owner_name"><a href="/thanh-vien/169701">Phot.</a></span>
                                                                             </div>
                                 </div>
                                 <div class="fantrans-section">
                                     <div class="fantrans-name">Nhóm dịch</div>
-                                    <div class="fantrans-value"><a href="https://docln.net/nhom-dich/3422-con-duong-xuyen-thoi-dai">The Mavericks</a></div>
+                                    <div class="fantrans-value"><a href="https://docln.net/nhom-dich/3474-the-mavericks">The Mavericks</a></div>
                                 </div>
                                                                 <div class="owner-donate" style="padding: 0">
                                     <!-- <span class="donate-intro">Bạn muốn tiến độ đều hơn ?</span>
@@ -401,9 +393,11 @@
                     <main class="d-lg-block">
                         <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Nguồn eng lấy từ bên nhóm skythewood.</p>
+
 <p>Tập tành dịch thuật.</p>
 <p>Vol 1-3 mọi người kiếm ở trên hako nhé.</p>
-<p>Đọc những bộ khác mà ae trong nhóm làm ở đây: <a href="../../../nhom-dich/3422-con-duong-xuyen-thoi-dai" target="_blank" rel="noreferrer noopener">dị điểm</a></p>
+
+<p>Đọc những bộ khác mà ae trong nhóm làm ở đây: <a href="../../nhom-dich/3422-con-duong-xuyen-thoi-dai" target="_blank" rel="noreferrer noopener">dị điểm</a></p>
 <p>Mọi thắc mắc liên quan đến truyện, mọi người có thể nhắn trực tiếp ở phần bình luận, hoặc liên hệ với tôi qua discord của nhóm (vào giao lưu thôi cũng được) : <s><a href="https://discord.gg/rspnbGz7nF" target="_blank" rel="nofollow noreferrer noopener">dị giáo</a></s></p>
                         </div>
                     </main>
@@ -439,12 +433,111 @@
                 <div style="text-align: center; margin: 0 auto 10px auto;">
                                                         </div>
 
+                                <section id="series-reviews" class="basic-section">
+    <header class="sect-header tab-list"> 
+        <span class="sect-title tab-title" data-tab-index="1">Reviews mới</span></span>
+    </header>
+    <div class="overflow-hidden shadow">
+        <ul role="list" class="">
+                        <li>
+                <a href="https://docln.net/truyen/23058/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
+                    <div class="px-4 py-4 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Pumpkin3112</p>
+                            <div class="ml-2 flex flex-shrink-0">
+                                <div class="d-flex justify-content-around">
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+    </div> 
+                            </div>
+                        </div>
+                        <div class="mt-2 sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                                <p class="flex items-center text-sm text-gray-500 dark:text-white">
+                                    <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    Hay nhưng mà sao skip vol1,2,3 vậy
+                                </p>
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
+                                <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
+                                </svg>
+                                <p>
+                                    <time class="topic-time timeago" title="09-11-2025 20:01:03" datetime="2025-11-09T20:01:03+07:00"></time>                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+                        <li>
+                <a href="https://docln.net/truyen/23058/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
+                    <div class="px-4 py-4 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">deobtdatten</p>
+                            <div class="ml-2 flex flex-shrink-0">
+                                <div class="d-flex justify-content-around">
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+            <div class="text-base text-yellow-400">
+            <i class="fas fa-star"></i>
+        </div>
+    </div> 
+                            </div>
+                        </div>
+                        <div class="mt-2 sm:flex sm:justify-between">
+                            <div class="sm:flex">
+                                <p class="flex items-center text-sm text-gray-500 dark:text-white">
+                                    <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                    </svg>
+                                    khó tìm đc ng dịch bộ này đàng hoàng mà ko drop. c...
+                                </p>
+                            </div>
+                            <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
+                                <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
+                                </svg>
+                                <p>
+                                    <time class="topic-time timeago" title="10-10-2025 14:47:55" datetime="2025-10-10T14:47:55+07:00"></time>                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+                    </ul>
+    </div>
+</section>
                 
                                                 <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
                     <header id="volume_32080" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Vol 04
+                            Vol 04 <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -565,9 +658,21 @@
                                                                                             </div>
                                             <div class="chapter-time">27/09/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/23058-make-heroine-ga-osugiru/c273964-chuong-dac-biet-xin-hay-giu-trat-tu-trong-hieu-sach" title="Chương đặc biệt: Xin hãy giữ trật tự trong hiệu sách">Chương đặc biệt: Xin hãy giữ trật tự trong hiệu sách</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">15/12/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (6 chương)</span>
+                                            <span>Xem tiếp (7 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -579,7 +684,7 @@
                     <header id="volume_33183" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Vol 05 <span style="color: red">*</span>
+                            Vol 05
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -618,9 +723,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -631,9 +733,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -650,7 +749,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:23058,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;YL49ZCBcleUKpWBuMe3X&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/23058-make-heroine-ga-osugiru&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ecc3cc077c0accb540417661a50c0dec5984becdd13f6a56b71781f5da89bd50&quot;}" wire:effects="[]" wire:id="YL49ZCBcleUKpWBuMe3X" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:23058,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;RhrTqsBdrWBPXOt7W0Kh&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/23058-make-heroine-ga-osugiru&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d276f91fcd18faff817eec108d7f3fb22ed80a06f636c6975c8cbefd399b93bd&quot;}" wire:effects="[]" wire:id="RhrTqsBdrWBPXOt7W0Kh" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -669,14 +768,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(230)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(245)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">155 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">162 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -686,16 +785,16 @@
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-3047272"
+    <div id="ln-comment-3083622"
     class="ln-comment-item mt-3 clear"
-    data-comment="3047272" 
-    data-parent="3047272" 
+    data-comment="3083622" 
+    data-parent="3083622" 
     data-type="series" 
     data-typeid="23058">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u169701-ae2747b4-d5ab-4bc7-870c-ebe5bd3b5f0a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u169701-e6514b0b-1602-4e44-9a12-92ba0d881baf.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -724,15 +823,179 @@
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        Vô đây chơi: <s><a href="https://discord.gg/uvQ6A3CDPq" rel="nofollow noreferrer noopener" target="_blank">dị giáo</a></s>
+                        Nghỉ thôi, chuẩn bị lúa dần để mang hốc trưởng về nhà nào<br>
+<img src="https://i.postimg.cc/Ls1Q2vtd/577005196-1425648919567488-5856032317213202164-n.jpg" alt="577005196-1425648919567488-5856032317213202164-n.jpg">
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047272#ln-comment-3047272"
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3083622#ln-comment-3083622"
                             class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 12:33:24"
-                                datetime="2025-10-05T12:33:24+07:00">
-                                05-10-2025 12:33:24
+                            <time class="timeago" title="08-11-2025 21:51:02"
+                                datetime="2025-11-08T21:51:02+07:00">
+                                08-11-2025 21:51:02
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">2</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+                <div id="ln-comment-3083642"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3083642" 
+    data-parent="3083622" 
+    data-type="series" 
+    data-typeid="23058">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u200719-c1b653eb-7787-41aa-aba2-5a642a5f9590.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200719">read for fun and die</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        có thông báo manga r giờ đợi light novel thôi
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3083622&amp;reply_id=3083642#ln-comment-3083642"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-11-2025 22:01:43"
+                                datetime="2025-11-08T22:01:43+07:00">
+                                08-11-2025 22:01:43
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-3083685"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3083685" 
+    data-parent="3083622" 
+    data-type="series" 
+    data-typeid="23058">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u169701-e6514b0b-1602-4e44-9a12-92ba0d881baf.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169701">Phot.</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/200719">@read for fun and die:</a> khéo đêm nay có luôn ấy chứ
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3083622&amp;reply_id=3083685#ln-comment-3083685"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-11-2025 22:38:19"
+                                datetime="2025-11-08T22:38:19+07:00">
+                                08-11-2025 22:38:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="3083622">
+            Xem thêm 4 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>        
+        
+        <div class="ln-comment-group">
+    <div id="ln-comment-3085873"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3085873" 
+    data-parent="3085873" 
+    data-type="chapter" 
+    data-typeid="240311">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/227696">HữuLộcxyzt</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c240311-chuong-01-chang-co-cua-de-qua-mat-nhau-dau"
+                        class="text-slate-500 inline-block">Chương 01: Chẳng có cửa để qua mặt nhau đâu</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Moá,em gái main đỉnh vách :))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3085873#ln-comment-3085873"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-11-2025 15:52:09"
+                                datetime="2025-11-10T15:52:09+07:00">
+                                10-11-2025 15:52:09
                             </time>
                         </a>
                         <a
@@ -746,9 +1009,406 @@
     </div>
 </div>
 
-    </div>        
-        
-        <div class="ln-comment-group">
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3082508"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3082508" 
+    data-parent="3082508" 
+    data-type="series" 
+    data-typeid="23058">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u138458-237854ce-eb58-44a6-b601-fe27963aaffb.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/138458">EbiKhan</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        :&lt;
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3082508#ln-comment-3082508"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-11-2025 20:53:59"
+                                datetime="2025-11-07T20:53:59+07:00">
+                                07-11-2025 20:53:59
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3072130"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3072130" 
+    data-parent="3072130" 
+    data-type="chapter" 
+    data-typeid="241614">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205345">Izumi206</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c241614-giao-doan-1-hoi-hoc-sinh-cao-trung-tsuwabuki"
+                        class="text-slate-500 inline-block">Giao đoạn 1: Hội học sinh Cao trung Tsuwabuki</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Cả 1 động tà giáo ở đây:))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3072130#ln-comment-3072130"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-10-2025 01:38:08"
+                                datetime="2025-10-29T01:38:08+07:00">
+                                29-10-2025 01:38:08
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3072128"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3072128" 
+    data-parent="3072128" 
+    data-type="chapter" 
+    data-typeid="241614">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205345">Izumi206</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c241614-giao-doan-1-hoi-hoc-sinh-cao-trung-tsuwabuki"
+                        class="text-slate-500 inline-block">Giao đoạn 1: Hội học sinh Cao trung Tsuwabuki</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Cảm ơn ad nhiều mong ad ra nhiều chap mới hóng quá
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3072128#ln-comment-3072128"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-10-2025 01:32:21"
+                                datetime="2025-10-29T01:32:21+07:00">
+                                29-10-2025 01:32:21
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3072065"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3072065" 
+    data-parent="3072065" 
+    data-type="chapter" 
+    data-typeid="236110">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205345">Izumi206</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c236110-extra-mot-phien-ban-nhe-nhang-hon-va-khong-bi-gioi-han-do-tuoi"
+                        class="text-slate-500 inline-block">Extra: Một phiên bản nhẹ nhàng hơn và không bị giới hạn độ tuổi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Sa ngã rồi:)
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3072065#ln-comment-3072065"
+                            class="text-slate-500">
+                            <time class="timeago" title="28-10-2025 23:56:00"
+                                datetime="2025-10-28T23:56:00+07:00">
+                                28-10-2025 23:56:00
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3072017"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3072017" 
+    data-parent="3072017" 
+    data-type="chapter" 
+    data-typeid="223864">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205345">Izumi206</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c223864-chuong-03-nhung-cam-xuc-kho-goi-thanh-loi"
+                        class="text-slate-500 inline-block">Chương 03: Những cảm xúc khó gọi thành lời</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Hơn gay nha
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3072017#ln-comment-3072017"
+                            class="text-slate-500">
+                            <time class="timeago" title="28-10-2025 23:07:56"
+                                datetime="2025-10-28T23:07:56+07:00">
+                                28-10-2025 23:07:56
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3065457"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3065457" 
+    data-parent="3065457" 
+    data-type="chapter" 
+    data-typeid="236110">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/113366">Duy=))</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c236110-extra-mot-phien-ban-nhe-nhang-hon-va-khong-bi-gioi-han-do-tuoi"
+                        class="text-slate-500 inline-block">Extra: Một phiên bản nhẹ nhàng hơn và không bị giới hạn độ tuổi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Cạm bẫy BL
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3065457#ln-comment-3065457"
+                            class="text-slate-500">
+                            <time class="timeago" title="22-10-2025 19:37:13"
+                                datetime="2025-10-22T19:37:13+07:00">
+                                22-10-2025 19:37:13
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3065197"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3065197" 
+    data-parent="3065197" 
+    data-type="chapter" 
+    data-typeid="223864">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/113366">Duy=))</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c223864-chuong-03-nhung-cam-xuc-kho-goi-thanh-loi"
+                        class="text-slate-500 inline-block">Chương 03: Những cảm xúc khó gọi thành lời</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Lé biên
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3065197#ln-comment-3065197"
+                            class="text-slate-500">
+                            <time class="timeago" title="22-10-2025 13:22:15"
+                                datetime="2025-10-22T13:22:15+07:00">
+                                22-10-2025 13:22:15
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3054010"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3054010" 
+    data-parent="3054010" 
+    data-type="chapter" 
+    data-typeid="235548">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/220205">Skibizi zes zes</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c235548-mo-dau"
+                        class="text-slate-500 inline-block">Mở đầu</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        A đã bị dắt kể từ khoảnh khắc ấy:))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3054010#ln-comment-3054010"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-10-2025 19:14:09"
+                                datetime="2025-10-11T19:14:09+07:00">
+                                11-10-2025 19:14:09
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-3050585"
     class="ln-comment-item mt-3 clear deleted disabled"
     data-comment="3050585" 
@@ -758,7 +1418,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -781,747 +1441,19 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3050058"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3050058" 
-    data-parent="3050058" 
-    data-type="chapter" 
-    data-typeid="241614">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u194653-133e6fe1-c8ef-4288-84a2-8b61311d25b9.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/194653">KR Brave</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c241614-giao-doan-1-hoi-hoc-sinh-cao-trung-tsuwabuki"
-                        class="text-slate-500 inline-block">Giao đoạn 1: Hội học sinh Cao trung Tsuwabuki</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        ông anh hiroto với bà hội trưởng mong đc phát triển thêm<br>
-anw basori nhà ta nghiện BL cmnr =)))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3050058#ln-comment-3050058"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2025 22:41:24"
-                                datetime="2025-10-07T22:41:24+07:00">
-                                07-10-2025 22:41:24
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3049787"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3049787" 
-    data-parent="3049787" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u200719-c1b653eb-7787-41aa-aba2-5a642a5f9590.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200719">read for fun and die</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        cái hội học sinh bất ổn =ll
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3049787#ln-comment-3049787"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2025 20:02:59"
-                                datetime="2025-10-07T20:02:59+07:00">
-                                07-10-2025 20:02:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3049686"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3049686" 
-    data-parent="3049686" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u169701-ae2747b4-d5ab-4bc7-870c-ebe5bd3b5f0a.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169701">Phot.</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Quên mất hôm trước chưa có up minh họa chap 1 lên=)) sr ae
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3049686#ln-comment-3049686"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2025 18:21:11"
-                                datetime="2025-10-07T18:21:11+07:00">
-                                07-10-2025 18:21:11
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3048881"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3048881" 
-    data-parent="3048881" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/226377">deobtdatten</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        khoảng bao lâu nx thì lm xog chương 2 vol 5 v ad
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3048881#ln-comment-3048881"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-10-2025 22:02:03"
-                                datetime="2025-10-06T22:02:03+07:00">
-                                06-10-2025 22:02:03
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3048891"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3048891" 
-    data-parent="3048881" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u184263-e1f868e5-f7cf-4a2d-976f-e2100d63981e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/184263">nhen67</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        mai bạn nhé 🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3048881&amp;reply_id=3048891#ln-comment-3048891"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-10-2025 22:07:58"
-                                datetime="2025-10-06T22:07:58+07:00">
-                                06-10-2025 22:07:58
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-3049017"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3049017" 
-    data-parent="3048881" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u169701-ae2747b4-d5ab-4bc7-870c-ebe5bd3b5f0a.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169701">Phot.</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Tôi cũng không biết nữa bác ạ🧑‍🦽
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3048881&amp;reply_id=3049017#ln-comment-3049017"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-10-2025 00:02:22"
-                                datetime="2025-10-07T00:02:22+07:00">
-                                07-10-2025 00:02:22
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3047424"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047424" 
-    data-parent="3047424" 
-    data-type="chapter" 
-    data-typeid="240311">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u200719-c1b653eb-7787-41aa-aba2-5a642a5f9590.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200719">read for fun and die</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c240311-chuong-01-chang-co-cua-de-qua-mat-nhau-dau"
-                        class="text-slate-500 inline-block">Chương 01: Chẳng có cửa để qua mặt nhau đâu</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        cảm giác main bị bé kaju và yanami lùa hay chỉ là bị yanami lùa đi chơi với ẻm thôi =)))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047424#ln-comment-3047424"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 15:28:44"
-                                datetime="2025-10-05T15:28:44+07:00">
-                                05-10-2025 15:28:44
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3048124"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3048124" 
-    data-parent="3047424" 
-    data-type="chapter" 
-    data-typeid="240311">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187530-2387a48a-e25b-405e-a627-980a353a5d74.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/187530">Ohma_TVD</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c240311-chuong-01-chang-co-cua-de-qua-mat-nhau-dau"
-                        class="text-slate-500 inline-block">Chương 01: Chẳng có cửa để qua mặt nhau đâu</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        main bị cả hai lùa nha , bị yanami dụ đi chơi , còn kaju biết mình bị theo dõi nhưng ko quan tâm vẫn muốn main tiếp tục hiểu lầm nha:))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047424&amp;reply_id=3048124#ln-comment-3048124"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-10-2025 01:52:46"
-                                datetime="2025-10-06T01:52:46+07:00">
-                                06-10-2025 01:52:46
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3047350"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047350" 
-    data-parent="3047350" 
-    data-type="chapter" 
-    data-typeid="240311">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u194653-133e6fe1-c8ef-4288-84a2-8b61311d25b9.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/194653">KR Brave</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c240311-chuong-01-chang-co-cua-de-qua-mat-nhau-dau"
-                        class="text-slate-500 inline-block">Chương 01: Chẳng có cửa để qua mặt nhau đâu</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        hmm hmm hi vọng vol này sẽ giải thích rõ hơn sự kiện này chứ ko thì chịu chết
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047350#ln-comment-3047350"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 13:59:08"
-                                datetime="2025-10-05T13:59:08+07:00">
-                                05-10-2025 13:59:08
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3047150"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047150" 
-    data-parent="3047150" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200549">evesroaden</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Ai bt link đọc eng vol 8 k ạ
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047150#ln-comment-3047150"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 10:21:59"
-                                datetime="2025-10-05T10:21:59+07:00">
-                                05-10-2025 10:21:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3047154"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047154" 
-    data-parent="3047150" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u169701-ae2747b4-d5ab-4bc7-870c-ebe5bd3b5f0a.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169701">Phot.</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        :))) tôi thấy có mỗi bản mtl thôi bác ơi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047150&amp;reply_id=3047154#ln-comment-3047154"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 10:31:00"
-                                datetime="2025-10-05T10:31:00+07:00">
-                                05-10-2025 10:31:00
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-3047221"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047221" 
-    data-parent="3047150" 
-    data-type="series" 
-    data-typeid="23058">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u194653-133e6fe1-c8ef-4288-84a2-8b61311d25b9.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/194653">KR Brave</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        chắc bạn nên đọc bản AI dịch ở hako này th
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047150&amp;reply_id=3047221#ln-comment-3047221"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 11:32:49"
-                                datetime="2025-10-05T11:32:49+07:00">
-                                05-10-2025 11:32:49
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                <div class="fetch_reply" data-parent="3047150">
-            Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3047041"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3047041" 
-    data-parent="3047041" 
-    data-type="chapter" 
-    data-typeid="240311">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/124603">Hoàng Đạt 077</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c240311-chuong-01-chang-co-cua-de-qua-mat-nhau-dau"
-                        class="text-slate-500 inline-block">Chương 01: Chẳng có cửa để qua mặt nhau đâu</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        TFNC
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3047041#ln-comment-3047041"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-10-2025 06:33:22"
-                                datetime="2025-10-05T06:33:22+07:00">
-                                05-10-2025 06:33:22
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3045463"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3045463" 
-    data-parent="3045463" 
-    data-type="chapter" 
-    data-typeid="235548">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u200719-c1b653eb-7787-41aa-aba2-5a642a5f9590.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200719">read for fun and die</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23058-make-heroine-ga-osugiru/c235548-mo-dau"
-                        class="text-slate-500 inline-block">Mở đầu</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        tks trans
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23058-make-heroine-ga-osugiru?comment_id=3045463#ln-comment-3045463"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-10-2025 20:25:59"
-                                datetime="2025-10-03T20:25:59+07:00">
-                                03-10-2025 20:25:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/23058-make-heroine-ga-osugiru?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/23058-make-heroine-ga-osugiru?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = '2vgXg8jYyaMj7weUKhdIrfCF3xcIRnXBCaZo2yHK';
+        var token = '74ByJ6AjGD7WWX1kOh3RrpqOLYC39yBfB6EiwPhP';
         var comment_type = 'series';
         var comment_typeid = '23058';
     </script>
@@ -1569,10 +1501,14 @@ anw basori nhà ta nghiện BL cmnr =)))
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="2vgXg8jYyaMj7weUKhdIrfCF3xcIRnXBCaZo2yHK" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="WO6kQGcSC3S77WC3VqcnczIICAaJMVz2V5skvdnh" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//bugscrawled.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script
+  type="text/javascript"
+  src="https://disinheritguilewallow.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"
+  async
+></script>
 
         
             <footer id="footer">
