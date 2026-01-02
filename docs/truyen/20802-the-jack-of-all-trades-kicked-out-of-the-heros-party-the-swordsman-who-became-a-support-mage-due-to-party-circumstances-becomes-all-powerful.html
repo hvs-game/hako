@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="OAbDCTH1KetXOl8gmiQpYUWeOO44X5LAM0YCcHBb">
+    <meta name="csrf-token" content="wBtHAWKAAGWWXaLhGtWkKVvMaab1Ozk5DjuXNUTd">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -159,9 +159,12 @@
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -173,16 +176,7 @@
                     <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
                 </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -246,6 +240,21 @@
 		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/web-novel" x-show="more" :class="{ 'fade-in': more }">
 		Web Novel
 	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/adapted-to-anime" x-show="more" :class="{ 'fade-in': more }">
+		Adapted to Anime
+	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/character-growth" x-show="more" :class="{ 'fade-in': more }">
+		Character Growth
+	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/comedy" x-show="more" :class="{ 'fade-in': more }">
+		Comedy
+	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/martial-arts" x-show="more" :class="{ 'fade-in': more }">
+		Martial Arts
+	</a>
+		<a class="series-gerne-item animation" style="display: none;" href="https://docln.net/the-loai/super-power" x-show="more" :class="{ 'fade-in': more }">
+		Super Power
+	</a>
 	
 		<a class="series-gerne-item" x-show="!more" @click="more = true;"><i class="fas fa-ellipsis-h"></i></a>
 	</div>                                        <div class="info-item">
@@ -272,7 +281,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 501 </span>
+                                                <span class="block feature-name"> 517 </span>
                                             </a>
                                                                                         </div>
 
@@ -322,11 +331,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="08/12/2025 17:25:21" datetime="2025-12-08T17:25:21+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="02/01/2026 22:00:48" datetime="2026-01-02T22:00:48+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">251.517</div>
+                                            <div class="statistic-value">255.119</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -335,7 +344,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">200.518</div>
+                                            <div class="statistic-value">213.851</div>
                                         </div>
                                     </div>
                                 </div>
@@ -374,7 +383,7 @@
                         <section class="series-users">
                             <main>
                                 <div class="series-owner group-mem">
-                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u120197-570772fb-56e6-4e23-b410-a8bea5a061d6.jpg" alt="Poster's avatar">
+                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u120197-0ba5cdc2-5122-42d4-86c3-84aff5460c55.jpg" alt="Poster's avatar">
                                     <div class="series-owner-title">
                                         <span class="series-owner_name"><a href="/thanh-vien/120197">Kirito51</a></span>
                                                                             </div>
@@ -591,9 +600,6 @@ Quá tuyệt v...
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -604,13 +610,20 @@ Quá tuyệt v...
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
                                                 <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c270916-vol-4" title="Vol 4">Vol 4</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">08/12/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c270923-vol-5" title="Vol 5">Vol 5</a>
 
                                                                                             </div>
                                             <div class="chapter-time">08/12/2025</div>
@@ -623,12 +636,60 @@ Quá tuyệt v...
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
-                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c270923-vol-5" title="Vol 5">Vol 5</a>
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c284013-vol-6" title="Vol 6">Vol 6</a>
 
+                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
                                                                                             </div>
-                                            <div class="chapter-time">08/12/2025</div>
+                                            <div class="chapter-time">02/01/2026</div>
                                         </li>
-                                                                                                        </ul>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c284014-vol-07" title="Vol 7">Vol 7</a>
+
+                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
+                                                                                            </div>
+                                            <div class="chapter-time">02/01/2026</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c284015-vol-8" title="Vol 8">Vol 8</a>
+
+                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
+                                                                                            </div>
+                                            <div class="chapter-time">02/01/2026</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c284018-vol-9" title="Vol 9">Vol 9</a>
+
+                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
+                                                                                            </div>
+                                            <div class="chapter-time">02/01/2026</div>
+                                        </li>
+                                                                                                            <div class="mobile-more">
+                                        <div class="see_more">
+                                            <span>Xem tiếp (4 chương)</span>
+                                        </div>
+                                    </div>
+                                                                    </ul>
                             </div>
                         </div>
                     </main>
@@ -1635,7 +1696,7 @@ Quá tuyệt v...
                     <header id="volume_29567" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Web Novel (101 - 150) - Đang tiến hành
+                            Web Novel (101 - 150) - Đang tiến hành <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1770,9 +1831,21 @@ Quá tuyệt v...
                                                                                             </div>
                                             <div class="chapter-time">30/11/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c284010-chuong-114-vuot-len-chinh-minh" title="Chương 114 - Vượt lên chính mình">Chương 114 - Vượt lên chính mình</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">02/01/2026</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (8 chương)</span>
+                                            <span>Xem tiếp (9 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1783,7 +1856,7 @@ Quá tuyệt v...
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20802,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;gnpjq8tipg1HhVQ9lZ5x&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;f918cab00954955f744048b64f7417cedea779acde8b4ca11eaa2f5079bcc9c5&quot;}" wire:effects="[]" wire:id="gnpjq8tipg1HhVQ9lZ5x" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20802,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;BVk31XQMyCEYUMuQDUQV&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;4159bea8527f5eb75d769c5a5fb8e306c77e803dd38f2637990025de608601a6&quot;}" wire:effects="[]" wire:id="BVk31XQMyCEYUMuQDUQV" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1802,14 +1875,14 @@ Quá tuyệt v...
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(703)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(766)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">72 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">75 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -1819,16 +1892,16 @@ Quá tuyệt v...
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-3115686"
+    <div id="ln-comment-3148107"
     class="ln-comment-item mt-3 clear"
-    data-comment="3115686" 
-    data-parent="3115686" 
+    data-comment="3148107" 
+    data-parent="3148107" 
     data-type="series" 
     data-typeid="20802">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u120197-570772fb-56e6-4e23-b410-a8bea5a061d6.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u120197-0ba5cdc2-5122-42d4-86c3-84aff5460c55.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1857,69 +1930,15 @@ Quá tuyệt v...
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        Mình sắp bước vào kỳ thi thử - đánh giá năng lực lớp 12 đợt 1 nên xin phép sủi 1 tuần nữa nha mọi người, không ôn là chết mất💀
+                        Bạn nào có link minh hoạ vol 6-7-8-9 thì cho mình xin với. Và đừng quên đón xem tập 1 anime lên sóng vào 4/1 tới đây nha các bạn. Thân. <s>Còn chiếu ở nền tảng nào thì chịu, lên web lậu coi tạm</s>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3115686#ln-comment-3115686"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3148107#ln-comment-3148107"
                             class="text-slate-500">
-                            <time class="timeago" title="06-12-2025 20:57:53"
-                                datetime="2025-12-06T20:57:53+07:00">
-                                06-12-2025 20:57:53
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">2</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-                <div id="ln-comment-3116901"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3116901" 
-    data-parent="3115686" 
-    data-type="series" 
-    data-typeid="20802">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u64359-84ed1d8b-e6aa-4334-923d-3ca317664bb7.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Akarui_Taiyo</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        hsa hay thi thử thptqg thế
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3115686&amp;reply_id=3116901#ln-comment-3116901"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-12-2025 18:31:15"
-                                datetime="2025-12-07T18:31:15+07:00">
-                                07-12-2025 18:31:15
+                            <time class="timeago" title="02-01-2026 22:04:33"
+                                datetime="2026-01-02T22:04:33+07:00">
+                                02-01-2026 22:04:33
                             </time>
                         </a>
                         <a
@@ -1932,16 +1951,67 @@ Quá tuyệt v...
         </div>
     </div>
 </div>
-            <div id="ln-comment-3116922"
+
+    </div>        
+        
+        <div class="ln-comment-group">
+    <div id="ln-comment-3147072"
     class="ln-comment-item mt-3 clear"
-    data-comment="3116922" 
-    data-parent="3115686" 
+    data-comment="3147072" 
+    data-parent="3147072" 
     data-type="series" 
     data-typeid="20802">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u120197-570772fb-56e6-4e23-b410-a8bea5a061d6.jpg" class="w-full rounded-full" />
+                <img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/229924">Fghjkl144</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Shion vợ cả à các bác với tính tới hiện tại em nào đang là harem của main thế v:
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3147072#ln-comment-3147072"
+                            class="text-slate-500">
+                            <time class="timeago" title="02-01-2026 01:47:27"
+                                datetime="2026-01-02T01:47:27+07:00">
+                                02-01-2026 01:47:27
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3147179"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3147179" 
+    data-parent="3147072" 
+    data-type="series" 
+    data-typeid="20802">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u120197-0ba5cdc2-5122-42d4-86c3-84aff5460c55.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1970,15 +2040,15 @@ Quá tuyệt v...
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/64359">@Akarui_Taiyo:</a> thptqg bro ơi, tôi trình đâu có mà đòi thi hsa=)
+                        Đến hiện tại tôi dịch(nếu không tính Shion) thì chắc là Selma, Sophia với Luna, có thể là cả Lain(và theo minh hoạ thì có cả công chúa nữa)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3115686&amp;reply_id=3116922#ln-comment-3116922"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3147072&amp;reply_id=3147179#ln-comment-3147179"
                             class="text-slate-500">
-                            <time class="timeago" title="07-12-2025 18:50:10"
-                                datetime="2025-12-07T18:50:10+07:00">
-                                07-12-2025 18:50:10
+                            <time class="timeago" title="02-01-2026 08:06:03"
+                                datetime="2026-01-02T08:06:03+07:00">
+                                02-01-2026 08:06:03
                             </time>
                         </a>
                         <a
@@ -1992,25 +2062,20 @@ Quá tuyệt v...
     </div>
 </div>
     
-                <div class="fetch_reply" data-parent="3115686">
-            Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
                 
     </div>
-    </div>        
-        
-        <div class="ln-comment-group">
-    <div id="ln-comment-3111172"
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3130132"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111172" 
-    data-parent="3111172" 
+    data-comment="3130132" 
+    data-parent="3130132" 
     data-type="chapter" 
-    data-typeid="166610">
+    data-typeid="164026">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u46303-c332ca3f-4c47-456b-8a53-329cd810458b.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2019,23 +2084,23 @@ Quá tuyệt v...
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/46303">Zzzudhhe</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166610-chuong-60-ngoai-truyen-to-doi-anh-hung-luna-moi-rang-buoc"
-                        class="text-slate-500 inline-block">Chương 60 - (Ngoại truyện Tổ đội Anh hùng, Luna) - Mối ràng buộc</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c164026-chuong-38-moi-truong-moi"
+                        class="text-slate-500 inline-block">Chương 38 - Môi trường mới</a></span>
                                                     <div class="ln-comment-content long-text">
-                        :&gt;
+                        cá nhân t thì t ko thích cái thiết lập phong ấn này kia cho lắm, để hình tượng mạnh lên như này mới nổi bật chứ, tự dưng cho quả thiết lập sở hữu sức mạnh khủng bố thì lại thành hack game r
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111172#ln-comment-3111172"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3130132#ln-comment-3130132"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 20:16:08"
-                                datetime="2025-12-02T20:16:08+07:00">
-                                02-12-2025 20:16:08
+                            <time class="timeago" title="19-12-2025 05:31:54"
+                                datetime="2025-12-19T05:31:54+07:00">
+                                19-12-2025 05:31:54
                             </time>
                         </a>
                         <a
@@ -2051,16 +2116,16 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111168"
+    <div id="ln-comment-3130129"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111168" 
-    data-parent="3111168" 
+    data-comment="3130129" 
+    data-parent="3130129" 
     data-type="chapter" 
-    data-typeid="166584">
+    data-typeid="163926">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u46303-c332ca3f-4c47-456b-8a53-329cd810458b.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2069,23 +2134,138 @@ Quá tuyệt v...
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/46303">Zzzudhhe</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166584-chuong-59-ngoai-truyen-to-doi-anh-hung-oliver-lech-lac"
-                        class="text-slate-500 inline-block">Chương 59 - (Ngoại truyện Tổ đội Anh hùng, Oliver) - Lầm đường lạc lối</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c163926-chuong-36-khoi-dau-moi"
+                        class="text-slate-500 inline-block">Chương 36 - Khởi đầu mới</a></span>
                                                     <div class="ln-comment-content long-text">
-                        :&gt;
+                        ô tưởng đánh solo, cuối cùng vẫn quyết định tham gia là thế nào??
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111168#ln-comment-3111168"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3130129#ln-comment-3130129"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 20:12:35"
-                                datetime="2025-12-02T20:12:35+07:00">
-                                02-12-2025 20:12:35
+                            <time class="timeago" title="19-12-2025 05:25:16"
+                                datetime="2025-12-19T05:25:16+07:00">
+                                19-12-2025 05:25:16
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3130401"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3130401" 
+    data-parent="3130129" 
+    data-type="chapter" 
+    data-typeid="163926">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u120197-0ba5cdc2-5122-42d4-86c3-84aff5460c55.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/120197">Kirito51</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c163926-chuong-36-khoi-dau-moi"
+                        class="text-slate-500 inline-block">Chương 36 - Khởi đầu mới</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Là trưởng thành đấy bạn, Orn muốn đi solo là vì đang mất niềm tin vào người khác, nhưng khi đã có niềm tin lại thì ảnh sẽ gia nhập tập thể mới thôi, cứ xem như đây là bước phát triển nhân vật cũng được=)
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3130129&amp;reply_id=3130401#ln-comment-3130401"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-12-2025 12:45:46"
+                                datetime="2025-12-19T12:45:46+07:00">
+                                19-12-2025 12:45:46
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3130128"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3130128" 
+    data-parent="3130128" 
+    data-type="chapter" 
+    data-typeid="163731">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u46303-c332ca3f-4c47-456b-8a53-329cd810458b.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/46303">Zzzudhhe</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c163731-chuong-34-loi-moi"
+                        class="text-slate-500 inline-block">Chương 34 - Lời mời</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        đuỵt mọe nó mà ko đánh solo nx thì bố bỏ truyện
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3130128#ln-comment-3130128"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-12-2025 05:22:12"
+                                datetime="2025-12-19T05:22:12+07:00">
+                                19-12-2025 05:22:12
                             </time>
                         </a>
                         <a
@@ -2101,16 +2281,16 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111164"
+    <div id="ln-comment-3130120"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111164" 
-    data-parent="3111164" 
+    data-comment="3130120" 
+    data-parent="3130120" 
     data-type="chapter" 
-    data-typeid="166551">
+    data-typeid="161658">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u46303-c332ca3f-4c47-456b-8a53-329cd810458b.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2119,23 +2299,23 @@ Quá tuyệt v...
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/46303">Zzzudhhe</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166551-chuong-58-qua-khu-cua-ba-em-ay"
-                        class="text-slate-500 inline-block">Chương 58 - Quá khứ của ba em ấy</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c161658-chuong-23-cac-sy-quan-doi-dau-con-trum-tang-50"
+                        class="text-slate-500 inline-block">Chương 23 - Các Sỹ quan đối đầu con Trùm tầng 50</a></span>
                                                     <div class="ln-comment-content long-text">
-                        :&gt;
+                        đấy nhá, thỏa lòng ước mơ của azai khi muốn lemme solo it nhá
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111164#ln-comment-3111164"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3130120#ln-comment-3130120"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 20:05:37"
-                                datetime="2025-12-02T20:05:37+07:00">
-                                02-12-2025 20:05:37
+                            <time class="timeago" title="19-12-2025 04:33:52"
+                                datetime="2025-12-19T04:33:52+07:00">
+                                19-12-2025 04:33:52
                             </time>
                         </a>
                         <a
@@ -2151,12 +2331,132 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111158"
+    <div id="ln-comment-3129442"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111158" 
-    data-parent="3111158" 
+    data-comment="3129442" 
+    data-parent="3129442" 
+    data-type="series" 
+    data-typeid="20802">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u120197-0ba5cdc2-5122-42d4-86c3-84aff5460c55.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/120197">Kirito51</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Mình sẽ lên chương mới sau vài ngày nữa <s>vì sắp đi thi Rung Chuông Vàng nên phải ôn</s> nên mình sẽ để lại 2 link PV của anime sắp sửa được chiếu vào tháng 1 2026 tới đây. Cùng đón chờ anime nhé ae (Art ngon vcl)<br>
+<a href="https://youtu.be/eG_aufK84t4?si=bgSfnUq_kFGI4cNt" target="_blank" rel="nofollow noreferrer noopener">PV chính thức</a><br>
+<a href="https://youtu.be/s1BwOQnSuZw?si=ppnUPbML_EjGYwnR" rel="nofollow noreferrer noopener" target="_blank">PV giới thiệu nhân vật</a>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3129442#ln-comment-3129442"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-12-2025 17:19:16"
+                                datetime="2025-12-18T17:19:16+07:00">
+                                18-12-2025 17:19:16
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">2</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3129637"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3129637" 
+    data-parent="3129442" 
+    data-type="series" 
+    data-typeid="20802">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u64359-84ed1d8b-e6aa-4334-923d-3ca317664bb7.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Akarui_Taiyo</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        ngon thí, muse có thầu k nhẻ
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3129442&amp;reply_id=3129637#ln-comment-3129637"
+                            class="text-slate-500">
+                            <time class="timeago" title="18-12-2025 20:36:37"
+                                datetime="2025-12-18T20:36:37+07:00">
+                                18-12-2025 20:36:37
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3122978"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3122978" 
+    data-parent="3122978" 
     data-type="chapter" 
-    data-typeid="166443">
+    data-typeid="267140">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2174,18 +2474,18 @@ Quá tuyệt v...
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166443-chuong-57-khi-em-ay-nhan-ra-noi-dau-cua-minh"
-                        class="text-slate-500 inline-block">Chương 57 - Khi em ấy nhận ra nỗi đau của mình</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c267140-chuong-113-ngoai-truyen-luna-anh-trang-soi-sang-man-dem"
+                        class="text-slate-500 inline-block">Chương 113 (Ngoại truyện Luna) - Ánh trăng soi sáng màn đêm ②</a></span>
                                                     <div class="ln-comment-content long-text">
                         :&gt;
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111158#ln-comment-3111158"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3122978#ln-comment-3122978"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 20:01:54"
-                                datetime="2025-12-02T20:01:54+07:00">
-                                02-12-2025 20:01:54
+                            <time class="timeago" title="13-12-2025 01:30:21"
+                                datetime="2025-12-13T01:30:21+07:00">
+                                13-12-2025 01:30:21
                             </time>
                         </a>
                         <a
@@ -2201,12 +2501,12 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111154"
+    <div id="ln-comment-3122974"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111154" 
-    data-parent="3111154" 
+    data-comment="3122974" 
+    data-parent="3122974" 
     data-type="chapter" 
-    data-typeid="166163">
+    data-typeid="266073">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2224,18 +2524,18 @@ Quá tuyệt v...
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166163-chuong-56-tran-danh-solo"
-                        class="text-slate-500 inline-block">Chương 56 - Trận đánh Solo</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c266073-chuong-112-ngoai-truyen-luna-anh-trang-roi-sang-man-dem"
+                        class="text-slate-500 inline-block">Chương 112 (Ngoại truyện Luna) - Ánh trăng soi sáng màn đêm ①</a></span>
                                                     <div class="ln-comment-content long-text">
                         :&gt;
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111154#ln-comment-3111154"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3122974#ln-comment-3122974"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:57:01"
-                                datetime="2025-12-02T19:57:01+07:00">
-                                02-12-2025 19:57:01
+                            <time class="timeago" title="13-12-2025 01:27:32"
+                                datetime="2025-12-13T01:27:32+07:00">
+                                13-12-2025 01:27:32
                             </time>
                         </a>
                         <a
@@ -2251,12 +2551,12 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111149"
+    <div id="ln-comment-3122971"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111149" 
-    data-parent="3111149" 
+    data-comment="3122971" 
+    data-parent="3122971" 
     data-type="chapter" 
-    data-typeid="166101">
+    data-typeid="266011">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2274,18 +2574,18 @@ Quá tuyệt v...
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c166101-chuong-55-ma-thu"
-                        class="text-slate-500 inline-block">Chương 55 - Ma thú</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c266011-chuong-111-mot-tuan-sau"
+                        class="text-slate-500 inline-block">Chương 111 - Một tuần sau</a></span>
                                                     <div class="ln-comment-content long-text">
                         :&gt;
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111149#ln-comment-3111149"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3122971#ln-comment-3122971"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:51:46"
-                                datetime="2025-12-02T19:51:46+07:00">
-                                02-12-2025 19:51:46
+                            <time class="timeago" title="13-12-2025 01:24:47"
+                                datetime="2025-12-13T01:24:47+07:00">
+                                13-12-2025 01:24:47
                             </time>
                         </a>
                         <a
@@ -2301,12 +2601,12 @@ Quá tuyệt v...
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111145"
+    <div id="ln-comment-3122967"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111145" 
-    data-parent="3111145" 
+    data-comment="3122967" 
+    data-parent="3122967" 
     data-type="chapter" 
-    data-typeid="165824">
+    data-typeid="264369">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2324,168 +2624,18 @@ Quá tuyệt v...
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c165824-chuong-54-tai-ngo-biet-danh"
-                        class="text-slate-500 inline-block">Chương 54 - Tái ngộ ③ - Biệt danh</a></span>
+                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c264369-chuong-110-ngoai-truyen-oliver-cuoc-tro-chuyen-keo-dai-10-nam"
+                        class="text-slate-500 inline-block">Chương 110 (Ngoại truyện Oliver) - Cuộc trò chuyện kéo dài 10 năm</a></span>
                                                     <div class="ln-comment-content long-text">
                         :&gt;
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111145#ln-comment-3111145"
+                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3122967#ln-comment-3122967"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:46:53"
-                                datetime="2025-12-02T19:46:53+07:00">
-                                02-12-2025 19:46:53
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3111143"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3111143" 
-    data-parent="3111143" 
-    data-type="chapter" 
-    data-typeid="165820">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c165820-chuong-53-tai-ngo-hoan-canh-cua-hai-em-ay"
-                        class="text-slate-500 inline-block">Chương 53 - Tái ngộ ② - Hoàn cảnh của hai em ấy</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        :&gt;
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111143#ln-comment-3111143"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:45:13"
-                                datetime="2025-12-02T19:45:13+07:00">
-                                02-12-2025 19:45:13
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3111134"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3111134" 
-    data-parent="3111134" 
-    data-type="chapter" 
-    data-typeid="165726">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c165726-chuong-52-tai-ngo-thuyet-giang"
-                        class="text-slate-500 inline-block">Chương 52 - Tái ngộ ① - Thuyết giảng</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        :&gt;
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111134#ln-comment-3111134"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:40:32"
-                                datetime="2025-12-02T19:40:32+07:00">
-                                02-12-2025 19:40:32
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3111127"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3111127" 
-    data-parent="3111127" 
-    data-type="chapter" 
-    data-typeid="165680">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54467-e65c56ef-6e2f-414d-a03b-b64568c6d1cb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54467">Lucia-chan</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/c165680-chuong-51-dinh-huong-dao-tao"
-                        class="text-slate-500 inline-block">Chương 51 - Định hướng đào tạo</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        :&gt;
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?comment_id=3111127#ln-comment-3111127"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 19:35:08"
-                                datetime="2025-12-02T19:35:08+07:00">
-                                02-12-2025 19:35:08
+                            <time class="timeago" title="13-12-2025 01:16:14"
+                                datetime="2025-12-13T01:16:14+07:00">
+                                13-12-2025 01:16:14
                             </time>
                         </a>
                         <a
@@ -2506,13 +2656,13 @@ Quá tuyệt v...
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="http://docln.sbs/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://ln.hako.vn/truyen/20802-the-jack-of-all-trades-kicked-out-of-the-heros-party-the-swordsman-who-became-a-support-mage-due-to-party-circumstances-becomes-all-powerful/t28094-light-novel-vol-1?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'w5UvfsfQqsqGXis5Zj2UnxpI3PiHzrtzN6KIyaTr';
+        var token = 'nmdOP71p9knTGcBZyGgAlb7JYavEJHgZUbrpG23h';
         var comment_type = 'series';
         var comment_typeid = '20802';
     </script>
@@ -2560,14 +2710,10 @@ Quá tuyệt v...
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="OAbDCTH1KetXOl8gmiQpYUWeOO44X5LAM0YCcHBb" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="wBtHAWKAAGWWXaLhGtWkKVvMaab1Ozk5DjuXNUTd" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script
-  type="text/javascript"
-  src="//spicewaxworks.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"
-  async
-></script>
+    <script src="https://confidecross.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js" async></script>
 
         
             <footer id="footer">
@@ -2575,7 +2721,7 @@ Quá tuyệt v...
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2026 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
