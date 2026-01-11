@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="Abwjrh17iihVTFdYvCT2BvopaCern0h1dE8iXQye">
+    <meta name="csrf-token" content="Whi13aWVZQfggT5ucM8idZn9elo9jnGIu6oo02pc">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=9128bdee617e5eb876ffd418ed3597bf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -84,7 +84,7 @@
             </div>
 
             <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')" title="Trang chủ"></a>
+                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-xmas-2025.png')" title="Trang chủ"></a>
             </div>
              
             <div id="navbar-user" class="guest">						
@@ -155,13 +155,16 @@
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -169,17 +172,11 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -259,7 +256,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 759 </span>
+                                                <span class="block feature-name"> 770 </span>
                                             </a>
                                                                                         </div>
 
@@ -309,11 +306,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="19/10/2025 22:40:31" datetime="2025-10-19T22:40:31+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="11/01/2026 23:18:47" datetime="2026-01-11T23:18:47+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">20.191</div>
+                                            <div class="statistic-value">21.487</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -322,7 +319,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">83.804</div>
+                                            <div class="statistic-value">89.319</div>
                                         </div>
                                     </div>
                                 </div>
@@ -698,9 +695,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c247802-chuong-32-that-muon-duoc-au-yem-senpai-sau-mot-ngay-di-hoc-dai-hoc" title="Chương 3.2: Thật Muốn Được Âu Yếm Senpai Sau Một Ngày Đi Học Đại Học">Chương 3.2: Thật Muốn Được Âu Yếm Senpai Sau Một Ngày Đi Học Đại Học</a>
@@ -708,9 +702,21 @@
                                                                                             </div>
                                             <div class="chapter-time">19/10/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c289205-chuong-33-that-muon-duoc-au-yem-senpai-sau-mot-ngay-di-hoc-dai-hoc" title="Chương 3.3: Thật Muốn Được Âu Yếm Senpai Sau Một Ngày Đi Học Đại Học">Chương 3.3: Thật Muốn Được Âu Yếm Senpai Sau Một Ngày Đi Học Đại Học</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">11/01/2026</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (12 chương)</span>
+                                            <span>Xem tiếp (13 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -747,7 +753,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18161,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;wAXaD9GuUI2znima2cQi&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;dfdc90df13bf6ace1652d5e4f8c28742ce2329aadca2ca664c75589fb38812b7&quot;}" wire:effects="[]" wire:id="wAXaD9GuUI2znima2cQi" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:18161,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;jwQL26gssccLTYlRX7hY&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;89de0d883bc46a4ea6bce0d46a38385c06fd585df04b6f74319fce1a8e6ebf77&quot;}" wire:effects="[]" wire:id="jwQL26gssccLTYlRX7hY" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -766,14 +772,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(235)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(242)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">98 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">100 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -958,6 +964,367 @@
     </div>        
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3159664"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3159664" 
+    data-parent="3159664" 
+    data-type="chapter" 
+    data-typeid="289205">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u126662-ad5d3ff0-1cc2-4469-9429-e5c7fcb4ff7c.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/126662">Cày bừa</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c289205-chuong-33-that-muon-duoc-au-yem-senpai-sau-mot-ngay-di-hoc-dai-hoc"
+                        class="text-slate-500 inline-block">Chương 3.3: Thật Muốn Được Âu Yếm Senpai Sau Một Ngày Đi Học Đại Học</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3159664#ln-comment-3159664"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-01-2026 23:42:08"
+                                datetime="2026-01-11T23:42:08+07:00">
+                                11-01-2026 23:42:08
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3156308"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3156308" 
+    data-parent="3156308" 
+    data-type="series" 
+    data-typeid="18161">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u180900-2fdf1321-fa29-4cce-8188-b8d322912aeb.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180900">Sasaki Kiyoshi</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Hiếm lắm mới có 1 bộ hợp gu tui mong sớm ra tiếp
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3156308#ln-comment-3156308"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-01-2026 23:58:55"
+                                datetime="2026-01-08T23:58:55+07:00">
+                                08-01-2026 23:58:55
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3158227"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3158227" 
+    data-parent="3156308" 
+    data-type="series" 
+    data-typeid="18161">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u152182-7c0ace48-fbf3-4e4e-9590-71ec26879180.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/152182">0range</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Âyda =)))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3156308&amp;reply_id=3158227#ln-comment-3158227"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-01-2026 22:34:13"
+                                datetime="2026-01-10T22:34:13+07:00">
+                                10-01-2026 22:34:13
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">1</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3101692"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3101692" 
+    data-parent="3101692" 
+    data-type="chapter" 
+    data-typeid="158236">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c158236-chuong-23-dan-da-mat-noi-de-lan-tron"
+                        class="text-slate-500 inline-block">Chương 2.3: Dần Dà Mất Nơi Để Lẩn Trốn</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3101692#ln-comment-3101692"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-11-2025 22:43:21"
+                                datetime="2025-11-24T22:43:21+07:00">
+                                24-11-2025 22:43:21
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3101680"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3101680" 
+    data-parent="3101680" 
+    data-type="chapter" 
+    data-typeid="156635">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c156635-chuong-10"
+                        class="text-slate-500 inline-block">Chương 2.1: Dần Dà Mất Nơi Để Lẩn Trốn</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Đến lúc buff cho main r
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3101680#ln-comment-3101680"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-11-2025 22:36:06"
+                                datetime="2025-11-24T22:36:06+07:00">
+                                24-11-2025 22:36:06
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3101670"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3101670" 
+    data-parent="3101670" 
+    data-type="chapter" 
+    data-typeid="143018">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c143018-chuong-17-giao-doan"
+                        class="text-slate-500 inline-block">Chương 1.7: Giao đoạn</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Haiz kịch bản anh bạn da ngăm sẽ k xảy ra rồi
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3101670#ln-comment-3101670"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-11-2025 22:32:04"
+                                datetime="2025-11-24T22:32:04+07:00">
+                                24-11-2025 22:32:04
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3101641"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3101641" 
+    data-parent="3101641" 
+    data-type="chapter" 
+    data-typeid="135328">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c135328-chuong-12-vao-tuoi-hai-muoi-ban-co-the-song-chung-voi-nguoi-yeu-va-uong-bia-mot-cach-hop-phap"
+                        class="text-slate-500 inline-block">Chương 1.2: Vào Tuổi Hai Mươi, Bạn Có Thể Sống Chung Với Người Yêu Và Uống Bia Một Cách Hợp Pháp</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Và thật ra k có đứa bạn khoa kiến trúc nào hết :)))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3101641#ln-comment-3101641"
+                            class="text-slate-500">
+                            <time class="timeago" title="24-11-2025 22:15:36"
+                                datetime="2025-11-24T22:15:36+07:00">
+                                24-11-2025 22:15:36
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-3063044"
     class="ln-comment-item mt-3 clear"
     data-comment="3063044" 
@@ -1163,438 +1530,19 @@ YAAI
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3044584"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3044584" 
-    data-parent="3044584" 
-    data-type="chapter" 
-    data-typeid="238567">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/165231">Ps97</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c238567-chuong-26-giao-doan"
-                        class="text-slate-500 inline-block">Chương 2.6: Giao Đoạn</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Ít v bác<br>
-Tfnc kkk
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3044584#ln-comment-3044584"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-10-2025 23:19:01"
-                                datetime="2025-10-02T23:19:01+07:00">
-                                02-10-2025 23:19:01
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3046841"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3046841" 
-    data-parent="3044584" 
-    data-type="chapter" 
-    data-typeid="238567">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u152182-7c0ace48-fbf3-4e4e-9590-71ec26879180.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/152182">0range</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20/c238567-chuong-26-giao-doan"
-                        class="text-slate-500 inline-block">Chương 2.6: Giao Đoạn</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Đang lười :p
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3044584&amp;reply_id=3046841#ln-comment-3046841"
-                            class="text-slate-500">
-                            <time class="timeago" title="04-10-2025 23:16:59"
-                                datetime="2025-10-04T23:16:59+07:00">
-                                04-10-2025 23:16:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3044055"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3044055" 
-    data-parent="3044055" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua102504-397e52e1-5e71-4f7e-b303-173c9a2a2a4e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/102504">namLN</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        bộ này có manga rồi á, trans thêm tag vào đi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3044055#ln-comment-3044055"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-10-2025 13:42:47"
-                                datetime="2025-10-02T13:42:47+07:00">
-                                02-10-2025 13:42:47
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3046843"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3046843" 
-    data-parent="3044055" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u152182-7c0ace48-fbf3-4e4e-9590-71ec26879180.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/152182">0range</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        à ok, thanks bạn đã nhắc
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3044055&amp;reply_id=3046843#ln-comment-3046843"
-                            class="text-slate-500">
-                            <time class="timeago" title="04-10-2025 23:17:40"
-                                datetime="2025-10-04T23:17:40+07:00">
-                                04-10-2025 23:17:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3044038"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3044038" 
-    data-parent="3044038" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187134-4d04b1cb-958d-4228-a7f0-7ea644266941.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/187134">TapLamWibuChua</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        cuối cùng trans cũng comeback :v
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3044038#ln-comment-3044038"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-10-2025 13:16:30"
-                                datetime="2025-10-02T13:16:30+07:00">
-                                02-10-2025 13:16:30
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3043809"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3043809" 
-    data-parent="3043809" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u141733-b5cee9dc-9f79-43a3-9fb7-b765534c7c10.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/141733">Zuxng</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Hoi sinh
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3043809#ln-comment-3043809"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-10-2025 05:53:11"
-                                datetime="2025-10-02T05:53:11+07:00">
-                                02-10-2025 05:53:11
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3043807"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3043807" 
-    data-parent="3043807" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u196911-1d99fbdc-5df5-487c-89e2-d70fe0850045.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/196911">HQQ</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Adu comeback
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=3043807#ln-comment-3043807"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-10-2025 05:41:21"
-                                datetime="2025-10-02T05:41:21+07:00">
-                                02-10-2025 05:41:21
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2932804"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2932804" 
-    data-parent="2932804" 
-    data-type="series" 
-    data-typeid="18161">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u54169-361c2de7-f41f-4d64-acb7-5511644bffd6.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/54169">dap33</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        đào :&gt;
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?comment_id=2932804#ln-comment-2932804"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-07-2025 00:36:27"
-                                datetime="2025-07-13T00:36:27+07:00">
-                                13-07-2025 00:36:27
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/18161-cuoc-song-say-khuot-trong-tinh-yeu-voi-senpai-tu-tuoi-20?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'Abwjrh17iihVTFdYvCT2BvopaCern0h1dE8iXQye';
+        var token = 'dQpsKMwLjhhMl5IRc5w8UJpVgq92e4B6ken2nyr0';
         var comment_type = 'series';
         var comment_typeid = '18161';
     </script>
@@ -1642,10 +1590,10 @@ Tfnc kkk
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="Abwjrh17iihVTFdYvCT2BvopaCern0h1dE8iXQye" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="Whi13aWVZQfggT5ucM8idZn9elo9jnGIu6oo02pc" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script src="https://confidecross.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js" async></script>
 
         
             <footer id="footer">
@@ -1653,7 +1601,7 @@ Tfnc kkk
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2026 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
