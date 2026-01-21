@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="lhcVcFJ7tGJG5dtW2KAKlmcxirWqAikIN0augKSb">
+    <meta name="csrf-token" content="ShA5DFxnCLc4wwXYJEtqKS2nBFSTNA1e73kf0RY8">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=9128bdee617e5eb876ffd418ed3597bf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -84,7 +84,7 @@
             </div>
 
             <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')" title="Trang chủ"></a>
+                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-xmas-2025.png')" title="Trang chủ"></a>
             </div>
              
             <div id="navbar-user" class="guest">						
@@ -155,13 +155,16 @@
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -169,46 +172,16 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -276,7 +249,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 29 </span>
+                                                <span class="block feature-name"> 33 </span>
                                             </a>
                                                                                         </div>
 
@@ -326,11 +299,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="24/07/2025 01:00:47" datetime="2025-07-24T01:00:47+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="21/01/2026 23:53:41" datetime="2026-01-21T23:53:41+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">20.913</div>
+                                            <div class="statistic-value">22.407</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -339,16 +312,17 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">16.811</div>
+                                            <div class="statistic-value">20.263</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">小説仮面ライダー電王デネブ勧進帳</div>
-                                                                                <div class="block pad-bottom-5">Shosetsu Kamen Raida Den&#039;ō Denebu Kanshinchō</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">小説仮面ライダー電王デネブ勧進帳</div>
+                                                                                            <div class="block pad-bottom-5">Shosetsu Kamen Raida Den&#039;ō Denebu Kanshinchō</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -382,6 +356,10 @@
                                     <div class="fantrans-name">Nhóm dịch</div>
                                     <div class="fantrans-value"><a href="https://docln.net/nhom-dich/539-">　 　</a></div>
                                 </div>
+                                                                <div class="series-owner_share">
+                                    <span class="owner_share-title" title="Tham gia">Tham gia</span>
+                                                                        <a class="ln_info-name" href="/thanh-vien/660" style="padding-left: 5px;">Abraham Winchester</a>
+                                                                    </div>
                                                                 <div class="owner-donate" style="padding: 0">
                                     <!-- <span class="donate-intro">Bạn muốn tiến độ đều hơn ?</span>
                                     <span class="button button-red" onclick="alert('Chức năng đang được hoàn thiện')">Hãy Ủng hộ !!</span> -->
@@ -458,7 +436,7 @@
                                             <div class="chapter-name">
                                                 
                                                 
-                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c131019-prologue-tai-noi-tran-chien-cuoi-cung" title="Prologue: Tại nơi trận chiến cuối cùng">Prologue: Tại nơi trận chiến cuối cùng</a>
+                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c131019-prologue-tai-noi-tran-chien-cuoi-cung" title="Mở đầu: Tại nơi trận chiến cuối cùng">Mở đầu: Tại nơi trận chiến cuối cùng</a>
 
                                                                                             </div>
                                             <div class="chapter-time">02/05/2024</div>
@@ -467,7 +445,7 @@
                                             <div class="chapter-name">
                                                 
                                                 
-                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c131020-chuong-1-den-o-da-chet-phan-1" title="Chương 1: Den-O đã chết! (Phần 1)">Chương 1: Den-O đã chết! (Phần 1)</a>
+                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c131020-chuong-1-den-o-da-chet-phan-1" title="Chương 01: Den-O đã chết! (Phần 1)">Chương 01: Den-O đã chết! (Phần 1)</a>
 
                                                                                             </div>
                                             <div class="chapter-time">02/05/2024</div>
@@ -504,7 +482,7 @@
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
-                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c132742-chuong-2-zeroliner-gap-nan" title="Chương 2: ZeroLiner gặp nạn! (Phần 1)">Chương 2: ZeroLiner gặp nạn! (Phần 1)</a>
+                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c132742-chuong-2-zeroliner-gap-nan" title="Chương 02: Zero-Liner gặp nạn! (Phần 1)">Chương 02: Zero-Liner gặp nạn! (Phần 1)</a>
 
                                                                                             </div>
                                             <div class="chapter-time">01/06/2024</div>
@@ -523,7 +501,7 @@
                                             <div class="chapter-name">
                                                 
                                                 
-                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c134603-chuong-3-sao-lam-ten-yoshitsune-gia-mao-the-nay-phan-1" title="Chương 3: Sao lắm tên Yoshitsune giả mạo thế này! (Phần 1)">Chương 3: Sao lắm tên Yoshitsune giả mạo thế này! (Phần 1)</a>
+                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c134603-chuong-3-sao-lam-ten-yoshitsune-gia-mao-the-nay-phan-1" title="Chương 03: Sao lắm tên Yoshitsune giả mạo thế này! (Phần 1)">Chương 03: Sao lắm tên Yoshitsune giả mạo thế này! (Phần 1)</a>
 
                                                                                             </div>
                                             <div class="chapter-time">25/06/2024</div>
@@ -548,9 +526,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c202686-chuong-3-phan-4" title="Chương 3 (Phần 4)">Chương 3 (Phần 4)</a>
@@ -558,9 +533,21 @@
                                                                                             </div>
                                             <div class="chapter-time">24/07/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou/c295227-chuong-03-phan-5" title="Chương 03 (Phần 5)">Chương 03 (Phần 5)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">21/01/2026</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (7 chương)</span>
+                                            <span>Xem tiếp (8 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -571,7 +558,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17692,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;YnbchO0dHxIFN8ebIfLt&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;9600a8f87361e95734812e878881c454baf2dedbfd8eac9ce5cd91dc8f31627b&quot;}" wire:effects="[]" wire:id="YnbchO0dHxIFN8ebIfLt" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17692,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;RLolK03BrSPA6BgpObCc&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17692-tieu-thuyet-kamen-rider-den-o-kanjinchou&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3fcd2890bc3c06b10ebe73ead5eb20a97632f092eea4512911bca60594385885&quot;}" wire:effects="[]" wire:id="RLolK03BrSPA6BgpObCc" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -666,7 +653,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u176634-df52c43f-8869-4c2d-9b0c-910c82ed5a25.gif" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u176634-1347012e-ac8d-4609-8434-2225d064f342.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -675,7 +662,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Tên là gì ăn được không?</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Je t&#039;aime beaucoup</a>
     </div>
                                     </div>
                                         
@@ -723,7 +710,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142791">m4dness</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142791">黒くろ川かわ 茜</a>
     </div>
                                         <div class="self-center">
             <div
@@ -743,7 +730,7 @@
                                         
                 </div>
                                                     <div class="ln-comment-content long-text">
-                        Bình luận đã bị xóa bởi m4dness
+                        Bình luận đã bị xóa bởi 黒くろ川かわ 茜
                     </div>
                             </div>
         </div>
@@ -756,7 +743,7 @@
 </div>    </main>
 
     <script>
-        var token = 'lhcVcFJ7tGJG5dtW2KAKlmcxirWqAikIN0augKSb';
+        var token = 'ShA5DFxnCLc4wwXYJEtqKS2nBFSTNA1e73kf0RY8';
         var comment_type = 'series';
         var comment_typeid = '17692';
     </script>
@@ -801,13 +788,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="lhcVcFJ7tGJG5dtW2KAKlmcxirWqAikIN0augKSb" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="ShA5DFxnCLc4wwXYJEtqKS2nBFSTNA1e73kf0RY8" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script src="https://confidecross.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js" async></script>
 
         
             <footer id="footer">
@@ -815,7 +802,7 @@
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2026 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
