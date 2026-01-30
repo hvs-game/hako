@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="KpdSGwguKuslCHkAgG88yOew6vhsH1AOMNlCceCj">
+    <meta name="csrf-token" content="NqcqHbJL8mgGXiio1wfMMeNec6cHvsvSDq7UEfEA">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=79c8956531b276c6564b6dfd12d504f8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -84,7 +84,7 @@
             </div>
 
             <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')" title="Trang chủ"></a>
+                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-xmas-2025.png')" title="Trang chủ"></a>
             </div>
              
             <div id="navbar-user" class="guest">						
@@ -149,19 +149,22 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
+                <a href="/truyen/16221">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -169,17 +172,11 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -245,7 +242,7 @@
                                         <div class="info-item">
                                             <span class="info-name">Tình trạng:</span>
                                             <span class="info-value">
-                                                <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
+                                                <a href="https://docln.net/truyen-tam-ngung">Tạm ngưng</a>
                                             </span>
                                         </div>
 
@@ -257,7 +254,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 415 </span>
+                                                <span class="block feature-name"> 418 </span>
                                             </a>
                                                                                         </div>
 
@@ -307,11 +304,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="11/10/2025 22:19:15" datetime="2025-10-11T22:19:15+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="30/01/2026 22:19:38" datetime="2026-01-30T22:19:38+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">89.116</div>
+                                            <div class="statistic-value">90.478</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -320,7 +317,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">113.823</div>
+                                            <div class="statistic-value">132.053</div>
                                         </div>
                                     </div>
                                 </div>
@@ -380,8 +377,8 @@
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
                         <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
-                        <p>Bản dịch eng: <a href="https://www.foxaholic.com/novel/otherworld-dagashi-shop-yahagi/" rel="nofollow noreferrer noopener" target="_blank">eng</a></p>
-<p>Raw gốc:<a href="https://ncode.syosetu.com/n6347hd/" rel="nofollow noreferrer noopener" target="_blank">Raw</a></p>
+                        <p>Bản dịch eng: <a href="https://www.foxaholic.com/novel/otherworld-dagashi-shop-yahagi/" target="_blank" rel="nofollow noreferrer noopener">eng</a></p>
+<p>Raw gốc:<a href="https://ncode.syosetu.com/n6347hd/" target="_blank" rel="nofollow noreferrer noopener">Raw</a></p>
 <p>Nếu có bất cứ sai sót hoặc đóng góp gì về bản dịch xin hãy comment với mình ở chương đó.</p>
                         </div>
                     </main>
@@ -1049,9 +1046,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi/c244227-chuong-65-hien-tai-thi-lay-tam-may-vien-da-quy-nay-di" title="Chương 65: Hiện tại thì lấy tạm mấy viên đá quý này đi….">Chương 65: Hiện tại thì lấy tạm mấy viên đá quý này đi….</a>
@@ -1059,9 +1053,21 @@
                                                                                             </div>
                                             <div class="chapter-time">11/10/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi/c300046-chuong-66-cay-chay-dinh-huyen-thoai" title="Chương 66: Cây chày đinh huyền thoại">Chương 66: Cây chày đinh huyền thoại</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/01/2026</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (5 chương)</span>
+                                            <span>Xem tiếp (6 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1072,7 +1078,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20847,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;mQBdEtKxeKkvaaYddCMQ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;ee3782285051fae323f5a09ffe85f155843a1f2361eccdcea092d79316a19dc5&quot;}" wire:effects="[]" wire:id="mQBdEtKxeKkvaaYddCMQ" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:20847,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;5lt2bjnCejSUMk1K8KPn&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;315ae49a48cd3512e3c044b13eb5a7371809df41829065bd893409d125a175ee&quot;}" wire:effects="[]" wire:id="5lt2bjnCejSUMk1K8KPn" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1091,7 +1097,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(554)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(556)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1110,6 +1116,63 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3184830"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3184830" 
+    data-parent="3184830" 
+    data-type="chapter" 
+    data-typeid="300046">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u64359-84ed1d8b-e6aa-4334-923d-3ca317664bb7.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Akarui_Taiyo</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi/c300046-chuong-66-cay-chay-dinh-huyen-thoai"
+                        class="text-slate-500 inline-block">Chương 66: Cây chày đinh huyền thoại</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        cumbackk
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi?comment_id=3184830#ln-comment-3184830"
+                            class="text-slate-500">
+                            <time class="timeago" title="30-01-2026 22:37:24"
+                                datetime="2026-01-30T22:37:24+07:00">
+                                30-01-2026 22:37:24
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-3054994"
     class="ln-comment-item mt-3 clear"
     data-comment="3054994" 
@@ -1369,7 +1432,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u19014-fddfca75-9013-478d-8f9f-23223c3beed2.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u19014-dbfd1139-3424-41b3-8c6b-f0dc7783cc33.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1378,7 +1441,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19014">Venom Viper</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/19014">Zagiel</a>
     </div>
                                     </div>
                                         
@@ -1519,7 +1582,7 @@
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u120197-cb1f65eb-4969-48d3-93fc-829ee61fe4c3.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u120197-4c982d8d-4106-42d1-84f8-6cd0931beea0.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1537,7 +1600,14 @@
                 <div class="leading-4">TRANS</div>
             </div>
         </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
         </div>
+    </div>
                                         
                 </div>
                                     <span class="text-sm"><a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi/c235333-chuong-60-toi-dung-duoc-phep-thuat-roi"
@@ -1566,56 +1636,6 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3036948"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3036948" 
-    data-parent="3036948" 
-    data-type="chapter" 
-    data-typeid="235359">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/169648">Agent Ace</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi/c235359-chuong-61-que-cuong-hoa-phep-thuat"
-                        class="text-slate-500 inline-block">Chương 61: Que cường hoá phép thuật.</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        May anh t người thường ko năng lực này hack quá:))
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/20847-tiem-dagashi-tu-the-gioi-khac-cua-yahagi?comment_id=3036948#ln-comment-3036948"
-                            class="text-slate-500">
-                            <time class="timeago" title="25-09-2025 18:04:39"
-                                datetime="2025-09-25T18:04:39+07:00">
-                                25-09-2025 18:04:39
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -1628,7 +1648,7 @@
 </div>    </main>
 
     <script>
-        var token = 'o4Zca43Znbk73Z3BbY4sKCPd3c9iFdY90Mel8GGT';
+        var token = 'NqcqHbJL8mgGXiio1wfMMeNec6cHvsvSDq7UEfEA';
         var comment_type = 'series';
         var comment_typeid = '20847';
     </script>
@@ -1676,10 +1696,10 @@
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="KpdSGwguKuslCHkAgG88yOew6vhsH1AOMNlCceCj" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="NqcqHbJL8mgGXiio1wfMMeNec6cHvsvSDq7UEfEA" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//bugscrawled.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script src="https://confidecross.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js" async></script>
 
         
             <footer id="footer">
@@ -1687,7 +1707,7 @@
         <!--<span><a href="">Hako.re</a></span>-->
         <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 
-        <span>© 2016 - 2025 Cổng Light Novel - Đọc Light Novel</span>
+        <span>© 2016 - 2026 Cổng Light Novel - Đọc Light Novel</span>
     </div>
 </footer>    
     <div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
@@ -1698,5 +1718,5 @@
             <p class="text-sm" x-text="$store.toast.message"></p>
         </div>
     </div>
-</div></body>
+</div><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c6259a409ea237a',t:'MTc2OTc5MDU4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
